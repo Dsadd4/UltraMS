@@ -6,9 +6,9 @@ tags:
   - spectrum-embedding
 ---
 
-# UltraMS MoNA Contrastive
+# UltraMS Unsupervised
 
-Use this model, contrastively trained on MoNA, for MS/MS spectrum similarity.
+Use this model to obtain a general embedding of an MS/MS spectrum.
 
 ```bash
 pip install ultrams
@@ -17,7 +17,7 @@ pip install ultrams
 ```python
 from ultrams import UltraMS
 
-model = UltraMS.from_pretrained("mona")
+model = UltraMS.from_pretrained("unsupervised")
 embedding = model.encode(
     mz=[100.1, 121.1, 150.0], intensity=[20, 100, 35], precursor_mz=301.2
 ).embedding

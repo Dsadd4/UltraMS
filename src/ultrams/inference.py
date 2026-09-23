@@ -3,15 +3,22 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from itertools import chain
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping, Sequence
 
 import numpy as np
 import torch
 import torch.nn.functional as F
 
 from ._architecture import UltraMSBackbone, UltraMSWithHeads, model_config
+
+
+PRETRAINED_MODELS = {
+    "unsupervised": "dsadd4/UltraMS-Unsupervised",
+    "base": "dsadd4/UltraMS-Unsupervised",
+    "mona": "dsadd4/UltraMS-MoNA-Contrastive",
+    "search": "dsadd4/UltraMS-Search",
+}
 
 
 @dataclass(frozen=True)
@@ -55,6 +62,40 @@ def _prepare_spectrum(
     peaks = np.stack((mz_array[order], intensity_array[order]), axis=-1).astype(np.float32)
     mask = np.ones(len(peaks), dtype=np.int64)
     return peaks, mask
+
+
+@dataclass(frozen=True)
+class SpectrumCollator:
+    """Convert variable-length spectra into a padded PyTorch batch."""
+
+    max_peaks: int
+
+    def __call__(self, examples: Sequence[Mapping[str, Any]]) -> dict[str, torch.Tensor]:
+        if not examples:
+            raise ValueError("cannot collate an empty batch")
+        prepared = [
+            _prepare_spectrum(row["mz"], row["intensity"], self.max_peaks)[0]
+            for row in examples
+        ]
+        length = max(len(spectrum) for spectrum in prepared)
+        peaks = torch.zeros((len(prepared), length, 2), dtype=torch.float32)
+        attention_mask = torch.zeros((len(prepared), length), dtype=torch.long)
+        for index, spectrum in enumerate(prepared):
+            count = len(spectrum)
+            peaks[index, :count] = torch.from_numpy(spectrum)
+            attention_mask[index, :count] = 1
+        batch = {
+            "peaks": peaks,
+            "attention_mask": attention_mask,
+            "precursor_mz": torch.tensor(
+                [float(row["precursor_mz"]) for row in examples], dtype=torch.float32
+            ),
+        }
+        if all("target" in row for row in examples):
+            batch["target"] = torch.tensor(
+                [float(row["target"]) for row in examples], dtype=torch.float32
+            )
+        return batch
 
 
 def _checkpoint_state(
@@ -133,8 +174,8 @@ def _atlas_projection(state: Any) -> torch.nn.Module:
     return projection.eval()
 
 
-class UltraMS:
-    """Inference wrapper for the pretraining and RT/polarity model layouts."""
+class UltraMS(torch.nn.Module):
+    """Pretrained MS/MS encoder that works as a standard PyTorch module."""
 
     def __init__(
         self,
@@ -144,11 +185,13 @@ class UltraMS:
         model_family: str,
         projection: torch.nn.Module | None,
     ):
-        self.model = model.eval()
+        super().__init__()
+        self.model = model
         self.config = config
         self.input_max_peaks = input_max_peaks
         self.model_family = model_family
         self.projection = projection
+        self.eval()
 
     @property
     def embedding_dim(self) -> int:
@@ -158,24 +201,34 @@ class UltraMS:
                     return layer.out_features
         return int(self.config["d_model"])
 
-    def parameters(self):
-        """Parameters of the encoder and its optional contrastive projection."""
-        return chain(
-            self.model.parameters(),
-            self.projection.parameters() if self.projection is not None else (),
+    def forward(
+        self,
+        peaks: torch.Tensor,
+        attention_mask: torch.Tensor,
+        precursor_mz: torch.Tensor,
+    ) -> torch.Tensor:
+        """Return a ``[batch, embedding_dim]`` embedding with gradients."""
+        if peaks.ndim != 3 or peaks.shape[-1] != 2:
+            raise ValueError("peaks must have shape [batch, peaks, 2]")
+        if attention_mask.shape != peaks.shape[:2] or precursor_mz.shape != peaks.shape[:1]:
+            raise ValueError("attention_mask or precursor_mz has the wrong shape")
+        if peaks.shape[1] > self.input_max_peaks:
+            raise ValueError("batch contains more peaks than this model supports")
+        _, cls = self.model.encode(
+            peaks.float(), attention_mask.long(), precursor_mz.float()
         )
+        embedding = self.projection(cls) if self.projection is not None else cls
+        if self.model_family == "mona":
+            return embedding.float()
+        return F.normalize(embedding.float(), dim=-1)
 
-    def train(self) -> "UltraMS":
-        self.model.train()
-        if self.projection is not None:
-            self.projection.train()
-        return self
+    def batch_converter(self) -> SpectrumCollator:
+        """Return a lightweight ``DataLoader(collate_fn=...)`` converter."""
+        return SpectrumCollator(self.input_max_peaks)
 
-    def eval(self) -> "UltraMS":
-        self.model.eval()
-        if self.projection is not None:
-            self.projection.eval()
-        return self
+    def collate(self, examples: Sequence[Mapping[str, Any]]) -> dict[str, torch.Tensor]:
+        """Convert a batch of spectra for PyTorch."""
+        return self.batch_converter()(examples)
 
     def encode_tensor(
         self, mz: Any, intensity: Any, *, precursor_mz: float
@@ -184,13 +237,12 @@ class UltraMS:
         peaks, attention = _prepare_spectrum(mz, intensity, self.input_max_peaks)
         if not np.isfinite(precursor_mz) or precursor_mz <= 0:
             raise ValueError("precursor_mz must be a positive finite number")
-        device = next(self.model.parameters()).device
-        spectra = torch.as_tensor(peaks, device=device).unsqueeze(0)
-        mask = torch.as_tensor(attention, device=device).unsqueeze(0)
-        precursor = torch.tensor([precursor_mz], dtype=torch.float32, device=device)
-        _, cls = self.model.encode(spectra, mask, precursor)
-        embedding = self.projection(cls) if self.projection is not None else cls
-        return F.normalize(embedding.float(), dim=-1)
+        device = next(self.parameters()).device
+        return self.forward(
+            torch.as_tensor(peaks, device=device).unsqueeze(0),
+            torch.as_tensor(attention, device=device).unsqueeze(0),
+            torch.tensor([precursor_mz], dtype=torch.float32, device=device),
+        )
 
     @classmethod
     def from_checkpoint(
@@ -202,10 +254,24 @@ class UltraMS:
         unified = any(key.startswith("base.") for key in state)
         model = UltraMSWithHeads(config) if unified else UltraMSBackbone(config)
         model.load_state_dict(state, strict=True)
-        model.to(torch.device(device))
-        if projection is not None:
-            projection.to(torch.device(device))
-        return cls(model, config, input_max_peaks, model_family, projection)
+        return cls(model, config, input_max_peaks, model_family, projection).to(device)
+
+    @classmethod
+    def from_pretrained(
+        cls, name: str = "unsupervised", *, device: str | torch.device = "cpu"
+    ) -> "UltraMS":
+        """Load ``unsupervised``, ``mona``, or ``search`` from Hugging Face."""
+        try:
+            repo_id = PRETRAINED_MODELS[name.lower()]
+        except KeyError as exc:
+            raise ValueError("name must be 'unsupervised', 'mona', or 'search'") from exc
+        return cls.from_hub(repo_id, device=device)
+
+    def finetune(self, records: Sequence[Mapping[str, Any]], **kwargs: Any):
+        """Fine-tune on labelled spectra and return a task predictor."""
+        from .finetune import finetune
+
+        return finetune(self, records, **kwargs)
 
     @classmethod
     def from_hub(
@@ -219,7 +285,7 @@ class UltraMS:
         try:
             from huggingface_hub import hf_hub_download
         except ImportError as exc:
-            raise ImportError("Hugging Face downloads require pip install 'ultrams[hub]'") from exc
+            raise ImportError("Hugging Face downloads require huggingface-hub") from exc
         path = hf_hub_download(repo_id=repo_id, filename=filename, revision=revision)
         return cls.from_checkpoint(path, device=device)
 

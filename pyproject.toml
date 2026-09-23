@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ultrams"
-version = "0.1.0"
-description = "UltraMS spectrum representations and model inference"
+version = "0.1.1"
+description = "Pretrained UltraMS models for mass spectrometry"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
@@ -13,14 +13,12 @@ dependencies = [
   "numpy>=1.24,<3",
   "torch>=2.1",
   "transformers>=4.33,<5",
+  "huggingface-hub>=0.23,<1",
 ]
 
 [project.urls]
 Homepage = "https://github.com/Dsadd4/UltraMS"
 Source = "https://github.com/Dsadd4/UltraMS"
-
-[project.optional-dependencies]
-hub = ["huggingface-hub>=0.23,<2"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

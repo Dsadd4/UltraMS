@@ -6,9 +6,9 @@ tags:
   - spectrum-embedding
 ---
 
-# UltraMS MoNA Contrastive
+# UltraMS Search
 
-Use this model, contrastively trained on MoNA, for MS/MS spectrum similarity.
+The final UltraMS model for spectrum similarity search, used in UltraAtlas.
 
 ```bash
 pip install ultrams
@@ -17,7 +17,7 @@ pip install ultrams
 ```python
 from ultrams import UltraMS
 
-model = UltraMS.from_pretrained("mona")
+model = UltraMS.from_pretrained("search")
 embedding = model.encode(
     mz=[100.1, 121.1, 150.0], intensity=[20, 100, 35], precursor_mz=301.2
 ).embedding

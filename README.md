@@ -1,50 +1,62 @@
 # UltraMS
 
-Encode an MS/MS spectrum in three lines. Fine-tune the same encoder with your own labels.
+Pretrained models for MS/MS spectra.
 
 ```bash
-pip install "ultrams[hub]"
+pip install ultrams
 ```
+
+| Model | Use | Weights |
+| --- | --- | --- |
+| **Unsupervised** | General spectrum embeddings | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Unsupervised) |
+| **MoNA Contrastive** | Spectrum similarity learned on MoNA | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
+| **Search** | Final spectrum search model | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Search) |
+
+## Get an embedding
 
 ```python
 from ultrams import UltraMS
 
-model = UltraMS.from_hub("dsadd4/UltraMS-RT-only")
+model = UltraMS.from_pretrained("unsupervised")
 embedding = model.encode(
     mz=[100.1, 121.1, 150.0], intensity=[20, 100, 35], precursor_mz=301.2
 ).embedding  # NumPy vector
 ```
 
-## Fine-tune
+## Fine-tune with PyTorch
 
-`encode_tensor` keeps gradients. Add a task head and train the encoder and head together:
+`UltraMS` is a `torch.nn.Module`. Each item in `dataset` contains `mz`, `intensity`, `precursor_mz`, and a numeric `target`. The batch converter prepares variable-length spectra for `DataLoader`.
 
 ```python
 import torch
+from torch.utils.data import DataLoader
 from ultrams import UltraMS
 
-model = UltraMS.from_hub("dsadd4/UltraMS-RT-only").train()
-head = torch.nn.Linear(model.embedding_dim, 1)
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = UltraMS.from_pretrained("unsupervised", device=device).train()
+head = torch.nn.Linear(model.embedding_dim, 1).to(device)
+loader = DataLoader(dataset, batch_size=16, collate_fn=model.batch_converter())
 optimizer = torch.optim.AdamW([*model.parameters(), *head.parameters()], lr=1e-5)
 
-for mz, intensity, precursor_mz, target in training_rows:
-    prediction = head(model.encode_tensor(mz, intensity, precursor_mz=precursor_mz))
-    loss = torch.nn.functional.mse_loss(prediction.flatten(), torch.tensor([target], dtype=torch.float32))
+for batch in loader:
+    batch = {name: value.to(device) for name, value in batch.items()}
+    prediction = head(model(batch["peaks"], batch["attention_mask"], batch["precursor_mz"]))
+    loss = torch.nn.functional.mse_loss(prediction.squeeze(-1), batch["target"])
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
 ```
 
-`training_rows` contains your labelled spectra. For MoNA or UltraAtlas fine-tuning, replace the model ID in the same code.
+## Fine-tune in one call
 
-## Checkpoints
+Each item in `labelled_spectra` contains `mz`, `intensity`, `precursor_mz`, and `label`.
 
-| Model | Hugging Face | Use |
-| --- | --- | --- |
-| RT-only D11 | [UltraMS-RT-only](https://huggingface.co/dsadd4/UltraMS-RT-only) | General MS/MS representation |
-| MoNA contrastive | [UltraMS-MoNA](https://huggingface.co/dsadd4/UltraMS-MoNA) | MoNA spectrum similarity |
-| UltraAtlas contrastive | [UltraMS-UltraAtlas](https://huggingface.co/dsadd4/UltraMS-UltraAtlas) | Figure 5 Atlas application |
+```python
+model = UltraMS.from_pretrained("unsupervised")
+predictor = model.finetune(labelled_spectra, task="regression", epochs=5)
+prediction = predictor.predict([100.1, 121.1, 150.0], [20, 100, 35], precursor_mz=301.2)
+```
 
-All three can also be loaded from a downloaded `model.pt` with `UltraMS.from_checkpoint(path)`.
+Use `task="classification"` for class labels. Fine-tuning saves the model, training configuration, and loss history in `ultrams_finetune/`. A downloaded `model.pt` can be loaded with `UltraMS.from_checkpoint(path)`.
 
-The current pure Ae3 pretraining and RT/ion-mode adaptation source is in [training/](training/).
+The current pretraining code is in [training](https://github.com/Dsadd4/UltraMS/tree/main/training).
