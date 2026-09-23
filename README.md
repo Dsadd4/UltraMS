@@ -25,17 +25,22 @@ embedding = model.encode(
 
 ## Fine-tune with PyTorch
 
-`UltraMS` is a `torch.nn.Module`. Each item in `dataset` contains `mz`, `intensity`, `precursor_mz`, and a numeric `target`. The batch converter prepares variable-length spectra for `DataLoader`.
+`UltraMS` is a `torch.nn.Module`. The two rows below show the required data format; replace them with your labelled spectra.
 
 ```python
 import torch
 from torch.utils.data import DataLoader
 from ultrams import UltraMS
 
+dataset = [
+    {"mz": [100.1, 121.1, 150.0], "intensity": [20, 100, 35], "precursor_mz": 301.2, "target": 0.5},
+    {"mz": [102.1, 135.2, 167.3], "intensity": [40, 100, 25], "precursor_mz": 315.3, "target": 0.7},
+]
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model = UltraMS.from_pretrained("unsupervised", device=device).train()
 head = torch.nn.Linear(model.embedding_dim, 1).to(device)
-loader = DataLoader(dataset, batch_size=16, collate_fn=model.batch_converter())
+loader = DataLoader(dataset, batch_size=2, collate_fn=model.batch_converter())
 optimizer = torch.optim.AdamW([*model.parameters(), *head.parameters()], lr=1e-5)
 
 for batch in loader:
@@ -45,16 +50,25 @@ for batch in loader:
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
+    print(f"loss: {loss.item():.4f}")
 ```
 
 ## Fine-tune in one call
 
-Each item in `labelled_spectra` contains `mz`, `intensity`, `precursor_mz`, and `label`.
+For a shorter route, provide the same spectra with a `label` field.
 
 ```python
+from ultrams import UltraMS
+
+labelled_spectra = [
+    {"mz": [100.1, 121.1, 150.0], "intensity": [20, 100, 35], "precursor_mz": 301.2, "label": 0.5},
+    {"mz": [102.1, 135.2, 167.3], "intensity": [40, 100, 25], "precursor_mz": 315.3, "label": 0.7},
+]
+
 model = UltraMS.from_pretrained("unsupervised")
-predictor = model.finetune(labelled_spectra, task="regression", epochs=5)
+predictor = model.finetune(labelled_spectra, task="regression", epochs=1)
 prediction = predictor.predict([100.1, 121.1, 150.0], [20, 100, 35], precursor_mz=301.2)
+print(prediction)
 ```
 
 Use `task="classification"` for class labels. Fine-tuning saves the model, training configuration, and loss history in `ultrams_finetune/`. A downloaded `model.pt` can be loaded with `UltraMS.from_checkpoint(path)`.
