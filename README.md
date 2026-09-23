@@ -58,6 +58,7 @@ for batch in loader:
 For a shorter route, provide the same spectra with a `label` field.
 
 ```python
+import torch
 from ultrams import UltraMS
 
 labelled_spectra = [
@@ -65,7 +66,8 @@ labelled_spectra = [
     {"mz": [102.1, 135.2, 167.3], "intensity": [40, 100, 25], "precursor_mz": 315.3, "label": 0.7},
 ]
 
-model = UltraMS.from_pretrained("unsupervised")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = UltraMS.from_pretrained("unsupervised", device=device)
 predictor = model.finetune(labelled_spectra, task="regression", epochs=1)
 prediction = predictor.predict([100.1, 121.1, 150.0], [20, 100, 35], precursor_mz=301.2)
 print(prediction)
