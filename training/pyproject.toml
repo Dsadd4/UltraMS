@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultrams-training"
+version = "0.1.0"
+description = "UltraMS pretraining source"
+requires-python = ">=3.11,<3.12"
+license = "Apache-2.0"
+dependencies = [
+  "numpy==1.24.4",
+  "pandas==1.5.3",
+  "pyarrow==15.0.2",
+  "PyYAML==6.0.2",
+  "rdkit==2023.9.5",
+  "torch==2.7.1",
+  "transformers==4.33.2",
+]
+
+[project.scripts]
+ultrams-pretrain = "ultrams_training.train_pretraining:main"
+ultrams-adapt = "ultrams_training.train_full_adaptation:main"
+
+[tool.setuptools.packages.find]
+include = ["ultrams_training*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+ultrams_training = ["configs/*.json", "data_tools/*.json"]
