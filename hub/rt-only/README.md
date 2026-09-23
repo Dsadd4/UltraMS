@@ -12,7 +12,7 @@ UltraMS spectrum encoder after pretraining and RT/ion-mode adaptation. Use it to
 
 - **Input:** fragment `m/z` and intensity arrays, plus precursor `m/z`.
 - **Output:** a spectrum embedding (`embedding.embedding`); the `ultrams` package also exposes CLS, peak-weighted, and fused embeddings.
-- **Package:** `pip install ultrams`; load a downloaded checkpoint with `UltraMS.from_checkpoint(path)`.
+- **Load:** `pip install "ultrams[hub]"`; `UltraMS.from_hub("dsadd4/UltraMS-RT-only")`.
 - **Source checkpoint:** `Light_ultra/train/output/phase2_rt_only/stage_d_epoch_11.pt`.
 - **Expected source SHA256:** `6a4c6660999848c409303119f6caa54fbae9444d0b75c7fcd8bafd303cde9830`.
 - **License:** Apache-2.0.

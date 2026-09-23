@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from itertools import chain
 from pathlib import Path
 from typing import Any
 
@@ -148,6 +149,48 @@ class UltraMS:
         self.input_max_peaks = input_max_peaks
         self.model_family = model_family
         self.projection = projection
+
+    @property
+    def embedding_dim(self) -> int:
+        if self.projection is not None:
+            for layer in reversed(list(self.projection.modules())):
+                if isinstance(layer, torch.nn.Linear):
+                    return layer.out_features
+        return int(self.config["d_model"])
+
+    def parameters(self):
+        """Parameters of the encoder and its optional contrastive projection."""
+        return chain(
+            self.model.parameters(),
+            self.projection.parameters() if self.projection is not None else (),
+        )
+
+    def train(self) -> "UltraMS":
+        self.model.train()
+        if self.projection is not None:
+            self.projection.train()
+        return self
+
+    def eval(self) -> "UltraMS":
+        self.model.eval()
+        if self.projection is not None:
+            self.projection.eval()
+        return self
+
+    def encode_tensor(
+        self, mz: Any, intensity: Any, *, precursor_mz: float
+    ) -> torch.Tensor:
+        """Differentiable model embedding of one spectrum, shape ``(1, embedding_dim)``."""
+        peaks, attention = _prepare_spectrum(mz, intensity, self.input_max_peaks)
+        if not np.isfinite(precursor_mz) or precursor_mz <= 0:
+            raise ValueError("precursor_mz must be a positive finite number")
+        device = next(self.model.parameters()).device
+        spectra = torch.as_tensor(peaks, device=device).unsqueeze(0)
+        mask = torch.as_tensor(attention, device=device).unsqueeze(0)
+        precursor = torch.tensor([precursor_mz], dtype=torch.float32, device=device)
+        _, cls = self.model.encode(spectra, mask, precursor)
+        embedding = self.projection(cls) if self.projection is not None else cls
+        return F.normalize(embedding.float(), dim=-1)
 
     @classmethod
     def from_checkpoint(
