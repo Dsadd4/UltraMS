@@ -11,4 +11,4 @@ ultrams-pretrain \
   --end-stage peak_reconstruction
 ```
 
-The RT and ion-mode training configuration is in `configs/pretraining_pure_ae3_full_adaptation.json`. Fine-tuning runs save their model, configuration, and loss history; `python training/plot_finetune_history.py <run_dir>` plots the saved history.
+The RT and ion-mode training configuration is [here](ultrams_training/configs/pretraining_pure_ae3_full_adaptation.json). Fine-tuning runs save their model, configuration, and loss history; `python training/plot_finetune_history.py <run_dir>` plots the saved history.
