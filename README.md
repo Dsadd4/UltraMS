@@ -1,35 +1,46 @@
 # UltraMS
 
-Foundation models for MS/MS spectra. Obtain spectrum-level embeddings or fine-tune the encoder with PyTorch.
-
-## Install
-
-Python 3.10 or newer:
+**Pretrained models for tandem mass spectra.** Turn MS/MS spectra into embeddings, compare spectra, or fine-tune the encoder for a measured property.
 
 ```bash
 python -m pip install ultrams
 ```
 
-For a particular CPU, CUDA, ROCm, or Apple Silicon setup, select the appropriate [PyTorch installation](https://pytorch.org/get-started/locally/) first. To install the current GitHub source instead:
+| I want to… | Start here |
+| --- | --- |
+| Embed one spectrum | [Python example](#embed-a-spectrum) |
+| Embed an MGF or mzML file | [File command](#embed-a-spectrum-file) |
+| Train on my labelled spectra | [PyTorch example](#fine-tune-with-pytorch) · [complete MGF example](examples/pytorch_finetune.py) |
+| Compare spectra | [Search example](examples/spectrum_search.py) |
+| Reproduce pretraining | [Training code](training/README.md) |
 
-```bash
-python -m pip install git+https://github.com/Dsadd4/UltraMS.git
-```
-
-## Get a spectrum embedding
+## Embed a spectrum
 
 ```python
 from ultrams import UltraMS
 
 model = UltraMS.from_pretrained("unsupervised")
 embedding = model.encode(
-    mz=[100.1, 121.1, 150.0], intensity=[20, 100, 35], precursor_mz=301.2
-).embedding  # NumPy vector
+    mz=[100.1, 121.1, 150.0],
+    intensity=[20, 100, 35],
+    precursor_mz=301.2,
+).embedding
+print(embedding.shape)  # (1024,)
 ```
+
+The first call downloads the selected checkpoint from Hugging Face. Use `device="cuda"` or `device="mps"` with `from_pretrained` to run on an available accelerator.
+
+## Embed a spectrum file
+
+```bash
+ultrams-embed spectra.mgf embeddings.npz --model unsupervised
+```
+
+The output has aligned `ids` and `embeddings` arrays. To use mzML, first run `python -m pip install 'ultrams[io]'`; the base installation reads MGF and `.mgf.gz` without an extra file-format package. The [checked-in example](examples/README.md) includes five real MS/MS spectra and a complete Python batch workflow.
 
 ## Fine-tune with PyTorch
 
-`UltraMS` is a `torch.nn.Module`. The two rows below show the required data format; replace them with your labelled spectra.
+`UltraMS` is a `torch.nn.Module`. Each dataset item contains peak `mz`, peak `intensity`, `precursor_mz`, and a measured numeric `target`. The two rows below are runnable example data; substitute your measured spectra and targets for research.
 
 ```python
 import torch
@@ -40,7 +51,6 @@ dataset = [
     {"mz": [100.1, 121.1, 150.0], "intensity": [20, 100, 35], "precursor_mz": 301.2, "target": 0.5},
     {"mz": [102.1, 135.2, 167.3], "intensity": [40, 100, 25], "precursor_mz": 315.3, "target": 0.7},
 ]
-
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model = UltraMS.from_pretrained("unsupervised", device=device).train()
 head = torch.nn.Linear(model.embedding_dim, 1).to(device)
@@ -57,38 +67,18 @@ for batch in loader:
     print(f"loss: {loss.item():.4f}")
 ```
 
-## Fine-tune in one call
+The [complete fine-tuning example](examples/pytorch_finetune.py) reads an MGF file and saves training history. For a shorter route, use `model.finetune(labelled_spectra, task="regression")` with a `label` field; it saves weights, configuration, and losses. See [spectrum input](docs/data-format.md) for the input format.
 
-For a shorter route, provide the same spectra with a `label` field.
+## Choose a model
 
-```python
-import torch
-from ultrams import UltraMS
+| Model name | Representation | Dimension | Spectral peak limit | Weights |
+| --- | --- | ---: | ---: | --- |
+| `unsupervised` | Encoder spectrum embedding | 1024 | 150 | [Unsupervised](https://huggingface.co/dsadd4/UltraMS-Unsupervised) |
+| `mona` | MoNA contrastive projection | 1024 | 100 | [MoNA contrastive](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
+| `search` | UltraAtlas search projection | 512 | 150 | [Search](https://huggingface.co/dsadd4/UltraMS-Search) |
 
-labelled_spectra = [
-    {"mz": [100.1, 121.1, 150.0], "intensity": [20, 100, 35], "precursor_mz": 301.2, "label": 0.5},
-    {"mz": [102.1, 135.2, 167.3], "intensity": [40, 100, 25], "precursor_mz": 315.3, "label": 0.7},
-]
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model = UltraMS.from_pretrained("unsupervised", device=device)
-predictor = model.finetune(labelled_spectra, task="regression", epochs=1)
-prediction = predictor.predict([100.1, 121.1, 150.0], [20, 100, 35], precursor_mz=301.2)
-print(prediction)
-```
-
-Use `task="classification"` for class labels. Fine-tuning saves the model, training configuration, and loss history in `ultrams_finetune/`.
-
-## Choose a pretrained model
-
-| Model | Learned representation | Use | Weights |
-| --- | --- | --- | --- |
-| **Unsupervised** (`"unsupervised"`) | Encoder spectrum-level embedding, $h_{\mathrm{CLS}}$ | General MS/MS representation and fine-tuning | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Unsupervised) |
-| **MoNA contrastive** (`"mona"`) | Embedding projection of $h_{\mathrm{CLS}}$ | Spectrum similarity learned on MoNA | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
-| **Search** (`"search"`) | Embedding projection of $h_{\mathrm{CLS}}$ | Spectrum-to-spectrum similarity used to build UltraAtlas | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Search) |
-
-`encode(...).embedding` returns the representation in the table. To use a downloaded `model.pt` directly, call `UltraMS.from_checkpoint(path)`.
+Load any of them with `UltraMS.from_pretrained("name")`, or load a downloaded `model.pt` with `UltraMS.from_checkpoint(path)`. [Model selection](docs/model-selection.md) explains the training purpose and output of each checkpoint. The Search checkpoint is the **UltraAtlas application `best.pt`**.
 
 ## Pretraining
 
-The [UltraMSdata pretraining code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) has a separate installation and requires prepared UltraMSdata.
+The [UltraMSdata pretraining package](training/README.md) contains the current model architecture, training entry points, configuration and history outputs. It installs separately from the inference package.

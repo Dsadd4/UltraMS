@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+from itertools import islice
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping, Sequence
+from typing import Any, Iterable, Mapping, Sequence
 
 import numpy as np
 import torch
@@ -73,6 +74,9 @@ class SpectrumCollator:
     def __call__(self, examples: Sequence[Mapping[str, Any]]) -> dict[str, torch.Tensor]:
         if not examples:
             raise ValueError("cannot collate an empty batch")
+        precursor_values = np.asarray([row["precursor_mz"] for row in examples], dtype=np.float32)
+        if not np.isfinite(precursor_values).all() or np.any(precursor_values <= 0):
+            raise ValueError("precursor_mz must be a positive finite number")
         prepared = [
             _prepare_spectrum(row["mz"], row["intensity"], self.max_peaks)[0]
             for row in examples
@@ -88,7 +92,7 @@ class SpectrumCollator:
             "peaks": peaks,
             "attention_mask": attention_mask,
             "precursor_mz": torch.tensor(
-                [float(row["precursor_mz"]) for row in examples], dtype=torch.float32
+                precursor_values, dtype=torch.float32
             ),
         }
         if all("target" in row for row in examples):
@@ -243,6 +247,34 @@ class UltraMS(torch.nn.Module):
             torch.as_tensor(attention, device=device).unsqueeze(0),
             torch.tensor([precursor_mz], dtype=torch.float32, device=device),
         )
+
+    def encode_batch(
+        self, spectra: Iterable[Mapping[str, Any]], *, batch_size: int = 32
+    ) -> np.ndarray:
+        """Encode spectra in input order as a ``[N, embedding_dim]`` NumPy array."""
+        if not isinstance(batch_size, int) or batch_size < 1:
+            raise ValueError("batch_size must be a positive integer")
+        iterator = iter(spectra)
+        converter = self.batch_converter()
+        device = next(self.parameters()).device
+        outputs: list[np.ndarray] = []
+        was_training = self.training
+        self.eval()
+        try:
+            with torch.inference_mode():
+                while rows := list(islice(iterator, batch_size)):
+                    batch = converter(rows)
+                    embeddings = self.forward(
+                        batch["peaks"].to(device),
+                        batch["attention_mask"].to(device),
+                        batch["precursor_mz"].to(device),
+                    )
+                    outputs.append(embeddings.cpu().numpy())
+        finally:
+            self.train(was_training)
+        if not outputs:
+            return np.empty((0, self.embedding_dim), dtype=np.float32)
+        return np.concatenate(outputs, axis=0)
 
     @classmethod
     def from_checkpoint(

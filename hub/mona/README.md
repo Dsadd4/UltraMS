@@ -8,7 +8,13 @@ tags:
 
 # UltraMS MoNA Contrastive
 
-Use this model, contrastively trained on MoNA, for MS/MS spectrum similarity. `encode(...).embedding` returns the embedding projection of the encoder's CLS embedding.
+The UltraMS MS/MS encoder with a spectrum-level projection learned through contrastive training on MoNA spectra. `encode(...).embedding` returns the learned projection of the encoder's CLS embedding. Use cosine similarity to compare spectra in this space.
+
+| Output | Value |
+| --- | --- |
+| Embedding dimension | 1024 |
+| Maximum spectral peaks | 100 |
+| Python model name | `"mona"` |
 
 ```bash
 python -m pip install ultrams
@@ -21,6 +27,7 @@ model = UltraMS.from_pretrained("mona")
 embedding = model.encode(
     mz=[100.1, 121.1, 150.0], intensity=[20, 100, 35], precursor_mz=301.2
 ).embedding
+print(embedding.shape)  # (1024,)
 ```
 
-Fine-tuning examples are in the [UltraMS repository](https://github.com/Dsadd4/UltraMS).
+Supply measured spectral peak `m/z` and intensity arrays plus precursor-ion `m/z`. UltraMS requires at least three spectral peaks with positive `m/z`, normalizes intensities by their maximum when positive, and retains the 100 most intense spectral peaks when needed. See the [input format](https://github.com/Dsadd4/UltraMS/blob/main/docs/data-format.md), [model selection](https://github.com/Dsadd4/UltraMS/blob/main/docs/model-selection.md), and [spectrum search example](https://github.com/Dsadd4/UltraMS/blob/main/examples/spectrum_search.py).
