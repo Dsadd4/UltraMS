@@ -75,4 +75,4 @@ print(prediction)
 
 Use `task="classification"` for class labels. Fine-tuning saves the model, training configuration, and loss history in `ultrams_finetune/`. A downloaded `model.pt` can be loaded with `UltraMS.from_checkpoint(path)`.
 
-Masked peak reconstruction on the UltraMSdata source subset is in [training](https://github.com/Dsadd4/UltraMS/tree/main/training).
+UltraMSdata pretraining code is in [training](https://github.com/Dsadd4/UltraMS/tree/main/training).

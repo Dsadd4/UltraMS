@@ -1,6 +1,6 @@
 # UltraMS pretraining
 
-The bundled configuration runs masked peak reconstruction (MPR) on the UltraMSdata source subset (160,641,162 spectra).
+The bundled configuration runs masked peak reconstruction (MPR) on UltraMSdata (160,641,162 spectra in this configuration).
 
 ```bash
 pip install -e ./training

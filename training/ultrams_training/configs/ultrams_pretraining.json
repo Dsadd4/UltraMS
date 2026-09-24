@@ -11,7 +11,7 @@
       "sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
     }
   },
-  "data_mode": "ultramsdata_source_parquet",
+  "data_mode": "ultramsdata_parquet",
   "distributed_profiles": {
     "4": {
       "finetune": {
@@ -93,7 +93,7 @@
     "output_dir": "runs/ultrams-masked-peak-reconstruction",
     "polarity_shard_dir": "derived/ae3_only_polarity_balanced/shards"
   },
-  "ultramsdata_source": {
+  "ultramsdata": {
     "mixed_source_fingerprint": "23ce892bdbdc0da19ad5b40367fde89c77c4ec6f9da83364b2101b9c8b2142ff",
     "mode": "masked_peak_reconstruction",
     "source_provenance_sha256": "35e8238dda98367195fd8a9037fac6f375972e385602782806c40564abccd09c",

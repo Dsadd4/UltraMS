@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an auditable, exactly balanced polarity dataset from UltraMSdata source spectra.
+"""Build an auditable, exactly balanced polarity dataset from UltraMSdata.
 
 All ``polarity == 0`` rows are retained. Exactly the same number of
 ``polarity == 1`` rows are sampled uniformly without replacement using seed

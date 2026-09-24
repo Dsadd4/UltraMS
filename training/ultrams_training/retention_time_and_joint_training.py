@@ -143,8 +143,8 @@ def load_config(path: Path, data_root: Path | None) -> dict[str, Any]:
         for key, value in cfg["paths"].items()
     }
     validate_profiles(cfg)
-    if cfg.get("data_mode") == "ultramsdata_source_parquet":
-        validate_ultramsdata_source_contract(cfg)
+    if cfg.get("data_mode") == "ultramsdata_parquet":
+        validate_ultramsdata_contract(cfg)
 
     wrapper_sha = sha256_file(Path(__file__).resolve())
     protocol_contract = {
@@ -161,7 +161,7 @@ def load_config(path: Path, data_root: Path | None) -> dict[str, Any]:
             "stages",
         )
     }
-    if cfg.get("data_mode") == "ultramsdata_source_parquet":
+    if cfg.get("data_mode") == "ultramsdata_parquet":
         protocol_contract["data_mode"] = cfg["data_mode"]
         protocol_contract["rt_data_contract"] = cfg["rt_data_contract"]
     protocol_contract["entrypoint_sha256"] = wrapper_sha
@@ -179,7 +179,7 @@ def load_config(path: Path, data_root: Path | None) -> dict[str, Any]:
     return cfg
 
 
-def validate_ultramsdata_source_contract(cfg: Mapping[str, Any]) -> None:
+def validate_ultramsdata_contract(cfg: Mapping[str, Any]) -> None:
     """Refuse an unfinished data contract instead of borrowing historical hashes."""
     required = (
         "expected_assets",
@@ -190,14 +190,14 @@ def validate_ultramsdata_source_contract(cfg: Mapping[str, Any]) -> None:
     for key in required:
         value = cfg.get(key)
         if not isinstance(value, Mapping) or "UNRESOLVED" in json.dumps(value):
-            raise ValueError(f"UltraMSdata source {key} is unresolved")
+            raise ValueError(f"UltraMSdata {key} is unresolved")
     if cfg.get("world_size") not in cfg["supported_world_sizes"]:
         raise ValueError(
-            "UltraMSdata source runtime must select a supported world_size"
+            "UltraMSdata runtime must select a supported world_size"
         )
     contract = cfg["rt_data_contract"]
     if contract != {
-        "source": "ultramsdata_source",
+        "source": "ultramsdata",
         "source_unit": "seconds",
         "loader_unit": "normalized_600s",
         "selection": "all_clean_rows",
@@ -212,9 +212,9 @@ def validate_ultramsdata_source_contract(cfg: Mapping[str, Any]) -> None:
         name in cfg["paths"]
         for name in ("massspecgym_csv", "msnlib_csv", "spectraverse_csv")
     ):
-        raise ValueError("UltraMSdata source configuration must not stage public database CSVs")
+        raise ValueError("UltraMSdata configuration must not stage public database CSVs")
     if cfg["paths"]["rt_shard_dir"] != cfg["paths"]["clean_shard_dir"]:
-        raise ValueError("retention-time prediction must consume all source subset rows")
+        raise ValueError("retention-time prediction must consume all UltraMSdata rows")
     if cfg["expected_assets"]["rt"] != cfg["expected_assets"]["clean"]:
         raise ValueError("RT and clean corpus identities must match exactly")
     override = cfg["stages"][1].get("scheduler_total_steps_override")
@@ -232,7 +232,7 @@ def source_epoch_layouts(cfg, records, stage_name):
         or world_size not in cfg["supported_world_sizes"]
     ):
         raise ValueError(
-            "UltraMSdata source runtime must select a supported world_size"
+            "UltraMSdata runtime must select a supported world_size"
         )
     for world_size in (world_size,):
         profile = profile_for_stage(cfg, stage, int(world_size))
@@ -275,7 +275,7 @@ def source_epoch_layouts(cfg, records, stage_name):
     return result
 
 
-def validate_ultramsdata_source_dataset(cfg, dataset_key, stage_name, *, verify_hashes):
+def validate_ultramsdata_dataset(cfg, dataset_key, stage_name, *, verify_hashes):
     shard_dir = Path(cfg["paths"][f"{dataset_key}_shard_dir"])
     manifest = json.loads((shard_dir / "manifest.json").read_text(encoding="utf-8"))
     if manifest.get("status") != "complete":
@@ -385,11 +385,11 @@ def validate_inputs(
 ) -> dict[str, Any]:
     """Validate only assets consumed by Phase 2; clean rows stay in S3."""
     report: dict[str, Any] = {"files": {}, "directories": {}, "errors": []}
-    ultramsdata_source = cfg.get("data_mode") == "ultramsdata_source_parquet"
-    if ultramsdata_source:
-        validate_ultramsdata_source_contract(cfg)
+    ultramsdata = cfg.get("data_mode") == "ultramsdata_parquet"
+    if ultramsdata:
+        validate_ultramsdata_contract(cfg)
     csv_assets = (
-        () if ultramsdata_source else ("massspecgym_csv", "msnlib_csv", "spectraverse_csv")
+        () if ultramsdata else ("massspecgym_csv", "msnlib_csv", "spectraverse_csv")
     )
     for name in csv_assets:
         path = Path(cfg["paths"][name])
@@ -485,7 +485,7 @@ def validate_inputs(
 
         ion_cfg = next(stage for stage in cfg["stages"] if stage["name"] == "ion_mode")
         checked_world_sizes = (
-            (cfg["world_size"],) if ultramsdata_source else cfg["supported_world_sizes"]
+            (cfg["world_size"],) if ultramsdata else cfg["supported_world_sizes"]
         )
         for world_size in checked_world_sizes:
             profile = profile_for_stage(cfg, ion_cfg, int(world_size))
@@ -510,18 +510,18 @@ def validate_inputs(
                 // profile["gradient_accumulation"],
             }
 
-    if ultramsdata_source:
+    if ultramsdata:
         for dataset_key, stage_name in (
             ("rt", "supervised_rt"),
             ("polarity", "ion_mode"),
         ):
             try:
-                detail = validate_ultramsdata_source_dataset(
+                detail = validate_ultramsdata_dataset(
                     cfg, dataset_key, stage_name, verify_hashes=verify_hashes
                 )
                 report["directories"][f"{dataset_key}_shard_dir"] = detail
             except (ValueError, RuntimeError, OSError, KeyError) as error:
-                report["errors"].append(f"UltraMSdata source {dataset_key}: {error}")
+                report["errors"].append(f"UltraMSdata {dataset_key}: {error}")
 
     for path in (
         project_root / "train" / "train_ue_multiscale_v9_mlm.py",
@@ -699,8 +699,8 @@ def make_loader(
     *,
     dataset_key: str | None = None,
 ):
-    if stage == "supervised_rt" and cfg.get("data_mode") == "ultramsdata_source_parquet":
-        detail = validate_ultramsdata_source_dataset(cfg, "rt", stage, verify_hashes=False)
+    if stage == "supervised_rt" and cfg.get("data_mode") == "ultramsdata_parquet":
+        detail = validate_ultramsdata_dataset(cfg, "rt", stage, verify_hashes=False)
         loader = create_parquet(
             shard_dir=cfg["paths"]["rt_shard_dir"],
             batch_size=int(profile["batch_size_per_rank"]),

@@ -1282,7 +1282,7 @@ def reshard_ultramsdata(
     *,
     max_new_shards_this_run: int | None = None,
 ) -> dict[str, Any]:
-    """Build or safely resume an audited deterministic Ae3 reshuffle."""
+    """Build or safely resume an audited deterministic UltraMSdata reshuffle."""
     _validate_config(config)
     if max_new_shards_this_run is not None and max_new_shards_this_run <= 0:
         raise ValueError("max_new_shards_this_run must be positive")

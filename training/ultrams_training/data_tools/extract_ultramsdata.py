@@ -1,4 +1,4 @@
-"""Extract the UltraMSdata source subset without changing spectral rows.
+"""Extract UltraMSdata without changing spectral rows.
 
 All source files are verified before new outputs are written. The existing
 resumable materializer only repartitions the prefix; its selection rules are
@@ -167,7 +167,7 @@ def verify_source(src: Path, contract: dict, expected_fingerprint: str) -> dict:
         if index < boundary:
             require(
                 cursor["source_index"] == len(expected_ae3) - 1,
-                "pre-boundary cursor is not in the last UltraMSdata source file",
+                "pre-boundary cursor is not in the last UltraMSdata file",
             )
         else:
             require(
@@ -313,11 +313,11 @@ def extract(
         require(
             manifest["output"]["stats"]["polarity"]
             == contract["historical_replay"]["clean_ae3_polarity"],
-            "UltraMSdata source subset polarity closure failed",
+            "UltraMSdata polarity closure failed",
         )
         require(
             manifest["output"]["stats"]["rows"] == proof["pure_rows"],
-            "UltraMSdata source subset row closure failed",
+            "UltraMSdata row closure failed",
         )
         atomic_write_json(
             dst / "pure_ae3_provenance.json",
@@ -342,7 +342,7 @@ def main() -> None:
     parser.add_argument(
         "--contract",
         type=Path,
-        default=Path(__file__).with_name("ultramsdata_source_contract.json"),
+        default=Path(__file__).with_name("ultramsdata_contract.json"),
     )
     parser.add_argument("--expected-mixed-fingerprint", default=DEFAULT_FINGERPRINT)
     parser.add_argument("--dataset-name", default="ae3_only_160641162")
