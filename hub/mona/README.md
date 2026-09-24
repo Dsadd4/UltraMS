@@ -8,10 +8,10 @@ tags:
 
 # UltraMS MoNA Contrastive
 
-Use this model, contrastively trained on MoNA, for MS/MS spectrum similarity.
+Use this model, contrastively trained on MoNA, for MS/MS spectrum similarity. `encode(...).embedding` returns the embedding projection of the encoder's CLS embedding.
 
 ```bash
-pip install ultrams
+python -m pip install ultrams
 ```
 
 ```python

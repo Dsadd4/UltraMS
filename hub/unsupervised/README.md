@@ -8,10 +8,10 @@ tags:
 
 # UltraMS Unsupervised
 
-Use this model to obtain a general embedding of an MS/MS spectrum.
+Use this model to obtain a general spectrum-level embedding of an MS/MS spectrum. `encode(...).embedding` returns the encoder's CLS embedding.
 
 ```bash
-pip install ultrams
+python -m pip install ultrams
 ```
 
 ```python

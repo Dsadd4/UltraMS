@@ -8,10 +8,10 @@ tags:
 
 # UltraMS Search
 
-The final UltraMS model for spectrum similarity search, used in UltraAtlas.
+This spectrum-to-spectrum contrastive model provides the representation used to construct UltraAtlas. `encode(...).embedding` returns the embedding projection of the encoder's CLS embedding.
 
 ```bash
-pip install ultrams
+python -m pip install ultrams
 ```
 
 ```python

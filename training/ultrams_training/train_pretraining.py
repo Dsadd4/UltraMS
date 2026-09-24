@@ -1666,6 +1666,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     cfg = load_config(args.config, args.data_root)
+    if args.end_stage == "peak_reconstruction":
+        cfg["launch_phase"] = "mlm"
     if args.validate_only:
         report = validate_inputs(
             cfg,

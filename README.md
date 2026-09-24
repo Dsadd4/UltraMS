@@ -1,18 +1,22 @@
 # UltraMS
 
-Pretrained models for MS/MS spectra.
+Foundation models for MS/MS spectra. Obtain spectrum-level embeddings or fine-tune the encoder with PyTorch.
+
+## Install
+
+Python 3.10 or newer:
 
 ```bash
-pip install ultrams
+python -m pip install ultrams
 ```
 
-| Model | Use | Weights |
-| --- | --- | --- |
-| **Unsupervised** | General spectrum embeddings | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Unsupervised) |
-| **MoNA Contrastive** | Spectrum similarity learned on MoNA | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
-| **Search** | Final spectrum search model | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Search) |
+For a particular CPU, CUDA, ROCm, or Apple Silicon setup, select the appropriate [PyTorch installation](https://pytorch.org/get-started/locally/) first. To install the current GitHub source instead:
 
-## Get an embedding
+```bash
+python -m pip install git+https://github.com/Dsadd4/UltraMS.git
+```
+
+## Get a spectrum embedding
 
 ```python
 from ultrams import UltraMS
@@ -73,6 +77,18 @@ prediction = predictor.predict([100.1, 121.1, 150.0], [20, 100, 35], precursor_m
 print(prediction)
 ```
 
-Use `task="classification"` for class labels. Fine-tuning saves the model, training configuration, and loss history in `ultrams_finetune/`. A downloaded `model.pt` can be loaded with `UltraMS.from_checkpoint(path)`.
+Use `task="classification"` for class labels. Fine-tuning saves the model, training configuration, and loss history in `ultrams_finetune/`.
 
-UltraMSdata pretraining code is in [training](https://github.com/Dsadd4/UltraMS/tree/main/training).
+## Choose a pretrained model
+
+| Model | Learned representation | Use | Weights |
+| --- | --- | --- | --- |
+| **Unsupervised** (`"unsupervised"`) | Encoder spectrum-level embedding, $h_{\mathrm{CLS}}$ | General MS/MS representation and fine-tuning | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Unsupervised) |
+| **MoNA contrastive** (`"mona"`) | Embedding projection of $h_{\mathrm{CLS}}$ | Spectrum similarity learned on MoNA | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
+| **Search** (`"search"`) | Embedding projection of $h_{\mathrm{CLS}}$ | Spectrum-to-spectrum similarity used to build UltraAtlas | [Hugging Face](https://huggingface.co/dsadd4/UltraMS-Search) |
+
+`encode(...).embedding` returns the representation in the table. To use a downloaded `model.pt` directly, call `UltraMS.from_checkpoint(path)`.
+
+## Pretraining
+
+The [UltraMSdata pretraining code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) has a separate installation and requires prepared UltraMSdata.
