@@ -12,7 +12,8 @@ python -m pip install ultrams
 | Embed an MGF or mzML file | [File command](#embed-a-spectrum-file) |
 | Train on my labelled spectra | [PyTorch example](#fine-tune-with-pytorch) · [complete MGF example](https://github.com/Dsadd4/UltraMS/blob/main/examples/pytorch_finetune.py) |
 | Compare spectra | [Search example](https://github.com/Dsadd4/UltraMS/blob/main/examples/spectrum_search.py) |
-| Reproduce pretraining | [Training code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) |
+| Learn in a notebook | [UltraMS tutorials](https://github.com/Dsadd4/UltraMS/tree/main/cookbook/tutorials) |
+| Inspect or run pretraining | [Training code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) |
 
 ## Embed a spectrum
 
@@ -29,6 +30,8 @@ print(embedding.shape)  # (1024,)
 ```
 
 The first call downloads the selected checkpoint from Hugging Face. Use `device="cuda"` or `device="mps"` with `from_pretrained` to run on an available accelerator.
+
+The three checkpoints are collected on [Hugging Face](https://huggingface.co/collections/dsadd4/ultrams-6ab4cfaa860cbbd1f9a6b9b6).
 
 ## Embed a spectrum file
 
@@ -69,6 +72,8 @@ for batch in loader:
 
 The [complete fine-tuning example](https://github.com/Dsadd4/UltraMS/blob/main/examples/pytorch_finetune.py) reads an MGF file and saves training history. For a shorter route, use `model.finetune(labelled_spectra, task="regression")` with a `label` field; it saves weights, configuration, and losses. See [spectrum input](https://github.com/Dsadd4/UltraMS/blob/main/docs/data-format.md) for the input format.
 
+For measured molecular labels, the [MassSpecGym contrastive tutorial](https://github.com/Dsadd4/UltraMS/blob/main/cookbook/tutorials/MASSSPECGYM_CONTRASTIVE.md) downloads the dataset, keeps its train/validation/test folds, fine-tunes the encoder, and reloads the selected checkpoint.
+
 ## Choose a model
 
 | Model name | Representation | Dimension | Spectral peak limit | Weights |
@@ -82,3 +87,7 @@ Load any of them with `UltraMS.from_pretrained("name")`, or load a downloaded `m
 ## Pretraining
 
 The [UltraMSdata pretraining package](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) contains the current model architecture, training entry points, configuration and history outputs. It installs separately from the inference package.
+
+## Cite
+
+Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff).

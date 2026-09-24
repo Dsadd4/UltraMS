@@ -53,6 +53,21 @@ class ModelAPITests(unittest.TestCase):
         actual = self.model.encode_batch([], batch_size=2)
         self.assertEqual(actual.shape, (0, self.model.embedding_dim))
 
+    def test_peak_embeddings_align_with_selected_sorted_peaks(self) -> None:
+        mz = [180, 100, 150, 110, 140, 120, 170, 130, 190, 160]
+        intensity = [8, 1, 5, 2, 4, 3, 7, 6, 10, 9]
+        result = self.model.encode(mz, intensity, precursor_mz=301.2, return_peaks=True)
+        self.assertEqual(result.peak_embeddings.shape, (8, 16))
+        np.testing.assert_array_equal(
+            result.peak_mz,
+            np.asarray([120, 130, 140, 150, 160, 170, 180, 190], dtype=np.float32),
+        )
+        np.testing.assert_array_equal(
+            result.peak_intensity,
+            np.asarray([3, 6, 4, 5, 9, 7, 8, 10], dtype=np.float32) / 10,
+        )
+        self.assertIsNone(self.model.encode(mz, intensity, precursor_mz=301.2).peak_embeddings)
+
     def test_real_mgf_to_npz_with_local_checkpoint(self) -> None:
         source = Path(__file__).resolve().parents[1] / "examples/data/example_5_spectra.mgf"
         with tempfile.TemporaryDirectory() as directory:

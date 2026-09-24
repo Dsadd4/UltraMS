@@ -20,8 +20,21 @@ jobs:
       - name: Test spectrum files, model API, and file export
         run: python -m unittest discover -s tests -v
 
+  checkpoints:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package
+        run: python -m pip install .
+      - name: Verify all published checkpoints
+        run: python tests/check_released_models.py
+
   build:
-    needs: test
+    needs: [test, checkpoints]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

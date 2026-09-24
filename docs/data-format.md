@@ -42,6 +42,21 @@ The `target` field is a numeric training value used by `model.batch_converter()`
 
 `model.encode(...).embedding` is a NumPy vector for inference. `model(peaks, attention_mask, precursor_mz)` returns a `[batch, embedding_dim]` PyTorch tensor with gradients for training. See [model selection](model-selection.md) for the representation returned by each checkpoint.
 
+To inspect representations for individual spectral peaks, pass `return_peaks=True`:
+
+```python
+result = model.encode(
+    mz=[150.0, 100.1, 121.1],
+    intensity=[35, 20, 100],
+    precursor_mz=301.2,
+    return_peaks=True,
+)
+print(result.peak_mz)                 # processed peak m/z, sorted ascending
+print(result.peak_embeddings.shape)  # (3, 1024) for the Unsupervised model
+```
+
+`peak_embeddings[i]` is the encoder's final contextual representation for `peak_mz[i]` and `peak_intensity[i]`. These arrays reflect the peak selection, intensity normalization and sorting described above. They are returned only when requested.
+
 ## Spectrum files
 
 For MGF or `.mgf.gz`, UltraMS reads each `BEGIN IONS` block, uses `PEPMASS` for precursor-ion `m/z`, and takes the spectrum ID from `TITLE`, `NAME`, or `SCANS` when available. Extra columns after a spectral peak's `m/z` and intensity are ignored. The optional `ultrams[io]` installation adds mzML input; only MS2 spectra are read.

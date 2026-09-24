@@ -47,6 +47,8 @@ def main() -> None:
 
     output_dir = args.output_dir or Path(tempfile.mkdtemp(prefix="ultrams-finetune-"))
     output_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint = output_dir / "model.pt"
+    torch.save({"encoder": model.state_dict(), "head": head.state_dict()}, checkpoint)
     record = {
         "model": "unsupervised",
         "target": "demonstration labels from input order, scaled to [0, 1]",
@@ -56,6 +58,7 @@ def main() -> None:
     }
     (output_dir / "training.json").write_text(json.dumps(record, indent=2) + "\n")
     print(f"Trained on {len(spectra)} spectra with demonstration targets; final loss: {history[-1]:.4f}")
+    print(checkpoint)
     print(output_dir / "training.json")
 
 

@@ -29,6 +29,9 @@ class SpectrumEmbedding:
     fusion: np.ndarray
     projection: np.ndarray | None = None
     rt_seconds: float | None = None
+    peak_embeddings: np.ndarray | None = None
+    peak_mz: np.ndarray | None = None
+    peak_intensity: np.ndarray | None = None
 
     @property
     def embedding(self) -> np.ndarray:
@@ -323,7 +326,18 @@ class UltraMS(torch.nn.Module):
 
     @torch.inference_mode()
     def encode(
-        self, mz: Any, intensity: Any, *, precursor_mz: float
+        self, mz: Any, intensity: Any, *, precursor_mz: float, return_peaks: bool = False
+    ) -> SpectrumEmbedding:
+        """Encode one MS/MS spectrum; optionally return aligned peak embeddings."""
+        was_training = self.training
+        self.eval()
+        try:
+            return self._encode_one(mz, intensity, precursor_mz, return_peaks)
+        finally:
+            self.train(was_training)
+
+    def _encode_one(
+        self, mz: Any, intensity: Any, precursor_mz: float, return_peaks: bool
     ) -> SpectrumEmbedding:
         peaks, attention = _prepare_spectrum(mz, intensity, self.input_max_peaks)
         if not np.isfinite(precursor_mz) or precursor_mz <= 0:
@@ -356,4 +370,7 @@ class UltraMS(torch.nn.Module):
             fusion=fusion[0].cpu().numpy(),
             projection=projected[0].cpu().numpy() if projected is not None else None,
             rt_seconds=rt_seconds,
+            peak_embeddings=peak_hidden[0].float().cpu().numpy() if return_peaks else None,
+            peak_mz=peaks[:, 0].copy() if return_peaks else None,
+            peak_intensity=peaks[:, 1].copy() if return_peaks else None,
         )

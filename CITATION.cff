@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use UltraMS in your research, please cite this software."
+type: software
+title: UltraMS
+authors:
+  - family-names: Li
+    given-names: Yifan
+  - family-names: Zhong
+    given-names: Yunhua
+  - family-names: Liu
+    given-names: Pan
+  - family-names: Xia
+    given-names: Jun
+repository-code: https://github.com/Dsadd4/UltraMS
+license: Apache-2.0
