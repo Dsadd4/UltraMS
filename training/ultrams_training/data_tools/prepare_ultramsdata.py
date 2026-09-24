@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Materialize an auditable reconstructed clean Ae3 dataset.
+"""Materialize an auditable UltraMSdata source dataset.
 
 Inputs are read in lexical basename order as one global row stream. The
 default audited rule removes global 200,000-row partitions 798, 800, 801,

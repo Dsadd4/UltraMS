@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Worker-local, resumable orchestration for the source-bound pure Ae3 build.
+"""Build the frozen UltraMSdata source subset with resumable verification.
 
 Only this module's output prefix is writable. Input objects are read only.
 Recovery blobs are content addressed; a snapshot becomes eligible for recovery
@@ -468,7 +468,7 @@ class Job:
         pure = self.build / "pure"
         balanced = self.build / "polarity"
         self.run_child(
-            "ultrams_training.data_tools.extract_pure_ae3",
+            "ultrams_training.data_tools.extract_ultramsdata_source",
             "--src",
             self.mixed,
             "--dst",
@@ -477,7 +477,7 @@ class Job:
             self.build / "extract",
             "--contract",
             Path(os.environ["CODE_DIR"])
-            / "ultrams_training/data_tools/ae3_pretraining_contract_v2.json",
+            / "ultrams_training/data_tools/ultramsdata_source_contract.json",
             "--expected-mixed-fingerprint",
             MIXED_FINGERPRINT,
             "--dataset-name",
@@ -575,7 +575,7 @@ class Job:
             complete, self.output + "/_completion/" + os.environ["RUN_ID"] + ".json"
         )
         print(
-            "Pure Ae3 bundle built, semantically audited, and fully read back from S3.",
+            "UltraMSdata source subset built, audited, and read back from S3.",
             flush=True,
         )
 

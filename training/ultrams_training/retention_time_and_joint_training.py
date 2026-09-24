@@ -143,8 +143,8 @@ def load_config(path: Path, data_root: Path | None) -> dict[str, Any]:
         for key, value in cfg["paths"].items()
     }
     validate_profiles(cfg)
-    if cfg.get("data_mode") == "pure_ae3_parquet":
-        validate_pure_ae3_contract(cfg)
+    if cfg.get("data_mode") == "ultramsdata_source_parquet":
+        validate_ultramsdata_source_contract(cfg)
 
     wrapper_sha = sha256_file(Path(__file__).resolve())
     protocol_contract = {
@@ -161,7 +161,7 @@ def load_config(path: Path, data_root: Path | None) -> dict[str, Any]:
             "stages",
         )
     }
-    if cfg.get("data_mode") == "pure_ae3_parquet":
+    if cfg.get("data_mode") == "ultramsdata_source_parquet":
         protocol_contract["data_mode"] = cfg["data_mode"]
         protocol_contract["rt_data_contract"] = cfg["rt_data_contract"]
     protocol_contract["entrypoint_sha256"] = wrapper_sha
@@ -179,7 +179,7 @@ def load_config(path: Path, data_root: Path | None) -> dict[str, Any]:
     return cfg
 
 
-def validate_pure_ae3_contract(cfg: Mapping[str, Any]) -> None:
+def validate_ultramsdata_source_contract(cfg: Mapping[str, Any]) -> None:
     """Refuse an unfinished data contract instead of borrowing historical hashes."""
     required = (
         "expected_assets",
@@ -190,39 +190,39 @@ def validate_pure_ae3_contract(cfg: Mapping[str, Any]) -> None:
     for key in required:
         value = cfg.get(key)
         if not isinstance(value, Mapping) or "UNRESOLVED" in json.dumps(value):
-            raise ValueError(f"pure Ae3 {key} is unresolved")
+            raise ValueError(f"UltraMSdata source {key} is unresolved")
     if cfg.get("world_size") not in cfg["supported_world_sizes"]:
         raise ValueError(
-            "pure Ae3 runtime must explicitly select a supported world_size"
+            "UltraMSdata source runtime must select a supported world_size"
         )
     contract = cfg["rt_data_contract"]
     if contract != {
-        "source": "pure_ae3",
+        "source": "ultramsdata_source",
         "source_unit": "seconds",
         "loader_unit": "normalized_600s",
         "selection": "all_clean_rows",
         "scheduler_optimizer_step_factor": 3,
     }:
-        raise ValueError("unexpected pure Ae3 RT data contract")
+        raise ValueError("unexpected UltraMSdata retention-time data contract")
     if float(cfg["model"]["rt_norm_scale"]) != 600.0:
-        raise ValueError("pure Ae3 RT loader requires the historical 600-second scale")
+        raise ValueError("UltraMSdata retention-time loader requires the 600-second scale")
     if [int(stage["epochs"]) for stage in cfg["stages"]] != [5, 5, 11]:
-        raise ValueError("pure Ae3 requires the complete 5/5/11 epoch protocol")
+        raise ValueError("UltraMSdata training requires the complete 5/5/11 epoch protocol")
     if any(
         name in cfg["paths"]
         for name in ("massspecgym_csv", "msnlib_csv", "spectraverse_csv")
     ):
-        raise ValueError("pure Ae3 configuration must not stage public database CSVs")
+        raise ValueError("UltraMSdata source configuration must not stage public database CSVs")
     if cfg["paths"]["rt_shard_dir"] != cfg["paths"]["clean_shard_dir"]:
-        raise ValueError("RT must consume all rows of the pure Ae3 clean corpus")
+        raise ValueError("retention-time prediction must consume all source subset rows")
     if cfg["expected_assets"]["rt"] != cfg["expected_assets"]["clean"]:
         raise ValueError("RT and clean corpus identities must match exactly")
     override = cfg["stages"][1].get("scheduler_total_steps_override")
     if not isinstance(override, int) or isinstance(override, bool) or override <= 0:
-        raise ValueError("pure Ae3 RT scheduler steps are unresolved")
+        raise ValueError("UltraMSdata retention-time scheduler steps are unresolved")
 
 
-def pure_epoch_layouts(cfg, records, stage_name):
+def source_epoch_layouts(cfg, records, stage_name):
     """Count exact batches for every epoch of the explicitly selected GPU layout."""
     stage = next(item for item in cfg["stages"] if item["name"] == stage_name)
     result = {}
@@ -232,7 +232,7 @@ def pure_epoch_layouts(cfg, records, stage_name):
         or world_size not in cfg["supported_world_sizes"]
     ):
         raise ValueError(
-            "pure Ae3 runtime must explicitly select a supported world_size"
+            "UltraMSdata source runtime must select a supported world_size"
         )
     for world_size in (world_size,):
         profile = profile_for_stage(cfg, stage, int(world_size))
@@ -275,7 +275,7 @@ def pure_epoch_layouts(cfg, records, stage_name):
     return result
 
 
-def validate_pure_parquet_dataset(cfg, dataset_key, stage_name, *, verify_hashes):
+def validate_ultramsdata_source_dataset(cfg, dataset_key, stage_name, *, verify_hashes):
     shard_dir = Path(cfg["paths"][f"{dataset_key}_shard_dir"])
     manifest = json.loads((shard_dir / "manifest.json").read_text(encoding="utf-8"))
     if manifest.get("status") != "complete":
@@ -329,7 +329,7 @@ def validate_pure_parquet_dataset(cfg, dataset_key, stage_name, *, verify_hashes
         "manifest": str(shard_dir / "manifest.json"),
         "rows": stats["rows"],
         "dataset_fingerprint": manifest["dataset_fingerprint"],
-        "parallel_layouts": pure_epoch_layouts(cfg, records, stage_name),
+        "parallel_layouts": source_epoch_layouts(cfg, records, stage_name),
     }
 
 
@@ -385,11 +385,11 @@ def validate_inputs(
 ) -> dict[str, Any]:
     """Validate only assets consumed by Phase 2; clean rows stay in S3."""
     report: dict[str, Any] = {"files": {}, "directories": {}, "errors": []}
-    pure_ae3 = cfg.get("data_mode") == "pure_ae3_parquet"
-    if pure_ae3:
-        validate_pure_ae3_contract(cfg)
+    ultramsdata_source = cfg.get("data_mode") == "ultramsdata_source_parquet"
+    if ultramsdata_source:
+        validate_ultramsdata_source_contract(cfg)
     csv_assets = (
-        () if pure_ae3 else ("massspecgym_csv", "msnlib_csv", "spectraverse_csv")
+        () if ultramsdata_source else ("massspecgym_csv", "msnlib_csv", "spectraverse_csv")
     )
     for name in csv_assets:
         path = Path(cfg["paths"][name])
@@ -485,7 +485,7 @@ def validate_inputs(
 
         ion_cfg = next(stage for stage in cfg["stages"] if stage["name"] == "ion_mode")
         checked_world_sizes = (
-            (cfg["world_size"],) if pure_ae3 else cfg["supported_world_sizes"]
+            (cfg["world_size"],) if ultramsdata_source else cfg["supported_world_sizes"]
         )
         for world_size in checked_world_sizes:
             profile = profile_for_stage(cfg, ion_cfg, int(world_size))
@@ -510,18 +510,18 @@ def validate_inputs(
                 // profile["gradient_accumulation"],
             }
 
-    if pure_ae3:
+    if ultramsdata_source:
         for dataset_key, stage_name in (
             ("rt", "supervised_rt"),
             ("polarity", "ion_mode"),
         ):
             try:
-                detail = validate_pure_parquet_dataset(
+                detail = validate_ultramsdata_source_dataset(
                     cfg, dataset_key, stage_name, verify_hashes=verify_hashes
                 )
                 report["directories"][f"{dataset_key}_shard_dir"] = detail
             except (ValueError, RuntimeError, OSError, KeyError) as error:
-                report["errors"].append(f"pure Ae3 {dataset_key}: {error}")
+                report["errors"].append(f"UltraMSdata source {dataset_key}: {error}")
 
     for path in (
         project_root / "train" / "train_ue_multiscale_v9_mlm.py",
@@ -699,8 +699,8 @@ def make_loader(
     *,
     dataset_key: str | None = None,
 ):
-    if stage == "supervised_rt" and cfg.get("data_mode") == "pure_ae3_parquet":
-        detail = validate_pure_parquet_dataset(cfg, "rt", stage, verify_hashes=False)
+    if stage == "supervised_rt" and cfg.get("data_mode") == "ultramsdata_source_parquet":
+        detail = validate_ultramsdata_source_dataset(cfg, "rt", stage, verify_hashes=False)
         loader = create_parquet(
             shard_dir=cfg["paths"]["rt_shard_dir"],
             batch_size=int(profile["batch_size_per_rank"]),

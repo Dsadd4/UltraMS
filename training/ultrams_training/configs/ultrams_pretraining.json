@@ -11,7 +11,7 @@
       "sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
     }
   },
-  "data_mode": "pure_ae3_parquet",
+  "data_mode": "ultramsdata_source_parquet",
   "distributed_profiles": {
     "4": {
       "finetune": {
@@ -90,19 +90,19 @@
   },
   "paths": {
     "clean_shard_dir": "derived/ae3_only_160641162/shards",
-    "output_dir": "runs/ultrams-pure-ae3-mpr5-4g-20260920",
+    "output_dir": "runs/ultrams-masked-peak-reconstruction",
     "polarity_shard_dir": "derived/ae3_only_polarity_balanced/shards"
   },
-  "pure_ae3_freeze": {
+  "ultramsdata_source": {
     "mixed_source_fingerprint": "23ce892bdbdc0da19ad5b40367fde89c77c4ec6f9da83364b2101b9c8b2142ff",
-    "mode": "phase1",
-    "pure_provenance_sha256": "35e8238dda98367195fd8a9037fac6f375972e385602782806c40564abccd09c",
+    "mode": "masked_peak_reconstruction",
+    "source_provenance_sha256": "35e8238dda98367195fd8a9037fac6f375972e385602782806c40564abccd09c",
     "required_end_stage": "peak_reconstruction",
     "required_start_stage": "peak_reconstruction",
     "semantic_audit_sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461",
     "source_template_sha256": "10db5ee22b20491647404b2501b70beb7bc9e188fe595e3cb0ae9a67adb653b1"
   },
-  "run_name": "ultrams-pure-ae3-mpr5-4g-20260920",
+  "run_name": "ultrams-masked-peak-reconstruction",
   "seed": 42,
   "stages": [
     {

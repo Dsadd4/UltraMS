@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Safely reshuffle Ae3 Parquet shards without the PyArrow 4-GiB list bug.
+"""Safely reshuffle UltraMSdata Parquet shards without the PyArrow 4-GiB list bug.
 
 The two peak columns are promoted to ``large_list<double>`` before any
 ``Table.take`` operation. Bounded output shards are restored to the exact input
@@ -960,7 +960,7 @@ def _validate_complete_manifest(
         raise RuntimeError("final dataset fingerprint changed")
 
 
-def _reshard_ae3_safely_locked(
+def _reshard_ultramsdata_locked(
     config: SafeReshardConfig,
     *,
     max_new_shards_this_run: int | None = None,
@@ -1277,7 +1277,7 @@ def _reshard_ae3_safely_locked(
     return manifest
 
 
-def reshard_ae3_safely(
+def reshard_ultramsdata(
     config: SafeReshardConfig,
     *,
     max_new_shards_this_run: int | None = None,
@@ -1291,7 +1291,7 @@ def reshard_ae3_safely(
     audit_dir = output_dir / "_audit"
     (audit_dir / "progress").mkdir(parents=True, exist_ok=True)
     with _exclusive_run_lock(audit_dir):
-        return _reshard_ae3_safely_locked(
+        return _reshard_ultramsdata_locked(
             config, max_new_shards_this_run=max_new_shards_this_run
         )
 
@@ -1330,7 +1330,7 @@ def main() -> int:
         compression=args.compression,
         input_sha256_manifest=args.input_sha256_manifest,
     )
-    result = reshard_ae3_safely(
+    result = reshard_ultramsdata(
         config, max_new_shards_this_run=args.max_new_shards_this_run
     )
     print(f"status={result['status']} output={config.output_dir}")

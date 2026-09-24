@@ -1,4 +1,4 @@
-"""Recover the proven Ae3 prefix of a frozen mixed bundle without changing rows.
+"""Extract the UltraMSdata source subset without changing spectral rows.
 
 All source files are verified before new outputs are written. The existing
 resumable materializer only repartitions the prefix; its selection rules are
@@ -16,7 +16,7 @@ from pathlib import Path
 import pyarrow.parquet as pq
 
 from ._audit_utils import atomic_write_json, fingerprint, load_json, sha256_file
-from .materialize_clean_ae3 import CleanConfig, materialize_clean_dataset
+from .prepare_ultramsdata import CleanConfig, materialize_clean_dataset
 
 DEFAULT_FINGERPRINT = "23ce892bdbdc0da19ad5b40367fde89c77c4ec6f9da83364b2101b9c8b2142ff"
 
@@ -167,7 +167,7 @@ def verify_source(src: Path, contract: dict, expected_fingerprint: str) -> dict:
         if index < boundary:
             require(
                 cursor["source_index"] == len(expected_ae3) - 1,
-                "pre-boundary cursor is not in last Ae3 source",
+                "pre-boundary cursor is not in the last UltraMSdata source file",
             )
         else:
             require(
@@ -313,11 +313,11 @@ def extract(
         require(
             manifest["output"]["stats"]["polarity"]
             == contract["historical_replay"]["clean_ae3_polarity"],
-            "pure Ae3 polarity closure failed",
+            "UltraMSdata source subset polarity closure failed",
         )
         require(
             manifest["output"]["stats"]["rows"] == proof["pure_rows"],
-            "pure Ae3 row closure failed",
+            "UltraMSdata source subset row closure failed",
         )
         atomic_write_json(
             dst / "pure_ae3_provenance.json",
@@ -342,7 +342,7 @@ def main() -> None:
     parser.add_argument(
         "--contract",
         type=Path,
-        default=Path(__file__).with_name("ae3_pretraining_contract_v2.json"),
+        default=Path(__file__).with_name("ultramsdata_source_contract.json"),
     )
     parser.add_argument("--expected-mixed-fingerprint", default=DEFAULT_FINGERPRINT)
     parser.add_argument("--dataset-name", default="ae3_only_160641162")
