@@ -10,9 +10,9 @@ python -m pip install ultrams
 | --- | --- |
 | Embed one spectrum | [Python example](#embed-a-spectrum) |
 | Embed an MGF or mzML file | [File command](#embed-a-spectrum-file) |
-| Train on my labelled spectra | [PyTorch example](#fine-tune-with-pytorch) · [complete MGF example](examples/pytorch_finetune.py) |
-| Compare spectra | [Search example](examples/spectrum_search.py) |
-| Reproduce pretraining | [Training code](training/README.md) |
+| Train on my labelled spectra | [PyTorch example](#fine-tune-with-pytorch) · [complete MGF example](https://github.com/Dsadd4/UltraMS/blob/main/examples/pytorch_finetune.py) |
+| Compare spectra | [Search example](https://github.com/Dsadd4/UltraMS/blob/main/examples/spectrum_search.py) |
+| Reproduce pretraining | [Training code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) |
 
 ## Embed a spectrum
 
@@ -36,7 +36,7 @@ The first call downloads the selected checkpoint from Hugging Face. Use `device=
 ultrams-embed spectra.mgf embeddings.npz --model unsupervised
 ```
 
-The output has aligned `ids` and `embeddings` arrays. To use mzML, first run `python -m pip install 'ultrams[io]'`; the base installation reads MGF and `.mgf.gz` without an extra file-format package. The [checked-in example](examples/README.md) includes five real MS/MS spectra and a complete Python batch workflow.
+The output has aligned `ids` and `embeddings` arrays. To use mzML, first run `python -m pip install 'ultrams[io]'`; the base installation reads MGF and `.mgf.gz` without an extra file-format package. The [checked-in example](https://github.com/Dsadd4/UltraMS/tree/main/examples) includes five real MS/MS spectra and a complete Python batch workflow.
 
 ## Fine-tune with PyTorch
 
@@ -67,7 +67,7 @@ for batch in loader:
     print(f"loss: {loss.item():.4f}")
 ```
 
-The [complete fine-tuning example](examples/pytorch_finetune.py) reads an MGF file and saves training history. For a shorter route, use `model.finetune(labelled_spectra, task="regression")` with a `label` field; it saves weights, configuration, and losses. See [spectrum input](docs/data-format.md) for the input format.
+The [complete fine-tuning example](https://github.com/Dsadd4/UltraMS/blob/main/examples/pytorch_finetune.py) reads an MGF file and saves training history. For a shorter route, use `model.finetune(labelled_spectra, task="regression")` with a `label` field; it saves weights, configuration, and losses. See [spectrum input](https://github.com/Dsadd4/UltraMS/blob/main/docs/data-format.md) for the input format.
 
 ## Choose a model
 
@@ -77,8 +77,8 @@ The [complete fine-tuning example](examples/pytorch_finetune.py) reads an MGF fi
 | `mona` | MoNA contrastive projection | 1024 | 100 | [MoNA contrastive](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
 | `search` | UltraAtlas search projection | 512 | 150 | [Search](https://huggingface.co/dsadd4/UltraMS-Search) |
 
-Load any of them with `UltraMS.from_pretrained("name")`, or load a downloaded `model.pt` with `UltraMS.from_checkpoint(path)`. [Model selection](docs/model-selection.md) explains the training purpose and output of each checkpoint. The Search checkpoint is the **UltraAtlas application `best.pt`**.
+Load any of them with `UltraMS.from_pretrained("name")`, or load a downloaded `model.pt` with `UltraMS.from_checkpoint(path)`. [Model selection](https://github.com/Dsadd4/UltraMS/blob/main/docs/model-selection.md) explains the training purpose and output of each checkpoint. The Search checkpoint is the **UltraAtlas application `best.pt`**.
 
 ## Pretraining
 
-The [UltraMSdata pretraining package](training/README.md) contains the current model architecture, training entry points, configuration and history outputs. It installs separately from the inference package.
+The [UltraMSdata pretraining package](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) contains the current model architecture, training entry points, configuration and history outputs. It installs separately from the inference package.
