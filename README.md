@@ -16,6 +16,12 @@ python -m pip install ultrams
 | Inspect or run pretraining | [Training code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) |
 | Reproduce the paper benchmarks | [Spectral properties and molecular identification](https://github.com/Dsadd4/UltraMS/blob/main/benchmarks/README.md) |
 
+<p align="center">
+  <img src="assets/ultrams_chemical_landscape.png" alt="UltraAtlas universe map of tandem mass spectra with a chemical-class legend" width="720">
+</p>
+
+<p align="center"><em>UltraMS representations underpin the UltraAtlas chemical landscape.</em></p>
+
 ## Embed a spectrum
 
 ```python
