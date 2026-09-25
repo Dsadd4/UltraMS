@@ -1,0 +1,74 @@
+
+======================================================================
+Dataset: msnlib
+======================================================================
+[msnlib] 560084 total (train=446667, val=55980, test=57437)
+
+  Task: mass
+  Loading candidates from $WORKSPACE/datasets/MSnLib/MSnLib_candidates.json...
+  9886 queries in candidate file
+  6227380 eval candidate SMILES + 38711 train GT SMILES = 6266091 unique total
+  Encoding molecules with ChemBERTa (cache: msnlib_mass_chemberta_full)...
+    Loading cached mol embeddings: $WORKSPACE/train/output/comparison/mol_emb_cache/msnlib_mass_chemberta_full.pt
+    Cache hit: 6266091, miss: 0
+
+  --- Model: rt_only_d11 ---
+✓ 使用默认meta信息
+  [rt_only_d11] ep=11, step=190509
+  Extracting spectrum embeddings...
+  Embeddings: (560084, 1024)
+
+  [rt_only_d11] Training (T=0.050, seed=42)...
+    Training projection on 446667 pairs (1024→768, ResidualProj, T=0.050)
+      epoch 1: loss=4.1928  lr=5.00e-04
+      epoch 5: loss=3.4015  lr=4.89e-04
+      epoch 10: loss=3.1410  lr=4.57e-04
+      epoch 15: loss=2.9811  lr=4.07e-04
+      epoch 20: loss=2.8655  lr=3.45e-04
+      epoch 25: loss=2.7692  lr=2.75e-04
+      epoch 30: loss=2.6884  lr=2.05e-04
+      epoch 35: loss=2.6208  lr=1.43e-04
+      epoch 40: loss=2.5689  lr=9.30e-05
+      epoch 45: loss=2.5326  lr=6.10e-05
+      epoch 50: loss=2.5140  lr=5.00e-05
+  [rt_only_d11] Projection saved to $WORKSPACE/train/output/comparison/proj_msnlib_mass_rt_only_d11_seed42.pt
+  [rt_only_d11] Evaluating val (mass):
+    n=55980, avg_cands=3062: Top1=26.87%  Top5=34.48%  Top10=38.44%  Top20=43.06%  MRR=0.3092
+      [0-10] n=768, top1=55.73%  mrr=0.6913
+      [10-50] n=3132, top1=53.70%  mrr=0.6127
+      [50-200] n=6148, top1=37.77%  mrr=0.4389
+      [200-1000] n=12480, top1=33.75%  mrr=0.3847
+      [1000-inf] n=33452, top1=19.12%  mrr=0.2200
+    Raw scores saved: $WORKSPACE/train/output/comparison/10_raw_scores_msnlib_mass_rt_only_d11_val.npz
+    Per-spectrum details saved: $WORKSPACE/train/output/comparison/10_per_spectrum_msnlib_mass_rt_only_d11_val.jsonl
+  [rt_only_d11] Evaluating test (mass):
+    n=57437, avg_cands=2804: Top1=26.76%  Top5=34.41%  Top10=38.56%  Top20=43.15%  MRR=0.3086
+      [0-10] n=784, top1=52.55%  mrr=0.6569
+      [10-50] n=2620, top1=50.76%  mrr=0.5913
+      [50-200] n=6847, top1=39.51%  mrr=0.4546
+      [200-1000] n=12890, top1=32.08%  mrr=0.3647
+      [1000-inf] n=34296, top1=19.80%  mrr=0.2288
+    Raw scores saved: $WORKSPACE/train/output/comparison/10_raw_scores_msnlib_mass_rt_only_d11_test.npz
+    Per-spectrum details saved: $WORKSPACE/train/output/comparison/10_per_spectrum_msnlib_mass_rt_only_d11_test.jsonl
+
+====================================================================================================
+CROSS-MODAL RETRIEVAL SUMMARY (ResidualProjection + Enhanced)
+====================================================================================================
+Task                      Model              T Split      Top1     Top5    Top10    Top20      MRR
+----------------------------------------------------------------------------------------------------
+msnlib_mass               rt_only_d11    0.050 val      26.87%   34.48%   38.44%   43.06%   0.3092
+msnlib_mass               rt_only_d11    0.050 test     26.76%   34.41%   38.56%   43.15%   0.3086
+
+
+====================================================================================================
+STRATIFIED ANALYSIS
+====================================================================================================
+
+  msnlib_mass / rt_only_d11 (T=0.050):
+    [      0-10] n=  784  Top1= 52.55%  MRR=0.6569
+    [     10-50] n= 2620  Top1= 50.76%  MRR=0.5913
+    [    50-200] n= 6847  Top1= 39.51%  MRR=0.4546
+    [  200-1000] n=12890  Top1= 32.08%  MRR=0.3647
+    [  1000-inf] n=34296  Top1= 19.80%  MRR=0.2288
+
+Results saved to: $WORKSPACE/train/output/comparison/10_plot_results.json

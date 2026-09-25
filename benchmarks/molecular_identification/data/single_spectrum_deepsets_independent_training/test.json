@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_mass_deepsets_chemberta_test.jsonl": {
+      "sha256": "2f575df84ff8cc27de89d0bbce59d4aad1041aac13e4f9d0c0f0fe544a1f7223"
+    },
+    "raw_scores_msnlib_mass_deepsets_chemberta_test.npz": {
+      "sha256": "4bf4b6\u0061e3f7c06c422c308afc32d2faf144233f2bd34a78f469505c37ec8523a"
+    }
+  },
+  "candidate_count": {
+    "maximum": 31524,
+    "mean": 2803.9927398715113,
+    "median": 1553.0,
+    "minimum": 2
+  },
+  "display_name": "DeepSets",
+  "fold": "test",
+  "frozen_order_regression": {
+    "candidate_counts_sha256_i64le": "0590af48d96981c9c11df3f10cf3d20e09fd45d06952bb2270a45cbe67c0f05c",
+    "query_indices_sha256_i64le": "4cec8e332cb5cf5ba24ce6994795182fd5cdaceaef1c65c3dc674234db0413df",
+    "reference_test_jsonl_sha256": "82483a32de8349149df99cb2ea708b15cd5ecea443ab6f5d967217972d8ad64a"
+  },
+  "joint_runtime_seconds": 97.26975297927856,
+  "median_rank": 151.0,
+  "method": "deepsets",
+  "mrr": 0.11743815653904469,
+  "n_queries": 57437,
+  "n_query_groups": 5003,
+  "n_rows_with_top_score_tie": 0,
+  "n_zero_spectrum_embeddings": 0,
+  "top1": 0.07984400299458537,
+  "top10": 0.18672632623570173,
+  "top20": 0.24364085867994498,
+  "top5": 0.14286957884290613
+}

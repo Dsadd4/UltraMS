@@ -1,0 +1,170 @@
+{
+  "data_audits": {
+    "clean": {
+      "dataset_fingerprint": "8e12ce3eb625358b769f78f9ca1325413e6e71be1b3d2b54ec4f43ff9f905434",
+      "rows_at_least_three_valid_peaks": 160641162,
+      "sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
+    },
+    "polarity": {
+      "dataset_fingerprint": "e7635e649dcd5eb3817b1e02409c9d6561b030d56344346229d988f2a9123f26",
+      "rows_at_least_three_valid_peaks": 21586258,
+      "sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
+    }
+  },
+  "data_mode": "ultramsdata_parquet",
+  "launch_phase": "mlm",
+  "distributed_profiles": {
+    "4": {
+      "finetune": {
+        "batch_size_per_rank": 288,
+        "global_optimizer_batch_size": 1152,
+        "gradient_accumulation": 1
+      },
+      "phase1": {
+        "batch_size_per_rank": 480,
+        "global_optimizer_batch_size": 3840,
+        "gradient_accumulation": 2
+      }
+    },
+    "6": {
+      "finetune": {
+        "batch_size_per_rank": 192,
+        "global_optimizer_batch_size": 1152,
+        "gradient_accumulation": 1
+      },
+      "phase1": {
+        "batch_size_per_rank": 640,
+        "global_optimizer_batch_size": 3840,
+        "gradient_accumulation": 1
+      }
+    }
+  },
+  "expected_assets": {
+    "clean": {
+      "above_1500": 6351728,
+      "accepted_0_to_1500": 154289434,
+      "dataset_fingerprint": "8e12ce3eb625358b769f78f9ca1325413e6e71be1b3d2b54ec4f43ff9f905434",
+      "files": 816,
+      "input_content_fingerprint": "810861f1906ccf1fe33168b8aac2a885d7b434d78fef15e2f5b9a80381fa22d1",
+      "negative_0": 10793129,
+      "other_or_null": 80689,
+      "positive_1": 149767344,
+      "rows": 160641162,
+      "run_identity": "5a7eaac25b222c8f8c00986c16ed28ab62a401e6542f01a9d02045da55b01b39",
+      "schema_fingerprint": "182a8c7e2831a49d1b87515b2eac2c3be00c1e285fc04251091ee1d2b3520a2c"
+    },
+    "polarity": {
+      "above_1500": 1584057,
+      "accepted_0_to_1500": 20002201,
+      "dataset_fingerprint": "e7635e649dcd5eb3817b1e02409c9d6561b030d56344346229d988f2a9123f26",
+      "files": 48,
+      "input_content_fingerprint": "7785a659b4f5c5c615507f0edede864102ed505cc3a4f6a20534a9485aaa376c",
+      "negative_0": 10793129,
+      "other_or_null": 0,
+      "positive_1": 10793129,
+      "rows": 21586258,
+      "run_identity": "c50f94dcb48757095405c756a303c3360a65112d7c4faa7c2d8b8a90dddf68ba",
+      "schema_fingerprint": "182a8c7e2831a49d1b87515b2eac2c3be00c1e285fc04251091ee1d2b3520a2c",
+      "seed": 42
+    }
+  },
+  "model": {
+    "freeze_layers_after_phase1": 12,
+    "mask_ratio": 0.15,
+    "max_peaks": 150,
+    "mlm_weight": 0.3,
+    "rt_huber_delta": 0.1,
+    "rt_max_seconds": 1500.0,
+    "rt_norm_scale": 600.0,
+    "rt_self_consistency_tau": 0.1
+  },
+  "optimization": {
+    "gradient_clip": 5.0,
+    "keep_last_step_checkpoints": 2,
+    "log_every_optimizer_steps": 50,
+    "num_workers": 2,
+    "precision": "bf16",
+    "save_every_optimizer_steps": 5000,
+    "weight_decay": 0.01
+  },
+  "paths": {
+    "clean_shard_dir": "derived/ultramsdata_clean/shards",
+    "output_dir": "runs/ultramsdata-mpr5-4g",
+    "polarity_shard_dir": "derived/ultramsdata_polarity/shards"
+  },
+  "ultramsdata_freeze": {
+    "mixed_source_fingerprint": "23ce892bdbdc0da19ad5b40367fde89c77c4ec6f9da83364b2101b9c8b2142ff",
+    "mode": "phase1",
+    "pure_provenance_sha256": "35e8238dda98367195fd8a9037fac6f375972e385602782806c40564abccd09c",
+    "required_end_stage": "peak_reconstruction",
+    "required_start_stage": "peak_reconstruction",
+    "semantic_audit_sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461",
+    "source_template_sha256": "10db5ee22b20491647404b2501b70beb7bc9e188fe595e3cb0ae9a67adb653b1"
+  },
+  "run_name": "ultramsdata-mpr5-4g",
+  "seed": 42,
+  "stages": [
+    {
+      "epochs": 5,
+      "initial_estimated_steps_per_epoch": 53000,
+      "learning_rate": 3e-05,
+      "minimum_learning_rate": 5e-07,
+      "mlm_frequency": 1,
+      "name": "peak_reconstruction",
+      "polarity_weight": 0.0,
+      "profile": "phase1",
+      "recalibrate_scheduler_after_epoch": 1,
+      "rt_weight": 0.0,
+      "save_every_optimizer_steps": 2500,
+      "scheduler": "warmup_cosine",
+      "scheduler_planned_epochs": 5,
+      "trainable_scope": "all_base",
+      "warmup_ratio": 0.03
+    },
+    {
+      "epochs": 5,
+      "gradient_accumulation_multiplier": 3,
+      "learning_rate": 1e-05,
+      "minimum_learning_rate": 1e-07,
+      "mlm_frequency": 1,
+      "name": "supervised_rt",
+      "polarity_weight": 0.0,
+      "profile": "finetune",
+      "rt_input_unit": "normalized_600s",
+      "rt_weight": 0.5,
+      "scheduler": "legacy_warmup_cosine",
+      "trainable_scope": "last_layers_and_heads",
+      "warmup_ratio": 0.05
+    },
+    {
+      "epochs": 1,
+      "learning_rate": 5e-06,
+      "mlm_frequency": 1,
+      "name": "self_consistent_rt",
+      "polarity_weight": 0.0,
+      "profile": "finetune",
+      "rt_input_unit": "seconds",
+      "rt_weight": 0.1,
+      "scheduler": "constant",
+      "trainable_scope": "last_layers_and_heads"
+    },
+    {
+      "epochs": 11,
+      "learning_rate": 5e-06,
+      "mlm_frequency": 1,
+      "name": "ion_mode",
+      "polarity_weight": 0.1,
+      "profile": "finetune",
+      "rt_input_unit": "seconds",
+      "rt_weight": 0.1,
+      "scheduler": "constant",
+      "trainable_scope": "last_layers_and_heads"
+    }
+  ],
+  "supported_world_sizes": [
+    4,
+    6
+  ],
+  "training_mode": "pretraining",
+  "world_size": 4
+}

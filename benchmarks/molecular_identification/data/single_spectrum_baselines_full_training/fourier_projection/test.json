@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_mass_fourier_projection_chemberta_test.jsonl": {
+      "sha256": "3d9b64f5cec7cdd4e5b49c1e73437c6b4babed50af1f9c0075d3f5bc8a44f399"
+    },
+    "raw_scores_msnlib_mass_fourier_projection_chemberta_test.npz": {
+      "sha256": "9b4e6ffebebcd8dd360b1405024f1d8b56fffab68a2ff6ed9cc6af2ed3b4e2d2"
+    }
+  },
+  "candidate_count": {
+    "maximum": 31524,
+    "mean": 2803.9927398715113,
+    "median": 1553.0,
+    "minimum": 2
+  },
+  "display_name": "Fourier projection",
+  "fold": "test",
+  "frozen_order_regression": {
+    "candidate_counts_sha256_i64le": "0590af48d96981c9c11df3f10cf3d20e09fd45d06952bb2270a45cbe67c0f05c",
+    "query_indices_sha256_i64le": "4cec8e332cb5cf5ba24ce6994795182fd5cdaceaef1c65c3dc674234db0413df",
+    "reference_test_jsonl_sha256": "82483a32de8349149df99cb2ea708b15cd5ecea443ab6f5d967217972d8ad64a"
+  },
+  "joint_runtime_seconds": 911.7741756439209,
+  "median_rank": 156.0,
+  "method": "fourier_projection",
+  "mrr": 0.18739261002503663,
+  "n_queries": 57437,
+  "n_query_groups": 5003,
+  "n_rows_with_top_score_tie": 4,
+  "n_zero_spectrum_embeddings": 0,
+  "top1": 0.14992078277068788,
+  "top10": 0.2541567282413775,
+  "top20": 0.30283615091317445,
+  "top5": 0.21813465187945053
+}

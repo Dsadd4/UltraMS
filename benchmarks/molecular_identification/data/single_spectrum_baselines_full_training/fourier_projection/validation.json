@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_mass_fourier_projection_chemberta_val.jsonl": {
+      "sha256": "5c7ff386eb18c1260b830c2c30ed0cf2c3dc3e7557d6f4a7d1377c17daf5d07b"
+    },
+    "raw_scores_msnlib_mass_fourier_projection_chemberta_val.npz": {
+      "sha256": "277b1bae5fee4ad9e8040594ea4a1a66bd41b2817aeb74ae62151b9f19a4a56d"
+    }
+  },
+  "candidate_count": {
+    "maximum": 36300,
+    "mean": 3061.8657020364417,
+    "median": 1710.0,
+    "minimum": 2
+  },
+  "display_name": "Fourier projection",
+  "fold": "val",
+  "frozen_order_regression": {
+    "candidate_counts_sha256_i64le": "ecaf5a8e5d20c501f70aa6c8ea1b8e0cd6937483f83337d0692270848760be53",
+    "query_indices_sha256_i64le": "19ca2e174b1ed6b1566034562a89149e78f1554ab1d039e1306ddc0d3a0f9d73"
+  },
+  "joint_runtime_seconds": 935.9187722206116,
+  "median_rank": 168.0,
+  "method": "fourier_projection",
+  "mrr": 0.18805095676807157,
+  "n_queries": 55980,
+  "n_query_groups": 4883,
+  "n_rows_with_top_score_tie": 1,
+  "n_zero_spectrum_embeddings": 0,
+  "top1": 0.15057163272597357,
+  "top10": 0.25453733476241514,
+  "top20": 0.3031261164701679,
+  "top5": 0.2195069667738478
+}

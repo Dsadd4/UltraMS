@@ -1,0 +1,30 @@
+{
+  "purpose": "Fresh full-scale DreaMS MSnLib single-spectrum projection training/test under the public 30-epoch validation-selection protocol",
+  "model": "dreams",
+  "dataset": "msnlib",
+  "n_spectra_expected": 560084,
+  "n_test_expected": 57437,
+  "projection_epochs": 30,
+  "early_stop_validation_selection": true,
+  "load_projection": false,
+  "seed": 42,
+  "temperature": 0.05,
+  "save_projection": true,
+  "save_raw_scores": true,
+  "save_per_spectrum_topk": 50,
+  "device": "cuda:0",
+  "python": "3.11.0",
+  "packages": {
+    "torch": "2.2.1",
+    "transformers": "4.40.0",
+    "numpy": "1.24.4",
+    "pandas": "2.2.1",
+    "rdkit": "2023.9.5",
+    "scikit-learn": "1.5.0"
+  },
+  "dreams_source_commit": "dbec3a0b514a99e5056cfccde4559fda8cfe8129",
+  "source_sha256": "0ae860856425f0392ff50abcab7b05ab912f5a013f48325ec3da3b150f968217",
+  "launch_script": "launch.sh",
+  "log": "train_test.log",
+  "input_note": "Full MSnLib and ChemBERTa cache from byte-validated public-conversion-equivalent workspace; official DreaMS SSL model and pinned source; no saved projection is present or loaded."
+}

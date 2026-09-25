@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_mass_linear_chemberta_val.jsonl": {
+      "sha256": "6ee4da808452b16f07e8cbc3d9ed6409bf1c2aa8ecbaf815ba80063d69dddb65"
+    },
+    "raw_scores_msnlib_mass_linear_chemberta_val.npz": {
+      "sha256": "01514f6ca6bab070dde4321c28a2255c46f004b141e903c0ac127a4748379c8a"
+    }
+  },
+  "candidate_count": {
+    "maximum": 36300,
+    "mean": 3061.8657020364417,
+    "median": 1710.0,
+    "minimum": 2
+  },
+  "display_name": "Linear",
+  "fold": "val",
+  "frozen_order_regression": {
+    "candidate_counts_sha256_i64le": "ecaf5a8e5d20c501f70aa6c8ea1b8e0cd6937483f83337d0692270848760be53",
+    "query_indices_sha256_i64le": "19ca2e174b1ed6b1566034562a89149e78f1554ab1d039e1306ddc0d3a0f9d73"
+  },
+  "joint_runtime_seconds": 929.6108057498932,
+  "median_rank": 116.0,
+  "method": "linear",
+  "mrr": 0.2144210286683861,
+  "n_queries": 55980,
+  "n_query_groups": 4883,
+  "n_rows_with_top_score_tie": 0,
+  "n_zero_spectrum_embeddings": 0,
+  "top1": 0.1744194355126831,
+  "top10": 0.28687031082529474,
+  "top20": 0.33572704537334763,
+  "top5": 0.24896391568417292
+}

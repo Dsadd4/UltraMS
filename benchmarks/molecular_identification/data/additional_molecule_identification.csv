@@ -1,0 +1,73 @@
+panel,benchmark_variant,model,display_model,model_family,result_group,metric,retrieval_percent,source_label
+NPLIB1,NPLIB1 ms2peaks_min50 three-fold source fusion,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-1,32.981886996485535,UltraMS NPLIB evidence package
+NPLIB1,NPLIB1 ms2peaks_min50 three-fold source fusion,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-5,57.907542579075425,UltraMS NPLIB evidence package
+NPLIB1,NPLIB1 ms2peaks_min50 three-fold source fusion,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-20,80.5352798053528,UltraMS NPLIB evidence package
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST full,MIST full,MIST,Public baseline,Top-1,30.703,MIST Supplementary Table 8
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST full,MIST full,MIST,Public baseline,Top-5,58.12,MIST Supplementary Table 8
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST full,MIST full,MIST,Public baseline,Top-20,75.709,MIST Supplementary Table 8
+NPLIB1,NPLIB1 ms2peaks_min50 three-fold source fusion,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-1,27.926466612598,UltraMS NPLIB evidence package
+NPLIB1,NPLIB1 ms2peaks_min50 three-fold source fusion,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-5,54.63638821303055,UltraMS NPLIB evidence package
+NPLIB1,NPLIB1 ms2peaks_min50 three-fold source fusion,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-20,79.10246012435793,UltraMS NPLIB evidence package
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST contrastive,MIST contrastive,MIST,Public baseline,Top-1,21.5,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST contrastive,MIST contrastive,MIST,Public baseline,Top-5,47.9,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST contrastive,MIST contrastive,MIST,Public baseline,Top-20,62.3,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST fingerprint,MIST fingerprint,MIST,Public baseline,Top-1,20.3,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST fingerprint,MIST fingerprint,MIST,Public baseline,Top-5,41.1,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,MIST fingerprint,MIST fingerprint,MIST,Public baseline,Top-20,55.1,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,FFN fingerprint,FFN fingerprint,FFN,Public baseline,Top-1,13.3,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,FFN fingerprint,FFN fingerprint,FFN,Public baseline,Top-5,28.8,MIST GitHub notebook
+NPLIB1,NPLIB1/CANOPUS public natural product retrieval,FFN fingerprint,FFN fingerprint,FFN,Public baseline,Top-20,44.4,MIST GitHub notebook
+MassSpecGym mass,Mass/all fair two-source fingerprint retrieval,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-1,17.092457420924575,UltraMS MassSpecGym source-fusion run
+MassSpecGym mass,Mass/all fair two-source fingerprint retrieval,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-5,33.345498783454985,UltraMS MassSpecGym source-fusion run
+MassSpecGym mass,Mass/all fair two-source fingerprint retrieval,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-20,54.89051094890512,UltraMS MassSpecGym source-fusion run
+MassSpecGym mass,Official molecule retrieval leaderboard,JESTR,JESTR,JESTR,Public baseline,Top-1,15.13,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,JESTR,JESTR,JESTR,Public baseline,Top-5,36.75,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,JESTR,JESTR,JESTR,Public baseline,Top-20,60.32,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,MIST,MIST,MIST,Public baseline,Top-1,14.64,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,MIST,MIST,MIST,Public baseline,Top-5,34.87,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,MIST,MIST,MIST,Public baseline,Top-20,59.15,MassSpecGym leaderboard
+MassSpecGym mass,Mass/all fair two-source fingerprint retrieval,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-1,13.242092457420926,UltraMS MassSpecGym source-fusion run
+MassSpecGym mass,Mass/all fair two-source fingerprint retrieval,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-5,26.271289537712896,UltraMS MassSpecGym source-fusion run
+MassSpecGym mass,Mass/all fair two-source fingerprint retrieval,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-20,45.675182481751825,UltraMS MassSpecGym source-fusion run
+MassSpecGym mass,Official molecule retrieval leaderboard,ESP,ESP,ESP,Public baseline,Top-1,10.71,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,ESP,ESP,ESP,Public baseline,Top-5,24.84,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,ESP,ESP,ESP,Public baseline,Top-20,42.66,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,DeepSets + Fourier features,DeepSets+Fourier,DeepSets,Public baseline,Top-1,5.24,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,DeepSets + Fourier features,DeepSets+Fourier,DeepSets,Public baseline,Top-5,12.58,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,DeepSets + Fourier features,DeepSets+Fourier,DeepSets,Public baseline,Top-20,28.21,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,Fingerprint FFN,Fingerprint FFN,FFN,Public baseline,Top-1,2.54,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,Fingerprint FFN,Fingerprint FFN,FFN,Public baseline,Top-5,7.59,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,Fingerprint FFN,Fingerprint FFN,FFN,Public baseline,Top-20,20.8,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,DeepSets,DeepSets,DeepSets,Public baseline,Top-1,1.47,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,DeepSets,DeepSets,DeepSets,Public baseline,Top-5,6.21,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,DeepSets,DeepSets,DeepSets,Public baseline,Top-20,19.23,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,Random,Random,Random,Public baseline,Top-1,0.37,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,Random,Random,Random,Public baseline,Top-5,2.01,MassSpecGym leaderboard
+MassSpecGym mass,Official molecule retrieval leaderboard,Random,Random,Random,Public baseline,Top-20,8.22,MassSpecGym leaderboard
+MassSpecGym formula,Formula/all fair two-source fingerprint retrieval,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-1,14.07542579075426,UltraMS MassSpecGym formula sensitivity
+MassSpecGym formula,Formula/all fair two-source fingerprint retrieval,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-5,29.03284671532847,UltraMS MassSpecGym formula sensitivity
+MassSpecGym formula,Formula/all fair two-source fingerprint retrieval,UltraMS fair fusion,UltraMS,UltraMS,This work,Top-20,51.68491484184915,UltraMS MassSpecGym formula sensitivity
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,JESTR,JESTR,JESTR,Public baseline,Top-1,11.85,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,JESTR,JESTR,JESTR,Public baseline,Top-5,32.95,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,JESTR,JESTR,JESTR,Public baseline,Top-20,61.46,MassSpecGym leaderboard
+MassSpecGym formula,Formula/all fair two-source fingerprint retrieval,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-1,11.411192214111924,UltraMS MassSpecGym formula sensitivity
+MassSpecGym formula,Formula/all fair two-source fingerprint retrieval,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-5,23.953771289537713,UltraMS MassSpecGym formula sensitivity
+MassSpecGym formula,Formula/all fair two-source fingerprint retrieval,DreaMS fair fusion,DreaMS,DreaMS,This work baseline,Top-20,43.400243309002434,UltraMS MassSpecGym formula sensitivity
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,ESP,ESP,ESP,Public baseline,Top-1,11.05,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,ESP,ESP,ESP,Public baseline,Top-5,27.42,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,ESP,ESP,ESP,Public baseline,Top-20,52.2,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,MIST,MIST,MIST,Public baseline,Top-1,9.57,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,MIST,MIST,MIST,Public baseline,Top-5,22.11,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,MIST,MIST,MIST,Public baseline,Top-20,41.12,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,DeepSets + Fourier features,DeepSets+Fourier,DeepSets,Public baseline,Top-1,6.56,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,DeepSets + Fourier features,DeepSets+Fourier,DeepSets,Public baseline,Top-5,16.46,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,DeepSets + Fourier features,DeepSets+Fourier,DeepSets,Public baseline,Top-20,33.46,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,Fingerprint FFN,Fingerprint FFN,FFN,Public baseline,Top-1,5.09,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,Fingerprint FFN,Fingerprint FFN,FFN,Public baseline,Top-5,16.03,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,Fingerprint FFN,Fingerprint FFN,FFN,Public baseline,Top-20,31.97,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,DeepSets,DeepSets,DeepSets,Public baseline,Top-1,4.42,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,DeepSets,DeepSets,DeepSets,Public baseline,Top-5,14.46,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,DeepSets,DeepSets,DeepSets,Public baseline,Top-20,30.76,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,Random,Random,Random,Public baseline,Top-1,3.06,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,Random,Random,Random,Public baseline,Top-5,11.35,MassSpecGym leaderboard
+MassSpecGym formula,Official molecule retrieval bonus leaderboard,Random,Random,Random,Public baseline,Top-20,27.74,MassSpecGym leaderboard

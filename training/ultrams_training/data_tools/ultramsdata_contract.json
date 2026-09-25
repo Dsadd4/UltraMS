@@ -1,0 +1,49 @@
+{
+  "raw_ultramsdata": {
+    "files": 608,
+    "rows": 163714098,
+    "schema_fingerprint": "182a8c7e2831a49d1b87515b2eac2c3be00c1e285fc04251091ee1d2b3520a2c",
+    "sha256_manifest_sha256": "bfa98e7f4c46d5e37392af54e4c340383ab1a6514481c2abd64886adbd91032d"
+  },
+  "historical_replay": {
+    "seed": 42,
+    "target_rows_per_shard": 200000,
+    "balanced_files": 819,
+    "excluded_balanced_shards": [
+      "shard_0798.parquet",
+      "shard_0800.parquet",
+      "shard_0801.parquet",
+      "shard_0802.parquet",
+      "shard_0810.parquet",
+      "shard_0811.parquet"
+    ],
+    "max_precursor_mz": 1000.0,
+    "clean_ultramsdata_rows": 160641162,
+    "clean_ultramsdata_polarity": {
+      "positive_1": 149767344,
+      "negative_0": 10793129,
+      "other_or_null": 80689
+    }
+  },
+  "public_increment": {
+    "rows": 775870,
+    "summary_sha256": "3bbeff2941a54e9a99a6409f8fd467f4a6854456aaa9b5d60f21af33d5bcd37c",
+    "files": [
+      ["shard_0810.parquet", 129312, "42e28bd61056e6c8e68361a4b8610c8ceea8786954d5400c5eddfcde0e20a610"],
+      ["shard_0811.parquet", 129312, "49e6a02f93b070462819f4b879db52fae6c0217d742253667fff0a4884156f13"],
+      ["shard_0812.parquet", 129312, "352edf5a0bed215b6f269cd62510c72fd891b251c492caf6a21895a9b4c34e01"],
+      ["shard_0813.parquet", 129312, "022b6e8619af70a8871d673a0dbea980604610b47c4b64e34b557f0dda2a714d"],
+      ["shard_0814.parquet", 129311, "7d4ec7cbfb3636aee608ad6e3fef21998c6ddd61c96f1b89735a847d42244f37"],
+      ["shard_0815.parquet", 129311, "df6ec312b1ca28314caf2126420e3d5f4bfa80534b99c1bd0f9af667eee202ea"]
+    ]
+  },
+  "final": {
+    "rows": 161417032,
+    "files": 816,
+    "polarity": {
+      "positive_1": 150270062,
+      "negative_0": 11066281,
+      "other_or_null": 80689
+    }
+  }
+}

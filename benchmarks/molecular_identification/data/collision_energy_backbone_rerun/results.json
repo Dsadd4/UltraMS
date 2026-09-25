@@ -1,0 +1,22 @@
+{
+  "UltraMS_pos": {
+    "n_queries": 6161,
+    "top1_correct": 5832,
+    "top1_accuracy_percent": 94.65995779905859
+  },
+  "DreaMS_pos": {
+    "n_queries": 6161,
+    "top1_correct": 5456,
+    "top1_accuracy_percent": 88.55705242655414
+  },
+  "UltraMS_neg": {
+    "n_queries": 2999,
+    "top1_correct": 2771,
+    "top1_accuracy_percent": 92.39746582194064
+  },
+  "DreaMS_neg": {
+    "n_queries": 2999,
+    "top1_correct": 2588,
+    "top1_accuracy_percent": 86.29543181060353
+  }
+}

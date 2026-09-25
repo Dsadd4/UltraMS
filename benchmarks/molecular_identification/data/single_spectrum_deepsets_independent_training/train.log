@@ -1,0 +1,172 @@
+model=deepsets epoch=1 step=1 train_loss=6.316260
+model=deepsets epoch=1 step=250 train_loss=6.242205
+model=deepsets epoch=1 step=500 train_loss=6.143926
+model=deepsets epoch=1 step=750 train_loss=6.085982
+{"epoch": 1, "train_infonce_loss": 6.0668616811349825, "validation_paired_cosine_loss": 0.944805103559586, "best_validation_loss": 0.944805103559586, "best_epoch": 1, "improved": 1, "learning_rate": 0.0004987674264578614, "epoch_seconds": 12.179085731506348, "elapsed_seconds": 12.17908763885498}
+model=deepsets epoch=2 step=1 train_loss=5.916036
+model=deepsets epoch=2 step=250 train_loss=5.941961
+model=deepsets epoch=2 step=500 train_loss=5.938027
+model=deepsets epoch=2 step=750 train_loss=5.933654
+{"epoch": 2, "train_infonce_loss": 5.931344446866595, "validation_paired_cosine_loss": 0.9684451829284035, "best_validation_loss": 0.944805103559586, "best_epoch": 1, "improved": 0, "learning_rate": 0.0004950832101651061, "epoch_seconds": 12.079689264297485, "elapsed_seconds": 24.26019048690796}
+model=deepsets epoch=3 step=1 train_loss=5.880525
+model=deepsets epoch=3 step=250 train_loss=5.916265
+model=deepsets epoch=3 step=500 train_loss=5.913035
+model=deepsets epoch=3 step=750 train_loss=5.909949
+{"epoch": 3, "train_infonce_loss": 5.908122520591622, "validation_paired_cosine_loss": 0.9866931529588553, "best_validation_loss": 0.944805103559586, "best_epoch": 1, "improved": 0, "learning_rate": 0.0004889877161664095, "epoch_seconds": 11.897244453430176, "elapsed_seconds": 36.1585488319397}
+model=deepsets epoch=4 step=1 train_loss=5.895854
+model=deepsets epoch=4 step=250 train_loss=5.892100
+model=deepsets epoch=4 step=500 train_loss=5.889590
+model=deepsets epoch=4 step=750 train_loss=5.886515
+{"epoch": 4, "train_infonce_loss": 5.88298069083487, "validation_paired_cosine_loss": 0.9849019815513772, "best_validation_loss": 0.944805103559586, "best_epoch": 1, "improved": 0, "learning_rate": 0.00048054772796958506, "epoch_seconds": 11.891324996948242, "elapsed_seconds": 48.0509934425354}
+model=deepsets epoch=5 step=1 train_loss=5.862820
+model=deepsets epoch=5 step=250 train_loss=5.809756
+model=deepsets epoch=5 step=500 train_loss=5.745482
+model=deepsets epoch=5 step=750 train_loss=5.682875
+{"epoch": 5, "train_infonce_loss": 5.655711219989329, "validation_paired_cosine_loss": 0.916210186281303, "best_validation_loss": 0.916210186281303, "best_epoch": 5, "improved": 1, "learning_rate": 0.00046985571585149866, "epoch_seconds": 11.907970428466797, "elapsed_seconds": 59.95996594429016}
+model=deepsets epoch=6 step=1 train_loss=5.471765
+model=deepsets epoch=6 step=250 train_loss=5.424368
+model=deepsets epoch=6 step=500 train_loss=5.381168
+model=deepsets epoch=6 step=750 train_loss=5.343871
+{"epoch": 6, "train_infonce_loss": 5.328359034158648, "validation_paired_cosine_loss": 0.8849819607204861, "best_validation_loss": 0.8849819607204861, "best_epoch": 6, "improved": 1, "learning_rate": 0.0004570288237343631, "epoch_seconds": 11.915351629257202, "elapsed_seconds": 71.87615084648132}
+model=deepsets epoch=7 step=1 train_loss=5.207507
+model=deepsets epoch=7 step=250 train_loss=5.199978
+model=deepsets epoch=7 step=500 train_loss=5.182853
+model=deepsets epoch=7 step=750 train_loss=5.173106
+{"epoch": 7, "train_infonce_loss": 5.167873092867583, "validation_paired_cosine_loss": 0.8983225695360298, "best_validation_loss": 0.8849819607204861, "best_epoch": 6, "improved": 0, "learning_rate": 0.0004422075857324136, "epoch_seconds": 11.916684865951538, "elapsed_seconds": 83.79369306564331}
+model=deepsets epoch=8 step=1 train_loss=5.173717
+model=deepsets epoch=8 step=250 train_loss=5.107916
+model=deepsets epoch=8 step=500 train_loss=5.100636
+model=deepsets epoch=8 step=750 train_loss=5.096097
+{"epoch": 8, "train_infonce_loss": 5.093915718027892, "validation_paired_cosine_loss": 0.8772121406274422, "best_validation_loss": 0.8772121406274422, "best_epoch": 8, "improved": 1, "learning_rate": 0.000425554386430743, "epoch_seconds": 11.929422616958618, "elapsed_seconds": 95.72408246994019}
+model=deepsets epoch=9 step=1 train_loss=5.077445
+model=deepsets epoch=9 step=250 train_loss=5.062537
+model=deepsets epoch=9 step=500 train_loss=5.059836
+model=deepsets epoch=9 step=750 train_loss=5.054612
+{"epoch": 9, "train_infonce_loss": 5.051804506958091, "validation_paired_cosine_loss": 0.8921516693758513, "best_validation_loss": 0.8772121406274422, "best_epoch": 8, "improved": 0, "learning_rate": 0.0004072516817658064, "epoch_seconds": 11.910439014434814, "elapsed_seconds": 107.63551950454712}
+model=deepsets epoch=10 step=1 train_loss=5.088711
+model=deepsets epoch=10 step=250 train_loss=5.026298
+model=deepsets epoch=10 step=500 train_loss=5.025248
+model=deepsets epoch=10 step=750 train_loss=5.021070
+{"epoch": 10, "train_infonce_loss": 5.019722364897587, "validation_paired_cosine_loss": 0.9382186300884873, "best_validation_loss": 0.8772121406274422, "best_epoch": 8, "improved": 0, "learning_rate": 0.00038749999999999993, "epoch_seconds": 11.917016744613647, "elapsed_seconds": 119.55351305007935}
+model=deepsets epoch=11 step=1 train_loss=5.121737
+model=deepsets epoch=11 step=250 train_loss=5.005842
+model=deepsets epoch=11 step=500 train_loss=4.999228
+model=deepsets epoch=11 step=750 train_loss=4.993867
+{"epoch": 11, "train_infonce_loss": 4.992787663027553, "validation_paired_cosine_loss": 0.8883713477251571, "best_validation_loss": 0.8772121406274422, "best_epoch": 8, "improved": 0, "learning_rate": 0.000366515744692055, "epoch_seconds": 11.946575403213501, "elapsed_seconds": 131.50108361244202}
+model=deepsets epoch=12 step=1 train_loss=5.067294
+model=deepsets epoch=12 step=250 train_loss=4.979509
+model=deepsets epoch=12 step=500 train_loss=4.978904
+model=deepsets epoch=12 step=750 train_loss=4.975034
+{"epoch": 12, "train_infonce_loss": 4.973565360518163, "validation_paired_cosine_loss": 0.8616517356226554, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 1, "learning_rate": 0.00034452882373436314, "epoch_seconds": 11.930802583694458, "elapsed_seconds": 143.43293929100037}
+model=deepsets epoch=13 step=1 train_loss=5.043411
+model=deepsets epoch=13 step=250 train_loss=4.964596
+model=deepsets epoch=13 step=500 train_loss=4.959760
+model=deepsets epoch=13 step=750 train_loss=4.958421
+{"epoch": 13, "train_infonce_loss": 4.957039525768524, "validation_paired_cosine_loss": 0.9077922934163848, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00032178013043399577, "epoch_seconds": 11.926181554794312, "elapsed_seconds": 155.36014890670776}
+model=deepsets epoch=14 step=1 train_loss=4.927097
+model=deepsets epoch=14 step=250 train_loss=4.940682
+model=deepsets epoch=14 step=500 train_loss=4.944752
+model=deepsets epoch=14 step=750 train_loss=4.943758
+{"epoch": 14, "train_infonce_loss": 4.94319200666698, "validation_paired_cosine_loss": 0.8917526119732354, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.000298518904235222, "epoch_seconds": 11.92996883392334, "elapsed_seconds": 167.29134845733643}
+model=deepsets epoch=15 step=1 train_loss=4.896379
+model=deepsets epoch=15 step=250 train_loss=4.920680
+model=deepsets epoch=15 step=500 train_loss=4.922242
+model=deepsets epoch=15 step=750 train_loss=4.923324
+{"epoch": 15, "train_infonce_loss": 4.922975903830506, "validation_paired_cosine_loss": 0.906796665879904, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.000275, "epoch_seconds": 11.929924488067627, "elapsed_seconds": 179.22283816337585}
+model=deepsets epoch=16 step=1 train_loss=4.868798
+model=deepsets epoch=16 step=250 train_loss=4.916201
+model=deepsets epoch=16 step=500 train_loss=4.913136
+model=deepsets epoch=16 step=750 train_loss=4.912309
+{"epoch": 16, "train_infonce_loss": 4.912174392654522, "validation_paired_cosine_loss": 0.8875562917934907, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.000251481095764778, "epoch_seconds": 11.928931713104248, "elapsed_seconds": 191.15296864509583}
+model=deepsets epoch=17 step=1 train_loss=4.877409
+model=deepsets epoch=17 step=250 train_loss=4.902399
+model=deepsets epoch=17 step=500 train_loss=4.904454
+model=deepsets epoch=17 step=750 train_loss=4.903509
+{"epoch": 17, "train_infonce_loss": 4.902544294088787, "validation_paired_cosine_loss": 0.8925728446630633, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00022821986956600413, "epoch_seconds": 11.93143892288208, "elapsed_seconds": 203.08581519126892}
+model=deepsets epoch=18 step=1 train_loss=4.950013
+model=deepsets epoch=18 step=250 train_loss=4.893650
+model=deepsets epoch=18 step=500 train_loss=4.892144
+model=deepsets epoch=18 step=750 train_loss=4.893887
+{"epoch": 18, "train_infonce_loss": 4.8925689060660735, "validation_paired_cosine_loss": 0.9098170191528713, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00020547117626563684, "epoch_seconds": 11.918121814727783, "elapsed_seconds": 215.00515699386597}
+model=deepsets epoch=19 step=1 train_loss=4.895561
+model=deepsets epoch=19 step=250 train_loss=4.883534
+model=deepsets epoch=19 step=500 train_loss=4.881911
+model=deepsets epoch=19 step=750 train_loss=4.883830
+{"epoch": 19, "train_infonce_loss": 4.883742541018373, "validation_paired_cosine_loss": 0.9028034173407355, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00018348425530794499, "epoch_seconds": 11.91976523399353, "elapsed_seconds": 226.92626190185547}
+model=deepsets epoch=20 step=1 train_loss=4.889138
+model=deepsets epoch=20 step=250 train_loss=4.876638
+model=deepsets epoch=20 step=500 train_loss=4.878607
+model=deepsets epoch=20 step=750 train_loss=4.877506
+{"epoch": 20, "train_infonce_loss": 4.877248347950648, "validation_paired_cosine_loss": 0.8971859462093396, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00016250000000000005, "epoch_seconds": 11.921063423156738, "elapsed_seconds": 238.84858989715576}
+model=deepsets epoch=21 step=1 train_loss=4.926775
+model=deepsets epoch=21 step=250 train_loss=4.867189
+model=deepsets epoch=21 step=500 train_loss=4.872310
+model=deepsets epoch=21 step=750 train_loss=4.871822
+{"epoch": 21, "train_infonce_loss": 4.870377731688556, "validation_paired_cosine_loss": 0.9080263389268489, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00014274831823419358, "epoch_seconds": 11.911915302276611, "elapsed_seconds": 250.76168036460876}
+model=deepsets epoch=22 step=1 train_loss=4.854026
+model=deepsets epoch=22 step=250 train_loss=4.863710
+model=deepsets epoch=22 step=500 train_loss=4.862797
+model=deepsets epoch=22 step=750 train_loss=4.864203
+{"epoch": 22, "train_infonce_loss": 4.86277685493686, "validation_paired_cosine_loss": 0.9143620301928423, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.000124445613569257, "epoch_seconds": 11.9328773021698, "elapsed_seconds": 262.69587302207947}
+model=deepsets epoch=23 step=1 train_loss=4.832358
+model=deepsets epoch=23 step=250 train_loss=4.860535
+model=deepsets epoch=23 step=500 train_loss=4.860409
+model=deepsets epoch=23 step=750 train_loss=4.858736
+{"epoch": 23, "train_infonce_loss": 4.857622033349521, "validation_paired_cosine_loss": 0.9067827372603776, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 0.00010779241426758638, "epoch_seconds": 11.921666622161865, "elapsed_seconds": 274.6188600063324}
+model=deepsets epoch=24 step=1 train_loss=4.796239
+model=deepsets epoch=24 step=250 train_loss=4.851804
+model=deepsets epoch=24 step=500 train_loss=4.853238
+model=deepsets epoch=24 step=750 train_loss=4.853408
+{"epoch": 24, "train_infonce_loss": 4.8540496041633, "validation_paired_cosine_loss": 0.9093987408004602, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 9.297117626563688e-05, "epoch_seconds": 11.924342632293701, "elapsed_seconds": 286.5445439815521}
+model=deepsets epoch=25 step=1 train_loss=4.916838
+model=deepsets epoch=25 step=250 train_loss=4.848545
+model=deepsets epoch=25 step=500 train_loss=4.849015
+model=deepsets epoch=25 step=750 train_loss=4.849311
+{"epoch": 25, "train_infonce_loss": 4.849011727764129, "validation_paired_cosine_loss": 0.8976687197942484, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 8.014428414850132e-05, "epoch_seconds": 11.910825729370117, "elapsed_seconds": 298.45669960975647}
+model=deepsets epoch=26 step=1 train_loss=4.852624
+model=deepsets epoch=26 step=250 train_loss=4.846285
+model=deepsets epoch=26 step=500 train_loss=4.844184
+model=deepsets epoch=26 step=750 train_loss=4.844992
+{"epoch": 26, "train_infonce_loss": 4.845350979294529, "validation_paired_cosine_loss": 0.9091171411839328, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 6.94522720304148e-05, "epoch_seconds": 11.908523797988892, "elapsed_seconds": 310.3665814399719}
+model=deepsets epoch=27 step=1 train_loss=4.816608
+model=deepsets epoch=27 step=250 train_loss=4.846339
+model=deepsets epoch=27 step=500 train_loss=4.843555
+model=deepsets epoch=27 step=750 train_loss=4.842259
+{"epoch": 27, "train_infonce_loss": 4.842489271513006, "validation_paired_cosine_loss": 0.8939316324695343, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 6.1012283833590465e-05, "epoch_seconds": 11.907420873641968, "elapsed_seconds": 322.2755026817322}
+model=deepsets epoch=28 step=1 train_loss=4.772156
+model=deepsets epoch=28 step=250 train_loss=4.839650
+model=deepsets epoch=28 step=500 train_loss=4.841966
+model=deepsets epoch=28 step=750 train_loss=4.838881
+{"epoch": 28, "train_infonce_loss": 4.839201843462836, "validation_paired_cosine_loss": 0.8921319043649099, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 5.4916789834893724e-05, "epoch_seconds": 11.926090240478516, "elapsed_seconds": 334.2030608654022}
+model=deepsets epoch=29 step=1 train_loss=4.824856
+model=deepsets epoch=29 step=250 train_loss=4.838937
+model=deepsets epoch=29 step=500 train_loss=4.837406
+model=deepsets epoch=29 step=750 train_loss=4.837375
+{"epoch": 29, "train_infonce_loss": 4.8370144247311355, "validation_paired_cosine_loss": 0.9008407445582546, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 5.1232573542138485e-05, "epoch_seconds": 11.933547735214233, "elapsed_seconds": 346.13805413246155}
+model=deepsets epoch=30 step=1 train_loss=4.836235
+model=deepsets epoch=30 step=250 train_loss=4.835568
+model=deepsets epoch=30 step=500 train_loss=4.832989
+model=deepsets epoch=30 step=750 train_loss=4.835105
+{"epoch": 30, "train_infonce_loss": 4.835238165036996, "validation_paired_cosine_loss": 0.9012583501937773, "best_validation_loss": 0.8616517356226554, "best_epoch": 12, "improved": 0, "learning_rate": 5e-05, "epoch_seconds": 11.921915292739868, "elapsed_seconds": 358.0613853931427}
+{
+  "status": "complete",
+  "method": "deepsets",
+  "seed": 0,
+  "best_epoch": 12,
+  "best_validation_loss": 0.8616517356226554,
+  "epochs_completed": 30,
+  "parameter_count": 198528,
+  "checkpoint": "/tmp/ultrams_public_probe/deepsets_reported_20260925/results/chemberta_readout_reported/deepsets/seed_0/best.pt",
+  "checkpoint_sha256": "66da25e528aca0dfc9537a154640e0947d9c41a8945f7095f87308b4b936ee69",
+  "history_sha256": "d0d228fe7b1eb7b2209072b5df9d1abdd03a835183a7b07f0e5ba100a76af461",
+  "runtime_seconds": 358.06407141685486,
+  "environment": {
+    "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]",
+    "platform": "Linux-5.14.0-570.62.1.el9_6.x86_64-x86_64-with-glibc2.35",
+    "numpy": "1.24.4",
+    "torch": "2.2.1+cu121",
+    "cuda": "12.1",
+    "device": "cuda:0",
+    "gpu": "NVIDIA A800-SXM4-80GB MIG 3g.40gb"
+  }
+}
