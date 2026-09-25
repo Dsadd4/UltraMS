@@ -17,10 +17,10 @@ python -m pip install ultrams
 | Reproduce the paper benchmarks | [Spectral properties and molecular identification](https://github.com/Dsadd4/UltraMS/blob/main/benchmarks/README.md) |
 
 <p align="center">
-  <img src="assets/ultrams_homepage_concept.png" alt="Concept illustration of MS/MS peaks becoming UltraMS representations and a chemical landscape" width="820">
+  <img src="assets/ultrams_homepage_traced.svg" alt="MS/MS peaks flowing through UltraMS representations into a chemical landscape" width="820">
 </p>
 
-<p align="center"><em>MS/MS spectra → UltraMS representations → UltraAtlas chemical space. Concept illustration.</em></p>
+<p align="center"><em>MS/MS spectra → UltraMS representations → UltraAtlas chemical space. Vector illustration.</em></p>
 
 ## Embed a spectrum
 
