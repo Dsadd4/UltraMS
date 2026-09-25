@@ -1,0 +1,160 @@
+
+======================================================================
+Dataset: msnlib
+======================================================================
+[msnlib] 560084 total (train=446667, val=55980, test=57437)
+
+  Task: mass
+  Loading candidates from <benchmark_workspace>/datasets/MSnLib/MSnLib_candidates.json...
+  9886 queries in candidate file
+  6227380 eval candidate SMILES + 38711 train GT SMILES = 6266091 unique total
+  Encoding molecules with ChemBERTa (cache: msnlib_mass_chemberta_full)...
+    Loading cached mol embeddings: <benchmark_workspace>/train/output/comparison/mol_emb_cache/msnlib_mass_chemberta_full.pt
+    Cache hit: 6266091, miss: 0
+
+  --- Model: dreams ---
+<python_environment>/lib/python3.11/site-packages/lightning_fabric/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+[DreaMS] Loaded full model: d_model=1024, n_layers=7, has_ff_out=True
+  Extracting spectrum embeddings...
+    DreaMS embed: 0/560084
+    DreaMS embed: 6400/560084
+    DreaMS embed: 12800/560084
+    DreaMS embed: 19200/560084
+    DreaMS embed: 25600/560084
+    DreaMS embed: 32000/560084
+    DreaMS embed: 38400/560084
+    DreaMS embed: 44800/560084
+    DreaMS embed: 51200/560084
+    DreaMS embed: 57600/560084
+    DreaMS embed: 64000/560084
+    DreaMS embed: 70400/560084
+    DreaMS embed: 76800/560084
+    DreaMS embed: 83200/560084
+    DreaMS embed: 89600/560084
+    DreaMS embed: 96000/560084
+    DreaMS embed: 102400/560084
+    DreaMS embed: 108800/560084
+    DreaMS embed: 115200/560084
+    DreaMS embed: 121600/560084
+    DreaMS embed: 128000/560084
+    DreaMS embed: 134400/560084
+    DreaMS embed: 140800/560084
+    DreaMS embed: 147200/560084
+    DreaMS embed: 153600/560084
+    DreaMS embed: 160000/560084
+    DreaMS embed: 166400/560084
+    DreaMS embed: 172800/560084
+    DreaMS embed: 179200/560084
+    DreaMS embed: 185600/560084
+    DreaMS embed: 192000/560084
+    DreaMS embed: 198400/560084
+    DreaMS embed: 204800/560084
+    DreaMS embed: 211200/560084
+    DreaMS embed: 217600/560084
+    DreaMS embed: 224000/560084
+    DreaMS embed: 230400/560084
+    DreaMS embed: 236800/560084
+    DreaMS embed: 243200/560084
+    DreaMS embed: 249600/560084
+    DreaMS embed: 256000/560084
+    DreaMS embed: 262400/560084
+    DreaMS embed: 268800/560084
+    DreaMS embed: 275200/560084
+    DreaMS embed: 281600/560084
+    DreaMS embed: 288000/560084
+    DreaMS embed: 294400/560084
+    DreaMS embed: 300800/560084
+    DreaMS embed: 307200/560084
+    DreaMS embed: 313600/560084
+    DreaMS embed: 320000/560084
+    DreaMS embed: 326400/560084
+    DreaMS embed: 332800/560084
+    DreaMS embed: 339200/560084
+    DreaMS embed: 345600/560084
+    DreaMS embed: 352000/560084
+    DreaMS embed: 358400/560084
+    DreaMS embed: 364800/560084
+    DreaMS embed: 371200/560084
+    DreaMS embed: 377600/560084
+    DreaMS embed: 384000/560084
+    DreaMS embed: 390400/560084
+    DreaMS embed: 396800/560084
+    DreaMS embed: 403200/560084
+    DreaMS embed: 409600/560084
+    DreaMS embed: 416000/560084
+    DreaMS embed: 422400/560084
+    DreaMS embed: 428800/560084
+    DreaMS embed: 435200/560084
+    DreaMS embed: 441600/560084
+    DreaMS embed: 448000/560084
+    DreaMS embed: 454400/560084
+    DreaMS embed: 460800/560084
+    DreaMS embed: 467200/560084
+    DreaMS embed: 473600/560084
+    DreaMS embed: 480000/560084
+    DreaMS embed: 486400/560084
+    DreaMS embed: 492800/560084
+    DreaMS embed: 499200/560084
+    DreaMS embed: 505600/560084
+    DreaMS embed: 512000/560084
+    DreaMS embed: 518400/560084
+    DreaMS embed: 524800/560084
+    DreaMS embed: 531200/560084
+    DreaMS embed: 537600/560084
+    DreaMS embed: 544000/560084
+    DreaMS embed: 550400/560084
+    DreaMS embed: 556800/560084
+  Embeddings: (560084, 1024)
+
+  [dreams] Training (T=0.050, seed=42)...
+    Training projection on 446667 pairs (1024→768, ResidualProj, T=0.050)
+      epoch 1: train=3.8517  val=5.6228  lr=4.99e-04  *best
+      epoch 5: train=2.4273  val=5.9987  lr=4.70e-04
+      epoch 10: train=2.0471  val=6.2048  lr=3.87e-04
+      epoch 15: train=1.8459  val=6.3479  lr=2.75e-04
+      epoch 20: train=1.7070  val=6.4333  lr=1.63e-04
+      epoch 25: train=1.6161  val=6.4752  lr=8.01e-05
+      epoch 30: train=1.5713  val=6.5007  lr=5.00e-05
+      → restored best epoch 1 (val_loss=5.6228)
+  [dreams] Projection saved to <benchmark_workspace>/train/output/comparison/proj_msnlib_mass_dreams_seed42.pt
+  [dreams] Evaluating val (mass):
+    n=55980, avg_cands=3062: Top1=29.82%  Top5=37.68%  Top10=41.69%  Top20=46.41%  MRR=0.3393
+      [0-10] n=768, top1=57.94%  mrr=0.7050
+      [10-50] n=3132, top1=52.33%  mrr=0.6043
+      [50-200] n=6148, top1=44.75%  mrr=0.5089
+      [200-1000] n=12480, top1=38.56%  mrr=0.4325
+      [1000-inf] n=33452, top1=21.07%  mrr=0.2402
+    Raw scores saved: <benchmark_workspace>/train/output/comparison/10_raw_scores_msnlib_mass_dreams_val.npz
+    Per-spectrum details saved: <benchmark_workspace>/train/output/comparison/10_per_spectrum_msnlib_mass_dreams_val.jsonl
+  [dreams] Evaluating test (mass):
+    n=57437, avg_cands=2804: Top1=30.52%  Top5=38.30%  Top10=42.37%  Top20=47.05%  MRR=0.3466
+      [0-10] n=784, top1=60.84%  mrr=0.7197
+      [10-50] n=2620, top1=55.34%  mrr=0.6303
+      [50-200] n=6847, top1=40.70%  mrr=0.4690
+      [200-1000] n=12890, top1=36.89%  mrr=0.4170
+      [1000-inf] n=34296, top1=23.51%  mrr=0.2655
+    Raw scores saved: <benchmark_workspace>/train/output/comparison/10_raw_scores_msnlib_mass_dreams_test.npz
+    Per-spectrum details saved: <benchmark_workspace>/train/output/comparison/10_per_spectrum_msnlib_mass_dreams_test.jsonl
+
+====================================================================================================
+CROSS-MODAL RETRIEVAL SUMMARY (ResidualProjection + Enhanced)
+====================================================================================================
+Task                      Model              T Split      Top1     Top5    Top10    Top20      MRR
+----------------------------------------------------------------------------------------------------
+msnlib_mass               dreams         0.050 val      29.82%   37.68%   41.69%   46.41%   0.3393
+msnlib_mass               dreams         0.050 test     30.52%   38.30%   42.37%   47.05%   0.3466
+
+
+====================================================================================================
+STRATIFIED ANALYSIS
+====================================================================================================
+
+  msnlib_mass / dreams (T=0.050):
+    [      0-10] n=  784  Top1= 60.84%  MRR=0.7197
+    [     10-50] n= 2620  Top1= 55.34%  MRR=0.6303
+    [    50-200] n= 6847  Top1= 40.70%  MRR=0.4690
+    [  200-1000] n=12890  Top1= 36.89%  MRR=0.4170
+    [  1000-inf] n=34296  Top1= 23.51%  MRR=0.2655
+
+Results saved to: <benchmark_workspace>/train/output/comparison/10_plot_results.json

@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_mass_linear_chemberta_test.jsonl": {
+      "sha256": "9db0a18e47630e8034b4ff36ab115de3bc58909300f70e7f8a1192a491084489"
+    },
+    "raw_scores_msnlib_mass_linear_chemberta_test.npz": {
+      "sha256": "81ae4e1fa86e912ddf1b01fc4ff4613abfee26b42a20737dca79e53215fe448f"
+    }
+  },
+  "candidate_count": {
+    "maximum": 31524,
+    "mean": 2803.9927398715113,
+    "median": 1553.0,
+    "minimum": 2
+  },
+  "display_name": "Linear",
+  "fold": "test",
+  "frozen_order_regression": {
+    "candidate_counts_sha256_i64le": "0590af48d96981c9c11df3f10cf3d20e09fd45d06952bb2270a45cbe67c0f05c",
+    "query_indices_sha256_i64le": "4cec8e332cb5cf5ba24ce6994795182fd5cdaceaef1c65c3dc674234db0413df",
+    "reference_test_jsonl_sha256": "82483a32de8349149df99cb2ea708b15cd5ecea443ab6f5d967217972d8ad64a"
+  },
+  "joint_runtime_seconds": 901.499804019928,
+  "median_rank": 103.0,
+  "method": "linear",
+  "mrr": 0.21911772605237811,
+  "n_queries": 57437,
+  "n_query_groups": 5003,
+  "n_rows_with_top_score_tie": 1,
+  "n_zero_spectrum_embeddings": 0,
+  "top1": 0.17915281090586208,
+  "top10": 0.291797969949684,
+  "top20": 0.3405470341417553,
+  "top5": 0.2503438550063548
+}

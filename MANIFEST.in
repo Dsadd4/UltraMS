@@ -1,0 +1,4 @@
+recursive-include docs *.md
+recursive-include examples *.py *.md *.mgf
+recursive-include cookbook/tutorials *.ipynb *.md *.py
+include CITATION.cff

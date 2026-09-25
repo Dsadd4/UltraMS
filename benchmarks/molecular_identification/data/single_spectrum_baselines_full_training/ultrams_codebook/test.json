@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_mass_ultrams_codebook_chemberta_test.jsonl": {
+      "sha256": "94d92b3a17056554dc49dc881c85c06a638039e99982be80519d72be8b53ea7f"
+    },
+    "raw_scores_msnlib_mass_ultrams_codebook_chemberta_test.npz": {
+      "sha256": "c678058a2c085801b420e9d81d45f2b3abaa8f4681ac0ff0da4754d18777199a"
+    }
+  },
+  "candidate_count": {
+    "maximum": 31524,
+    "mean": 2803.9927398715113,
+    "median": 1553.0,
+    "minimum": 2
+  },
+  "display_name": "UltraMS codebook",
+  "fold": "test",
+  "frozen_order_regression": {
+    "candidate_counts_sha256_i64le": "0590af48d96981c9c11df3f10cf3d20e09fd45d06952bb2270a45cbe67c0f05c",
+    "query_indices_sha256_i64le": "4cec8e332cb5cf5ba24ce6994795182fd5cdaceaef1c65c3dc674234db0413df",
+    "reference_test_jsonl_sha256": "82483a32de8349149df99cb2ea708b15cd5ecea443ab6f5d967217972d8ad64a"
+  },
+  "joint_runtime_seconds": 917.1435782909393,
+  "median_rank": 151.0,
+  "method": "ultrams_codebook",
+  "mrr": 0.19813368098583578,
+  "n_queries": 57437,
+  "n_query_groups": 5003,
+  "n_rows_with_top_score_tie": 4,
+  "n_zero_spectrum_embeddings": 0,
+  "top1": 0.15911346344690705,
+  "top10": 0.26881626825913607,
+  "top20": 0.31700820028901233,
+  "top5": 0.23211518707453382
+}

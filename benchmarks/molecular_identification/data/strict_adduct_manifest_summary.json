@@ -1,0 +1,22 @@
+{
+  "mode_labels": {
+    "neg": "[M-H]-",
+    "pos": "[M+H]+"
+  },
+  "modes": {
+    "pos": {
+      "test": {
+        "n_query": 6202,
+        "n_queries_with_library_positive": 6201,
+        "n_library": 295434
+      }
+    },
+    "neg": {
+      "test": {
+        "n_query": 3193,
+        "n_queries_with_library_positive": 3160,
+        "n_library": 137000
+      }
+    }
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "additional_adduct_library_search": {
+    "Codebook/neg": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.04878797817017381,
+      "n_queries": 2112
+    },
+    "Codebook/pos": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.01895530939648587,
+      "n_queries": 714
+    },
+    "DeepSets/neg": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.039888121761437134,
+      "n_queries": 2112
+    },
+    "DeepSets/pos": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.06032063362979601,
+      "n_queries": 714
+    },
+    "DreaMS/neg": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.32378875820427094,
+      "n_queries": 2112
+    },
+    "DreaMS/pos": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.1083319381672305,
+      "n_queries": 714
+    },
+    "Fourier/neg": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.060160607787514475,
+      "n_queries": 2112
+    },
+    "Fourier/pos": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.1425055246340786,
+      "n_queries": 714
+    },
+    "Linear/neg": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.05822683217222893,
+      "n_queries": 2112
+    },
+    "Linear/pos": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.12257797855984501,
+      "n_queries": 714
+    },
+    "UltraMS/neg": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.35712147841310937,
+      "n_queries": 2112
+    },
+    "UltraMS/pos": {
+      "mean_micro_recall_fdr_0_to_5pct": 0.17577333514054616,
+      "n_queries": 714
+    }
+  },
+  "collision_energy_search": {
+    "Codebook/neg/all_compounds": {
+      "n_molecules": 2999,
+      "recall_at_1": 0.03667889296432144
+    },
+    "Codebook/neg/carboxylic_acids": {
+      "n_molecules": 835,
+      "recall_at_1": 0.037125748502994015
+    },
+    "Codebook/neg/halogenated_compounds": {
+      "n_molecules": 962,
+      "recall_at_1": 0.032224532224532226
+    },
+    "Codebook/neg/multi_ring_aromatics": {
+      "n_molecules": 1066,
+      "recall_at_1": 0.04409005628517824
+    },
+    "Codebook/neg/stereochemically_complex": {
+      "n_molecules": 267,
+      "recall_at_1": 0.10861423220973783
+    },
+    "Codebook/pos/all_compounds": {
+      "n_molecules": 6161,
+      "recall_at_1": 0.014932640805064113
+    },
+    "Codebook/pos/carboxylic_acids": {
+      "n_molecules": 818,
+      "recall_at_1": 0.012224938875305624
+    },
+    "Codebook/pos/halogenated_compounds": {
+      "n_molecules": 1835,
+      "recall_at_1": 0.017983651226158037
+    },
+    "Codebook/pos/multi_ring_aromatics": {
+      "n_molecules": 2203,
+      "recall_at_1": 0.016795279164775308
+    },
+    "Codebook/pos/stereochemically_complex": {
+      "n_molecules": 351,
+      "recall_at_1": 0.03133903133903134
+    },
+    "DeepSets/neg/all_compounds": {
+      "n_molecules": 2999,
+      "recall_at_1": 0.008002667555851951
+    },
+    "DeepSets/neg/carboxylic_acids": {
+      "n_molecules": 835,
+      "recall_at_1": 0.008383233532934131
+    },
+    "DeepSets/neg/halogenated_compounds": {
+      "n_molecules": 962,
+      "recall_at_1": 0.006237006237006237
+    },
+    "DeepSets/neg/multi_ring_aromatics": {
+      "n_molecules": 1066,
+      "recall_at_1": 0.008442776735459663
+    },
+    "DeepSets/neg/stereochemically_complex": {
+      "n_molecules": 267,
+      "recall_at_1": 0.04119850187265917
+    },
+    "DeepSets/pos/all_compounds": {
+      "n_molecules": 6161,
+      "recall_at_1": 0.008602499594221717
+    },
+    "DeepSets/pos/carboxylic_acids": {
+      "n_molecules": 818,
+      "recall_at_1": 0.004889975550122249
+    },
+    "DeepSets/pos/halogenated_compounds": {
+      "n_molecules": 1835,
+      "recall_at_1": 0.007629427792915531
+    },
+    "DeepSets/pos/multi_ring_aromatics": {
+      "n_molecules": 2203,
+      "recall_at_1": 0.013617793917385384
+    },
+    "DeepSets/pos/stereochemically_complex": {
+      "n_molecules": 351,
+      "recall_at_1": 0.03133903133903134
+    },
+    "DreaMS/neg/all_compounds": {
+      "n_molecules": 2999,
+      "recall_at_1": 0.8629543181060353
+    },
+    "DreaMS/neg/carboxylic_acids": {
+      "n_molecules": 835,
+      "recall_at_1": 0.8107784431137725
+    },
+    "DreaMS/neg/halogenated_compounds": {
+      "n_molecules": 962,
+      "recall_at_1": 0.8918918918918919
+    },
+    "DreaMS/neg/multi_ring_aromatics": {
+      "n_molecules": 1066,
+      "recall_at_1": 0.8902439024390244
+    },
+    "DreaMS/neg/stereochemically_complex": {
+      "n_molecules": 267,
+      "recall_at_1": 0.8426966292134831
+    },
+    "DreaMS/pos/all_compounds": {
+      "n_molecules": 6161,
+      "recall_at_1": 0.8855705242655413
+    },
+    "DreaMS/pos/carboxylic_acids": {
+      "n_molecules": 818,
+      "recall_at_1": 0.8471882640586798
+    },
+    "DreaMS/pos/halogenated_compounds": {
+      "n_molecules": 1835,
+      "recall_at_1": 0.8991825613079019
+    },
+    "DreaMS/pos/multi_ring_aromatics": {
+      "n_molecules": 2203,
+      "recall_at_1": 0.9005901044030867
+    },
+    "DreaMS/pos/stereochemically_complex": {
+      "n_molecules": 351,
+      "recall_at_1": 0.8746438746438746
+    },
+    "Fourier/neg/all_compounds": {
+      "n_molecules": 2999,
+      "recall_at_1": 0.19073024341447148
+    },
+    "Fourier/neg/carboxylic_acids": {
+      "n_molecules": 835,
+      "recall_at_1": 0.17365269461077845
+    },
+    "Fourier/neg/halogenated_compounds": {
+      "n_molecules": 962,
+      "recall_at_1": 0.19854469854469856
+    },
+    "Fourier/neg/multi_ring_aromatics": {
+      "n_molecules": 1066,
+      "recall_at_1": 0.20825515947467166
+    },
+    "Fourier/neg/stereochemically_complex": {
+      "n_molecules": 267,
+      "recall_at_1": 0.3146067415730337
+    },
+    "Fourier/pos/all_compounds": {
+      "n_molecules": 6161,
+      "recall_at_1": 0.14186008764810906
+    },
+    "Fourier/pos/carboxylic_acids": {
+      "n_molecules": 818,
+      "recall_at_1": 0.1234718826405868
+    },
+    "Fourier/pos/halogenated_compounds": {
+      "n_molecules": 1835,
+      "recall_at_1": 0.16294277929155312
+    },
+    "Fourier/pos/multi_ring_aromatics": {
+      "n_molecules": 2203,
+      "recall_at_1": 0.15433499773036768
+    },
+    "Fourier/pos/stereochemically_complex": {
+      "n_molecules": 351,
+      "recall_at_1": 0.17663817663817663
+    },
+    "Linear/neg/all_compounds": {
+      "n_molecules": 2999,
+      "recall_at_1": 0.24708236078692897
+    },
+    "Linear/neg/carboxylic_acids": {
+      "n_molecules": 835,
+      "recall_at_1": 0.2275449101796407
+    },
+    "Linear/neg/halogenated_compounds": {
+      "n_molecules": 962,
+      "recall_at_1": 0.24220374220374222
+    },
+    "Linear/neg/multi_ring_aromatics": {
+      "n_molecules": 1066,
+      "recall_at_1": 0.24108818011257035
+    },
+    "Linear/neg/stereochemically_complex": {
+      "n_molecules": 267,
+      "recall_at_1": 0.33707865168539325
+    },
+    "Linear/pos/all_compounds": {
+      "n_molecules": 6161,
+      "recall_at_1": 0.2290212627820159
+    },
+    "Linear/pos/carboxylic_acids": {
+      "n_molecules": 818,
+      "recall_at_1": 0.2591687041564792
+    },
+    "Linear/pos/halogenated_compounds": {
+      "n_molecules": 1835,
+      "recall_at_1": 0.21689373297002726
+    },
+    "Linear/pos/multi_ring_aromatics": {
+      "n_molecules": 2203,
+      "recall_at_1": 0.21425329096686338
+    },
+    "Linear/pos/stereochemically_complex": {
+      "n_molecules": 351,
+      "recall_at_1": 0.2706552706552707
+    },
+    "UltraMS/neg/all_compounds": {
+      "n_molecules": 2999,
+      "recall_at_1": 0.9239746582194065
+    },
+    "UltraMS/neg/carboxylic_acids": {
+      "n_molecules": 835,
+      "recall_at_1": 0.9029940119760479
+    },
+    "UltraMS/neg/halogenated_compounds": {
+      "n_molecules": 962,
+      "recall_at_1": 0.9345114345114345
+    },
+    "UltraMS/neg/multi_ring_aromatics": {
+      "n_molecules": 1066,
+      "recall_at_1": 0.9333958724202627
+    },
+    "UltraMS/neg/stereochemically_complex": {
+      "n_molecules": 267,
+      "recall_at_1": 0.898876404494382
+    },
+    "UltraMS/pos/all_compounds": {
+      "n_molecules": 6161,
+      "recall_at_1": 0.9465995779905859
+    },
+    "UltraMS/pos/carboxylic_acids": {
+      "n_molecules": 818,
+      "recall_at_1": 0.9168704156479217
+    },
+    "UltraMS/pos/halogenated_compounds": {
+      "n_molecules": 1835,
+      "recall_at_1": 0.9602179836512261
+    },
+    "UltraMS/pos/multi_ring_aromatics": {
+      "n_molecules": 2203,
+      "recall_at_1": 0.9500680889695869
+    },
+    "UltraMS/pos/stereochemically_complex": {
+      "n_molecules": 351,
+      "recall_at_1": 0.9430199430199431
+    }
+  },
+  "label_blind_voting": {
+    "DeepSets": {
+      "gain_percentage_points": -0.2285385058575,
+      "mixed_molecule_groups": {
+        "gain_percentage_points": -3.0527289546716005,
+        "n_spectra": 2162
+      },
+      "n_groups": 15541,
+      "n_spectra": 52070,
+      "same_molecule_groups": {
+        "gain_percentage_points": -0.10619539953514466,
+        "n_spectra": 49908
+      },
+      "single_top1": 0.055847897061647785,
+      "voting_top1": 0.053562512003072785
+    },
+    "DreaMS": {
+      "gain_percentage_points": 1.5171884002304599,
+      "group_bootstrap_ci_percentage_points": [
+        1.1648441951429829,
+        1.8727399293523996
+      ],
+      "mixed_molecule_groups": {
+        "gain_percentage_points": -12.99722479185939,
+        "n_spectra": 2162
+      },
+      "n_groups": 15541,
+      "n_spectra": 52070,
+      "same_molecule_groups": {
+        "gain_percentage_points": 2.145948545323395,
+        "n_spectra": 49908
+      },
+      "single_top1": 0.20510850777799117,
+      "voting_top1": 0.22028039178029576
+    },
+    "Fourier projection": {
+      "gain_percentage_points": 0.07105819089686938,
+      "mixed_molecule_groups": {
+        "gain_percentage_points": -9.528214616096207,
+        "n_spectra": 2162
+      },
+      "n_groups": 15541,
+      "n_spectra": 52070,
+      "same_molecule_groups": {
+        "gain_percentage_points": 0.48689588843471987,
+        "n_spectra": 49908
+      },
+      "single_top1": 0.149875168043019,
+      "voting_top1": 0.1505857499519877
+    },
+    "Linear": {
+      "gain_percentage_points": 0.13059343191857142,
+      "mixed_molecule_groups": {
+        "gain_percentage_points": -9.990749306197964,
+        "n_spectra": 2162
+      },
+      "n_groups": 15541,
+      "n_spectra": 52070,
+      "same_molecule_groups": {
+        "gain_percentage_points": 0.5690470465656808,
+        "n_spectra": 49908
+      },
+      "single_top1": 0.18056462454388322,
+      "voting_top1": 0.18187055886306894
+    },
+    "UltraMS": {
+      "gain_percentage_points": 1.8820818129441141,
+      "group_bootstrap_ci_percentage_points": [
+        1.5105670805441773,
+        2.2477549040078983
+      ],
+      "mixed_molecule_groups": {
+        "gain_percentage_points": -14.384828862164662,
+        "n_spectra": 2162
+      },
+      "n_groups": 15541,
+      "n_spectra": 52070,
+      "same_molecule_groups": {
+        "gain_percentage_points": 2.5867596377334294,
+        "n_spectra": 49908
+      },
+      "single_top1": 0.2736316497023238,
+      "voting_top1": 0.29245246783176493
+    },
+    "UltraMS codebook": {
+      "gain_percentage_points": -0.347608987900902,
+      "mixed_molecule_groups": {
+        "gain_percentage_points": -7.9093432007400555,
+        "n_spectra": 2162
+      },
+      "n_groups": 15541,
+      "n_spectra": 52070,
+      "same_molecule_groups": {
+        "gain_percentage_points": -0.02003686783681975,
+        "n_spectra": 49908
+      },
+      "single_top1": 0.15655847897061648,
+      "voting_top1": 0.15308238909160746
+    }
+  },
+  "multiple_spectrum_voting": {
+    "DeepSets": {
+      "n_molecules": 5002,
+      "top1": 0.05797680927628948,
+      "top20": 0.2107157137145142,
+      "top5": 0.1287485005997601
+    },
+    "DreaMS": {
+      "n_molecules": 5002,
+      "top1": 0.3348660535785686,
+      "top20": 0.5773690523790483,
+      "top5": 0.4936025589764094
+    },
+    "Fourier projection": {
+      "n_molecules": 5002,
+      "top1": 0.194922031187525,
+      "top20": 0.4066373450619752,
+      "top5": 0.32526989204318274
+    },
+    "Linear": {
+      "n_molecules": 5002,
+      "top1": 0.24350259896041584,
+      "top20": 0.48660535785685727,
+      "top5": 0.404438224710116
+    },
+    "UltraMS": {
+      "n_molecules": 5002,
+      "top1": 0.4256297481007597,
+      "top20": 0.6487405037984806,
+      "top5": 0.5757696921231508
+    },
+    "UltraMS codebook": {
+      "n_molecules": 5002,
+      "top1": 0.17832866853258697,
+      "top20": 0.38564574170331867,
+      "top5": 0.31067572970811674
+    }
+  },
+  "same_adduct_library_search": {
+    "Codebook/neg": {
+      "mean_recall_fdr_0_to_5pct": 0.08243006831597142,
+      "n_eligible_queries": 3160,
+      "n_test_queries": 3193,
+      "recall_at_fdr_5pct": 0.21518987341772153,
+      "unthresholded_fdr": 0.5671782023175697,
+      "unthresholded_recall": 0.43734177215189873
+    },
+    "Codebook/pos": {
+      "mean_recall_fdr_0_to_5pct": 0.1958709593848443,
+      "n_eligible_queries": 6201,
+      "n_test_queries": 6202,
+      "recall_at_fdr_5pct": 0.29753265602322204,
+      "unthresholded_fdr": 0.5277329893582715,
+      "unthresholded_recall": 0.472343170456378
+    },
+    "DeepSets/neg": {
+      "mean_recall_fdr_0_to_5pct": 0.07483814055164222,
+      "n_eligible_queries": 3160,
+      "n_test_queries": 3193,
+      "recall_at_fdr_5pct": 0.15126582278481013,
+      "unthresholded_fdr": 0.7651111807077983,
+      "unthresholded_recall": 0.23734177215189872
+    },
+    "DeepSets/pos": {
+      "mean_recall_fdr_0_to_5pct": 0.10960167927763383,
+      "n_eligible_queries": 6201,
+      "n_test_queries": 6202,
+      "recall_at_fdr_5pct": 0.13707466537655216,
+      "unthresholded_fdr": 0.7597549177684618,
+      "unthresholded_recall": 0.24028382518948557
+    },
+    "DreaMS/neg": {
+      "mean_recall_fdr_0_to_5pct": 0.30551653449297417,
+      "n_eligible_queries": 3160,
+      "n_test_queries": 3193,
+      "recall_at_fdr_5pct": 0.8037974683544303,
+      "unthresholded_fdr": 0.07234575634199812,
+      "unthresholded_recall": 0.9373417721518987
+    },
+    "DreaMS/pos": {
+      "mean_recall_fdr_0_to_5pct": 0.5203061801954735,
+      "n_eligible_queries": 6201,
+      "n_test_queries": 6202,
+      "recall_at_fdr_5pct": 0.9543621996452185,
+      "unthresholded_fdr": 0.04579168010319252,
+      "unthresholded_recall": 0.9543621996452185
+    },
+    "Fourier/neg": {
+      "mean_recall_fdr_0_to_5pct": 0.13541608773993444,
+      "n_eligible_queries": 3160,
+      "n_test_queries": 3193,
+      "recall_at_fdr_5pct": 0.30253164556962026,
+      "unthresholded_fdr": 0.24710303789539617,
+      "unthresholded_recall": 0.760759493670886
+    },
+    "Fourier/pos": {
+      "mean_recall_fdr_0_to_5pct": 0.29827218346618006,
+      "n_eligible_queries": 6201,
+      "n_test_queries": 6202,
+      "recall_at_fdr_5pct": 0.38800193517174647,
+      "unthresholded_fdr": 0.20702999032570138,
+      "unthresholded_recall": 0.7930978874375101
+    },
+    "Linear/neg": {
+      "mean_recall_fdr_0_to_5pct": 0.11156234710255523,
+      "n_eligible_queries": 3160,
+      "n_test_queries": 3193,
+      "recall_at_fdr_5pct": 0.2610759493670886,
+      "unthresholded_fdr": 0.27622925148762917,
+      "unthresholded_recall": 0.7313291139240506
+    },
+    "Linear/pos": {
+      "mean_recall_fdr_0_to_5pct": 0.25604856749765026,
+      "n_eligible_queries": 6201,
+      "n_test_queries": 6202,
+      "recall_at_fdr_5pct": 0.35591033704241254,
+      "unthresholded_fdr": 0.22379877458884231,
+      "unthresholded_recall": 0.7763263989679084
+    },
+    "UltraMS/neg": {
+      "mean_recall_fdr_0_to_5pct": 0.3808598524501199,
+      "n_eligible_queries": 3160,
+      "n_test_queries": 3193,
+      "recall_at_fdr_5pct": 0.9566455696202532,
+      "unthresholded_fdr": 0.05292828061384278,
+      "unthresholded_recall": 0.9569620253164557
+    },
+    "UltraMS/pos": {
+      "mean_recall_fdr_0_to_5pct": 0.6705679134616311,
+      "n_eligible_queries": 6201,
+      "n_test_queries": 6202,
+      "recall_at_fdr_5pct": 0.9712949524270279,
+      "unthresholded_fdr": 0.028861657529829086,
+      "unthresholded_recall": 0.9712949524270279
+    }
+  },
+  "single_spectrum": {
+    "DeepSets": {
+      "n_spectra": 57437,
+      "top1": 0.056862301304037466,
+      "top100": 0.3926737120671344,
+      "top20": 0.2025175409579191,
+      "top5": 0.10898897922941658
+    },
+    "DreaMS": {
+      "n_spectra": 57437,
+      "top1": 0.2025349513379877,
+      "top100": 0.4889531138464753,
+      "top20": 0.35351776729286,
+      "top5": 0.27050507512579
+    },
+    "Fourier projection": {
+      "n_spectra": 57437,
+      "top1": 0.14992078277068788,
+      "top100": 0.45266988178351936,
+      "top20": 0.30283615091317445,
+      "top5": 0.21813465187945053
+    },
+    "Linear": {
+      "n_spectra": 57437,
+      "top1": 0.17915281090586208,
+      "top100": 0.4972752755192646,
+      "top20": 0.3405470341417553,
+      "top5": 0.2503438550063548
+    },
+    "UltraMS": {
+      "n_spectra": 57437,
+      "top1": 0.2715496979299058,
+      "top100": 0.5692323763427756,
+      "top20": 0.43538137437540264,
+      "top5": 0.3479986768111148
+    },
+    "UltraMS codebook": {
+      "n_spectra": 57437,
+      "top1": 0.15911346344690705,
+      "top100": 0.4570398871807372,
+      "top20": 0.31700820028901233,
+      "top5": 0.23211518707453382
+    }
+  },
+  "supplementary_molecule_identification": {
+    "MassSpecGym formula/DreaMS": {
+      "n_queries": 16440,
+      "top1": 0.11411192214111923,
+      "top20": 0.43400243309002434,
+      "top5": 0.23953771289537712
+    },
+    "MassSpecGym formula/UltraMS": {
+      "n_queries": 16440,
+      "top1": 0.1407542579075426,
+      "top20": 0.5168491484184915,
+      "top5": 0.2903284671532847
+    },
+    "MassSpecGym mass/DreaMS": {
+      "n_queries": 16440,
+      "top1": 0.13242092457420926,
+      "top20": 0.45675182481751825,
+      "top5": 0.26271289537712894
+    },
+    "MassSpecGym mass/UltraMS": {
+      "n_queries": 16440,
+      "top1": 0.17092457420924576,
+      "top20": 0.5489051094890511,
+      "top5": 0.33345498783454985
+    },
+    "NPLIB1/DreaMS": {
+      "n_queries": 3699,
+      "top1": 0.27926466612598,
+      "top20": 0.7910246012435793,
+      "top5": 0.5463638821303055
+    },
+    "NPLIB1/UltraMS": {
+      "n_queries": 3699,
+      "top1": 0.3298188699648554,
+      "top20": 0.805352798053528,
+      "top5": 0.5790754257907542
+    }
+  }
+}

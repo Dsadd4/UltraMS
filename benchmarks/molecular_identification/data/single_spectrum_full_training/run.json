@@ -1,0 +1,48 @@
+{
+  "source": "original/evaluate_molecule_identification.py",
+  "source_sha256": "0ae860856425f0392ff50abcab7b05ab912f5a013f48325ec3da3b150f968217",
+  "model": "rt_only_d11",
+  "data": "MSnLib mass retrieval",
+  "n_spectra": 560084,
+  "train_pairs": 446667,
+  "n_validation": 55980,
+  "n_test": 57437,
+  "projection_epochs": 50,
+  "early_stop": false,
+  "load_saved_projection": false,
+  "seed": 42,
+  "temperature": 0.05,
+  "projection_dim": [
+    1024,
+    768
+  ],
+  "projection_sha256": "925ff398642d1ac72c6f59ffa25fe9cea5c1b2f6253440d1ba87099534ed6119",
+  "projection_bytes": 10504568,
+  "train_trace": [
+    "epoch 1: loss=4.1928  lr=5.00e-04",
+    "epoch 5: loss=3.4015  lr=4.89e-04",
+    "epoch 10: loss=3.1410  lr=4.57e-04",
+    "epoch 15: loss=2.9811  lr=4.07e-04",
+    "epoch 20: loss=2.8655  lr=3.45e-04",
+    "epoch 25: loss=2.7692  lr=2.75e-04",
+    "epoch 30: loss=2.6884  lr=2.05e-04",
+    "epoch 35: loss=2.6208  lr=1.43e-04",
+    "epoch 40: loss=2.5689  lr=9.30e-05",
+    "epoch 45: loss=2.5326  lr=6.10e-05",
+    "epoch 50: loss=2.5140  lr=5.00e-05"
+  ],
+  "test_hits": {
+    "top1": 15373,
+    "top5": 19763,
+    "top20": 24783
+  },
+  "environment": {
+    "python": "3.11.0",
+    "torch": "2.2.1",
+    "transformers": "4.40.0",
+    "numpy": "1.24.4",
+    "pandas": "2.2.1",
+    "rdkit": "2023.9.5",
+    "scikit-learn": "1.5.0"
+  }
+}

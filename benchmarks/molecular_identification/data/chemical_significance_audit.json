@@ -1,0 +1,103 @@
+{
+  "case": {
+    "target_name": "8-methoxyquercetin 7-O-beta-D-glucopyranoside",
+    "target_pubchem_cid": 75528773,
+    "target_inchikey": "XTWQFJODFQFTIT-UAEGTEGVSA-N",
+    "fixed_decoy_name": "Pleurostimin 7-glucoside",
+    "fixed_decoy_pubchem_cid": 163016934,
+    "formula": "C22H22O13",
+    "precursor_mz": 493.09877,
+    "n_measured_peaks": 54,
+    "n_benchmark_entries": 62,
+    "n_connectivity_candidates": 60
+  },
+  "descriptor_tie": {
+    "properties": [
+      "tpsa_a2",
+      "clogp",
+      "phenolic_oh_groups",
+      "carbonyl_groups",
+      "rotatable_bonds",
+      "fraction_csp3"
+    ],
+    "n_candidates_matching_target_on_all_six_including_target": 29,
+    "n_non_target_candidates_matching_target_on_all_six": 28,
+    "fixed_decoy_matches_target_on_all_six": true
+  },
+  "models": {
+    "ultrams": {
+      "target_rank_all_60": 1,
+      "target_rank_among_descriptor_matched": 1,
+      "target_score": 0.4872663617134094,
+      "target_z_above_non_target_mean": 3.7478321638547185,
+      "target_lead_over_best_non_target": 0.08772653341293335,
+      "target_margin_over_fixed_decoy": 0.1167241632938385,
+      "score_vs_morgan_spearman_rho": 0.267363339010661,
+      "score_vs_morgan_spearman_p": 0.03890573413578513,
+      "top20_non_target": {
+        "n_non_target": 19,
+        "morgan_tanimoto_mean": 0.5016665733620386,
+        "morgan_tanimoto_median": 0.5405405405405406,
+        "morgan_tanimoto_rank_weighted_mean": 0.4155951722481217,
+        "morgan_tanimoto_ge_0_7": 3,
+        "all_six_properties_equal_target": 11,
+        "mean_absolute_property_difference": {
+          "tpsa_a2": 5.786315789473714,
+          "clogp": 0.26351473684210536,
+          "phenolic_oh_groups": 0.5789473684210527,
+          "carbonyl_groups": 0.5263157894736842,
+          "rotatable_bonds": 0.5263157894736842,
+          "fraction_csp3": 0.01913875598086125
+        }
+      }
+    },
+    "dreams": {
+      "target_rank_all_60": 14,
+      "target_rank_among_descriptor_matched": 8,
+      "target_score": 0.4500920176506042,
+      "target_z_above_non_target_mean": 0.4549623468393173,
+      "target_lead_over_best_non_target": -0.03842586278915411,
+      "target_margin_over_fixed_decoy": -0.03842586278915411,
+      "score_vs_morgan_spearman_rho": 0.4412050942613558,
+      "score_vs_morgan_spearman_p": 0.00041781793310141624,
+      "top20_non_target": {
+        "n_non_target": 19,
+        "morgan_tanimoto_mean": 0.5392057335091979,
+        "morgan_tanimoto_median": 0.5753424657534246,
+        "morgan_tanimoto_rank_weighted_mean": 0.5579198281600484,
+        "morgan_tanimoto_ge_0_7": 4,
+        "all_six_properties_equal_target": 11,
+        "mean_absolute_property_difference": {
+          "tpsa_a2": 6.2447368421052944,
+          "clogp": 0.38154631578947434,
+          "phenolic_oh_groups": 0.8421052631578947,
+          "carbonyl_groups": 0.3684210526315789,
+          "rotatable_bonds": 0.47368421052631576,
+          "fraction_csp3": 0.021531100478468908
+        }
+      }
+    }
+  },
+  "top20_non_target_overlap": {
+    "intersection": 11,
+    "union": 27,
+    "jaccard": 0.4074074074074074
+  },
+  "fixed_decoy": {
+    "ultrams_rank": 5,
+    "dreams_rank": 1,
+    "morgan_tanimoto_to_target": 0.6285714285714286
+  },
+  "magma": {
+    "true_assigned_peaks": 42,
+    "true_assignment_rate": 0.7777777777777778,
+    "fixed_decoy_assigned_peaks": 48,
+    "fixed_decoy_assignment_rate": 0.8888888888888888,
+    "peaks_assigned_for_both": 42,
+    "shared_fragment_formula": 30,
+    "shared_fragment_formula_and_smiles": 2,
+    "same_formula_different_candidate_connectivity": 28,
+    "interpretation": "MAGMa assignments are candidate interpretations, not confirmed pathways or model attribution."
+  },
+  "claim_boundary": "The audit supports connectivity-level discrimination within a same-formula, descriptor-matched set. It does not support a claim that UltraMS retrieves globally more similar non-targets or that the four displayed peaks caused the ranking."
+}

@@ -1,0 +1,172 @@
+model=fourier_projection epoch=1 step=1 train_loss=6.341680
+model=fourier_projection epoch=1 step=250 train_loss=5.849273
+model=fourier_projection epoch=1 step=500 train_loss=5.740336
+model=fourier_projection epoch=1 step=750 train_loss=5.679842
+{"epoch": 1, "train_infonce_loss": 5.65710030362634, "validation_paired_cosine_loss": 0.8974290592238579, "best_validation_loss": 0.8974290592238579, "best_epoch": 1, "improved": 1, "learning_rate": 0.0004987674264578614, "epoch_seconds": 2.1665287017822266, "elapsed_seconds": 2.1665308475494385}
+model=fourier_projection epoch=2 step=1 train_loss=5.547201
+model=fourier_projection epoch=2 step=250 train_loss=5.487980
+model=fourier_projection epoch=2 step=500 train_loss=5.477414
+model=fourier_projection epoch=2 step=750 train_loss=5.469680
+{"epoch": 2, "train_infonce_loss": 5.464931223577369, "validation_paired_cosine_loss": 0.8941604336230573, "best_validation_loss": 0.8941604336230573, "best_epoch": 2, "improved": 1, "learning_rate": 0.0004950832101651061, "epoch_seconds": 1.9272708892822266, "elapsed_seconds": 4.094458341598511}
+model=fourier_projection epoch=3 step=1 train_loss=5.430619
+model=fourier_projection epoch=3 step=250 train_loss=5.427672
+model=fourier_projection epoch=3 step=500 train_loss=5.421981
+model=fourier_projection epoch=3 step=750 train_loss=5.420201
+{"epoch": 3, "train_infonce_loss": 5.419096706956359, "validation_paired_cosine_loss": 0.8892087423277566, "best_validation_loss": 0.8892087423277566, "best_epoch": 3, "improved": 1, "learning_rate": 0.0004889877161664095, "epoch_seconds": 1.9364869594573975, "elapsed_seconds": 6.031609535217285}
+model=fourier_projection epoch=4 step=1 train_loss=5.436181
+model=fourier_projection epoch=4 step=250 train_loss=5.406156
+model=fourier_projection epoch=4 step=500 train_loss=5.402123
+model=fourier_projection epoch=4 step=750 train_loss=5.401288
+{"epoch": 4, "train_infonce_loss": 5.3996520574249045, "validation_paired_cosine_loss": 0.8865772254128846, "best_validation_loss": 0.8865772254128846, "best_epoch": 4, "improved": 1, "learning_rate": 0.00048054772796958506, "epoch_seconds": 1.9357893466949463, "elapsed_seconds": 7.9682698249816895}
+model=fourier_projection epoch=5 step=1 train_loss=5.402963
+model=fourier_projection epoch=5 step=250 train_loss=5.388964
+model=fourier_projection epoch=5 step=500 train_loss=5.389609
+model=fourier_projection epoch=5 step=750 train_loss=5.389339
+{"epoch": 5, "train_infonce_loss": 5.389095669097061, "validation_paired_cosine_loss": 0.8866527932164668, "best_validation_loss": 0.8865772254128846, "best_epoch": 4, "improved": 0, "learning_rate": 0.00046985571585149866, "epoch_seconds": 1.9394853115081787, "elapsed_seconds": 9.908496141433716}
+model=fourier_projection epoch=6 step=1 train_loss=5.333979
+model=fourier_projection epoch=6 step=250 train_loss=5.382383
+model=fourier_projection epoch=6 step=500 train_loss=5.380856
+model=fourier_projection epoch=6 step=750 train_loss=5.382043
+{"epoch": 6, "train_infonce_loss": 5.382212337855307, "validation_paired_cosine_loss": 0.8855915512515631, "best_validation_loss": 0.8855915512515631, "best_epoch": 6, "improved": 1, "learning_rate": 0.0004570288237343631, "epoch_seconds": 1.972531795501709, "elapsed_seconds": 11.881916284561157}
+model=fourier_projection epoch=7 step=1 train_loss=5.362272
+model=fourier_projection epoch=7 step=250 train_loss=5.376030
+model=fourier_projection epoch=7 step=500 train_loss=5.375926
+model=fourier_projection epoch=7 step=750 train_loss=5.377418
+{"epoch": 7, "train_infonce_loss": 5.377520328166765, "validation_paired_cosine_loss": 0.8828891308489081, "best_validation_loss": 0.8828891308489081, "best_epoch": 7, "improved": 1, "learning_rate": 0.0004422075857324136, "epoch_seconds": 1.9668540954589844, "elapsed_seconds": 13.849523305892944}
+model=fourier_projection epoch=8 step=1 train_loss=5.423752
+model=fourier_projection epoch=8 step=250 train_loss=5.372216
+model=fourier_projection epoch=8 step=500 train_loss=5.374213
+model=fourier_projection epoch=8 step=750 train_loss=5.373059
+{"epoch": 8, "train_infonce_loss": 5.373289796381764, "validation_paired_cosine_loss": 0.8834529373806772, "best_validation_loss": 0.8828891308489081, "best_epoch": 7, "improved": 0, "learning_rate": 0.000425554386430743, "epoch_seconds": 1.959925889968872, "elapsed_seconds": 15.810352325439453}
+model=fourier_projection epoch=9 step=1 train_loss=5.426380
+model=fourier_projection epoch=9 step=250 train_loss=5.369699
+model=fourier_projection epoch=9 step=500 train_loss=5.369520
+model=fourier_projection epoch=9 step=750 train_loss=5.369694
+{"epoch": 9, "train_infonce_loss": 5.369747081659505, "validation_paired_cosine_loss": 0.8846226285039719, "best_validation_loss": 0.8828891308489081, "best_epoch": 7, "improved": 0, "learning_rate": 0.0004072516817658064, "epoch_seconds": 1.9640634059906006, "elapsed_seconds": 17.775588512420654}
+model=fourier_projection epoch=10 step=1 train_loss=5.406147
+model=fourier_projection epoch=10 step=250 train_loss=5.360316
+model=fourier_projection epoch=10 step=500 train_loss=5.365760
+model=fourier_projection epoch=10 step=750 train_loss=5.367491
+{"epoch": 10, "train_infonce_loss": 5.366723132826268, "validation_paired_cosine_loss": 0.8811722057978993, "best_validation_loss": 0.8811722057978993, "best_epoch": 10, "improved": 1, "learning_rate": 0.00038749999999999993, "epoch_seconds": 1.930692434310913, "elapsed_seconds": 19.70752501487732}
+model=fourier_projection epoch=11 step=1 train_loss=5.375001
+model=fourier_projection epoch=11 step=250 train_loss=5.359398
+model=fourier_projection epoch=11 step=500 train_loss=5.362798
+model=fourier_projection epoch=11 step=750 train_loss=5.364523
+{"epoch": 11, "train_infonce_loss": 5.364277047733286, "validation_paired_cosine_loss": 0.8801093120241046, "best_validation_loss": 0.8801093120241046, "best_epoch": 11, "improved": 1, "learning_rate": 0.000366515744692055, "epoch_seconds": 1.9753336906433105, "elapsed_seconds": 21.68388843536377}
+model=fourier_projection epoch=12 step=1 train_loss=5.389888
+model=fourier_projection epoch=12 step=250 train_loss=5.362316
+model=fourier_projection epoch=12 step=500 train_loss=5.362680
+model=fourier_projection epoch=12 step=750 train_loss=5.361416
+{"epoch": 12, "train_infonce_loss": 5.3613512131337195, "validation_paired_cosine_loss": 0.8779154274283923, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 1, "learning_rate": 0.00034452882373436314, "epoch_seconds": 1.9123332500457764, "elapsed_seconds": 23.597285509109497}
+model=fourier_projection epoch=13 step=1 train_loss=5.385351
+model=fourier_projection epoch=13 step=250 train_loss=5.356957
+model=fourier_projection epoch=13 step=500 train_loss=5.356942
+model=fourier_projection epoch=13 step=750 train_loss=5.358345
+{"epoch": 13, "train_infonce_loss": 5.358852484091999, "validation_paired_cosine_loss": 0.8787432518973015, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00032178013043399577, "epoch_seconds": 1.9229674339294434, "elapsed_seconds": 25.521296739578247}
+model=fourier_projection epoch=14 step=1 train_loss=5.318684
+model=fourier_projection epoch=14 step=250 train_loss=5.356017
+model=fourier_projection epoch=14 step=500 train_loss=5.357388
+model=fourier_projection epoch=14 step=750 train_loss=5.357018
+{"epoch": 14, "train_infonce_loss": 5.356600330673013, "validation_paired_cosine_loss": 0.879066067689144, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.000298518904235222, "epoch_seconds": 1.931450366973877, "elapsed_seconds": 27.45383334159851}
+model=fourier_projection epoch=15 step=1 train_loss=5.370896
+model=fourier_projection epoch=15 step=250 train_loss=5.352229
+model=fourier_projection epoch=15 step=500 train_loss=5.353091
+model=fourier_projection epoch=15 step=750 train_loss=5.353060
+{"epoch": 15, "train_infonce_loss": 5.354090012574346, "validation_paired_cosine_loss": 0.8853517642060362, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.000275, "epoch_seconds": 1.9324543476104736, "elapsed_seconds": 29.387621879577637}
+model=fourier_projection epoch=16 step=1 train_loss=5.386904
+model=fourier_projection epoch=16 step=250 train_loss=5.354110
+model=fourier_projection epoch=16 step=500 train_loss=5.352453
+model=fourier_projection epoch=16 step=750 train_loss=5.352173
+{"epoch": 16, "train_infonce_loss": 5.351870547144441, "validation_paired_cosine_loss": 0.881092939686886, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.000251481095764778, "epoch_seconds": 1.928544044494629, "elapsed_seconds": 31.317275524139404}
+model=fourier_projection epoch=17 step=1 train_loss=5.329286
+model=fourier_projection epoch=17 step=250 train_loss=5.349207
+model=fourier_projection epoch=17 step=500 train_loss=5.351023
+model=fourier_projection epoch=17 step=750 train_loss=5.350287
+{"epoch": 17, "train_infonce_loss": 5.349784639951166, "validation_paired_cosine_loss": 0.878969109232999, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00022821986956600413, "epoch_seconds": 1.9249742031097412, "elapsed_seconds": 33.24358868598938}
+model=fourier_projection epoch=18 step=1 train_loss=5.406500
+model=fourier_projection epoch=18 step=250 train_loss=5.346994
+model=fourier_projection epoch=18 step=500 train_loss=5.346689
+model=fourier_projection epoch=18 step=750 train_loss=5.348041
+{"epoch": 18, "train_infonce_loss": 5.347562581874874, "validation_paired_cosine_loss": 0.8800253587009311, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00020547117626563684, "epoch_seconds": 1.911879539489746, "elapsed_seconds": 35.15659165382385}
+model=fourier_projection epoch=19 step=1 train_loss=5.318563
+model=fourier_projection epoch=19 step=250 train_loss=5.343370
+model=fourier_projection epoch=19 step=500 train_loss=5.344148
+model=fourier_projection epoch=19 step=750 train_loss=5.345329
+{"epoch": 19, "train_infonce_loss": 5.34552513259072, "validation_paired_cosine_loss": 0.8796483646677664, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00018348425530794499, "epoch_seconds": 1.9261908531188965, "elapsed_seconds": 37.08429670333862}
+model=fourier_projection epoch=20 step=1 train_loss=5.379977
+model=fourier_projection epoch=20 step=250 train_loss=5.341593
+model=fourier_projection epoch=20 step=500 train_loss=5.343621
+model=fourier_projection epoch=20 step=750 train_loss=5.343490
+{"epoch": 20, "train_infonce_loss": 5.343189178302796, "validation_paired_cosine_loss": 0.8797654882760165, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00016250000000000005, "epoch_seconds": 1.9385945796966553, "elapsed_seconds": 39.024253129959106}
+model=fourier_projection epoch=21 step=1 train_loss=5.413795
+model=fourier_projection epoch=21 step=250 train_loss=5.339093
+model=fourier_projection epoch=21 step=500 train_loss=5.340817
+model=fourier_projection epoch=21 step=750 train_loss=5.341445
+{"epoch": 21, "train_infonce_loss": 5.341408431217075, "validation_paired_cosine_loss": 0.8793170347005906, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00014274831823419358, "epoch_seconds": 1.930053472518921, "elapsed_seconds": 40.95549416542053}
+model=fourier_projection epoch=22 step=1 train_loss=5.347030
+model=fourier_projection epoch=22 step=250 train_loss=5.338649
+model=fourier_projection epoch=22 step=500 train_loss=5.340227
+model=fourier_projection epoch=22 step=750 train_loss=5.340286
+{"epoch": 22, "train_infonce_loss": 5.339609705006837, "validation_paired_cosine_loss": 0.8823138270730758, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.000124445613569257, "epoch_seconds": 1.9195692539215088, "elapsed_seconds": 42.876317501068115}
+model=fourier_projection epoch=23 step=1 train_loss=5.356812
+model=fourier_projection epoch=23 step=250 train_loss=5.337067
+model=fourier_projection epoch=23 step=500 train_loss=5.338700
+model=fourier_projection epoch=23 step=750 train_loss=5.338974
+{"epoch": 23, "train_infonce_loss": 5.337782965206309, "validation_paired_cosine_loss": 0.8796058515771537, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 0.00010779241426758638, "epoch_seconds": 1.929142951965332, "elapsed_seconds": 44.80670237541199}
+model=fourier_projection epoch=24 step=1 train_loss=5.308013
+model=fourier_projection epoch=24 step=250 train_loss=5.335532
+model=fourier_projection epoch=24 step=500 train_loss=5.336182
+model=fourier_projection epoch=24 step=750 train_loss=5.336130
+{"epoch": 24, "train_infonce_loss": 5.3361910413394344, "validation_paired_cosine_loss": 0.8814897477946225, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 9.297117626563688e-05, "epoch_seconds": 1.9323406219482422, "elapsed_seconds": 46.74054741859436}
+model=fourier_projection epoch=25 step=1 train_loss=5.362615
+model=fourier_projection epoch=25 step=250 train_loss=5.333169
+model=fourier_projection epoch=25 step=500 train_loss=5.333317
+model=fourier_projection epoch=25 step=750 train_loss=5.333183
+{"epoch": 25, "train_infonce_loss": 5.334518861744688, "validation_paired_cosine_loss": 0.8789603497395135, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 8.014428414850132e-05, "epoch_seconds": 1.9854233264923096, "elapsed_seconds": 48.7273006439209}
+model=fourier_projection epoch=26 step=1 train_loss=5.364352
+model=fourier_projection epoch=26 step=250 train_loss=5.334057
+model=fourier_projection epoch=26 step=500 train_loss=5.331716
+model=fourier_projection epoch=26 step=750 train_loss=5.333182
+{"epoch": 26, "train_infonce_loss": 5.333290506809913, "validation_paired_cosine_loss": 0.8790448078729289, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 6.94522720304148e-05, "epoch_seconds": 2.031404972076416, "elapsed_seconds": 50.76002550125122}
+model=fourier_projection epoch=27 step=1 train_loss=5.285187
+model=fourier_projection epoch=27 step=250 train_loss=5.329737
+model=fourier_projection epoch=27 step=500 train_loss=5.331370
+model=fourier_projection epoch=27 step=750 train_loss=5.332751
+{"epoch": 27, "train_infonce_loss": 5.332017736102695, "validation_paired_cosine_loss": 0.8790940306875782, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 6.1012283833590465e-05, "epoch_seconds": 1.9645533561706543, "elapsed_seconds": 52.72596216201782}
+model=fourier_projection epoch=28 step=1 train_loss=5.285507
+model=fourier_projection epoch=28 step=250 train_loss=5.329353
+model=fourier_projection epoch=28 step=500 train_loss=5.331124
+model=fourier_projection epoch=28 step=750 train_loss=5.331170
+{"epoch": 28, "train_infonce_loss": 5.331189054368934, "validation_paired_cosine_loss": 0.8798186209168593, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 5.4916789834893724e-05, "epoch_seconds": 1.9536199569702148, "elapsed_seconds": 54.68106532096863}
+model=fourier_projection epoch=29 step=1 train_loss=5.365679
+model=fourier_projection epoch=29 step=250 train_loss=5.329894
+model=fourier_projection epoch=29 step=500 train_loss=5.329957
+model=fourier_projection epoch=29 step=750 train_loss=5.329939
+{"epoch": 29, "train_infonce_loss": 5.330335466518087, "validation_paired_cosine_loss": 0.8781669395912882, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 5.1232573542138485e-05, "epoch_seconds": 1.954345703125, "elapsed_seconds": 56.63709735870361}
+model=fourier_projection epoch=30 step=1 train_loss=5.328824
+model=fourier_projection epoch=30 step=250 train_loss=5.330112
+model=fourier_projection epoch=30 step=500 train_loss=5.330483
+model=fourier_projection epoch=30 step=750 train_loss=5.329486
+{"epoch": 30, "train_infonce_loss": 5.3296993138385975, "validation_paired_cosine_loss": 0.8795103083341707, "best_validation_loss": 0.8779154274283923, "best_epoch": 12, "improved": 0, "learning_rate": 5e-05, "epoch_seconds": 1.9497878551483154, "elapsed_seconds": 58.58856010437012}
+{
+  "status": "complete",
+  "method": "fourier_projection",
+  "seed": 0,
+  "best_epoch": 12,
+  "best_validation_loss": 0.8779154274283923,
+  "epochs_completed": 30,
+  "parameter_count": 99072,
+  "checkpoint": "WORKSPACE/train/output/comparison/fig3_simple_baselines_20260821/chemberta_readout_v1/formal_runs/fourier_projection/seed_0/best.pt",
+  "checkpoint_sha256": "20a3208a31dc7b0b831c3cd6464331108da2753d02ffdd96c36fb72a75c327a5",
+  "history_sha256": "ff57eb4c83097a4a5c352cd66b49b779eef30c6101cb026cfd45a52aa85c0c5e",
+  "runtime_seconds": 58.59087657928467,
+  "environment": {
+    "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]",
+    "platform": "Linux-5.14.0-570.62.1.el9_6.x86_64-x86_64-with-glibc2.35",
+    "numpy": "1.24.4",
+    "torch": "2.2.1+cu121",
+    "cuda": "12.1",
+    "device": "cuda:0",
+    "gpu": "NVIDIA A800-SXM4-80GB MIG 3g.40gb"
+  }
+}

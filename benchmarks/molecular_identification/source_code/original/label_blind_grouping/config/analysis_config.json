@@ -1,0 +1,88 @@
+{
+  "analysis_id": "s9_nonoracle_consensus_20260722",
+  "project_root": ".",
+  "inputs": {
+    "dataset": "datasets/MSnLib/MSnLib_with_rt.csv",
+    "oracle_summary": "train/output/comparison/14_cluster_consensus/cluster_consensus_summary.json",
+    "retrieval_test": {
+      "UltraMS": "train/output/comparison/10_per_spectrum_msnlib_mass_rt_only_d11_test.jsonl",
+      "DreaMS": "train/output/comparison/10_per_spectrum_msnlib_mass_dreams_test.jsonl"
+    }
+  },
+  "splits": {
+    "threshold_selection": "val",
+    "locked_evaluation": "test"
+  },
+  "grouping": {
+    "label_columns_forbidden": [
+      "smiles",
+      "canonical_smiles",
+      "molecule_id",
+      "formula"
+    ],
+    "deployable_columns": [
+      "sample_idx",
+      "mzs",
+      "intensities",
+      "precursor_mz",
+      "adduct",
+      "retention_time",
+      "collision_energy"
+    ],
+    "precursor_round_decimals": 4,
+    "retention_time_round_decimals": 2,
+    "retention_time_missing_value": 0.0,
+    "spectrum_top_n_peaks": 150,
+    "spectrum_mz_bin_width_da": 0.02,
+    "spectrum_intensity_transform": "sqrt_then_l2",
+    "linkage": "complete",
+    "min_group_size": 2,
+    "similarity_threshold_grid": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ]
+  },
+  "threshold_selection_rule": {
+    "hidden_labels_used_only_after_groups_are_built": true,
+    "minimum_validation_spectrum_weighted_purity": 0.98,
+    "minimum_validation_coverage": 0.5,
+    "minimum_validation_groups": 1000,
+    "objective": "maximum validation coverage among feasible thresholds",
+    "tie_break": "lowest similarity threshold"
+  },
+  "consensus": {
+    "protocol": "hard_plurality_with_borda_tie_break",
+    "per_spectrum_candidate_depth": 50,
+    "candidate_order": "descending top1 vote count, descending normalized Borda support, lexical candidate SMILES",
+    "member_order": "ascending collision energy, then spectrum-content SHA256",
+    "same_groups_and_protocol_for_both_models": true
+  },
+  "statistics": {
+    "bootstrap_unit": "group",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260722,
+    "confidence_level": 0.95
+  },
+  "promotion_gate": {
+    "minimum_test_spectrum_weighted_purity": 0.97,
+    "minimum_test_coverage": 0.5,
+    "minimum_test_groups": 1000,
+    "require_positive_top1_gain_for_both_models": true,
+    "require_top1_gain_ci_lower_bound_above_zero_for_both_models": true
+  },
+  "example_selection": {
+    "uses_model_outcomes": true,
+    "used_for_inference_or_threshold_selection": false,
+    "require_pure_hidden_label_audit": true,
+    "minimum_group_size": 6,
+    "minimum_distinct_collision_energies": 3,
+    "selection": "illustrative shared rescue: both models start below rank 1 and finish at rank 1; maximize group size, then choose precursor_mz nearest the eligible median and lexical group_id"
+  }
+}

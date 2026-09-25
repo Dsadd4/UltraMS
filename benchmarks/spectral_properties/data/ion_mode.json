@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "description": "Polarity probe (LogReg + MLP) on MSnLib; default compare rt_only_d vs DreaMS",
+    "method": "LogisticRegressionCV(cv=3) + deep MLP (GELU, 512\u2192256, dropout, cosine LR, early stopping on val acc, val-tuned logit threshold)",
+    "selection": {
+      "adducts": "canonical POSITIVE_ADDUCTS + NEGATIVE_ADDUCTS only",
+      "train": "100000 per class",
+      "val": "3000 per class (balanced)",
+      "test": "5000 per class per source (balanced)"
+    },
+    "sources": [
+      "MSnLib"
+    ],
+    "models": [
+      "dreams",
+      "rt_only_d"
+    ]
+  },
+  "results": {
+    "dreams": {
+      "logreg_val": {
+        "accuracy": 0.8653333333333333,
+        "f1_macro": 0.8652973976724234,
+        "f1_neg": 0.8674975401771072,
+        "f1_pos": 0.8630972551677397,
+        "n": 6000
+      },
+      "logreg_test": {
+        "accuracy": 0.8544,
+        "f1_macro": 0.8543681007887968,
+        "f1_neg": 0.8565234528971226,
+        "f1_pos": 0.8522127486804709,
+        "n": 10000
+      },
+      "mlp_meta": {
+        "hidden1": 512,
+        "hidden2": 256,
+        "max_epochs": 120,
+        "epochs_run": 53,
+        "best_val_accuracy": 0.8965,
+        "threshold_from_val": 3.125975570678719,
+        "patience": 25
+      },
+      "mlp_val": {
+        "accuracy": 0.8965,
+        "f1_macro": 0.8963766623223292,
+        "f1_neg": 0.8999516674722088,
+        "f1_pos": 0.8928016571724495,
+        "n": 6000
+      },
+      "mlp_test": {
+        "accuracy": 0.8879,
+        "f1_macro": 0.8877969875362872,
+        "f1_neg": 0.8911967388139377,
+        "f1_pos": 0.8843972362586366,
+        "n": 10000
+      }
+    },
+    "rt_only_d": {
+      "logreg_val": {
+        "accuracy": 0.9315,
+        "f1_macro": 0.9314828231244083,
+        "f1_neg": 0.9325676784249385,
+        "f1_pos": 0.9303979678238781,
+        "n": 6000
+      },
+      "logreg_test": {
+        "accuracy": 0.9348,
+        "f1_macro": 0.9347994131947188,
+        "f1_neg": 0.9349950149551346,
+        "f1_pos": 0.9346038114343029,
+        "n": 10000
+      },
+      "mlp_meta": {
+        "hidden1": 512,
+        "hidden2": 256,
+        "max_epochs": 120,
+        "epochs_run": 58,
+        "best_val_accuracy": 0.9501666666666667,
+        "threshold_from_val": 0.15966304779053075,
+        "patience": 25
+      },
+      "mlp_val": {
+        "accuracy": 0.9501666666666667,
+        "f1_macro": 0.9501575828861477,
+        "f1_neg": 0.9508304555171847,
+        "f1_pos": 0.9494847102551106,
+        "n": 6000
+      },
+      "mlp_test": {
+        "accuracy": 0.9492,
+        "f1_macro": 0.9491977870556041,
+        "f1_neg": 0.9495330816610371,
+        "f1_pos": 0.9488624924501712,
+        "n": 10000
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+method,mode,split,seed,fdr_interval_maximum,mean_identification_recall,integration
+UltraMS,pos,test,0,0.05,0.6705679134616316,exact step envelope over observed empirical-FDR breakpoints
+DreaMS,pos,test,0,0.05,0.5203061801954735,exact step envelope over observed empirical-FDR breakpoints
+UltraMS,neg,test,0,0.05,0.380859852450121,exact step envelope over observed empirical-FDR breakpoints
+DreaMS,neg,test,0,0.05,0.3055165344929749,exact step envelope over observed empirical-FDR breakpoints
+Codebook,pos,test,0,0.05,0.1958709593848443,exact step envelope over observed empirical-FDR breakpoints
+Codebook,neg,test,0,0.05,0.08243006831597142,exact step envelope over observed empirical-FDR breakpoints
+DeepSets,pos,test,0,0.05,0.10960167927763383,exact step envelope over observed empirical-FDR breakpoints
+DeepSets,neg,test,0,0.05,0.07483814055164222,exact step envelope over observed empirical-FDR breakpoints
+Fourier,pos,test,0,0.05,0.29827218346618006,exact step envelope over observed empirical-FDR breakpoints
+Fourier,neg,test,0,0.05,0.13541608773993444,exact step envelope over observed empirical-FDR breakpoints
+Linear,pos,test,0,0.05,0.25604856749765026,exact step envelope over observed empirical-FDR breakpoints
+Linear,neg,test,0,0.05,0.11156234710255523,exact step envelope over observed empirical-FDR breakpoints

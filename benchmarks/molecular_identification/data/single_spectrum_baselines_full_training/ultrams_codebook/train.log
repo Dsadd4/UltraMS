@@ -1,0 +1,172 @@
+model=ultrams_codebook epoch=1 step=1 train_loss=6.314251
+model=ultrams_codebook epoch=1 step=250 train_loss=6.077734
+model=ultrams_codebook epoch=1 step=500 train_loss=6.049548
+model=ultrams_codebook epoch=1 step=750 train_loss=6.035347
+{"epoch": 1, "train_infonce_loss": 6.030502036865644, "validation_paired_cosine_loss": 0.9522983312521631, "best_validation_loss": 0.9522983312521631, "best_epoch": 1, "improved": 1, "learning_rate": 0.0004987674264578614, "epoch_seconds": 2.420203447341919, "elapsed_seconds": 2.4202051162719727}
+model=ultrams_codebook epoch=2 step=1 train_loss=5.997736
+model=ultrams_codebook epoch=2 step=250 train_loss=5.994747
+model=ultrams_codebook epoch=2 step=500 train_loss=5.996758
+model=ultrams_codebook epoch=2 step=750 train_loss=5.995507
+{"epoch": 2, "train_infonce_loss": 5.993964558664094, "validation_paired_cosine_loss": 0.9568388529699502, "best_validation_loss": 0.9522983312521631, "best_epoch": 1, "improved": 0, "learning_rate": 0.0004950832101651061, "epoch_seconds": 2.1053383350372314, "elapsed_seconds": 4.526467561721802}
+model=ultrams_codebook epoch=3 step=1 train_loss=5.961224
+model=ultrams_codebook epoch=3 step=250 train_loss=5.987742
+model=ultrams_codebook epoch=3 step=500 train_loss=5.987343
+model=ultrams_codebook epoch=3 step=750 train_loss=5.986020
+{"epoch": 3, "train_infonce_loss": 5.9856529983943405, "validation_paired_cosine_loss": 0.9588747374114499, "best_validation_loss": 0.9522983312521631, "best_epoch": 1, "improved": 0, "learning_rate": 0.0004889877161664095, "epoch_seconds": 2.1413753032684326, "elapsed_seconds": 6.66884708404541}
+model=ultrams_codebook epoch=4 step=1 train_loss=5.961523
+model=ultrams_codebook epoch=4 step=250 train_loss=5.980648
+model=ultrams_codebook epoch=4 step=500 train_loss=5.980238
+model=ultrams_codebook epoch=4 step=750 train_loss=5.980731
+{"epoch": 4, "train_infonce_loss": 5.979857359080948, "validation_paired_cosine_loss": 0.9608571828369926, "best_validation_loss": 0.9522983312521631, "best_epoch": 1, "improved": 0, "learning_rate": 0.00048054772796958506, "epoch_seconds": 2.1224329471588135, "elapsed_seconds": 8.79213833808899}
+model=ultrams_codebook epoch=5 step=1 train_loss=6.024991
+model=ultrams_codebook epoch=5 step=250 train_loss=5.976572
+model=ultrams_codebook epoch=5 step=500 train_loss=5.975465
+model=ultrams_codebook epoch=5 step=750 train_loss=5.975672
+{"epoch": 5, "train_infonce_loss": 5.9751539634006825, "validation_paired_cosine_loss": 0.9524883819503757, "best_validation_loss": 0.9522983312521631, "best_epoch": 1, "improved": 0, "learning_rate": 0.00046985571585149866, "epoch_seconds": 2.1354358196258545, "elapsed_seconds": 10.928682804107666}
+model=ultrams_codebook epoch=6 step=1 train_loss=5.929301
+model=ultrams_codebook epoch=6 step=250 train_loss=5.971883
+model=ultrams_codebook epoch=6 step=500 train_loss=5.970641
+model=ultrams_codebook epoch=6 step=750 train_loss=5.970006
+{"epoch": 6, "train_infonce_loss": 5.970140290456156, "validation_paired_cosine_loss": 0.9588384554019014, "best_validation_loss": 0.9522983312521631, "best_epoch": 1, "improved": 0, "learning_rate": 0.0004570288237343631, "epoch_seconds": 2.1024060249328613, "elapsed_seconds": 13.032247543334961}
+model=ultrams_codebook epoch=7 step=1 train_loss=5.978472
+model=ultrams_codebook epoch=7 step=250 train_loss=5.967833
+model=ultrams_codebook epoch=7 step=500 train_loss=5.966155
+model=ultrams_codebook epoch=7 step=750 train_loss=5.966740
+{"epoch": 7, "train_infonce_loss": 5.9660192328580575, "validation_paired_cosine_loss": 0.9506191971899144, "best_validation_loss": 0.9506191971899144, "best_epoch": 7, "improved": 1, "learning_rate": 0.0004422075857324136, "epoch_seconds": 2.1283042430877686, "elapsed_seconds": 15.161730766296387}
+model=ultrams_codebook epoch=8 step=1 train_loss=5.977546
+model=ultrams_codebook epoch=8 step=250 train_loss=5.964464
+model=ultrams_codebook epoch=8 step=500 train_loss=5.962573
+model=ultrams_codebook epoch=8 step=750 train_loss=5.962317
+{"epoch": 8, "train_infonce_loss": 5.962058364822037, "validation_paired_cosine_loss": 0.9644606742572682, "best_validation_loss": 0.9506191971899144, "best_epoch": 7, "improved": 0, "learning_rate": 0.000425554386430743, "epoch_seconds": 2.133509635925293, "elapsed_seconds": 17.29625916481018}
+model=ultrams_codebook epoch=9 step=1 train_loss=5.972873
+model=ultrams_codebook epoch=9 step=250 train_loss=5.958651
+model=ultrams_codebook epoch=9 step=500 train_loss=5.958563
+model=ultrams_codebook epoch=9 step=750 train_loss=5.958847
+{"epoch": 9, "train_infonce_loss": 5.958128046560234, "validation_paired_cosine_loss": 0.9614156294397134, "best_validation_loss": 0.9506191971899144, "best_epoch": 7, "improved": 0, "learning_rate": 0.0004072516817658064, "epoch_seconds": 2.099674940109253, "elapsed_seconds": 19.39713406562805}
+model=ultrams_codebook epoch=10 step=1 train_loss=5.950306
+model=ultrams_codebook epoch=10 step=250 train_loss=5.958485
+model=ultrams_codebook epoch=10 step=500 train_loss=5.956694
+model=ultrams_codebook epoch=10 step=750 train_loss=5.955628
+{"epoch": 10, "train_infonce_loss": 5.954162661259518, "validation_paired_cosine_loss": 0.9407241052625519, "best_validation_loss": 0.9407241052625519, "best_epoch": 10, "improved": 1, "learning_rate": 0.00038749999999999993, "epoch_seconds": 2.128643274307251, "elapsed_seconds": 21.52696204185486}
+model=ultrams_codebook epoch=11 step=1 train_loss=5.949450
+model=ultrams_codebook epoch=11 step=250 train_loss=5.950306
+model=ultrams_codebook epoch=11 step=500 train_loss=5.950637
+model=ultrams_codebook epoch=11 step=750 train_loss=5.950730
+{"epoch": 11, "train_infonce_loss": 5.950125532474567, "validation_paired_cosine_loss": 0.9465725325311495, "best_validation_loss": 0.9407241052625519, "best_epoch": 10, "improved": 0, "learning_rate": 0.000366515744692055, "epoch_seconds": 2.1508748531341553, "elapsed_seconds": 23.678887605667114}
+model=ultrams_codebook epoch=12 step=1 train_loss=5.991539
+model=ultrams_codebook epoch=12 step=250 train_loss=5.947970
+model=ultrams_codebook epoch=12 step=500 train_loss=5.946302
+model=ultrams_codebook epoch=12 step=750 train_loss=5.946283
+{"epoch": 12, "train_infonce_loss": 5.945588875139079, "validation_paired_cosine_loss": 0.9462565562093884, "best_validation_loss": 0.9407241052625519, "best_epoch": 10, "improved": 0, "learning_rate": 0.00034452882373436314, "epoch_seconds": 2.16721773147583, "elapsed_seconds": 25.847374439239502}
+model=ultrams_codebook epoch=13 step=1 train_loss=5.941117
+model=ultrams_codebook epoch=13 step=250 train_loss=5.943642
+model=ultrams_codebook epoch=13 step=500 train_loss=5.942446
+model=ultrams_codebook epoch=13 step=750 train_loss=5.942389
+{"epoch": 13, "train_infonce_loss": 5.94184718778108, "validation_paired_cosine_loss": 0.9398162471093889, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 1, "learning_rate": 0.00032178013043399577, "epoch_seconds": 2.149639844894409, "elapsed_seconds": 27.998263835906982}
+model=ultrams_codebook epoch=14 step=1 train_loss=5.954927
+model=ultrams_codebook epoch=14 step=250 train_loss=5.939353
+model=ultrams_codebook epoch=14 step=500 train_loss=5.938934
+model=ultrams_codebook epoch=14 step=750 train_loss=5.939333
+{"epoch": 14, "train_infonce_loss": 5.938354086683704, "validation_paired_cosine_loss": 0.9481448125481478, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.000298518904235222, "epoch_seconds": 2.1486873626708984, "elapsed_seconds": 30.148077964782715}
+model=ultrams_codebook epoch=15 step=1 train_loss=5.972497
+model=ultrams_codebook epoch=15 step=250 train_loss=5.937599
+model=ultrams_codebook epoch=15 step=500 train_loss=5.936051
+model=ultrams_codebook epoch=15 step=750 train_loss=5.934568
+{"epoch": 15, "train_infonce_loss": 5.934089188684987, "validation_paired_cosine_loss": 0.9558428634529073, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.000275, "epoch_seconds": 2.165132522583008, "elapsed_seconds": 32.31431317329407}
+model=ultrams_codebook epoch=16 step=1 train_loss=5.954350
+model=ultrams_codebook epoch=16 step=250 train_loss=5.931235
+model=ultrams_codebook epoch=16 step=500 train_loss=5.930520
+model=ultrams_codebook epoch=16 step=750 train_loss=5.930336
+{"epoch": 16, "train_infonce_loss": 5.929719483216103, "validation_paired_cosine_loss": 0.9556443476429919, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.000251481095764778, "epoch_seconds": 2.104543447494507, "elapsed_seconds": 34.42023229598999}
+model=ultrams_codebook epoch=17 step=1 train_loss=5.942441
+model=ultrams_codebook epoch=17 step=250 train_loss=5.927073
+model=ultrams_codebook epoch=17 step=500 train_loss=5.927126
+model=ultrams_codebook epoch=17 step=750 train_loss=5.925941
+{"epoch": 17, "train_infonce_loss": 5.925566068850798, "validation_paired_cosine_loss": 0.9582899414585846, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.00022821986956600413, "epoch_seconds": 2.1200056076049805, "elapsed_seconds": 36.54140090942383}
+model=ultrams_codebook epoch=18 step=1 train_loss=5.895494
+model=ultrams_codebook epoch=18 step=250 train_loss=5.920630
+model=ultrams_codebook epoch=18 step=500 train_loss=5.921536
+model=ultrams_codebook epoch=18 step=750 train_loss=5.922343
+{"epoch": 18, "train_infonce_loss": 5.9213840230887165, "validation_paired_cosine_loss": 0.9466215896197582, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.00020547117626563684, "epoch_seconds": 2.0779712200164795, "elapsed_seconds": 38.62070274353027}
+model=ultrams_codebook epoch=19 step=1 train_loss=5.897367
+model=ultrams_codebook epoch=19 step=250 train_loss=5.919384
+model=ultrams_codebook epoch=19 step=500 train_loss=5.918398
+model=ultrams_codebook epoch=19 step=750 train_loss=5.918404
+{"epoch": 19, "train_infonce_loss": 5.918340521377357, "validation_paired_cosine_loss": 0.9559855579350326, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.00018348425530794499, "epoch_seconds": 2.10016131401062, "elapsed_seconds": 40.722060680389404}
+model=ultrams_codebook epoch=20 step=1 train_loss=5.947865
+model=ultrams_codebook epoch=20 step=250 train_loss=5.915563
+model=ultrams_codebook epoch=20 step=500 train_loss=5.915776
+model=ultrams_codebook epoch=20 step=750 train_loss=5.914449
+{"epoch": 20, "train_infonce_loss": 5.913606732572304, "validation_paired_cosine_loss": 0.9483020560321488, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.00016250000000000005, "epoch_seconds": 2.0771963596343994, "elapsed_seconds": 42.80072331428528}
+model=ultrams_codebook epoch=21 step=1 train_loss=5.982492
+model=ultrams_codebook epoch=21 step=250 train_loss=5.910705
+model=ultrams_codebook epoch=21 step=500 train_loss=5.911478
+model=ultrams_codebook epoch=21 step=750 train_loss=5.910799
+{"epoch": 21, "train_infonce_loss": 5.910362882960255, "validation_paired_cosine_loss": 0.942974950552583, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.00014274831823419358, "epoch_seconds": 2.0776584148406982, "elapsed_seconds": 44.87964630126953}
+model=ultrams_codebook epoch=22 step=1 train_loss=5.935517
+model=ultrams_codebook epoch=22 step=250 train_loss=5.907352
+model=ultrams_codebook epoch=22 step=500 train_loss=5.907043
+model=ultrams_codebook epoch=22 step=750 train_loss=5.906778
+{"epoch": 22, "train_infonce_loss": 5.9065800771808545, "validation_paired_cosine_loss": 0.9518485758550765, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.000124445613569257, "epoch_seconds": 2.145502805709839, "elapsed_seconds": 47.026360273361206}
+model=ultrams_codebook epoch=23 step=1 train_loss=5.952845
+model=ultrams_codebook epoch=23 step=250 train_loss=5.907708
+model=ultrams_codebook epoch=23 step=500 train_loss=5.905387
+model=ultrams_codebook epoch=23 step=750 train_loss=5.904013
+{"epoch": 23, "train_infonce_loss": 5.903598578356427, "validation_paired_cosine_loss": 0.9488494851240817, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 0.00010779241426758638, "epoch_seconds": 2.19576358795166, "elapsed_seconds": 49.223687171936035}
+model=ultrams_codebook epoch=24 step=1 train_loss=5.878974
+model=ultrams_codebook epoch=24 step=250 train_loss=5.902249
+model=ultrams_codebook epoch=24 step=500 train_loss=5.902560
+model=ultrams_codebook epoch=24 step=750 train_loss=5.901354
+{"epoch": 24, "train_infonce_loss": 5.900263008491898, "validation_paired_cosine_loss": 0.9502022250203755, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 9.297117626563688e-05, "epoch_seconds": 2.190195083618164, "elapsed_seconds": 51.415446519851685}
+model=ultrams_codebook epoch=25 step=1 train_loss=5.880422
+model=ultrams_codebook epoch=25 step=250 train_loss=5.897523
+model=ultrams_codebook epoch=25 step=500 train_loss=5.897278
+model=ultrams_codebook epoch=25 step=750 train_loss=5.896789
+{"epoch": 25, "train_infonce_loss": 5.8970265314187635, "validation_paired_cosine_loss": 0.9411868908695767, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 8.014428414850132e-05, "epoch_seconds": 2.1336846351623535, "elapsed_seconds": 53.55071544647217}
+model=ultrams_codebook epoch=26 step=1 train_loss=5.869195
+model=ultrams_codebook epoch=26 step=250 train_loss=5.894094
+model=ultrams_codebook epoch=26 step=500 train_loss=5.894180
+model=ultrams_codebook epoch=26 step=750 train_loss=5.894203
+{"epoch": 26, "train_infonce_loss": 5.894217202977851, "validation_paired_cosine_loss": 0.9520632837533355, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 6.94522720304148e-05, "epoch_seconds": 2.110837459564209, "elapsed_seconds": 55.66314506530762}
+model=ultrams_codebook epoch=27 step=1 train_loss=5.898893
+model=ultrams_codebook epoch=27 step=250 train_loss=5.892627
+model=ultrams_codebook epoch=27 step=500 train_loss=5.892684
+model=ultrams_codebook epoch=27 step=750 train_loss=5.892569
+{"epoch": 27, "train_infonce_loss": 5.892244884120477, "validation_paired_cosine_loss": 0.9506112390690593, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 6.1012283833590465e-05, "epoch_seconds": 2.1039767265319824, "elapsed_seconds": 57.768718004226685}
+model=ultrams_codebook epoch=28 step=1 train_loss=5.902116
+model=ultrams_codebook epoch=28 step=250 train_loss=5.887134
+model=ultrams_codebook epoch=28 step=500 train_loss=5.889801
+model=ultrams_codebook epoch=28 step=750 train_loss=5.890014
+{"epoch": 28, "train_infonce_loss": 5.890055498692645, "validation_paired_cosine_loss": 0.9405034366783477, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 5.4916789834893724e-05, "epoch_seconds": 2.1281347274780273, "elapsed_seconds": 59.89853882789612}
+model=ultrams_codebook epoch=29 step=1 train_loss=5.952719
+model=ultrams_codebook epoch=29 step=250 train_loss=5.889477
+model=ultrams_codebook epoch=29 step=500 train_loss=5.890653
+model=ultrams_codebook epoch=29 step=750 train_loss=5.888882
+{"epoch": 29, "train_infonce_loss": 5.888448697218624, "validation_paired_cosine_loss": 0.9490811428711984, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 5.1232573542138485e-05, "epoch_seconds": 2.112032890319824, "elapsed_seconds": 62.012261152267456}
+model=ultrams_codebook epoch=30 step=1 train_loss=5.902850
+model=ultrams_codebook epoch=30 step=250 train_loss=5.888730
+model=ultrams_codebook epoch=30 step=500 train_loss=5.888161
+model=ultrams_codebook epoch=30 step=750 train_loss=5.887706
+{"epoch": 30, "train_infonce_loss": 5.887155381148366, "validation_paired_cosine_loss": 0.9440366907859112, "best_validation_loss": 0.9398162471093889, "best_epoch": 13, "improved": 0, "learning_rate": 5e-05, "epoch_seconds": 2.113015651702881, "elapsed_seconds": 64.12678790092468}
+{
+  "status": "complete",
+  "method": "ultrams_codebook",
+  "seed": 0,
+  "best_epoch": 13,
+  "best_validation_loss": 0.9398162471093889,
+  "epochs_completed": 30,
+  "parameter_count": 787200,
+  "checkpoint": "WORKSPACE/train/output/comparison/fig3_simple_baselines_20260821/chemberta_readout_v1/formal_runs/ultrams_codebook/seed_0/best.pt",
+  "checkpoint_sha256": "a9ee173727b72885a98f45fce65461581c1ff9fd8e3a77541af8bde0b7308afb",
+  "history_sha256": "0277759c3c3c6d333e91edc5c6de5fe318bd4998d019298a172a97a029a4f392",
+  "runtime_seconds": 64.1319100856781,
+  "environment": {
+    "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]",
+    "platform": "Linux-5.14.0-570.62.1.el9_6.x86_64-x86_64-with-glibc2.35",
+    "numpy": "1.24.4",
+    "torch": "2.2.1+cu121",
+    "cuda": "12.1",
+    "device": "cuda:0",
+    "gpu": "NVIDIA A800-SXM4-80GB MIG 3g.40gb"
+  }
+}
