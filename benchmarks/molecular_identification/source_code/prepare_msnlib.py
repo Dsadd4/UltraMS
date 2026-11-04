@@ -1,7 +1,7 @@
 """Verify the released UltraMS MSnLib tables used by the benchmark programs.
 
 The UltraMS MSnLib benchmark release (Hugging Face dataset
-``dsadd4/UltraMS-MSnLib-Benchmark``; DOI pending) hosts two converted tables that
+``dsadd4/UltraMS-MSnLib-Benchmark``; DOI 10.5281/zenodo.23963489) hosts two converted tables that
 the spectrum-to-molecule programs consume:
 
 * ``MSnLib.csv`` -- one row per MSnLib spectrum with the peak arrays, SMILES,

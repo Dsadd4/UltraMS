@@ -18,7 +18,7 @@ SINGLE_SPECTRUM_PROJECTION_REVISION = "e9fe24af878f29ff1dda8cef919aab5d68d8ea33"
 SINGLE_SPECTRUM_READOUT_REVISION = "b15af172a7b875fedcc3aa85554d097f8d250829"
 SINGLE_SPECTRUM_DREAMS_PROJECTION_REVISION = "171426d7754368f02f5d7ab9bfd5e65b69c17c88"
 # The UltraMS MSnLib benchmark release (Hugging Face dataset
-# dsadd4/UltraMS-MSnLib-Benchmark; DOI pending) hosts the two converted MSnLib
+# dsadd4/UltraMS-MSnLib-Benchmark; DOI 10.5281/zenodo.23963489) hosts the two converted MSnLib
 # tables directly, so the benchmark downloads the released tables and not an MGF
 # or a candidate pickle:
 #   MSnLib.csv             -- one row per spectrum, with the UltraMS formula-level
@@ -26,10 +26,9 @@ SINGLE_SPECTRUM_DREAMS_PROJECTION_REVISION = "171426d7754368f02f5d7ab9bfd5e65b69
 #   MSnLib_candidates.json -- per-query candidate lists of the spectrum-to-molecule task.
 # The tables are derived from the public MSnLib release (Brungs et al., Zenodo
 # 11163380, CC BY 4.0). Sizes and SHA-256 values below are the published values.
-# PENDING: replace revision "main" with the published release commit once the
-# dataset is uploaded, and re-check the file list at that revision.
+# Published release tag of the UltraMS MSnLib benchmark dataset.
 MSNLIB_BENCHMARK_REPO = "dsadd4/UltraMS-MSnLib-Benchmark"
-MSNLIB_BENCHMARK_REVISION = "main"
+MSNLIB_BENCHMARK_REVISION = "v1.0.0"
 MSNLIB_BENCHMARK_URL = (
     f"https://huggingface.co/datasets/{MSNLIB_BENCHMARK_REPO}/resolve/"
     f"{MSNLIB_BENCHMARK_REVISION}"

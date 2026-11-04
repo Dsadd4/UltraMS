@@ -73,7 +73,7 @@ compounds by canonical isomeric SMILES; 6,202 + 3,193 test queries against
 295,434 + 137,000 library spectra). This partition is distributed with the UltraMS
 MSnLib benchmark dataset
 ([`dsadd4/UltraMS-MSnLib-Benchmark`](https://huggingface.co/datasets/dsadd4/UltraMS-MSnLib-Benchmark);
-DOI pending), together with its protocol, verification record and provenance.
+DOI 10.5281/zenodo.23963489), together with its protocol, verification record and provenance.
 It is **not** the full-library formula-level 80/10/10 split (446,667 / 55,980 /
 57,437 spectra) that the repository-wide MSnLib tables use. Both partitions are
 UltraMS benchmark partitions derived from the public MSnLib release (Brungs et al.,

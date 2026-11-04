@@ -1,7 +1,7 @@
 """Add a retention-time column to the released UltraMS MSnLib table.
 
 The released ``MSnLib.csv`` table of the UltraMS MSnLib benchmark release
-(Hugging Face dataset ``dsadd4/UltraMS-MSnLib-Benchmark``; DOI pending) contains
+(Hugging Face dataset ``dsadd4/UltraMS-MSnLib-Benchmark``; DOI 10.5281/zenodo.23963489) contains
 one row per MSnLib spectrum and the UltraMS formula-level 80/10/10 ``fold``
 column, but it does not carry retention times. This script joins ``RTINSECONDS``
 values from an RT-bearing spectrum record onto those 560,084 rows by

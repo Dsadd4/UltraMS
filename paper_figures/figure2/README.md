@@ -101,7 +101,7 @@ The public assets are hosted with the UltraMS benchmark release on Hugging Face
 (`dsadd4/UltraMS-Benchmark-Assets`); upstream spectra, model checkpoints and their licences are
 listed in `benchmarks/spectral_properties/INPUTS.md` (MassSpecGym MIT; MSnLib CC BY 4.0,
 Brungs et al., Zenodo 10.5281/zenodo.11163380, redistributed with the UltraMS MSnLib benchmark
-release, DOI pending; DreaMS MIT; UltraMS checkpoints Apache-2.0; MAGMa modules under the
+release, DOI 10.5281/zenodo.23963489; DreaMS MIT; UltraMS checkpoints Apache-2.0; MAGMa modules under the
 MIST MIT licence).
 
 ## Rendered panel images

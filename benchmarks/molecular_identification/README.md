@@ -189,7 +189,7 @@ release. They are different objects and must not be mixed:
 
 Both partitions are distributed with the UltraMS MSnLib benchmark dataset
 ([`dsadd4/UltraMS-MSnLib-Benchmark`](https://huggingface.co/datasets/dsadd4/UltraMS-MSnLib-Benchmark);
-DOI pending) and are derived from the public
+DOI 10.5281/zenodo.23963489) and are derived from the public
 [MSnLib release](https://doi.org/10.5281/zenodo.11163380) (Brungs et al., CC BY 4.0).
 The two partitions must not be compared fold-to-fold or used to claim the same test
 set. See [`paper_figures/README.md`](../../paper_figures/README.md) and

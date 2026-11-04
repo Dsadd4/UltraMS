@@ -36,9 +36,9 @@ ASSETS = {
         # UltraMS MSnLib benchmark release: the released MSnLib.csv table (one
         # row per spectrum; fold column = UltraMS formula-level 80/10/10 split),
         # derived from the public MSnLib library (Brungs et al., Zenodo 11163380,
-        # CC BY 4.0). DOI pending: pin the published release commit on upload.
+        # CC BY 4.0). Published release tag v1.0.0 (Hugging Face).
         "dsadd4/UltraMS-MSnLib-Benchmark", "dataset",
-        "main",
+        "v1.0.0",
         "MSnLib.csv", 752707651,
         "be54b33039cf18675751ea3c6354b592177c899a0cd5df303ae616330133ec07",
     ),

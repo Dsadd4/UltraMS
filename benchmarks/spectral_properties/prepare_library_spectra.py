@@ -169,7 +169,7 @@ def prepare_msnlib(source: Path, output: Path) -> dict:
         "output_sha256": MSNLIB_TABLE["sha256"],
         "rows": MSNLIB_TABLE["rows"],
         "folds": folds,
-        "source_release": "UltraMS MSnLib benchmark release (dsadd4/UltraMS-MSnLib-Benchmark; DOI pending)",
+        "source_release": "UltraMS MSnLib benchmark release (dsadd4/UltraMS-MSnLib-Benchmark; DOI 10.5281/zenodo.23963489)",
     }
 
 
