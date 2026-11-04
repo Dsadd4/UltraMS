@@ -43,10 +43,10 @@ ASSETS = {
         "be54b33039cf18675751ea3c6354b592177c899a0cd5df303ae616330133ec07",
     ),
     "spectraverse_spectra": Asset(
-        # UltraMS SpectraVerse benchmark release: the released Spectraverse.csv
+        # UltraMS SpectraVerse dataset: the released Spectraverse.csv
         # table (one row per spectrum; fold column = UltraMS molecule-level 8:1:1
         # split), derived from SpectraVerse v1.0.1 (Zenodo 17870921, CC BY 4.0).
-        "dsadd4/UltraMS-Spectraverse-Benchmark", "dataset",
+        "dsadd4/UltraMS-Spectraverse-Dataset", "dataset",
         "v1.0.0",
         "Spectraverse.csv", 707447509,
         "06e084501e91f92cc642c3d60de2863266ff3d0db958354a011e32851bef3976",

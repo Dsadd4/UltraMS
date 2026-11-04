@@ -85,7 +85,7 @@ The saved 94.92% result identifies `rt_only_d` but does not record the checkpoin
 
 ### Negative-ion structural families
 
-The SpectraVerse benchmark excludes MoNA molecules. The two supervised checkpoints come from molecular-identification training. The selected six-family protocol uses a 0.75 fingerprint-distance cutoff, followed by held-out test metrics. The downloaded frozen structure inputs retain the exact cluster assignments used for the reported test.
+The negative-ion SpectraVerse evaluation excludes molecules present in the MoNA adaptation data set. The two supervised checkpoints come from molecular-identification training. The selected six-family protocol uses a 0.75 fingerprint-distance cutoff, followed by held-out test metrics. The downloaded frozen structure inputs retain the exact cluster assignments used for the reported test.
 
 ```bash
 export SV=$EXPERIMENT/datasets/Spectraverse/Spectraverse.csv

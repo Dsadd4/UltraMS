@@ -7,9 +7,9 @@ downloaded by ``download_public_inputs.py``:
   (Hugging Face ``dsadd4/UltraMS-MSnLib-Benchmark``, DOI 10.5281/zenodo.23963489),
   derived from the public MSnLib library (Brungs et al., Zenodo 11163380,
   CC BY 4.0). Its ``fold`` column is the UltraMS formula-level 80/10/10 split.
-* **SpectraVerse** -- ``Spectraverse.csv`` of the UltraMS SpectraVerse benchmark
-  release (Hugging Face ``dsadd4/UltraMS-Spectraverse-Benchmark``,
-  DOI 10.5281/zenodo.23964106), derived from SpectraVerse v1.0.1
+* **SpectraVerse** -- ``Spectraverse.csv`` of the UltraMS SpectraVerse dataset
+  (Hugging Face ``dsadd4/UltraMS-Spectraverse-Dataset``,
+  DOI 10.5281/zenodo.23964105), derived from SpectraVerse v1.0.1
   (Zenodo 17870921, CC BY 4.0). Its ``fold`` column is the UltraMS molecule-level
   (exact-SMILES) 8:1:1 split.
 
@@ -41,7 +41,7 @@ RELEASED_TABLES = {
         "rows": 464_346,
         "header": "mzs,intensities,smiles,precursor_mz,adduct,collision_energy,fold",
         "folds": {"train": 370_362, "val": 47_825, "test": 46_159},
-        "release": "UltraMS SpectraVerse benchmark release (dsadd4/UltraMS-Spectraverse-Benchmark; DOI 10.5281/zenodo.23964106)",
+        "release": "UltraMS SpectraVerse dataset (dsadd4/UltraMS-Spectraverse-Dataset; DOI 10.5281/zenodo.23964105)",
     },
 }
 
