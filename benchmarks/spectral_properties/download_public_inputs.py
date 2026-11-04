@@ -42,6 +42,15 @@ ASSETS = {
         "MSnLib.csv", 752707651,
         "be54b33039cf18675751ea3c6354b592177c899a0cd5df303ae616330133ec07",
     ),
+    "spectraverse_spectra": Asset(
+        # UltraMS SpectraVerse benchmark release: the released Spectraverse.csv
+        # table (one row per spectrum; fold column = UltraMS molecule-level 8:1:1
+        # split), derived from SpectraVerse v1.0.1 (Zenodo 17870921, CC BY 4.0).
+        "dsadd4/UltraMS-Spectraverse-Benchmark", "dataset",
+        "v1.0.0",
+        "Spectraverse.csv", 707447509,
+        "06e084501e91f92cc642c3d60de2863266ff3d0db958354a011e32851bef3976",
+    ),
     "massspecgym": Asset(
         "roman-bushuiev/MassSpecGym", "dataset",
         "d2e86d0c3bd905a6d578c0dd6053ed2bd41f9c2a",
@@ -99,25 +108,6 @@ ASSETS = {
 }
 
 
-@dataclass(frozen=True)
-class ZenodoAsset:
-    filename: str
-    size: int
-    md5: str
-
-
-ZENODO_ASSETS = {
-    # Legacy SpectraVerse-derived distribution retained for the reported
-    # negative-ion structure results. The MSnLib counterpart already moved to the
-    # UltraMS MSnLib benchmark release above; moving SpectraVerse to a
-    # first-party release with the same frozen split is pending (see INPUTS.md).
-    "spectraverse_spectra": ZenodoAsset(
-        "Spectraverse_dataset.mgf", 751173810,
-        "6af0588372e00781ed23a018841938aa",
-    ),
-}
-ZENODO_RECORD = "https://zenodo.org/api/records/23963489/files"
-
 PEAK_NEIGHBOR_REVISION = "535afb61c9a4c6fb05dd5426cd5ff3299b24bdb8"
 PEAK_NEIGHBOR_FILES = {
     "msnlib_magma_annotations.json": (131619459, "e48c9498ca54c1b93976009fd049a8217b5f8795c9f17ef0aaa0942467fff3cb"),
@@ -145,6 +135,14 @@ ATOM_QUERY_HEADS_FILES = {
     "ultrams_probe.pt": (42067381, "2e61867fbe9505e4d78bff9150632e9fe36b5af7ab8677e4f2aa683781c0bf65"),
     "dreams_probe.pt": (42067414, "44ed616bae6a283bd05a9955036a823dc9d5af36705e670701e4b7f3f0ae0ccc"),
 }
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(8 * 1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def sha256(path: Path) -> str:
@@ -189,52 +187,16 @@ def download_hf(asset: Asset, directory: Path) -> Path:
     return path
 
 
-def download_zenodo(asset: ZenodoAsset, directory: Path) -> Path:
-    directory.mkdir(parents=True, exist_ok=True)
-    destination = directory / asset.filename
-    if destination.exists() and destination.stat().st_size == asset.size and md5(destination) == asset.md5:
-        return destination
-    partial = destination.with_suffix(destination.suffix + ".part")
-    if partial.exists() and partial.stat().st_size > asset.size:
-        partial.unlink()
-    if partial.exists() and partial.stat().st_size == asset.size:
-        if md5(partial) == asset.md5:
-            partial.replace(destination)
-            return destination
-        partial.unlink()
-    offset = partial.stat().st_size if partial.exists() else 0
-    if offset < asset.size:
-        url = f"{ZENODO_RECORD}/{asset.filename}/content"
-        headers = {"Range": f"bytes={offset}-"} if offset else {}
-        response = urlopen(Request(url, headers=headers), timeout=60)
-        if offset and response.status != 206:
-            response.close()
-            partial.unlink()
-            offset = 0
-            response = urlopen(Request(url), timeout=60)
-        with response, partial.open("ab" if offset else "wb") as output:
-            for chunk in iter(lambda: response.read(8 * 1024 * 1024), b""):
-                output.write(chunk)
-    actual_size = partial.stat().st_size
-    actual_md5 = md5(partial)
-    if actual_size != asset.size or actual_md5 != asset.md5:
-        raise ValueError(f"Source mismatch for {asset.filename}: size={actual_size}, md5={actual_md5}")
-    partial.replace(destination)
-    return destination
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--list", action="store_true", help="show available files and sizes")
-    parser.add_argument("--asset", nargs="+", choices=sorted(set(ASSETS) | set(ZENODO_ASSETS) | {"peak_neighbors", "negative_ion_structure", "atom_query_heads"}))
+    parser.add_argument("--asset", nargs="+", choices=sorted(set(ASSETS) | {"peak_neighbors", "negative_ion_structure", "atom_query_heads"}))
     parser.add_argument("--output-root", type=Path)
     args = parser.parse_args()
 
     if args.list:
         for name, asset in ASSETS.items():
             print(f"{name:21s} {asset.size / 1e9:6.2f} GB  {asset.repo}/{asset.filename}")
-        for name, asset in ZENODO_ASSETS.items():
-            print(f"{name:21s} {asset.size / 1e9:6.2f} GB  Zenodo {asset.filename}")
         print(f"{'peak_neighbors':21s} {sum(size for size, _ in PEAK_NEIGHBOR_FILES.values()) / 1e9:6.2f} GB  seven frozen benchmark inputs")
         print(f"{'negative_ion_structure':21s} {sum(size for size, _ in NEGATIVE_ION_STRUCTURE_FILES.values()) / 1e9:6.2f} GB  seven frozen benchmark inputs")
         print(f"{'atom_query_heads':21s} {sum(size for size, _ in ATOM_QUERY_HEADS_FILES.values()) / 1e9:6.2f} GB  two selected heteroatom-count probes")
@@ -284,12 +246,6 @@ def main() -> None:
                 files.append({**asdict(asset), "path": str(path)})
                 print(f"{name}: {path}", flush=True)
             manifest[name] = files
-            continue
-        if name in ZENODO_ASSETS:
-            asset = ZENODO_ASSETS[name]
-            path = download_zenodo(asset, root / name)
-            manifest[name] = {**asdict(asset), "path": str(path), "record": ZENODO_RECORD}
-            print(f"{name}: {path}", flush=True)
             continue
         asset = ASSETS[name]
         directory = root / "benchmark_assets" if name in {"masked_peak_reconstruction", "massspecgym_labels"} else root / name
