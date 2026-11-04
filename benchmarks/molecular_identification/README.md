@@ -6,7 +6,7 @@
 bash benchmarks/molecular_identification/source_code/run_public_molecular_identification.sh "$PWD/ultrams_benchmark_workspace"
 ```
 
-This downloads the original MSnLib spectra and candidate table plus model weights, trains the two spectrum-to-molecule projections and four comparison readouts, writes the six held-out top-50 candidate lists, and runs both grouping evaluations. The downloads and full training take substantial time and GPU memory. Completed inputs and encoder test lists are reused when the command is restarted.
+This downloads the released MSnLib table (`MSnLib.csv`), candidate table and model weights, trains the two spectrum-to-molecule projections and four comparison readouts, writes the six held-out top-50 candidate lists, and runs both grouping evaluations. The downloads and full training take substantial time and GPU memory. Completed inputs and encoder test lists are reused when the command is restarted.
 
 To run the six selected manuscript models over the original MSnLib test fold, including multiple-spectrum voting and label-blind grouping:
 
@@ -31,7 +31,7 @@ To rerun multiple-spectrum voting and label-blind grouping directly from the six
 bash benchmarks/molecular_identification/source_code/run_public_grouping_evaluation.sh "$PWD/ultrams_benchmark_workspace"
 ```
 
-This downloads the official MSnLib spectra and six reported 57,437-query top-50 lists, reconstructs retention times, selects the grouping threshold on validation spectra, and executes the original held-out evaluators.
+This downloads the released MSnLib table and six reported 57,437-query top-50 lists, builds the retention-time table from an RT-bearing spectrum record, selects the grouping threshold on validation spectra, and executes the original held-out evaluators.
 
 [Public inputs and a clean-workspace training route](INPUTS.md) cover the MSnLib UltraMS single-spectrum projection. On Linux with a CUDA GPU, from the repository root:
 
@@ -173,16 +173,24 @@ The released test assignments, validation threshold table, and `data/grouping_su
 
 ## Benchmark splits
 
-Two different MSnLib partitions are used in this repository and must not be mixed:
+The UltraMS MSnLib benchmark dataset publishes two partitions of the public MSnLib
+release. They are different objects and must not be mixed:
 
-- The repository-wide MSnLib tables (`data/`, NPLIB1/MassSpecGym candidate ranking,
-  multiple-spectrum voting, label-blind grouping) use the formula-level `FOLD` split
-  inherited from the public dataset MSnLib distribution (446,667 / 55,980 / 57,437 spectra,
-  grouped by molecular formula).
-- The Figure 3e/3h spectrum-to-spectrum library-search evaluation uses a molecule-level
-  disjoint split of the strict `[M+H]+` / `[M-H]-` subsets (70% / 15% / 15% of canonical
-  isomeric SMILES; 6,202 + 3,193 test queries). That split, its protocol and its
-  verification record are distributed separately; a persistent identifier will be linked
-  here when the dataset record is published. See
-  [`paper_figures/README.md`](../../paper_figures/README.md) and
-  [`paper_figures/figure3/version_audit.md`](../../paper_figures/figure3/version_audit.md).
+- **Full-library formula-level split (80 / 10 / 10).** The repository-wide MSnLib
+  tables (`data/`, NPLIB1/MassSpecGym candidate ranking, multiple-spectrum voting,
+  label-blind grouping) use the UltraMS formula-level split: 560,084 spectra assigned
+  by molecular formula to 446,667 training, 55,980 validation and 57,437 test spectra.
+  The 21,107 molecular formulas form 16,885 / 2,110 / 2,112 disjoint groups, so every
+  spectrum sharing a molecular formula falls in a single partition.
+- **Strict-adduct molecule-level split (70 / 15 / 15).** The Figure 3e/3h
+  spectrum-to-spectrum library-search evaluation uses a molecule-level disjoint split
+  of the strict `[M+H]+` / `[M-H]-` subsets (70% / 15% / 15% of canonical isomeric
+  SMILES; 6,202 + 3,193 test queries). A query is never part of its own library.
+
+Both partitions are distributed with the UltraMS MSnLib benchmark dataset
+([`dsadd4/UltraMS-MSnLib-Benchmark`](https://huggingface.co/datasets/dsadd4/UltraMS-MSnLib-Benchmark);
+DOI pending) and are derived from the public
+[MSnLib release](https://doi.org/10.5281/zenodo.11163380) (Brungs et al., CC BY 4.0).
+The two partitions must not be compared fold-to-fold or used to claim the same test
+set. See [`paper_figures/README.md`](../../paper_figures/README.md) and
+[`paper_figures/figure3/version_audit.md`](../../paper_figures/figure3/version_audit.md).

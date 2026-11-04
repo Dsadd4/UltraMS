@@ -34,7 +34,7 @@ To run all six single-spectrum methods followed by multiple-spectrum voting and 
 bash benchmarks/molecular_identification/source_code/run_public_molecular_identification.sh "$PWD/ultrams_benchmark_workspace"
 ```
 
-The training command downloads all public inputs, reconstructs the MSnLib and retention-time tables, then runs training and evaluation in that order. The full downloads and neural training require substantial time and GPU memory. It can resume with the completed input files and encoder test lists.
+The training command downloads and verifies all public inputs, builds the retention-time table from an RT-bearing spectrum record (`ULTRAMS_MSNLIB_RT_SOURCE`), then runs training and evaluation in that order. The full downloads and neural training require substantial time and GPU memory. It can resume with the completed input files and encoder test lists.
 
 To evaluate the six selected manuscript weights on the full test fold and run both grouping evaluators, use `bash benchmarks/molecular_identification/source_code/run_public_single_spectrum_reported_six_methods.sh "$PWD/ultrams_selected_models"` in a separate workspace.
 
@@ -44,7 +44,7 @@ For a direct evaluation from the six published top-50 test-query lists, run:
 bash benchmarks/molecular_identification/source_code/run_public_grouping_evaluation.sh "$PWD/ultrams_benchmark_workspace"
 ```
 
-This uses the same multiple-spectrum and label-blind evaluator programs. The label-blind program rebuilds validation and test groups from the original MSnLib spectra and retention times, chooses the threshold on the validation fold, and then evaluates the six methods on held-out test groups.
+This uses the same multiple-spectrum and label-blind evaluator programs. The label-blind program rebuilds validation and test groups from the released MSnLib table and the joined retention times, chooses the threshold on the validation fold, and then evaluates the six methods on held-out test groups.
 
 The released result tables contain six 57,437-query lists, 5,002 voting groups, and 15,541 label-blind groups covering 52,070 spectra. The grouping evaluator uses 10,000 bootstrap samples.
 
@@ -73,7 +73,7 @@ bash benchmarks/molecular_identification/source_code/run_multiple_spectrum_ident
 bash benchmarks/molecular_identification/source_code/run_label_blind_grouping.sh
 ```
 
-The first script trains the two spectrum–molecule projections and four ChemBERTa readouts, then writes six held-out per-spectrum candidate lists. It uses the frozen MSnLib folds, ChemBERTa molecule cache, and effective candidate list; the two projection encoders save their top-50 candidates with `--save-per-spectrum`. The second script runs multiple-spectrum voting. The third selects a label-blind grouping threshold on validation spectra and evaluates the frozen test groups for the same six methods. Its retention-time input is generated from the public public dataset MGF by `prepare_msnlib_rt.py` when absent.
+The first script trains the two spectrum–molecule projections and four ChemBERTa readouts, then writes six held-out per-spectrum candidate lists. It uses the frozen UltraMS MSnLib formula-level split (80/10/10), ChemBERTa molecule cache, and effective candidate list; the two projection encoders save their top-50 candidates with `--save-per-spectrum`. The second script runs multiple-spectrum voting. The third selects a label-blind grouping threshold on validation spectra and evaluates the frozen test groups for the same six methods. Its retention-time input is generated from the released MSnLib spectrum table by `prepare_msnlib_rt.py` when absent.
 
 For the learned readouts, the programs accept explicit input and output directories. For example, one strict-adduct comparison run is:
 

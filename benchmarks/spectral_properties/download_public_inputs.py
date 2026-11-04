@@ -32,6 +32,16 @@ class Asset:
 
 
 ASSETS = {
+    "msnlib_spectra": Asset(
+        # UltraMS MSnLib benchmark release: the released MSnLib.csv table (one
+        # row per spectrum; fold column = UltraMS formula-level 80/10/10 split),
+        # derived from the public MSnLib library (Brungs et al., Zenodo 11163380,
+        # CC BY 4.0). DOI pending: pin the published release commit on upload.
+        "dsadd4/UltraMS-MSnLib-Benchmark", "dataset",
+        "main",
+        "MSnLib.csv", 752707651,
+        "be54b33039cf18675751ea3c6354b592177c899a0cd5df303ae616330133ec07",
+    ),
     "massspecgym": Asset(
         "roman-bushuiev/MassSpecGym", "dataset",
         "d2e86d0c3bd905a6d578c0dd6053ed2bd41f9c2a",
@@ -97,10 +107,10 @@ class ZenodoAsset:
 
 
 ZENODO_ASSETS = {
-    "msnlib_spectra": ZenodoAsset(
-        "MSnLib_dataset.mgf", 1165459632,
-        "e7c648b89841d10759f6b796aa7e3e50",
-    ),
+    # Legacy SpectraVerse-derived distribution retained for the reported
+    # negative-ion structure results. The MSnLib counterpart already moved to the
+    # UltraMS MSnLib benchmark release above; moving SpectraVerse to a
+    # first-party release with the same frozen split is pending (see INPUTS.md).
     "spectraverse_spectra": ZenodoAsset(
         "Spectraverse_dataset.mgf", 751173810,
         "6af0588372e00781ed23a018841938aa",

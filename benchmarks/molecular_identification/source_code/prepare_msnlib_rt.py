@@ -1,10 +1,23 @@
-"""Add public dataset retention times to the MSnLib benchmark CSV."""
+"""Add a retention-time column to the released UltraMS MSnLib table.
+
+The released ``MSnLib.csv`` table of the UltraMS MSnLib benchmark release
+(Hugging Face dataset ``dsadd4/UltraMS-MSnLib-Benchmark``; DOI pending) contains
+one row per MSnLib spectrum and the UltraMS formula-level 80/10/10 ``fold``
+column, but it does not carry retention times. This script joins ``RTINSECONDS``
+values from an RT-bearing spectrum record onto those 560,084 rows by
+(SMILES, first-peak key) and writes ``MSnLib_with_rt.csv``.
+
+Supply that record with ``--rt-source`` (or the ``ULTRAMS_MSNLIB_RT_SOURCE``
+environment variable); a first-party RT table for the benchmark release is
+pending. The joined spectra are derived from the public MSnLib release
+(Brungs et al., Zenodo 11163380, CC BY 4.0).
+"""
 
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
-import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
@@ -78,9 +91,29 @@ def build_csv_key(row):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, required=True, help='Benchmark workspace root')
+    parser.add_argument(
+        '--rt-source', type=Path, default=None,
+        help='RT-bearing spectrum record (MGF with RTINSECONDS); defaults to '
+             'ULTRAMS_MSNLIB_RT_SOURCE or datasets/MSnLib/MSnLib_dataset.mgf when present',
+    )
     args = parser.parse_args()
     source = args.root.resolve() / 'datasets' / 'MSnLib'
-    mgf_path = source / 'MSnLib_dataset.mgf'
+    legacy_default = source / 'MSnLib_dataset.mgf'
+    mgf_path = (
+        args.rt_source
+        or (Path(os.environ['ULTRAMS_MSNLIB_RT_SOURCE'])
+            if os.environ.get('ULTRAMS_MSNLIB_RT_SOURCE') else None)
+        or (legacy_default if legacy_default.exists() else None)
+    )
+    if mgf_path is None:
+        raise SystemExit(
+            'error: the released MSnLib.csv has no retention-time column; pass an '
+            'RT-bearing spectrum record with --rt-source PATH or export '
+            'ULTRAMS_MSNLIB_RT_SOURCE=PATH (a first-party RT table is pending)'
+        )
+    mgf_path = Path(mgf_path).resolve()
+    if not mgf_path.is_file():
+        raise SystemExit(f'error: RT source not found: {mgf_path}')
     csv_path = source / 'MSnLib.csv'
     output_path = source / 'MSnLib_with_rt.csv'
     mgf_records = parse_mgf_rt(mgf_path)

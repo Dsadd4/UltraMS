@@ -1,5 +1,5 @@
 """
-Standalone DreaMS model loader that bypasses the public dataset adapter.
+Standalone DreaMS model loader used by the comparison baselines.
 Handles PyTorch 2.6 weights_only changes and matchms API updates.
 """
 
