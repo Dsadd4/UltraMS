@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "group_source": "frozen; no regrouping",
+  "n_groups": 15541,
+  "n_grouped_spectra": 52070,
+  "candidate_depth": 50,
+  "formal_method_completeness_enforced": true,
+  "formal_primary_six": false,
+  "formal_chemberta_six": false,
+  "formal_final_six": true,
+  "primary_model_seed": 0,
+  "main_result_policy": "single checkpoint per method; learned baselines use seed 0; no seed ensemble",
+  "stability_model_seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "bootstrap_seed_by_method": {
+    "UltraMS": 20260722,
+    "DreaMS": 20260723,
+    "Fingerprint FFN": 20260724,
+    "Spec2Vec": 20260725,
+    "Linear": 20260726,
+    "Binned FFN": 20260727,
+    "DeepSets": 20260728,
+    "DeepSets + Fourier": 20260729,
+    "Linear FP": 20260730,
+    "Fourier projection": 20260731,
+    "UltraMS codebook": 20260801
+  },
+  "legacy_regression": {
+    "UltraMS": {
+      "per_group_rows": 15541,
+      "regression": "exact_or_1e-14_float_tolerance"
+    },
+    "DreaMS": {
+      "per_group_rows": 15541,
+      "regression": "exact_or_1e-14_float_tolerance"
+    }
+  },
+  "frozen_inputs": {
+    "source_data/group_assignments_test.csv.gz": "ce8dfd5c7040533bdc5103d03559d47906913274652d39397c29cea60183b6ae",
+    "source_data/group_purity_test.csv.gz": "87a082dbef526f9c22e13da4ae1879537d42eb6e035dc2af5d45bdad082ea765",
+    "source_data/hidden_label_audit.csv.gz": "855024124d07b48613737240ac18aa5a6df97c725a4f236cde4a09c6f82463c8",
+    "source_data/per_group_metrics_test.csv.gz": "e2a617cd29e4834bb70167d17943cf17644bacd8477aad623c91d3904ce354a1",
+    "statistics/model_performance.csv": "96be66cb4f4263ea4a73d16914bca3f7f2a56fed8b3395917224a3d737de12ee",
+    "statistics/paired_group_bootstrap.csv": "34210335f9c119ced488220c9f708ebd1c601642ca6bed6f021eab5c11aa5ccb"
+  }
+}

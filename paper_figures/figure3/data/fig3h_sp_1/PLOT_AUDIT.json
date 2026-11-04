@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "source_id": "fig3h_threshold_transfer_v2/threshold_transfer_repeats.csv.gz",
+  "source_sha256": "af6675661085c5c7fd40d4f1db6be146f59df241bbd8ebd80105b63c37a7f6e0",
+  "aggregate_done_sha256": "450efb36c768d0be17038d161953bfe4839ca8cea172860b1067c6738d1fb8a7",
+  "n_rows": 1200,
+  "methods": [
+    "Binned cosine",
+    "DreaMS",
+    "UltraMS"
+  ],
+  "adducts": {
+    "pos": "[M+H]+",
+    "neg": "[M-H]-"
+  },
+  "outputs": {
+    "s4_fdr_threshold_transfer.pdf": "1b482fdc783cc7f45d741836f1f1872a76fb0675aee458ff63b4913cd8c3482a",
+    "s4_fdr_threshold_transfer.png": "f3cd550798e34a6daa56f9edb7924cd1e7399aa53d47e3f00d2709139887d9b8",
+    "s4_fdr_threshold_transfer.svg": "4adae5ddb3b104ad85dfd7e6c8b248dcea2afed21428c2ce3e438675c53fbeec"
+  }
+}

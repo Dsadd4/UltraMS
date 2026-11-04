@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "n_molecules": 661,
+  "family_sizes": [
+    327,
+    100,
+    89,
+    62,
+    48,
+    35
+  ],
+  "definition": "Standard Euclidean Davies-Bouldin on frozen Butina structure families",
+  "normalization": "Original float32 row L2 normalization; distance arithmetic float64",
+  "bootstrap": {
+    "n": 10000,
+    "seed": 3407,
+    "unit": "molecule within structure family",
+    "paired": true,
+    "diagnostic_bounds": "2.5/97.5 percentiles",
+    "use": "diagnostic only; systematic bootstrap shift; not validated confidence intervals",
+    "centroids_and_dispersion": "recomputed for every resample"
+  },
+  "software": {
+    "python": "3.13.11",
+    "numpy": "2.4.4",
+    "scipy": "1.16.3",
+    "sklearn": "1.9.0"
+  },
+  "input_sha256": {
+    "test_dreams_supervised.npy": "bdb5567c167f757c6d32ccc743629b004b40a329ebac799a6e439924f3ba9f2c",
+    "test_ultrams_supervised.npy": "f9bd8d21cef3bbb2366e55eefe3e014bc7007e11a20bfde86f6c6f94963782e8",
+    "test_metadata.csv": "ba2ed918b745a8a2402c4aef913b72efe30bd44f1536df53872da523c9935ae7",
+    "test_top150_peaks.npz": "f262073c8c462667c2368d9ed659aa596cd4645af1eea912b4dcc84b89747223"
+  },
+  "frozen_labels_sha256": "19af6c063cb35ce98f5732ca30c622f97f49f6c4754e4b0eb8bf0e72a1eb260a",
+  "script_sha256": "515f5df1bef23cf47f47384bceb48c66a810b5158e44ef081d74c8618255a866"
+}

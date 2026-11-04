@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "n_runs": 6,
+  "n_queries": 57437,
+  "n_molecule_clusters": 5003,
+  "formal_method_completeness_enforced": true,
+  "formal_primary_six": false,
+  "formal_chemberta_six": false,
+  "formal_final_six": true,
+  "primary_model_seed": 0,
+  "main_result_policy": "single checkpoint per method; learned baselines use seed 0; no seed ensemble",
+  "stability_model_seeds": [],
+  "query_index_sha256_i64le": "4cec8e332cb5cf5ba24ce6994795182fd5cdaceaef1c65c3dc674234db0413df",
+  "candidate_count_sha256_i64le": "0590af48d96981c9c11df3f10cf3d20e09fd45d06952bb2270a45cbe67c0f05c",
+  "bootstrap_replicates": 10000,
+  "artifacts": {
+    "frozen_query_identity.csv.gz": "ffce5150bb1a36b9dbc32570779d58a0b8d8d08c59de47b83fe740996642ffae",
+    "input_manifest.csv": "6e8bfe6b6e1a194f4304721ff7e2d365644733c3679597bc473a17057f42c0fb",
+    "method_summary.csv": "35436465dac896e5d25167c4063c64481aa3e353f8a4e19fd136b0ff9f7d62ff",
+    "paired_cluster_bootstrap.csv": "d560ec2fcf265893ad7338a36be859bb4fd642759e02e0ccf469535fd17c4dd3",
+    "per_seed_metrics.csv": "a2a79145dba3afd3d37d73159f7b98df4ccadc03cff46aa02f17bd3160c80a1c",
+    "rank_cdf_seed_stability.csv.gz": "6528e20901625a8a39e4c02de484d2c8c26d93bbe8f8d70226edad4ff065aa59",
+    "rank_cdf_source_data.csv.gz": "7baabe0926fa271c1974d392e5fd5fc692cff8c28153036f21e07670367f38a0"
+  }
+}

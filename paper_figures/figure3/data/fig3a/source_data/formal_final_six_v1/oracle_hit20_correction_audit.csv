@@ -1,0 +1,3 @@
+method,historical_top1_only_hit20_percent,corrected_top50_hit20_percent,change_percentage_points,historical_status
+DreaMS,99.2203118752499,57.73690523790483,-41.48340663734507,invalid_absent_target_pseudorank
+UltraMS,99.50019992003199,64.87405037984806,-34.62614954018393,invalid_absent_target_pseudorank

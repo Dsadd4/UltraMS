@@ -1,0 +1,104 @@
+{
+  "Raw spectrum": {
+    "silhouette_reproduced": 0.016847148537635803,
+    "silhouette_saved": 0.0168471504002809,
+    "db_sklearn": 8.037943878338469,
+    "db_gram": 8.037943878338465,
+    "bootstrap_checks": [
+      {
+        "replicate": 0,
+        "direct": 6.509932921946731,
+        "gram": 6.509932921946731
+      },
+      {
+        "replicate": 1,
+        "direct": 6.436164767331412,
+        "gram": 6.43616476733141
+      },
+      {
+        "replicate": 42,
+        "direct": 6.526069145150025,
+        "gram": 6.526069145150025
+      },
+      {
+        "replicate": 999,
+        "direct": 6.519113231457333,
+        "gram": 6.519113231457335
+      },
+      {
+        "replicate": 9999,
+        "direct": 6.2844299749294095,
+        "gram": 6.28442997492941
+      }
+    ],
+    "dimension": 20001
+  },
+  "DreaMS": {
+    "silhouette_reproduced": 0.10171467065811157,
+    "silhouette_saved": 0.1017146706581115,
+    "db_sklearn": 7.109464547631005,
+    "db_gram": 7.109464547631003,
+    "bootstrap_checks": [
+      {
+        "replicate": 0,
+        "direct": 5.580509959643565,
+        "gram": 5.58050995964357
+      },
+      {
+        "replicate": 1,
+        "direct": 5.690930222467131,
+        "gram": 5.690930222467124
+      },
+      {
+        "replicate": 42,
+        "direct": 6.049731471367397,
+        "gram": 6.049731471367399
+      },
+      {
+        "replicate": 999,
+        "direct": 5.63373413412366,
+        "gram": 5.633734134123663
+      },
+      {
+        "replicate": 9999,
+        "direct": 5.851327755082245,
+        "gram": 5.85132775508225
+      }
+    ],
+    "dimension": 1024
+  },
+  "UltraMS": {
+    "silhouette_reproduced": 0.12873011827468872,
+    "silhouette_saved": 0.1287301331758499,
+    "db_sklearn": 5.540295761466607,
+    "db_gram": 5.540295761466599,
+    "bootstrap_checks": [
+      {
+        "replicate": 0,
+        "direct": 4.350195540925344,
+        "gram": 4.35019554092534
+      },
+      {
+        "replicate": 1,
+        "direct": 4.67389385814482,
+        "gram": 4.673893858144823
+      },
+      {
+        "replicate": 42,
+        "direct": 5.64134108891522,
+        "gram": 5.6413410889152225
+      },
+      {
+        "replicate": 999,
+        "direct": 4.341255016513267,
+        "gram": 4.341255016513268
+      },
+      {
+        "replicate": 9999,
+        "direct": 5.007577236049175,
+        "gram": 5.0075772360491735
+      }
+    ],
+    "dimension": 1024
+  }
+}

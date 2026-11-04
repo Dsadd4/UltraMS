@@ -1,0 +1,27 @@
+{
+  "n_spectra": 7539,
+  "n_peaks": 176138,
+  "fragment_label_counts": {
+    "N-containing": 50000,
+    "O-rich": 44171,
+    "S/P-containing": 24508,
+    "Other": 22533,
+    "Hydrocarbon": 17670,
+    "Halogenated": 17256
+  },
+  "molecule_label_counts": {
+    "O-rich": 55459,
+    "N-containing": 40661,
+    "S/P-containing": 39640,
+    "Halogenated": 38626,
+    "Other": 1752
+  },
+  "ultra_embedding_shape": [
+    176138,
+    1024
+  ],
+  "dreams_embedding_shape": [
+    176138,
+    1024
+  ]
+}

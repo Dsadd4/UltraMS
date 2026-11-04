@@ -1,0 +1,75 @@
+{
+  "analysis_id": "s7_source_fusion_decision_v1",
+  "seed": 20260722,
+  "bootstrap_replicates": 2000,
+  "primary_unit": "held-out query spectrum",
+  "cluster_unit": "canonical target SMILES",
+  "outcome_definition": {
+    "rescued": "global_rank > 1 and fusion_rank == 1",
+    "preserved": "global_rank == 1 and fusion_rank == 1",
+    "harmed": "global_rank == 1 and fusion_rank > 1",
+    "unresolved": "global_rank > 1 and fusion_rank > 1"
+  },
+  "difficulty_strata": {
+    "candidate_competition": [
+      [1, 9, "1-9 candidates"],
+      [10, 49, "10-49 candidates"],
+      [50, 1000000, "50 candidates"]
+    ],
+    "retained_peak_evidence": [
+      [50, 99, "50-99 peaks"],
+      [100, 149, "100-149 peaks"],
+      [150, 1000000, "150 peaks"]
+    ],
+    "molecular_size": [
+      [1, 25, "<=25 heavy atoms"],
+      [26, 40, "26-40 heavy atoms"],
+      [41, 1000000, ">40 heavy atoms"]
+    ]
+  },
+  "case_selection": {
+    "eligible_candidate_count": 50,
+    "eligible_peak_count": 150,
+    "rescued_metric": "global_rank - final_rank",
+    "preserved_metric": "peak_rank",
+    "harmed_metric": "final_rank",
+    "rule": "closest to the within-lane median; ties resolved by split then spec_id"
+  },
+  "nplib1": {
+    "scenario": "ms2peaks_min50",
+    "splits": [1, 2, 3],
+    "promoted_package": "supp_figure/s2m/nplib",
+    "final_run": "train/output/comparison/nplib1_ms2fp_member_ensemble/sourcefusion_existing_u5_proj_compact_rank_3fold_20260703o",
+    "dataset_pattern": "datasets/NPLIB1/NPLIB1_ms2blocks_split{split}.csv",
+    "views": {
+      "global": "member_sources/rankfusion_u5elr8_cls_3fold_20260703a/query_rows/query_rows_ms2peaks_min50_split{split}_u5elr8_rank_src.csv",
+      "peak": "member_sources/rich_token_u5elr8_proj_mean_iw_3fold_20260703d/query_rows/query_rows_ms2peaks_min50_split{split}_u5elr8_proj_mean_iw.csv",
+      "raw_projection": "member_sources/hard4_raw_m010_best_projmean_3fold_20260703n/query_rows/query_rows_ms2peaks_min50_split{split}_hard4_raw_m010_best_projmean.csv",
+      "global_peak_fusion": "final_sourcefusion/query_rows/query_rows_ms2peaks_min50_split{split}_u5_cls_projmean.csv",
+      "final_fusion": "final_sourcefusion/query_rows/query_rows_ms2peaks_min50_split{split}_u5_cls_projmean_rawproj.csv",
+      "dreams_global": "member_sources/rankfusion_u5elr8_cls_3fold_20260703a/query_rows/query_rows_ms2peaks_min50_split{split}_dreams_embedding.csv",
+      "dreams_peak": "member_sources/dreams_peak_iw_3fold_20260703b/query_rows/query_rows_ms2peaks_min50_split{split}_dreams.csv",
+      "dreams_fusion": "final_sourcefusion/query_rows/query_rows_ms2peaks_min50_split{split}_dreams_global_iw.csv"
+    },
+    "weight_grid_pattern": "final_sourcefusion/weight_grid/weight_grid_ms2peaks_min50_split{split}_{model}.csv"
+  },
+  "massspecgym": {
+    "n_queries_per_task": 16440,
+    "mass": {
+      "source_run": "train/output/comparison/massspecgym_ms2fp_sourcefusion/sourcefusion_mass_all_fair_dp20_wd3e4_e15_ce2_b2048_none_w005_20260704ae",
+      "fusion_run": "train/output/comparison/massspecgym_ms2fp_sourcefusion/sourcefusion_mass_all_fair_dp20_score_tanimoto_rank_w001_20260705bp"
+    },
+    "formula": {
+      "source_run": "train/output/comparison/massspecgym_ms2fp_sourcefusion/sourcefusion_joint_zadapter_screen_l50_cw002_s002_h64_lim30k_e1_rank_20260706p",
+      "fusion_run": "train/output/comparison/massspecgym_ms2fp_sourcefusion/sourcefusion_joint_zadapter_screen_l50_cw002_s002_h64_lim30k_e1_rank_20260706p"
+    },
+    "views": {
+      "global": "query_rows_{task}_all_u5elr8_rank_src.csv",
+      "peak": "query_rows_{task}_all_u5elr8_proj_mean_iw.csv",
+      "fusion": "query_rows_{task}_all_u5_cls_projmean.csv",
+      "dreams_global": "query_rows_{task}_all_dreams_embedding.csv",
+      "dreams_peak": "query_rows_{task}_all_dreams_peak_iw.csv",
+      "dreams_fusion": "query_rows_{task}_all_dreams_global_iw.csv"
+    }
+  }
+}

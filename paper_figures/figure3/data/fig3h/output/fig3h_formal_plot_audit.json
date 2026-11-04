@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "figure_size_mm": [
+    102.5,
+    68.0
+  ],
+  "height_matched_to": "Figure 3b",
+  "render_layout_checks": {
+    "text_clipping_check": "passed",
+    "cross_panel_text_overlap_check": "passed",
+    "bar_annotation_overlap_check": "passed"
+  },
+  "visual_types": [
+    "strict [M+H]+ FDR-recall curve",
+    "strict [M-H]- FDR-recall curve",
+    "two aligned bar panels for query-micro-averaged mean recall over FDR 0\u20135% in additional positive and negative groups"
+  ],
+  "additional_adduct_metric": "query-micro-averaged exact-envelope mean identification recall over FDR 0\u20135% across all included exact-adduct tasks",
+  "additional_adduct_displayed": [
+    "[M+NH4]+",
+    "[M+Cl]-",
+    "[M+FA]-",
+    "[M+H-H2O]+",
+    "[M+Na]+"
+  ],
+  "additional_adduct_groups": {
+    "Additional positive": [
+      "[M+H-H2O]+",
+      "[M+NH4]+",
+      "[M+Na]+"
+    ],
+    "Additional negative": [
+      "[M+Cl]-",
+      "[M+FA]-"
+    ]
+  },
+  "additional_adduct_training": "all four controls were trained on distinct same-molecule spectrum pairs from the frozen composite-polarity training compounds; each displayed additional adduct contributes its own training spectra",
+  "learned_control_supervision": "symmetric same-molecule spectrum-pair InfoNCE; no molecular embedding target and no ChemBERTa",
+  "raw_cosine_training": "not applicable; MatchMS CosineGreedy is evaluated directly on the frozen peak lists",
+  "primary_model_seed": 0,
+  "methods": [
+    "DeepSets",
+    "Codebook",
+    "Linear",
+    "Raw cosine",
+    "Fourier",
+    "DreaMS",
+    "UltraMS"
+  ],
+  "excluded_from_plot": [
+    "Spec2Vec",
+    "Binned cosine"
+  ],
+  "exclusion_scope": "display only; formal result artifacts are retained",
+  "strict_adducts": {
+    "pos": "[M+H]+",
+    "neg": "[M-H]-"
+  },
+  "sources": {
+    "fdr_envelopes_primary_seed0.csv.gz": "524b3560bedb50cc901de9983679caac64b103b59b669a1fac6304f0f11803de",
+    "working_points_primary_seed0.csv": "b5c06419c5bc8f1037648a8ceba2ef19a1b6ced8c61b6571f125aa6db856f423",
+    "low_fdr_mean_recall_primary_seed0.csv": "8b8669f9bd97483909b152c3b53446c96f66a8127f794137cd2d9d8fd53d6a88",
+    "other_strict_adduct_low_fdr_summary.csv": "b845fd4235b65cce697ba5d815b4265e719cae0c429205728cd621007c61239e",
+    "other_strict_adduct_per_query.csv.gz": "996c0163693cf1090f17b2e80bba35929898e77e7ac53f3c9d591c9920aaf71c",
+    "other_strict_adduct_exact_fdr_frontiers.csv.gz": "bb41053562a4018e2299aa5fc1e84f2cdd2935e24d49de9be16da2ca8998723e",
+    "other_strict_adduct_task_rows.csv.gz": "ef27125d8af323bb214170285948d185682353cee220e9cc918d4b1bb89869fd",
+    "AUDIT.json": "fcdc787f04295afe9d4fb2c34e0adddbad136b2c526ae7a69c14ea3359f9a79e",
+    "msnlib_adduct_inventory_20260823.csv": "270bf23e503f5b2c88a088c793b8eb95e8eec914bcc3ea1d76e3d73cf93a9b91",
+    "fig3h_additional_adduct_micro_summary.csv": "f7831fd65a93dbbb0da79c5ca470accb7d76a6c9c38a7f3011d0a35f587ccde1",
+    "fig3h_adduct_sample_sizes.csv": "2108bd8d82d77fcb1c4363b3cec4639f342db36d9ffc9c324550867316dec7de"
+  }
+}

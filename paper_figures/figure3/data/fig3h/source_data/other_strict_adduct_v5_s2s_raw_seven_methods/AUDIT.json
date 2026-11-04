@@ -1,0 +1,136 @@
+{
+  "status": "complete",
+  "protocol": "matched composite-polarity training; frozen exact-adduct held-out test full-library search; raw cosine is training-free and uses MatchMS CosineGreedy",
+  "split_seed": 42,
+  "query_seed": 119,
+  "target_fdr": 0.05,
+  "minimum_accepted": 10,
+  "csv_sha256": "be54b33039cf18675751ea3c6354b592177c899a0cd5df303ae616330133ec07",
+  "methods": [
+    "DeepSets",
+    "Codebook",
+    "Fourier",
+    "Linear",
+    "Raw cosine",
+    "DreaMS",
+    "UltraMS"
+  ],
+  "modes": {
+    "pos": {
+      "n_train_spectra": 229142,
+      "n_train_compounds": 30453,
+      "corresponding_adduct_training_counts": {
+        "[M+H-H2O]+": {
+          "n_train_spectra": 8087,
+          "n_train_compounds": 1440
+        },
+        "[M+H]+": {
+          "n_train_spectra": 210882,
+          "n_train_compounds": 29483
+        },
+        "[M+NH4]+": {
+          "n_train_spectra": 6642,
+          "n_train_compounds": 1119
+        },
+        "[M+Na]+": {
+          "n_train_spectra": 3531,
+          "n_train_compounds": 857
+        }
+      },
+      "tasks": {
+        "[M+H-H2O]+": {
+          "n_query": 330,
+          "n_library": 11430,
+          "n_library_positive": 330,
+          "n_train_spectra": 8087,
+          "n_train_compounds": 1440
+        },
+        "[M+NH4]+": {
+          "n_query": 221,
+          "n_library": 9139,
+          "n_library_positive": 221,
+          "n_train_spectra": 6642,
+          "n_train_compounds": 1119
+        },
+        "[M+Na]+": {
+          "n_query": 163,
+          "n_library": 4777,
+          "n_library_positive": 163,
+          "n_train_spectra": 3531,
+          "n_train_compounds": 857
+        }
+      }
+    },
+    "neg": {
+      "n_train_spectra": 147345,
+      "n_train_compounds": 17610,
+      "corresponding_adduct_training_counts": {
+        "[M+Cl]-": {
+          "n_train_spectra": 13634,
+          "n_train_compounds": 3443
+        },
+        "[M+FA]-": {
+          "n_train_spectra": 35329,
+          "n_train_compounds": 6281
+        },
+        "[M-H]-": {
+          "n_train_spectra": 98382,
+          "n_train_compounds": 15052
+        }
+      },
+      "tasks": {
+        "[M+Cl]-": {
+          "n_query": 731,
+          "n_library": 19113,
+          "n_library_positive": 731,
+          "n_train_spectra": 13634,
+          "n_train_compounds": 3443
+        },
+        "[M+FA]-": {
+          "n_query": 1381,
+          "n_library": 49773,
+          "n_library_positive": 1381,
+          "n_train_spectra": 35329,
+          "n_train_compounds": 6281
+        }
+      }
+    }
+  },
+  "task_identity_regression": {
+    "status": "exact_match",
+    "reference": "<INTERNAL_HPC_ROOT>",
+    "reference_sha256": "e1615e2a79301dc2fce288475d725b90c79804272d09ce755d3844fe7aac9a41"
+  },
+  "outputs": {
+    "other_strict_adduct_per_query.csv.gz": {
+      "sha256": "996c0163693cf1090f17b2e80bba35929898e77e7ac53f3c9d591c9920aaf71c",
+      "rows": 19782
+    },
+    "other_strict_adduct_exact_fdr_frontiers.csv.gz": {
+      "sha256": "bb41053562a4018e2299aa5fc1e84f2cdd2935e24d49de9be16da2ca8998723e",
+      "rows": 17929
+    },
+    "other_strict_adduct_low_fdr_summary.csv": {
+      "sha256": "b845fd4235b65cce697ba5d815b4265e719cae0c429205728cd621007c61239e",
+      "rows": 35
+    },
+    "other_strict_adduct_task_rows.csv.gz": {
+      "sha256": "ef27125d8af323bb214170285948d185682353cee220e9cc918d4b1bb89869fd",
+      "rows": 97058
+    }
+  },
+  "parent_bundle": "<LOCAL_WORKSPACE_ROOT>",
+  "parent_audit_sha256": "578188a8e88ba8085695e971c6e16e24472819969a439eaeb82f9337dc43a1dd",
+  "raw_matchms_audit_sha256": "9c221c192e27605ab546a4da267ff96bdeb1ddc25a233f592267d854f043155e",
+  "raw_matchms_protocol": {
+    "similarity": "MatchMS CosineGreedy",
+    "tolerance_da": 0.02,
+    "mz_power": 0.0,
+    "intensity_power": 1.0,
+    "precursor_shift": false,
+    "training": "not applicable"
+  },
+  "learned_control_supervision": "same-molecule spectrum-pair symmetric InfoNCE; no molecular embedding target and no ChemBERTa",
+  "task_identity_check": "decoded task tables are exactly equal",
+  "protocol_file_sha256": "17de0c4a256777294041a46ac2d0a6b868d1c3a8e013df77d3e3c85d9d15e112"
+}

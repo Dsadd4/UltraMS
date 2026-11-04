@@ -170,3 +170,19 @@ python benchmarks/molecular_identification/source_code/original/label_blind_grou
 ```
 
 The released test assignments, validation threshold table, and `data/grouping_summary.csv` match that producer's output: 15,541 groups, 52,070 grouped spectra, and 98.10% spectrum-weighted purity at the validation-selected similarity threshold of 0.5. The result replay checks the saved assignments against the six methods' grouped-query results.
+
+## Benchmark splits
+
+Two different MSnLib partitions are used in this repository and must not be mixed:
+
+- The repository-wide MSnLib tables (`data/`, NPLIB1/MassSpecGym candidate ranking,
+  multiple-spectrum voting, label-blind grouping) use the formula-level `FOLD` split
+  inherited from the public dataset MSnLib distribution (446,667 / 55,980 / 57,437 spectra,
+  grouped by molecular formula).
+- The Figure 3e/3h spectrum-to-spectrum library-search evaluation uses a molecule-level
+  disjoint split of the strict `[M+H]+` / `[M-H]-` subsets (70% / 15% / 15% of canonical
+  isomeric SMILES; 6,202 + 3,193 test queries). That split, its protocol and its
+  verification record are distributed separately; a persistent identifier will be linked
+  here when the dataset record is published. See
+  [`paper_figures/README.md`](../../paper_figures/README.md) and
+  [`paper_figures/figure3/version_audit.md`](../../paper_figures/figure3/version_audit.md).

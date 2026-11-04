@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "methods": [
+    "Codebook",
+    "DeepSets",
+    "DreaMS",
+    "Fourier",
+    "Linear",
+    "Raw cosine",
+    "UltraMS"
+  ],
+  "primary_model_seed": 0,
+  "formal_method_completeness_enforced": true,
+  "raw_matchms_protocol": {
+    "similarity": "MatchMS CosineGreedy",
+    "tolerance_da": 0.02,
+    "mz_power": 0.0,
+    "intensity_power": 1.0,
+    "precursor_shift": false,
+    "input": "frozen producer top-150, base-peak-normalized peak lists",
+    "all_library_pairs_scored": true
+  },
+  "parent_bundle": "<LOCAL_WORKSPACE_ROOT>",
+  "parent_done_sha256": "552c98a18763848942eb956502184d73740f62b805c4c0f5fa8cbba3881b6805",
+  "artifacts": {
+    "fdr_envelopes_primary_seed0.csv.gz": "524b3560bedb50cc901de9983679caac64b103b59b669a1fac6304f0f11803de",
+    "working_points_primary_seed0.csv": "b5c06419c5bc8f1037648a8ceba2ef19a1b6ced8c61b6571f125aa6db856f423",
+    "low_fdr_mean_recall_primary_seed0.csv": "8b8669f9bd97483909b152c3b53446c96f66a8127f794137cd2d9d8fd53d6a88",
+    "raw_matchms_exact_fdr_frontiers.csv.gz": "acf464fe4c5cc24640ed8b42418df844638ff2f5d36587299b3adf5e67722379",
+    "raw_matchms_summary.csv": "187cea3b0dd01ef2dbcbe6a1e9bd3529b69344f959a1c5467ce3e10992b35867"
+  }
+}

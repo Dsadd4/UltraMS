@@ -5,3 +5,4 @@ __pycache__/
 *.py[cod]
 .venv/
 ultrams_finetune/
+.pytest_cache/

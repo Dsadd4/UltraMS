@@ -1,0 +1,104 @@
+{
+  "assignment_sha256": "af72189ab98887fafaf9177b2e6500b1a0f4fc60fda2bb8397e9c58f6cd4217d",
+  "inputs": [
+    {
+      "method": "UltraMS",
+      "mode": "pos",
+      "seed": null,
+      "source_sha256": "8580448da6354ac5340f6101839a1f2a006868b940fc9045fc6ba7658121c33b"
+    },
+    {
+      "method": "DreaMS",
+      "mode": "pos",
+      "seed": null,
+      "source_sha256": "982c6a3ea5cdc1b62741415139195ef6debaba60344407f06e26b517f4aa1aa0"
+    },
+    {
+      "method": "Binned cosine",
+      "mode": "pos",
+      "seed": null,
+      "source_sha256": "bd7614fdb23793043b0f1c298049f22ac347f569e9d08de891e50508b6f64149"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "pos",
+      "seed": 0,
+      "source_sha256": "423e8ed7e75fa6535120159f884bda9407be68f5c0616b778a7b5eb5bc3a0f11"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "pos",
+      "seed": 1,
+      "source_sha256": "be8cd5b2039c1c1be1ffb6621007a22744a668ce1033d93c9b40699dcde43813"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "pos",
+      "seed": 2,
+      "source_sha256": "b0ea918e6f9467cbe9c078017c04a7abaa01cae61a3c182410fe23de032e56ca"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "pos",
+      "seed": 3,
+      "source_sha256": "c4d38cff94469e67535d7de371404b07bbf93c057876e59b7c792494b8fe21a5"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "pos",
+      "seed": 4,
+      "source_sha256": "af8ea52719b29edde02ac7003dab4cbb017f7772efce82b5ad24c4de71e6eeba"
+    },
+    {
+      "method": "UltraMS",
+      "mode": "neg",
+      "seed": null,
+      "source_sha256": "8a5110978a88d9e731f73d8ea054b6d68fd510b4e23511a789a7f4076307a843"
+    },
+    {
+      "method": "DreaMS",
+      "mode": "neg",
+      "seed": null,
+      "source_sha256": "6423da658f02089de5b9e9571283af34f20c51a6c33612c04c88cfecb01ab19a"
+    },
+    {
+      "method": "Binned cosine",
+      "mode": "neg",
+      "seed": null,
+      "source_sha256": "3ad3bcd6f538326c3a8887f5db9f7f1517bfa85168e9dab2b1ef2228dfa35707"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "neg",
+      "seed": 0,
+      "source_sha256": "3e27ef81c7d5481734bd2bfa75002d21ec48dc14a2dfcf13f091d702609c2241"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "neg",
+      "seed": 1,
+      "source_sha256": "63db4c50b445565f8cdc0846370e7b4fecc05b8035bf0d856d14b479f8b94485"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "neg",
+      "seed": 2,
+      "source_sha256": "cdb03c9436474517596c339d28c12d2dfe9211213a147fbb899aa40309ee61fe"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "neg",
+      "seed": 3,
+      "source_sha256": "671cb08e038ec35d4ab0a139f69ac7bfe1e6f0156f4917253d9d75527886e7e8"
+    },
+    {
+      "method": "Spec2Vec",
+      "mode": "neg",
+      "seed": 4,
+      "source_sha256": "1abcfd4e4d03c5e5cb459b74e8dca3d40d0ed7f16e762828f998966151cac201"
+    }
+  ],
+  "minimum_accepted": 10,
+  "protocol": "200 frozen molecule-disjoint 1:1 validation/test identity splits of the strict-adduct test-query set",
+  "target_fdr": 0.05
+}

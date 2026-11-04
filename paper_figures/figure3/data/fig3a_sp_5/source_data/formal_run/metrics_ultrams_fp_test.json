@@ -1,0 +1,20 @@
+{
+  "artifacts": {
+    "per_spectrum_msnlib_ultrams_fp_test.jsonl": "57b4470e81519bb58c2bdfad75055e45d9312c457949384563b0b49f72a13603",
+    "raw_scores_msnlib_ultrams_fp_test.npz": "7f9d47e43c5f999cfe920b70fed181d136b6a6f45586ce04cc5f066028fb3179"
+  },
+  "candidate_counts_sha256_i64le": "0590af48d96981c9c11df3f10cf3d20e09fd45d06952bb2270a45cbe67c0f05c",
+  "fold": "test",
+  "median_rank": 71.0,
+  "method": "UltraMS FP",
+  "mrr": 0.08396077789663524,
+  "n_queries": 57437,
+  "n_query_groups": 5003,
+  "query_indices_sha256_i64le": "4cec8e332cb5cf5ba24ce6994795182fd5cdaceaef1c65c3dc674234db0413df",
+  "runtime_seconds": 119.49415588378906,
+  "source_weight_first": 0.35,
+  "top1": 0.013162247331859254,
+  "top10": 0.22542960112819263,
+  "top20": 0.3175305116910702,
+  "top5": 0.14464543760990303
+}

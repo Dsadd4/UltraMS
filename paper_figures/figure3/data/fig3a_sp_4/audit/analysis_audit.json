@@ -1,0 +1,55 @@
+{
+  "analysis_id": "s9_nonoracle_consensus_20260722",
+  "status": "promote_as_positive_supplement",
+  "threshold_selection_status": "validation_gate_met",
+  "selected_similarity_threshold": 0.5,
+  "grouping_columns": [
+    "sample_idx",
+    "mzs",
+    "intensities",
+    "precursor_mz",
+    "adduct",
+    "retention_time",
+    "collision_energy"
+  ],
+  "forbidden_label_columns_absent_from_group_assignments": true,
+  "val_summary": {
+    "similarity_threshold": 0.5,
+    "n_groups": 15204,
+    "n_grouped_spectra": 50638,
+    "split_size": 55980,
+    "coverage": 0.9045730618077885,
+    "spectrum_weighted_purity": 0.9821872901773372,
+    "mean_group_purity": 0.9852621080102334,
+    "fraction_pure_groups": 0.9671139173901605,
+    "median_group_size": 3.0,
+    "maximum_group_size": 16,
+    "selected": 1,
+    "selection_status": "validation_gate_met"
+  },
+  "test_summary": {
+    "similarity_threshold": 0.5,
+    "n_groups": 15541,
+    "n_grouped_spectra": 52070,
+    "split_size": 57437,
+    "coverage": 0.9065584901718404,
+    "spectrum_weighted_purity": 0.98102554253889,
+    "mean_group_purity": 0.9838129643037533,
+    "fraction_pure_groups": 0.963901936812303,
+    "median_group_size": 3.0,
+    "maximum_group_size": 17
+  },
+  "gate_checks": {
+    "test_purity": true,
+    "test_coverage": true,
+    "test_group_count": true,
+    "positive_top1_gain_both_models": true,
+    "positive_top1_ci_both_models": true,
+    "same_group_count_both_models": true
+  },
+  "example_group": "test_g08876",
+  "example_selection_rule": "illustrative_shared_rescue_not_used_for_inference",
+  "example_used_for_inference_or_threshold_selection": false,
+  "runtime_seconds": 239.03431463241577,
+  "python": "3.11.0 | packaged by conda-forge | (main, Jan 14 2023, 12:27:40) [GCC 11.3.0]"
+}

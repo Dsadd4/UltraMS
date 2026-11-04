@@ -1,0 +1,17 @@
+{
+  "models": [
+    "UltraMS",
+    "DreaMS",
+    "Peak features",
+    "Linear SVM",
+    "Random forest"
+  ],
+  "max_k": 100,
+  "source_metrics_json": "main_figure/fig2/output/task5_peak_embedding_umap/x10/peak_neighbor_curves_classical_x10_k100_limited.json",
+  "output_prefix": "fig2_peak_neighbor_curves_classical_x10_k100_limited_v2",
+  "plot_tag": "classical_x10_k100_limited_v2",
+  "formula_ylim": "0.0,0.82",
+  "family_ylim": "0.32,1.02",
+  "fp_ylim": "0.12,0.74",
+  "mz_ylim": "0.035,75.0"
+}

@@ -1,0 +1,304 @@
+{
+  "stage": "fig2_case_study_mixed_top4_row4_v16",
+  "source_script": "atom_attention_magma_ultra_mixed_top4_grid_full_fragments_v15",
+  "source_cache_jsons": [
+    "<WORKSPACE_ROOT>/main_figure/fig2/output/case_study_v11_lower_inset_more/atom_attention_magma_ultra_lower_inset_more_v11.plot_data.json",
+    "<WORKSPACE_ROOT>/main_figure/fig2/output/case_study_br_candidates_v12/atom_attention_magma_ultra_br_candidates_v12.plot_data.json"
+  ],
+  "cards": [
+    {
+      "global_index": 26580,
+      "atom": "S"
+    },
+    {
+      "global_index": 28053,
+      "atom": "F"
+    },
+    {
+      "global_index": 20940,
+      "atom": "Cl"
+    },
+    {
+      "global_index": 7960,
+      "atom": "Br"
+    }
+  ],
+  "selected_callouts": [
+    {
+      "global_index": 26580,
+      "case_idx": 0,
+      "atom": "S",
+      "peak_id": 16,
+      "mz": 286.074951171875,
+      "intensity": 0.007369999773800373,
+      "attention": 0.13376864790916443,
+      "frag_formula": "C13N5OSH11",
+      "frag_smiles": "C=C(N)/C=N\\NC(=O)CSC1=NC2=CC=CC=C2N1C",
+      "number": 1
+    },
+    {
+      "global_index": 26580,
+      "case_idx": 0,
+      "atom": "S",
+      "peak_id": 17,
+      "mz": 315.0352783203125,
+      "intensity": 0.5490599870681763,
+      "attention": 0.12821708619594574,
+      "frag_formula": "C16N2OSH12Cl",
+      "frag_smiles": "O=CCSC1=NC2=CC=CC=C2N1CC1=CC=C(Cl)C=C1",
+      "number": 2
+    },
+    {
+      "global_index": 26580,
+      "case_idx": 0,
+      "atom": "S",
+      "peak_id": 15,
+      "mz": 275.0404968261719,
+      "intensity": 0.02573000080883503,
+      "attention": 0.11195862293243408,
+      "frag_formula": "C14N2SH10Cl",
+      "frag_smiles": "SC1=NC2=CC=CC=C2N1CC1=CC=C(Cl)C=C1",
+      "number": 3
+    },
+    {
+      "global_index": 26580,
+      "case_idx": 0,
+      "atom": "S",
+      "peak_id": 14,
+      "mz": 203.02789306640625,
+      "intensity": 0.0030400000978261232,
+      "attention": 0.051905736327171326,
+      "frag_formula": "C10N2OSH8",
+      "frag_smiles": "CN1C2=CC=CC=C2N=C1SCC=O",
+      "number": 4
+    },
+    {
+      "global_index": 26580,
+      "case_idx": 0,
+      "atom": "S",
+      "peak_id": 20,
+      "mz": 436.0996398925781,
+      "intensity": 0.004100000020116568,
+      "attention": 0.0184477549046278,
+      "frag_formula": "C22N5OSH18Cl",
+      "frag_smiles": "O=C(CSC1=NC2=CC=CC=C2N1CC1=CC=C(Cl)C=C1)N/N=C\\C1=CC=CC=N1",
+      "number": 5
+    },
+    {
+      "global_index": 28053,
+      "case_idx": 1,
+      "atom": "F",
+      "peak_id": 8,
+      "mz": 122.03984832763672,
+      "intensity": 1.0,
+      "attention": 0.15385617315769196,
+      "frag_formula": "C7NH4F",
+      "frag_smiles": "CN=CC=CC=C(C)F",
+      "number": 1
+    },
+    {
+      "global_index": 28053,
+      "case_idx": 1,
+      "atom": "F",
+      "peak_id": 9,
+      "mz": 123.03508758544922,
+      "intensity": 0.8263099789619446,
+      "attention": 0.12672582268714905,
+      "frag_formula": "C6N2H3F",
+      "frag_smiles": "CN=CC(N)=CC=CF",
+      "number": 2
+    },
+    {
+      "global_index": 28053,
+      "case_idx": 1,
+      "atom": "F",
+      "peak_id": 13,
+      "mz": 147.03521728515625,
+      "intensity": 0.3896400034427643,
+      "attention": 0.10871394723653793,
+      "frag_formula": "C8N2H4F",
+      "frag_smiles": "C=CC(=N)C1=CC=C(F)C=N1",
+      "number": 3
+    },
+    {
+      "global_index": 28053,
+      "case_idx": 1,
+      "atom": "F",
+      "peak_id": 14,
+      "mz": 149.05076599121094,
+      "intensity": 0.03246999904513359,
+      "attention": 0.028204360976815224,
+      "frag_formula": "C8N2H4F",
+      "frag_smiles": "C=CC(=N)C1=CC=C(F)C=N1",
+      "number": 4
+    },
+    {
+      "global_index": 28053,
+      "case_idx": 1,
+      "atom": "F",
+      "peak_id": 25,
+      "mz": 248.06317138671875,
+      "intensity": 0.017799999564886093,
+      "attention": 0.02426677942276001,
+      "frag_formula": "C15N3H7F",
+      "frag_smiles": "N#CC1=CC=CC(C=CC(=N)C2=CC=C(F)C=N2)=C1",
+      "number": 5
+    },
+    {
+      "global_index": 28053,
+      "case_idx": 1,
+      "atom": "F",
+      "peak_id": 29,
+      "mz": 284.03961181640625,
+      "intensity": 0.0806799978017807,
+      "attention": 0.020656321197748184,
+      "frag_formula": "C15N3H8ClF",
+      "frag_smiles": "FC1=CC=C(C2=NC=NC(C3=CC=CC(Cl)=C3)=C2)N=C1",
+      "number": 6
+    },
+    {
+      "global_index": 20940,
+      "case_idx": 4,
+      "atom": "Cl",
+      "peak_id": 43,
+      "mz": 125.01519775390625,
+      "intensity": 1.0,
+      "attention": 0.445223331451416,
+      "frag_formula": "C7H5Cl",
+      "frag_smiles": "CC1=CC=C(Cl)C=C1",
+      "number": 1
+    },
+    {
+      "global_index": 20940,
+      "case_idx": 4,
+      "atom": "Cl",
+      "peak_id": 65,
+      "mz": 138.9945068359375,
+      "intensity": 0.00657087005674839,
+      "attention": 0.03793225437402725,
+      "frag_formula": "C7OH5Cl",
+      "frag_smiles": "OCC1=CC=C(Cl)C=C1",
+      "number": 2
+    },
+    {
+      "global_index": 20940,
+      "case_idx": 4,
+      "atom": "Cl",
+      "peak_id": 15,
+      "mz": 98.99960327148438,
+      "intensity": 0.040196288377046585,
+      "attention": 0.021474599838256836,
+      "frag_formula": "C5H4Cl",
+      "frag_smiles": "CC=C(Cl)C=C",
+      "number": 3
+    },
+    {
+      "global_index": 20940,
+      "case_idx": 4,
+      "atom": "Cl",
+      "peak_id": 26,
+      "mz": 113.01519775390625,
+      "intensity": 0.0018454899545758963,
+      "attention": 0.02054438553750515,
+      "frag_formula": "C6H4Cl",
+      "frag_smiles": "ClC1=CC=CC=C1",
+      "number": 4
+    },
+    {
+      "global_index": 20940,
+      "case_idx": 4,
+      "atom": "Cl",
+      "peak_id": 86,
+      "mz": 152.0261993408203,
+      "intensity": 0.023819079622626305,
+      "attention": 0.01371837966144085,
+      "frag_formula": "C8NH6Cl",
+      "frag_smiles": "NCCC1=CC=C(Cl)C=C1",
+      "number": 5
+    },
+    {
+      "global_index": 20940,
+      "case_idx": 4,
+      "atom": "Cl",
+      "peak_id": 85,
+      "mz": 152.002197265625,
+      "intensity": 0.0012169299880042672,
+      "attention": 0.0124747883528471,
+      "frag_formula": "C8OH5Cl",
+      "frag_smiles": "O=CCC1=CC=C(Cl)C=C1",
+      "number": 6
+    },
+    {
+      "global_index": 7960,
+      "case_idx": 0,
+      "atom": "Br",
+      "peak_id": 63,
+      "mz": 187.97085571289062,
+      "intensity": 1.0,
+      "attention": 0.08655451983213425,
+      "frag_formula": "C6NOH2Br",
+      "frag_smiles": "C=C(Br)C=NC=CC=O",
+      "number": 1
+    },
+    {
+      "global_index": 7960,
+      "case_idx": 0,
+      "atom": "Br",
+      "peak_id": 60,
+      "mz": 186.98683166503906,
+      "intensity": 0.11376000195741653,
+      "attention": 0.07068876922130585,
+      "frag_formula": "C6N2H3Br",
+      "frag_smiles": "CNC(=NC=C)C(=C)Br",
+      "number": 2
+    },
+    {
+      "global_index": 7960,
+      "case_idx": 0,
+      "atom": "Br",
+      "peak_id": 74,
+      "mz": 212.96615600585938,
+      "intensity": 0.06469999998807907,
+      "attention": 0.06947755068540573,
+      "frag_formula": "C7N2OH3Br",
+      "frag_smiles": "CN1C(=O)C=CN=C1C(=C)Br",
+      "number": 3
+    },
+    {
+      "global_index": 7960,
+      "case_idx": 0,
+      "atom": "Br",
+      "peak_id": 77,
+      "mz": 214.98204040527344,
+      "intensity": 0.01607999950647354,
+      "attention": 0.06612943857908249,
+      "frag_formula": "C7N2OH3Br",
+      "frag_smiles": "CN1C(=O)C=CN=C1C(=C)Br",
+      "number": 4
+    },
+    {
+      "global_index": 7960,
+      "case_idx": 0,
+      "atom": "Br",
+      "peak_id": 67,
+      "mz": 196.9712371826172,
+      "intensity": 0.07699000090360641,
+      "attention": 0.0644679069519043,
+      "frag_formula": "C7N2H3Br",
+      "frag_smiles": "CN1CC=CN=C1C(=C)Br",
+      "number": 5
+    },
+    {
+      "global_index": 7960,
+      "case_idx": 0,
+      "atom": "Br",
+      "peak_id": 70,
+      "mz": 201.986572265625,
+      "intensity": 0.0057299998588860035,
+      "attention": 0.0641724020242691,
+      "frag_formula": "C7NOH6Br",
+      "frag_smiles": "CC(=O)NC=C(C)C=CBr",
+      "number": 6
+    }
+  ]
+}

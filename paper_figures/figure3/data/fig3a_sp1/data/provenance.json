@@ -1,0 +1,95 @@
+{
+  "created_for": "UltraMS supplementary benchmark model comparison",
+  "created_date": "2026-07-06",
+  "primary_metric": "Top-1 retrieval accuracy / Hit rate @ 1 (%)",
+  "important_protocol_note": "MassSpecGym mass and formula are separate leaderboard tasks. Mass/all is matched to official Molecule retrieval; formula/all is matched to official Molecule retrieval (bonus), the known-formula setting. Public baselines are not shared between these two panels.",
+  "nplib_sources": [
+    {
+      "name": "MIST reference paper",
+      "url": "https://www.nature.com/articles/s42256-023-00708-3",
+      "local_pdf_mirror": "main_figure/Major_reference/s42256-023-00708-3.pdf",
+      "local_supplementary_pdf_mirror": "main_figure/Major_reference/s42256-023-00708-3-supplementary.pdf",
+      "used_values": {
+        "MIST full Top1": 30.703,
+        "MIST full Top5": 58.12,
+        "MIST full Top20": 75.709
+      },
+      "note": "Official Supplementary Table 8 reports the complete MIST contrastive + fingerprint retrieval row on the CANOPUS GNPS subset, including Top1, Top5, and Top20."
+    },
+    {
+      "name": "MIST GitHub notebook",
+      "url": "https://github.com/samgoldman97/mist/blob/main_v2/notebooks/retrieval_canopus_compare.ipynb",
+      "used_values": {
+        "FFN fingerprint Top1": 13.3,
+        "FFN fingerprint Top5": 28.8,
+        "FFN fingerprint Top20": 44.4,
+        "MIST fingerprint Top1": 20.3,
+        "MIST fingerprint Top5": 41.1,
+        "MIST fingerprint Top20": 55.1,
+        "MIST contrastive Top1": 21.5,
+        "MIST contrastive Top5": 47.9,
+        "MIST contrastive Top20": 62.3
+      },
+      "note": "Values read from embedded notebook output table for canopus_hplus_100_0 retrieval."
+    },
+    {
+      "name": "UltraMS NPLIB evidence package",
+      "path": "<INTERNAL_HPC_ROOT>",
+      "used_values": {
+        "DreaMS fair fusion Top1": 27.926466612598,
+        "DreaMS fair fusion Top5": 54.63638821303055,
+        "DreaMS fair fusion Top20": 79.10246012435793,
+        "UltraMS fair fusion Top1": 32.981886996485535,
+        "UltraMS fair fusion Top5": 57.907542579075425,
+        "UltraMS fair fusion Top20": 80.5352798053528
+      },
+      "note": "Three-fold ms2peaks_min50 block-micro evaluation; UltraMS row is u5_cls_projmean_rawproj, DreaMS row is dreams_global_iw. Top20 was computed from final per-query ranks in query_rows_ms2peaks_min50_split*_*.csv as rank <= 20 and independently checked against hit20."
+    }
+  ],
+  "massspecgym_sources": [
+    {
+      "name": "MassSpecGym online leaderboard",
+      "url": "https://massspecgym.onrender.com/",
+      "fetched_date": "2026-07-06",
+      "local_raw_json": {
+        "molecule_retrieval_hit_rate_at_1": "main_figure/Suppment_figure/data/benchmark_model_comparison/raw_massspecgym/molecule_retrieval_hit_rate_at_1.json",
+        "molecule_retrieval_bonus_hit_rate_at_1": "main_figure/Suppment_figure/data/benchmark_model_comparison/raw_massspecgym/molecule_retrieval_bonus_hit_rate_at_1.json",
+        "metric_options_molecule_retrieval": "main_figure/Suppment_figure/data/benchmark_model_comparison/raw_massspecgym/molecule_retrieval_metric_options.json",
+        "metric_options_molecule_retrieval_bonus": "main_figure/Suppment_figure/data/benchmark_model_comparison/raw_massspecgym/molecule_retrieval_bonus_metric_options.json"
+      },
+      "used_values": {
+        "Molecule retrieval best public Top1": 15.13,
+        "Molecule retrieval bonus best public Top1": 11.85
+      },
+      "note": "Rows were fetched from Dash callbacks for bench=Molecule retrieval and bench=Molecule retrieval (bonus), metric=Hit rate @ 1."
+    },
+    {
+      "name": "UltraMS MassSpecGym source-fusion metrics",
+      "paths": {
+        "mass_all": "<INTERNAL_HPC_ROOT>",
+        "formula_all": "<INTERNAL_HPC_ROOT>"
+      },
+      "used_values": {
+        "Mass/all DreaMS fair fusion Top1": 13.242092457420926,
+        "Mass/all UltraMS fair fusion Top1": 17.092457420924575,
+        "Formula/all DreaMS fair fusion Top1": 11.411192214111923,
+        "Formula/all UltraMS fair fusion Top1": 14.07542579075426
+      },
+      "note": "These are the fair two-source source-fusion runs used in the plotted comparison. They should be described as the selected plotted protocol values, not as every exploratory MassSpecGym run's highest result."
+    }
+  ],
+  "derived_files": {
+    "source_data_csv": "main_figure/Suppment_figure/data/benchmark_model_comparison/benchmark_top1_source_data.csv",
+    "plot_data_csv": "main_figure/Suppment_figure/output/benchmark_model_comparison/supp_benchmark_model_comparison_plot_data.csv",
+    "chart_contract": "main_figure/Suppment_figure/output/benchmark_model_comparison/benchmark_model_comparison_chart_contract.json",
+    "topn_plot_data_csv": "main_figure/Suppment_figure/output/benchmark_model_comparison/supp_benchmark_model_topn_plot_data.csv",
+    "topn_chart_contract": "main_figure/Suppment_figure/output/benchmark_model_comparison/benchmark_model_topn_chart_contract.json",
+    "topn_outputs": {
+      "png": "main_figure/Suppment_figure/output/benchmark_model_comparison/supp_benchmark_model_topn.png",
+      "pdf": "main_figure/Suppment_figure/output/benchmark_model_comparison/supp_benchmark_model_topn.pdf",
+      "svg": "main_figure/Suppment_figure/output/benchmark_model_comparison/supp_benchmark_model_topn.svg",
+      "latex_pdf": "main_figure/paper/Ultramsp/sup_figure/supp_benchmark_model_topn.pdf",
+      "latex_svg": "main_figure/paper/Ultramsp/sup_figure/supp_benchmark_model_topn.svg"
+    }
+  }
+}

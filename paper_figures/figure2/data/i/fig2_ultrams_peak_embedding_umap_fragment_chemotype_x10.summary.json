@@ -1,0 +1,22 @@
+{
+  "n_peaks_plotted": 60000,
+  "n_spectra": 7249,
+  "color_by": "fragment_chemotype",
+  "output_stem": "fig2_ultrams_peak_embedding_umap_fragment_chemotype_x10",
+  "fragment_label_counts": {
+    "Halogenated": 10000,
+    "Hydrocarbon": 10000,
+    "N-containing": 10000,
+    "O-rich": 10000,
+    "Other": 10000,
+    "S/P-containing": 10000
+  },
+  "umap": {
+    "n_neighbors": 28,
+    "min_dist": 0.38,
+    "spread": 1.45,
+    "n_epochs": 360,
+    "metric": "cosine",
+    "coord_cache": "main_figure/fig2/output/task5_peak_embedding_umap/x10/ultrams_peak_umap_coords_n28_d0p38_s1p45_e360_seed42.csv"
+  }
+}

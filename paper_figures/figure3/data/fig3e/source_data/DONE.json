@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "methods": [
+    "Codebook",
+    "DeepSets",
+    "DreaMS",
+    "Fourier",
+    "Linear",
+    "UltraMS"
+  ],
+  "primary_model_seed": 0,
+  "formal_method_completeness_enforced": true,
+  "source_frontier_sha256": "5703b766cd6db7767ce99eb776e79c69d7aa8b61c8c2f044538db7f21f2836b7",
+  "artifacts": {
+    "fdr_envelopes_primary_seed0.csv.gz": "5f8dfcf9122bb6ddba0ac179ee6051b763ef50a5c6f065a1e414e1867704960a",
+    "working_points_primary_seed0.csv": "12f0a1590b54b08ec7d31c649104e33c95d1a5da4af4b4cbfebd12a835255ac9",
+    "low_fdr_mean_recall_primary_seed0.csv": "ecb409956502993078fec8ac73a623a1cc69447d8bca76e47fe07e4be4eedf52"
+  }
+}

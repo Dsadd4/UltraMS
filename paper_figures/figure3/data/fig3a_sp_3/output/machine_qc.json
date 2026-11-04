@@ -1,0 +1,19 @@
+{
+  "status": "machine_checks_passed",
+  "nplib1_queries": 3699,
+  "nplib1_unique_spectra": 3352,
+  "nplib1_molecules": 1844,
+  "massspecgym_queries_per_task": 16440,
+  "png_pixels": [
+    4230,
+    4632
+  ],
+  "canvas_mm": [
+    179.07,
+    196.09
+  ],
+  "width_to_height_ratio": 0.9132124352331606,
+  "nonwhite_fraction_low_resolution": 0.22689583333333332,
+  "source_manifest_rows_verified": 13,
+  "manual_visual_qc": "recorded separately after rendered preview inspection"
+}

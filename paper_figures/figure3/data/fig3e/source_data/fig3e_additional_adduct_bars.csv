@@ -1,0 +1,13 @@
+group,method,n_query,mean_micro_recall_fdr_0_5pct
+Additional positive,Codebook,714,1.8955309396485827
+Additional positive,DeepSets,714,6.0320633629795966
+Additional positive,DreaMS,714,10.833193816723046
+Additional positive,Fourier,714,14.250552463407857
+Additional positive,Linear,714,12.257797855984501
+Additional positive,UltraMS,714,17.57733351405461
+Additional negative,Codebook,2112,4.8787978170173805
+Additional negative,DeepSets,2112,3.9888121761437105
+Additional negative,DreaMS,2112,32.3788758204271
+Additional negative,Fourier,2112,6.016060778751447
+Additional negative,Linear,2112,5.82268321722289
+Additional negative,UltraMS,2112,35.71214784131094

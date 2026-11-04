@@ -1,0 +1,9 @@
+descriptor,status,n_unique_all_60,n_unique_ultrams_top20,n_unique_dreams_top20,minimum_all_60,maximum_all_60,ultrams_top20_mean,dreams_top20_mean,spearman_with_tpsa,spearman_with_clogp,rationale
+tpsa_a2,retained,17,7,9,159.19,262.98999999999995,225.23699999999994,224.57249999999993,0.9999999999999998,-0.37349647873614017,Required polarity and exposed-surface context.
+clogp,retained,39,13,13,-3.101379999999999,2.7069000000000085,-0.7764590000000002,-0.5000989999999998,-0.37349647873614017,0.9999999999999998,Required hydrophobicity context.
+phenolic_oh_groups,added,9,5,5,0.0,13.0,3.75,4.4,0.3506209814335658,0.14126729981664649,Separates phenolic deprotonation sites from total H-bond donors.
+carbonyl_groups,added,6,3,4,0.0,6.0,1.5,1.25,-0.027080951748595004,-0.030083355673181038,Distinguishes oxygen allocation and carbonyl-bearing scaffolds.
+rotatable_bonds,retained,8,4,4,1.0,16.0,4.8,4.85,-0.3632238893638369,-0.049574729415207304,Non-redundant molecular-flexibility context.
+fraction_csp3,retained,7,3,4,0.13636363636363635,0.5,0.3272727272727273,0.3159090909090909,-0.3336368916787135,-0.027005680952879113,Non-redundant saturated-framework context.
+h_bond_donors,removed,7,2,4,0.0,13.0,8.25,8.35,0.7801645445646646,-0.5341831411631741,Strongly redundant with TPSA in this candidate set.
+aromatic_rings,removed,4,3,3,0.0,3.0,2.55,2.7,-0.0063782586478340645,0.025863149211315193,Highly concentrated and coarse for positional isomers.

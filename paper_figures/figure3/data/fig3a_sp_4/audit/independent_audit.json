@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "analysis_decision": "promote_as_positive_supplement",
+  "n_checks": 31,
+  "checks": {
+    "no forbidden labels in validation assignments": true,
+    "no forbidden labels in test assignments": true,
+    "validation spectra assigned at most once": true,
+    "test spectra assigned at most once": true,
+    "validation groups have at least two spectra": true,
+    "test groups have at least two spectra": true,
+    "one validation threshold selected": true,
+    "selected threshold matches audit": true,
+    "threshold table contains no test metrics": true,
+    "identical groups evaluated for both models": true,
+    "identical spectra evaluated for both models": true,
+    "test purity recomputes": true,
+    "test coverage recomputes": true,
+    "DreaMS single Top-1 recomputes": true,
+    "DreaMS consensus Top-1 recomputes": true,
+    "DreaMS single MRR recomputes": true,
+    "DreaMS consensus MRR recomputes": true,
+    "DreaMS grouped-bootstrap Top-1 CI excludes zero": true,
+    "UltraMS single Top-1 recomputes": true,
+    "UltraMS consensus Top-1 recomputes": true,
+    "UltraMS single MRR recomputes": true,
+    "UltraMS consensus MRR recomputes": true,
+    "UltraMS grouped-bootstrap Top-1 CI excludes zero": true,
+    "artifact exists: s9_nonoracle_consensus.png": true,
+    "artifact exists: s9_nonoracle_consensus.pdf": true,
+    "artifact exists: s9_nonoracle_consensus.svg": true,
+    "PNG has publication-scale raster dimensions": true,
+    "PNG is nonblank": true,
+    "PNG boundary is unclipped and near-white": true,
+    "SVG parses": true,
+    "PDF header valid": true
+  },
+  "recomputed_test_purity": 0.98102554253889,
+  "png_dimensions": [
+    4290,
+    3270
+  ]
+}

@@ -1,0 +1,1314 @@
+{
+  "multi": true,
+  "response": {
+    "bench-fig": {
+      "figure": {
+        "data": [
+          {
+            "hoverinfo": "skip",
+            "line": {
+              "color": "black",
+              "width": 1
+            },
+            "mode": "lines",
+            "showlegend": false,
+            "x": [
+              "2025-01-14T00:00:00.000000000",
+              "2025-06-10T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "SOF6FK5HLUDD9Shcj0IuQA=="
+            },
+            "type": "scatter"
+          },
+          {
+            "customdata": {
+              "dtype": "f8",
+              "bdata": "4XoUrkfh8j9SuB6F61H8Pw==",
+              "shape": "1, 2"
+            },
+            "error_y": {
+              "array": [
+                0.30000000000000004
+              ],
+              "arrayminus": [
+                0.29000000000000004
+              ],
+              "symmetric": false,
+              "type": "data"
+            },
+            "hovertemplate": "<b>DeepSets</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<br>CI: [%{customdata[0]:.4f}, %{customdata[1]:.4f}]<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "DeepSets",
+            "x": [
+              "2025-01-14T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "hetRuB6F9z8="
+            },
+            "type": "scatter"
+          },
+          {
+            "customdata": {
+              "dtype": "f8",
+              "bdata": "16NwPQrXEkBSuB6F61EXQA==",
+              "shape": "1, 2"
+            },
+            "error_y": {
+              "array": [
+                0.5899999999999999
+              ],
+              "arrayminus": [
+                0.5300000000000002
+              ],
+              "symmetric": false,
+              "type": "data"
+            },
+            "hovertemplate": "<b>DeepSets + Fourier features</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<br>CI: [%{customdata[0]:.4f}, %{customdata[1]:.4f}]<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "DeepSets + Fourier features",
+            "x": [
+              "2025-01-14T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "9ihcj8L1FEA="
+            },
+            "type": "scatter"
+          },
+          {
+            "hovertemplate": "<b>ESP</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "ESP",
+            "x": [
+              "2025-06-10T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "7FG4HoVrJUA="
+            },
+            "type": "scatter"
+          },
+          {
+            "customdata": {
+              "dtype": "f8",
+              "bdata": "XI/C9ShcAUDsUbgehesHQA==",
+              "shape": "1, 2"
+            },
+            "error_y": {
+              "array": [
+                0.4500000000000002
+              ],
+              "arrayminus": [
+                0.3700000000000001
+              ],
+              "symmetric": false,
+              "type": "data"
+            },
+            "hovertemplate": "<b>Fingerprint FFN</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<br>CI: [%{customdata[0]:.4f}, %{customdata[1]:.4f}]<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "Fingerprint FFN",
+            "x": [
+              "2025-01-14T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "UrgehetRBEA="
+            },
+            "type": "scatter"
+          },
+          {
+            "hovertemplate": "<b>JESTR</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "JESTR",
+            "x": [
+              "2025-06-10T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "w/UoXI9CLkA="
+            },
+            "type": "scatter"
+          },
+          {
+            "customdata": {
+              "dtype": "f8",
+              "bdata": "pHA9CtejK0AUrkfhehQvQA==",
+              "shape": "1, 2"
+            },
+            "error_y": {
+              "array": [
+                0.8999999999999986
+              ],
+              "arrayminus": [
+                0.8200000000000003
+              ],
+              "symmetric": false,
+              "type": "data"
+            },
+            "hovertemplate": "<b>MIST</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<br>CI: [%{customdata[0]:.4f}, %{customdata[1]:.4f}]<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "MIST",
+            "x": [
+              "2025-01-14T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "SOF6FK5HLUA="
+            },
+            "type": "scatter"
+          },
+          {
+            "customdata": {
+              "dtype": "f8",
+              "bdata": "uB6F61G4zj9I4XoUrkfhPw==",
+              "shape": "1, 2"
+            },
+            "error_y": {
+              "array": [
+                0.17000000000000004
+              ],
+              "arrayminus": [
+                0.13
+              ],
+              "symmetric": false,
+              "type": "data"
+            },
+            "hovertemplate": "<b>Random</b><br>%{x|%d %b %Y}<br>Hit rate @ 1: %{y:.4f}<br>CI: [%{customdata[0]:.4f}, %{customdata[1]:.4f}]<extra></extra>",
+            "marker": {
+              "size": 11,
+              "symbol": "x"
+            },
+            "mode": "markers+lines",
+            "name": "Random",
+            "x": [
+              "2025-01-14T00:00:00.000000000"
+            ],
+            "y": {
+              "dtype": "f8",
+              "bdata": "rkfhehSu1z8="
+            },
+            "type": "scatter"
+          }
+        ],
+        "layout": {
+          "template": {
+            "data": {
+              "barpolar": [
+                {
+                  "marker": {
+                    "line": {
+                      "color": "white",
+                      "width": 0.5
+                    },
+                    "pattern": {
+                      "fillmode": "overlay",
+                      "size": 10,
+                      "solidity": 0.2
+                    }
+                  },
+                  "type": "barpolar"
+                }
+              ],
+              "bar": [
+                {
+                  "error_x": {
+                    "color": "#2a3f5f"
+                  },
+                  "error_y": {
+                    "color": "#2a3f5f"
+                  },
+                  "marker": {
+                    "line": {
+                      "color": "white",
+                      "width": 0.5
+                    },
+                    "pattern": {
+                      "fillmode": "overlay",
+                      "size": 10,
+                      "solidity": 0.2
+                    }
+                  },
+                  "type": "bar"
+                }
+              ],
+              "carpet": [
+                {
+                  "aaxis": {
+                    "endlinecolor": "#2a3f5f",
+                    "gridcolor": "#C8D4E3",
+                    "linecolor": "#C8D4E3",
+                    "minorgridcolor": "#C8D4E3",
+                    "startlinecolor": "#2a3f5f"
+                  },
+                  "baxis": {
+                    "endlinecolor": "#2a3f5f",
+                    "gridcolor": "#C8D4E3",
+                    "linecolor": "#C8D4E3",
+                    "minorgridcolor": "#C8D4E3",
+                    "startlinecolor": "#2a3f5f"
+                  },
+                  "type": "carpet"
+                }
+              ],
+              "choropleth": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "type": "choropleth"
+                }
+              ],
+              "contourcarpet": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "type": "contourcarpet"
+                }
+              ],
+              "contour": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "colorscale": [
+                    [
+                      0.0,
+                      "#0d0887"
+                    ],
+                    [
+                      0.1111111111111111,
+                      "#46039f"
+                    ],
+                    [
+                      0.2222222222222222,
+                      "#7201a8"
+                    ],
+                    [
+                      0.3333333333333333,
+                      "#9c179e"
+                    ],
+                    [
+                      0.4444444444444444,
+                      "#bd3786"
+                    ],
+                    [
+                      0.5555555555555556,
+                      "#d8576b"
+                    ],
+                    [
+                      0.6666666666666666,
+                      "#ed7953"
+                    ],
+                    [
+                      0.7777777777777778,
+                      "#fb9f3a"
+                    ],
+                    [
+                      0.8888888888888888,
+                      "#fdca26"
+                    ],
+                    [
+                      1.0,
+                      "#f0f921"
+                    ]
+                  ],
+                  "type": "contour"
+                }
+              ],
+              "heatmap": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "colorscale": [
+                    [
+                      0.0,
+                      "#0d0887"
+                    ],
+                    [
+                      0.1111111111111111,
+                      "#46039f"
+                    ],
+                    [
+                      0.2222222222222222,
+                      "#7201a8"
+                    ],
+                    [
+                      0.3333333333333333,
+                      "#9c179e"
+                    ],
+                    [
+                      0.4444444444444444,
+                      "#bd3786"
+                    ],
+                    [
+                      0.5555555555555556,
+                      "#d8576b"
+                    ],
+                    [
+                      0.6666666666666666,
+                      "#ed7953"
+                    ],
+                    [
+                      0.7777777777777778,
+                      "#fb9f3a"
+                    ],
+                    [
+                      0.8888888888888888,
+                      "#fdca26"
+                    ],
+                    [
+                      1.0,
+                      "#f0f921"
+                    ]
+                  ],
+                  "type": "heatmap"
+                }
+              ],
+              "histogram2dcontour": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "colorscale": [
+                    [
+                      0.0,
+                      "#0d0887"
+                    ],
+                    [
+                      0.1111111111111111,
+                      "#46039f"
+                    ],
+                    [
+                      0.2222222222222222,
+                      "#7201a8"
+                    ],
+                    [
+                      0.3333333333333333,
+                      "#9c179e"
+                    ],
+                    [
+                      0.4444444444444444,
+                      "#bd3786"
+                    ],
+                    [
+                      0.5555555555555556,
+                      "#d8576b"
+                    ],
+                    [
+                      0.6666666666666666,
+                      "#ed7953"
+                    ],
+                    [
+                      0.7777777777777778,
+                      "#fb9f3a"
+                    ],
+                    [
+                      0.8888888888888888,
+                      "#fdca26"
+                    ],
+                    [
+                      1.0,
+                      "#f0f921"
+                    ]
+                  ],
+                  "type": "histogram2dcontour"
+                }
+              ],
+              "histogram2d": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "colorscale": [
+                    [
+                      0.0,
+                      "#0d0887"
+                    ],
+                    [
+                      0.1111111111111111,
+                      "#46039f"
+                    ],
+                    [
+                      0.2222222222222222,
+                      "#7201a8"
+                    ],
+                    [
+                      0.3333333333333333,
+                      "#9c179e"
+                    ],
+                    [
+                      0.4444444444444444,
+                      "#bd3786"
+                    ],
+                    [
+                      0.5555555555555556,
+                      "#d8576b"
+                    ],
+                    [
+                      0.6666666666666666,
+                      "#ed7953"
+                    ],
+                    [
+                      0.7777777777777778,
+                      "#fb9f3a"
+                    ],
+                    [
+                      0.8888888888888888,
+                      "#fdca26"
+                    ],
+                    [
+                      1.0,
+                      "#f0f921"
+                    ]
+                  ],
+                  "type": "histogram2d"
+                }
+              ],
+              "histogram": [
+                {
+                  "marker": {
+                    "pattern": {
+                      "fillmode": "overlay",
+                      "size": 10,
+                      "solidity": 0.2
+                    }
+                  },
+                  "type": "histogram"
+                }
+              ],
+              "mesh3d": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "type": "mesh3d"
+                }
+              ],
+              "parcoords": [
+                {
+                  "line": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "parcoords"
+                }
+              ],
+              "pie": [
+                {
+                  "automargin": true,
+                  "type": "pie"
+                }
+              ],
+              "scatter3d": [
+                {
+                  "line": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scatter3d"
+                }
+              ],
+              "scattercarpet": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scattercarpet"
+                }
+              ],
+              "scattergeo": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scattergeo"
+                }
+              ],
+              "scattergl": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scattergl"
+                }
+              ],
+              "scattermapbox": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scattermapbox"
+                }
+              ],
+              "scattermap": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scattermap"
+                }
+              ],
+              "scatterpolargl": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scatterpolargl"
+                }
+              ],
+              "scatterpolar": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scatterpolar"
+                }
+              ],
+              "scatter": [
+                {
+                  "fillpattern": {
+                    "fillmode": "overlay",
+                    "size": 10,
+                    "solidity": 0.2
+                  },
+                  "type": "scatter"
+                }
+              ],
+              "scatterternary": [
+                {
+                  "marker": {
+                    "colorbar": {
+                      "outlinewidth": 0,
+                      "ticks": ""
+                    }
+                  },
+                  "type": "scatterternary"
+                }
+              ],
+              "surface": [
+                {
+                  "colorbar": {
+                    "outlinewidth": 0,
+                    "ticks": ""
+                  },
+                  "colorscale": [
+                    [
+                      0.0,
+                      "#0d0887"
+                    ],
+                    [
+                      0.1111111111111111,
+                      "#46039f"
+                    ],
+                    [
+                      0.2222222222222222,
+                      "#7201a8"
+                    ],
+                    [
+                      0.3333333333333333,
+                      "#9c179e"
+                    ],
+                    [
+                      0.4444444444444444,
+                      "#bd3786"
+                    ],
+                    [
+                      0.5555555555555556,
+                      "#d8576b"
+                    ],
+                    [
+                      0.6666666666666666,
+                      "#ed7953"
+                    ],
+                    [
+                      0.7777777777777778,
+                      "#fb9f3a"
+                    ],
+                    [
+                      0.8888888888888888,
+                      "#fdca26"
+                    ],
+                    [
+                      1.0,
+                      "#f0f921"
+                    ]
+                  ],
+                  "type": "surface"
+                }
+              ],
+              "table": [
+                {
+                  "cells": {
+                    "fill": {
+                      "color": "#EBF0F8"
+                    },
+                    "line": {
+                      "color": "white"
+                    }
+                  },
+                  "header": {
+                    "fill": {
+                      "color": "#C8D4E3"
+                    },
+                    "line": {
+                      "color": "white"
+                    }
+                  },
+                  "type": "table"
+                }
+              ]
+            },
+            "layout": {
+              "annotationdefaults": {
+                "arrowcolor": "#2a3f5f",
+                "arrowhead": 0,
+                "arrowwidth": 1
+              },
+              "autotypenumbers": "strict",
+              "coloraxis": {
+                "colorbar": {
+                  "outlinewidth": 0,
+                  "ticks": ""
+                }
+              },
+              "colorscale": {
+                "diverging": [
+                  [
+                    0,
+                    "#8e0152"
+                  ],
+                  [
+                    0.1,
+                    "#c51b7d"
+                  ],
+                  [
+                    0.2,
+                    "#de77ae"
+                  ],
+                  [
+                    0.3,
+                    "#f1b6da"
+                  ],
+                  [
+                    0.4,
+                    "#fde0ef"
+                  ],
+                  [
+                    0.5,
+                    "#f7f7f7"
+                  ],
+                  [
+                    0.6,
+                    "#e6f5d0"
+                  ],
+                  [
+                    0.7,
+                    "#b8e186"
+                  ],
+                  [
+                    0.8,
+                    "#7fbc41"
+                  ],
+                  [
+                    0.9,
+                    "#4d9221"
+                  ],
+                  [
+                    1,
+                    "#276419"
+                  ]
+                ],
+                "sequential": [
+                  [
+                    0.0,
+                    "#0d0887"
+                  ],
+                  [
+                    0.1111111111111111,
+                    "#46039f"
+                  ],
+                  [
+                    0.2222222222222222,
+                    "#7201a8"
+                  ],
+                  [
+                    0.3333333333333333,
+                    "#9c179e"
+                  ],
+                  [
+                    0.4444444444444444,
+                    "#bd3786"
+                  ],
+                  [
+                    0.5555555555555556,
+                    "#d8576b"
+                  ],
+                  [
+                    0.6666666666666666,
+                    "#ed7953"
+                  ],
+                  [
+                    0.7777777777777778,
+                    "#fb9f3a"
+                  ],
+                  [
+                    0.8888888888888888,
+                    "#fdca26"
+                  ],
+                  [
+                    1.0,
+                    "#f0f921"
+                  ]
+                ],
+                "sequentialminus": [
+                  [
+                    0.0,
+                    "#0d0887"
+                  ],
+                  [
+                    0.1111111111111111,
+                    "#46039f"
+                  ],
+                  [
+                    0.2222222222222222,
+                    "#7201a8"
+                  ],
+                  [
+                    0.3333333333333333,
+                    "#9c179e"
+                  ],
+                  [
+                    0.4444444444444444,
+                    "#bd3786"
+                  ],
+                  [
+                    0.5555555555555556,
+                    "#d8576b"
+                  ],
+                  [
+                    0.6666666666666666,
+                    "#ed7953"
+                  ],
+                  [
+                    0.7777777777777778,
+                    "#fb9f3a"
+                  ],
+                  [
+                    0.8888888888888888,
+                    "#fdca26"
+                  ],
+                  [
+                    1.0,
+                    "#f0f921"
+                  ]
+                ]
+              },
+              "colorway": [
+                "#636efa",
+                "#EF553B",
+                "#00cc96",
+                "#ab63fa",
+                "#FFA15A",
+                "#19d3f3",
+                "#FF6692",
+                "#B6E880",
+                "#FF97FF",
+                "#FECB52"
+              ],
+              "font": {
+                "color": "#2a3f5f"
+              },
+              "geo": {
+                "bgcolor": "white",
+                "lakecolor": "white",
+                "landcolor": "white",
+                "showlakes": true,
+                "showland": true,
+                "subunitcolor": "#C8D4E3"
+              },
+              "hoverlabel": {
+                "align": "left"
+              },
+              "hovermode": "closest",
+              "mapbox": {
+                "style": "light"
+              },
+              "paper_bgcolor": "white",
+              "plot_bgcolor": "white",
+              "polar": {
+                "angularaxis": {
+                  "gridcolor": "#EBF0F8",
+                  "linecolor": "#EBF0F8",
+                  "ticks": ""
+                },
+                "bgcolor": "white",
+                "radialaxis": {
+                  "gridcolor": "#EBF0F8",
+                  "linecolor": "#EBF0F8",
+                  "ticks": ""
+                }
+              },
+              "scene": {
+                "xaxis": {
+                  "backgroundcolor": "white",
+                  "gridcolor": "#DFE8F3",
+                  "gridwidth": 2,
+                  "linecolor": "#EBF0F8",
+                  "showbackground": true,
+                  "ticks": "",
+                  "zerolinecolor": "#EBF0F8"
+                },
+                "yaxis": {
+                  "backgroundcolor": "white",
+                  "gridcolor": "#DFE8F3",
+                  "gridwidth": 2,
+                  "linecolor": "#EBF0F8",
+                  "showbackground": true,
+                  "ticks": "",
+                  "zerolinecolor": "#EBF0F8"
+                },
+                "zaxis": {
+                  "backgroundcolor": "white",
+                  "gridcolor": "#DFE8F3",
+                  "gridwidth": 2,
+                  "linecolor": "#EBF0F8",
+                  "showbackground": true,
+                  "ticks": "",
+                  "zerolinecolor": "#EBF0F8"
+                }
+              },
+              "shapedefaults": {
+                "line": {
+                  "color": "#2a3f5f"
+                }
+              },
+              "ternary": {
+                "aaxis": {
+                  "gridcolor": "#DFE8F3",
+                  "linecolor": "#A2B1C6",
+                  "ticks": ""
+                },
+                "baxis": {
+                  "gridcolor": "#DFE8F3",
+                  "linecolor": "#A2B1C6",
+                  "ticks": ""
+                },
+                "bgcolor": "white",
+                "caxis": {
+                  "gridcolor": "#DFE8F3",
+                  "linecolor": "#A2B1C6",
+                  "ticks": ""
+                }
+              },
+              "title": {
+                "x": 0.05
+              },
+              "xaxis": {
+                "automargin": true,
+                "gridcolor": "#EBF0F8",
+                "linecolor": "#EBF0F8",
+                "ticks": "",
+                "title": {
+                  "standoff": 15
+                },
+                "zerolinecolor": "#EBF0F8",
+                "zerolinewidth": 2
+              },
+              "yaxis": {
+                "automargin": true,
+                "gridcolor": "#EBF0F8",
+                "linecolor": "#EBF0F8",
+                "ticks": "",
+                "title": {
+                  "standoff": 15
+                },
+                "zerolinecolor": "#EBF0F8",
+                "zerolinewidth": 2
+              }
+            }
+          },
+          "xaxis": {
+            "title": {
+              "text": "Publication date"
+            },
+            "type": "date",
+            "tickformat": "%d %b %Y",
+            "range": [
+              "2024-12-30T07:12:00",
+              "2025-06-24T16:48:00"
+            ]
+          },
+          "legend": {
+            "font": {
+              "family": "Work Sans, sans-serif",
+              "size": 12
+            },
+            "title": {
+              "text": "Method"
+            },
+            "orientation": "h",
+            "yanchor": "top",
+            "y": -0.25,
+            "xanchor": "center",
+            "x": 0.5
+          },
+          "margin": {
+            "l": 40,
+            "r": 20,
+            "t": 20,
+            "b": 90
+          },
+          "font": {
+            "family": "Work Sans, sans-serif",
+            "size": 14,
+            "color": "#222"
+          },
+          "yaxis": {
+            "title": {
+              "text": "Hit rate @ 1 (\u2191)"
+            }
+          }
+        }
+      }
+    },
+    "results-table": {
+      "columnDefs": [
+        {
+          "field": "Method",
+          "colId": "Method",
+          "pinned": "left",
+          "width": 200,
+          "cellRenderer": "markdown"
+        },
+        {
+          "field": "Hit rate @ 1",
+          "colId": "Hit rate @ 1",
+          "headerName": "Hit rate @ 1 (\u2191)",
+          "sortable": true,
+          "filter": true,
+          "type": "numericColumn",
+          "width": 180,
+          "valueFormatter": {
+            "function": "\n                    function(params) {\n                        if (params.value == null || isNaN(params.value)) return '';\n                        const val = params.value.toFixed(4).replace(/\\.?0+$/, '');\n                        const low = params.data['Hit rate @ 1_ci_low'];\n                        const high = params.data['Hit rate @ 1_ci_high'];\n                        if (low != null && high != null && !isNaN(low) && !isNaN(high)) {\n                            const lowStr = low.toFixed(4).replace(/\\.?0+$/, '');\n                            const highStr = high.toFixed(4).replace(/\\.?0+$/, '');\n                            return val + ' (' + lowStr + '\u2013' + highStr + ')';\n                        }\n                        return val;\n                    }\n                    "
+          },
+          "cellClassRules": {
+            "best-value": {
+              "function": "params.data['Hit rate @ 1_rank'] === 1"
+            },
+            "second-best-value": {
+              "function": "params.data['Hit rate @ 1_rank'] === 2"
+            }
+          }
+        },
+        {
+          "field": "Hit rate @ 5",
+          "colId": "Hit rate @ 5",
+          "headerName": "Hit rate @ 5 (\u2191)",
+          "sortable": true,
+          "filter": true,
+          "type": "numericColumn",
+          "width": 180,
+          "valueFormatter": {
+            "function": "\n                    function(params) {\n                        if (params.value == null || isNaN(params.value)) return '';\n                        const val = params.value.toFixed(4).replace(/\\.?0+$/, '');\n                        const low = params.data['Hit rate @ 5_ci_low'];\n                        const high = params.data['Hit rate @ 5_ci_high'];\n                        if (low != null && high != null && !isNaN(low) && !isNaN(high)) {\n                            const lowStr = low.toFixed(4).replace(/\\.?0+$/, '');\n                            const highStr = high.toFixed(4).replace(/\\.?0+$/, '');\n                            return val + ' (' + lowStr + '\u2013' + highStr + ')';\n                        }\n                        return val;\n                    }\n                    "
+          },
+          "cellClassRules": {
+            "best-value": {
+              "function": "params.data['Hit rate @ 5_rank'] === 1"
+            },
+            "second-best-value": {
+              "function": "params.data['Hit rate @ 5_rank'] === 2"
+            }
+          }
+        },
+        {
+          "field": "Hit rate @ 20",
+          "colId": "Hit rate @ 20",
+          "headerName": "Hit rate @ 20 (\u2191)",
+          "sortable": true,
+          "filter": true,
+          "type": "numericColumn",
+          "width": 180,
+          "valueFormatter": {
+            "function": "\n                    function(params) {\n                        if (params.value == null || isNaN(params.value)) return '';\n                        const val = params.value.toFixed(4).replace(/\\.?0+$/, '');\n                        const low = params.data['Hit rate @ 20_ci_low'];\n                        const high = params.data['Hit rate @ 20_ci_high'];\n                        if (low != null && high != null && !isNaN(low) && !isNaN(high)) {\n                            const lowStr = low.toFixed(4).replace(/\\.?0+$/, '');\n                            const highStr = high.toFixed(4).replace(/\\.?0+$/, '');\n                            return val + ' (' + lowStr + '\u2013' + highStr + ')';\n                        }\n                        return val;\n                    }\n                    "
+          },
+          "cellClassRules": {
+            "best-value": {
+              "function": "params.data['Hit rate @ 20_rank'] === 1"
+            },
+            "second-best-value": {
+              "function": "params.data['Hit rate @ 20_rank'] === 2"
+            }
+          }
+        },
+        {
+          "field": "MCES @ 1",
+          "colId": "MCES @ 1",
+          "headerName": "MCES @ 1 (\u2193)",
+          "sortable": true,
+          "filter": true,
+          "type": "numericColumn",
+          "width": 180,
+          "valueFormatter": {
+            "function": "\n                    function(params) {\n                        if (params.value == null || isNaN(params.value)) return '';\n                        const val = params.value.toFixed(4).replace(/\\.?0+$/, '');\n                        const low = params.data['MCES @ 1_ci_low'];\n                        const high = params.data['MCES @ 1_ci_high'];\n                        if (low != null && high != null && !isNaN(low) && !isNaN(high)) {\n                            const lowStr = low.toFixed(4).replace(/\\.?0+$/, '');\n                            const highStr = high.toFixed(4).replace(/\\.?0+$/, '');\n                            return val + ' (' + lowStr + '\u2013' + highStr + ')';\n                        }\n                        return val;\n                    }\n                    "
+          },
+          "cellClassRules": {
+            "best-value": {
+              "function": "params.data['MCES @ 1_rank'] === 1"
+            },
+            "second-best-value": {
+              "function": "params.data['MCES @ 1_rank'] === 2"
+            }
+          }
+        },
+        {
+          "field": "Publication date",
+          "colId": "Publication date",
+          "headerName": "Publication date",
+          "sortable": true,
+          "width": 150
+        },
+        {
+          "field": "Paper",
+          "colId": "Paper",
+          "headerName": "Paper",
+          "sortable": true,
+          "width": 300,
+          "tooltipField": "Paper",
+          "cellClass": "paper-cell"
+        },
+        {
+          "field": "DOI",
+          "colId": "DOI",
+          "headerName": "DOI",
+          "sortable": true,
+          "width": 280,
+          "cellClass": "doi-cell",
+          "cellRenderer": "markdown"
+        }
+      ],
+      "rowData": [
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2411.14464) JESTR",
+          "Hit rate @ 1": 15.13,
+          "Hit rate @ 5": 36.75,
+          "Hit rate @ 20": 60.32,
+          "MCES @ 1": null,
+          "Publication date": "10 Jun 2025",
+          "Paper": "JESTR: Joint Embedding Space Technique for Ranking Candidate Molecules for the Annotation of Untargeted Metabolomics Data",
+          "DOI": "[10.48550/arXiv.2411.14464](https://doi.org/10.48550/arXiv.2411.14464)",
+          "Hit rate @ 1_rank": 1,
+          "Hit rate @ 1_ci_low": null,
+          "Hit rate @ 1_ci_high": null,
+          "Hit rate @ 5_rank": 1,
+          "Hit rate @ 5_ci_low": null,
+          "Hit rate @ 5_ci_high": null,
+          "Hit rate @ 20_rank": 1,
+          "Hit rate @ 20_ci_low": null,
+          "Hit rate @ 20_ci_high": null,
+          "MCES @ 1_rank": 0,
+          "MCES @ 1_ci_low": null,
+          "MCES @ 1_ci_high": null
+        },
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2410.23326) MIST",
+          "Hit rate @ 1": 14.64,
+          "Hit rate @ 5": 34.87,
+          "Hit rate @ 20": 59.15,
+          "MCES @ 1": 15.37,
+          "Publication date": "14 Jan 2025",
+          "Paper": "MassSpecGym: A benchmark for the discovery and identification of molecules",
+          "DOI": "[10.48550/arXiv.2410.23326](https://doi.org/10.48550/arXiv.2410.23326)",
+          "Hit rate @ 1_rank": 2,
+          "Hit rate @ 1_ci_low": 13.82,
+          "Hit rate @ 1_ci_high": 15.54,
+          "Hit rate @ 5_rank": 2,
+          "Hit rate @ 5_ci_low": 33.69,
+          "Hit rate @ 5_ci_high": 36.1,
+          "Hit rate @ 20_rank": 2,
+          "Hit rate @ 20_ci_low": 57.89,
+          "Hit rate @ 20_ci_high": 60.39,
+          "MCES @ 1_rank": 1,
+          "MCES @ 1_ci_low": 15.12,
+          "MCES @ 1_ci_high": 15.62
+        },
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2411.14464) ESP",
+          "Hit rate @ 1": 10.71,
+          "Hit rate @ 5": 24.84,
+          "Hit rate @ 20": 42.66,
+          "MCES @ 1": null,
+          "Publication date": "10 Jun 2025",
+          "Paper": "JESTR: Joint Embedding Space Technique for Ranking Candidate Molecules for the Annotation of Untargeted Metabolomics Data",
+          "DOI": "[10.48550/arXiv.2411.14464](https://doi.org/10.48550/arXiv.2411.14464)",
+          "Hit rate @ 1_rank": 0,
+          "Hit rate @ 1_ci_low": null,
+          "Hit rate @ 1_ci_high": null,
+          "Hit rate @ 5_rank": 0,
+          "Hit rate @ 5_ci_low": null,
+          "Hit rate @ 5_ci_high": null,
+          "Hit rate @ 20_rank": 0,
+          "Hit rate @ 20_ci_low": null,
+          "Hit rate @ 20_ci_high": null,
+          "MCES @ 1_rank": 0,
+          "MCES @ 1_ci_low": null,
+          "MCES @ 1_ci_high": null
+        },
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2410.23326) DeepSets + Fourier features",
+          "Hit rate @ 1": 5.24,
+          "Hit rate @ 5": 12.58,
+          "Hit rate @ 20": 28.21,
+          "MCES @ 1": 22.13,
+          "Publication date": "14 Jan 2025",
+          "Paper": "MassSpecGym: A benchmark for the discovery and identification of molecules",
+          "DOI": "[10.48550/arXiv.2410.23326](https://doi.org/10.48550/arXiv.2410.23326)",
+          "Hit rate @ 1_rank": 0,
+          "Hit rate @ 1_ci_low": 4.71,
+          "Hit rate @ 1_ci_high": 5.83,
+          "Hit rate @ 5_rank": 0,
+          "Hit rate @ 5_ci_low": 11.8,
+          "Hit rate @ 5_ci_high": 13.42,
+          "Hit rate @ 20_rank": 0,
+          "Hit rate @ 20_ci_low": 27.1,
+          "Hit rate @ 20_ci_high": 29.36,
+          "MCES @ 1_rank": 2,
+          "MCES @ 1_ci_low": 21.85,
+          "MCES @ 1_ci_high": 22.43
+        },
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2410.23326) Fingerprint FFN",
+          "Hit rate @ 1": 2.54,
+          "Hit rate @ 5": 7.59,
+          "Hit rate @ 20": 20.8,
+          "MCES @ 1": 24.66,
+          "Publication date": "14 Jan 2025",
+          "Paper": "MassSpecGym: A benchmark for the discovery and identification of molecules",
+          "DOI": "[10.48550/arXiv.2410.23326](https://doi.org/10.48550/arXiv.2410.23326)",
+          "Hit rate @ 1_rank": 0,
+          "Hit rate @ 1_ci_low": 2.17,
+          "Hit rate @ 1_ci_high": 2.99,
+          "Hit rate @ 5_rank": 0,
+          "Hit rate @ 5_ci_low": 6.96,
+          "Hit rate @ 5_ci_high": 8.28,
+          "Hit rate @ 20_rank": 0,
+          "Hit rate @ 20_ci_low": 19.01,
+          "Hit rate @ 20_ci_high": 20.98,
+          "MCES @ 1_rank": 0,
+          "MCES @ 1_ci_low": 24.38,
+          "MCES @ 1_ci_high": 24.94
+        },
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2410.23326) DeepSets",
+          "Hit rate @ 1": 1.47,
+          "Hit rate @ 5": 6.21,
+          "Hit rate @ 20": 19.23,
+          "MCES @ 1": 25.11,
+          "Publication date": "14 Jan 2025",
+          "Paper": "MassSpecGym: A benchmark for the discovery and identification of molecules",
+          "DOI": "[10.48550/arXiv.2410.23326](https://doi.org/10.48550/arXiv.2410.23326)",
+          "Hit rate @ 1_rank": 0,
+          "Hit rate @ 1_ci_low": 1.18,
+          "Hit rate @ 1_ci_high": 1.77,
+          "Hit rate @ 5_rank": 0,
+          "Hit rate @ 5_ci_low": 5.64,
+          "Hit rate @ 5_ci_high": 6.82,
+          "Hit rate @ 20_rank": 0,
+          "Hit rate @ 20_ci_low": 18.24,
+          "Hit rate @ 20_ci_high": 20.26,
+          "MCES @ 1_rank": 0,
+          "MCES @ 1_ci_low": 24.84,
+          "MCES @ 1_ci_high": 25.39
+        },
+        {
+          "Method": "[\ud83d\udcc4](https://doi.org/10.48550/arXiv.2410.23326) Random",
+          "Hit rate @ 1": 0.37,
+          "Hit rate @ 5": 2.01,
+          "Hit rate @ 20": 8.22,
+          "MCES @ 1": 30.81,
+          "Publication date": "14 Jan 2025",
+          "Paper": "MassSpecGym: A benchmark for the discovery and identification of molecules",
+          "DOI": "[10.48550/arXiv.2410.23326](https://doi.org/10.48550/arXiv.2410.23326)",
+          "Hit rate @ 1_rank": 0,
+          "Hit rate @ 1_ci_low": 0.24,
+          "Hit rate @ 1_ci_high": 0.54,
+          "Hit rate @ 5_rank": 0,
+          "Hit rate @ 5_ci_low": 1.68,
+          "Hit rate @ 5_ci_high": 2.39,
+          "Hit rate @ 20_rank": 0,
+          "Hit rate @ 20_ci_low": 7.53,
+          "Hit rate @ 20_ci_high": 8.89,
+          "MCES @ 1_rank": 0,
+          "MCES @ 1_ci_low": 30.4,
+          "MCES @ 1_ci_high": 31.21
+        }
+      ]
+    }
+  }
+}

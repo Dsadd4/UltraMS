@@ -1,0 +1,37 @@
+evaluation,analysis_unit,model,metric,hit_rate_percent,n
+Each spectrum alone,query spectrum,DeepSets,Hit@1,5.68623013040374,57437
+Each spectrum alone,query spectrum,DeepSets,Hit@5,10.89889792294165,57437
+Each spectrum alone,query spectrum,DeepSets,Hit@20,20.25175409579191,57437
+Each spectrum alone,query spectrum,Fourier projection,Hit@1,14.99207827706878,57437
+Each spectrum alone,query spectrum,Fourier projection,Hit@5,21.81346518794505,57437
+Each spectrum alone,query spectrum,Fourier projection,Hit@20,30.28361509131744,57437
+Each spectrum alone,query spectrum,UltraMS codebook,Hit@1,15.911346344690699,57437
+Each spectrum alone,query spectrum,UltraMS codebook,Hit@5,23.21151870745338,57437
+Each spectrum alone,query spectrum,UltraMS codebook,Hit@20,31.700820028901227,57437
+Each spectrum alone,query spectrum,Linear,Hit@1,17.9152810905862,57437
+Each spectrum alone,query spectrum,Linear,Hit@5,25.03438550063548,57437
+Each spectrum alone,query spectrum,Linear,Hit@20,34.05470341417553,57437
+Each spectrum alone,query spectrum,DreaMS,Hit@1,20.253495133798772,57437
+Each spectrum alone,query spectrum,DreaMS,Hit@5,27.050507512578996,57437
+Each spectrum alone,query spectrum,DreaMS,Hit@20,35.351776729286,57437
+Each spectrum alone,query spectrum,UltraMS,Hit@1,27.15496979299058,57437
+Each spectrum alone,query spectrum,UltraMS,Hit@5,34.79986768111148,57437
+Each spectrum alone,query spectrum,UltraMS,Hit@20,43.53813743754026,57437
+Combine votes from related spectra,ground-truth molecule group,DeepSets,Hit@1,5.79768092762894,5002
+Combine votes from related spectra,ground-truth molecule group,DeepSets,Hit@5,12.874850059976009,5002
+Combine votes from related spectra,ground-truth molecule group,DeepSets,Hit@20,21.07157137145142,5002
+Combine votes from related spectra,ground-truth molecule group,Fourier projection,Hit@1,19.4922031187525,5002
+Combine votes from related spectra,ground-truth molecule group,Fourier projection,Hit@5,32.52698920431827,5002
+Combine votes from related spectra,ground-truth molecule group,Fourier projection,Hit@20,40.66373450619752,5002
+Combine votes from related spectra,ground-truth molecule group,UltraMS codebook,Hit@1,17.83286685325869,5002
+Combine votes from related spectra,ground-truth molecule group,UltraMS codebook,Hit@5,31.067572970811668,5002
+Combine votes from related spectra,ground-truth molecule group,UltraMS codebook,Hit@20,38.56457417033186,5002
+Combine votes from related spectra,ground-truth molecule group,Linear,Hit@1,24.350259896041578,5002
+Combine votes from related spectra,ground-truth molecule group,Linear,Hit@5,40.4438224710116,5002
+Combine votes from related spectra,ground-truth molecule group,Linear,Hit@20,48.660535785685724,5002
+Combine votes from related spectra,ground-truth molecule group,DreaMS,Hit@1,33.48660535785686,5002
+Combine votes from related spectra,ground-truth molecule group,DreaMS,Hit@5,49.36025589764094,5002
+Combine votes from related spectra,ground-truth molecule group,DreaMS,Hit@20,57.736905237904836,5002
+Combine votes from related spectra,ground-truth molecule group,UltraMS,Hit@1,42.56297481007597,5002
+Combine votes from related spectra,ground-truth molecule group,UltraMS,Hit@5,57.57696921231508,5002
+Combine votes from related spectra,ground-truth molecule group,UltraMS,Hit@20,64.87405037984806,5002

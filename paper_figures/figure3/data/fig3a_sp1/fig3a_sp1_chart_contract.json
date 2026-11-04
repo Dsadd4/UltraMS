@@ -1,0 +1,29 @@
+{
+  "analytical_question": "How does cumulative candidate retrieval change from Top-1 to Top-5 and Top-20 across external benchmarks?",
+  "takeaway": "UltraMS exceeds the matched DreaMS comparator at every reported k, while reported JESTR Top-5 and Top-20 values are higher on both MassSpecGym tasks.",
+  "chart_family": "Comparison & Ranking",
+  "variant": "three-by-three horizontal bar matrix",
+  "metric": "Top-k retrieval accuracy / Hit rate at k (%)",
+  "missing_value_policy": "Missing values, if present, are retained as NA in plot data and shown as an empty row, without interpolation or a zero-valued bar.",
+  "data_source": "data/benchmark_top1_source_data.csv",
+  "derived_plot_data": "fig3a_sp1_plot_data.csv",
+  "panels": [
+    "NPLIB1",
+    "MassSpecGym mass",
+    "MassSpecGym formula"
+  ],
+  "metrics": [
+    "Top-1",
+    "Top-5",
+    "Top-20"
+  ],
+  "palette_policy": "Method-family colours are fixed across every row and metric column.",
+  "qa_requirements": [
+    "three benchmark rows and three Top-k columns are present",
+    "method order within each benchmark is fixed by descending Top-1 accuracy",
+    "all available values are shown as bars with direct value labels",
+    "the MIST full Top-1, Top-5, and Top-20 values match official Supplementary Table 8",
+    "no error bars, reference-category legend, line segments, or grey annotation text are rendered",
+    "PNG, PDF, and SVG are exported"
+  ]
+}

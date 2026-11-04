@@ -1,0 +1,23 @@
+{
+  "figure": "eight_peaks_assemble_a_molecular_decision_nature",
+  "reference": "Natureserises.pdf",
+  "final_size_inches": [
+    7.2,
+    4.45
+  ],
+  "minimum_planned_font_pt": 5.3,
+  "palette": {
+    "UltraMS": "#0072B2",
+    "DreaMS": "#D55E00",
+    "retained_peak": "#009E73",
+    "new_peak": "#E69F00"
+  },
+  "n_exact_coalitions": 256,
+  "rank1_across_all_256": {
+    "DreaMS": 51,
+    "UltraMS": 256
+  },
+  "training_or_inference_performed": false,
+  "formats_complete": true,
+  "source_tables_complete": true
+}

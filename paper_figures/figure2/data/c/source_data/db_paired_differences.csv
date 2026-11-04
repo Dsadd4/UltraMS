@@ -1,0 +1,3 @@
+comparison,difference,diagnostic_bootstrap_q025,diagnostic_bootstrap_q975,direction
+UltraMS - Raw spectrum,-2.4976481168718623,-2.0420394272207427,-0.969652602700043,negative_favors_UltraMS
+UltraMS - DreaMS,-1.5691687861643988,-1.5202317703033004,-0.3334735439442493,negative_favors_UltraMS

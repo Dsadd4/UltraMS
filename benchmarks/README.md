@@ -7,6 +7,8 @@ The benchmark inputs are publicly available. From a fresh checkout, the task com
 | Spectral properties | [Download and prepare](spectral_properties/INPUTS.md) | [Task commands](spectral_properties/EXPERIMENTS.md) | [Results](spectral_properties/README.md) |
 | Molecular identification | [Download and prepare](molecular_identification/INPUTS.md) | [Task commands](molecular_identification/EXPERIMENTS.md) | [Results](molecular_identification/README.md) |
 
+Manuscript figure plotting code and plotted source data are in [`paper_figures/`](../paper_figures/README.md).
+
 NPLIB1 and MassSpecGym use predicted 2,048-bit Morgan molecular fingerprints to rank candidate molecules. Their [training and download commands](molecular_identification/README.md#fingerprint-based-molecular-identification), [saved test-query results](molecular_identification/data/fingerprint_prediction/), and [result calculator](molecular_identification/reproduce_fingerprint_prediction.py) are included.
 
 To recalculate the reported tables from saved test outputs without training:

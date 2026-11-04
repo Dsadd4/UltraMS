@@ -1,0 +1,9 @@
+split,group_id,sample_idx,adduct,precursor_mz,retention_time,collision_energy,spectrum_signature,selected_similarity_threshold,member_order,selection_rule
+test,test_g08876,542481,[M+H]+,378.19245,102.92,20.0,ddba522c994e535f84f705db4be09f95e6f38e32e3e06bf277f9340588c268a9,0.5,4,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542482,[M+H]+,378.19245,102.92,20.0,a2932468b9f4006022782ab92e8c655184b360f1aaebea4529845452ba6a86af,0.5,3,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542483,[M+H]+,378.19245,102.92,60.0,b58c5912646df9228cb5733833230b7cabdce0b0b85d89353bdd27247778c401,0.5,8,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542484,[M+H]+,378.19245,102.92,20.0,9be13a1475f86b7df3c04c403db14add9d3f5d72b43e44479b02f13813c0d7b9,0.5,1,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542485,[M+H]+,378.19245,102.92,45.0,881d6f2660d78e5fa3c8d8e481df949762cc1071bfe2823b51c64f78f5e53811,0.5,6,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542486,[M+H]+,378.19245,102.92,60.0,a7aeda282944265a595bd55824d04a8e6b6cf93e9d1c0cfbef13b527040ac633,0.5,7,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542487,[M+H]+,378.19245,102.92,20.0,9fb45d7d0cd49f30275276d5b2628297c43b32fabae09edfca20206d9ae34b42,0.5,2,illustrative_shared_rescue_not_used_for_inference
+test,test_g08876,542488,[M+H]+,378.19245,102.92,45.0,333061adb5b8157fe9a90014c2b7aecae20895839fab76359aef385825f29236,0.5,5,illustrative_shared_rescue_not_used_for_inference

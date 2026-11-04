@@ -1,0 +1,28 @@
+{
+  "n_candidates": 55369,
+  "n_selected": 10000,
+  "splits": [
+    "val",
+    "test"
+  ],
+  "n_spectra_requested": 10000,
+  "min_peaks": 18,
+  "max_peaks": 130,
+  "label_counts": {
+    "O-rich": 2846,
+    "N-containing": 2826,
+    "Halogenated": 2216,
+    "S/P-containing": 2046,
+    "Other": 66
+  },
+  "adduct_counts": {
+    "[M+H]+": 3299,
+    "[M-H]-": 3255,
+    "[M+H-H2O]+": 1120,
+    "[M+NH4]+": 1004,
+    "[M+Cl]-": 679,
+    "[M]+": 275,
+    "[M+Na]+": 202,
+    "[M+H-2H2O]+": 166
+  }
+}

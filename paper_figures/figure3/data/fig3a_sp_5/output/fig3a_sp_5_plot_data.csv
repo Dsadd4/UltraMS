@@ -1,0 +1,7 @@
+method,display_method,metric,retrieval_percent,n_queries,validation_selected_global_weight
+DreaMS FP,DreaMS,Top-1,1.0080610059717598,57437,0.6
+DreaMS FP,DreaMS,Top-5,11.90695892891341,57437,0.6
+DreaMS FP,DreaMS,Top-20,27.569336838623187,57437,0.6
+UltraMS FP,UltraMS,Top-1,1.31622473318592,57437,0.35
+UltraMS FP,UltraMS,Top-5,14.464543760990301,57437,0.35
+UltraMS FP,UltraMS,Top-20,31.75305116910702,57437,0.35

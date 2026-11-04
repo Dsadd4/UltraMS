@@ -15,6 +15,7 @@ python -m pip install ultrams
 | Learn in a notebook | [UltraMS tutorials](https://github.com/Dsadd4/UltraMS/tree/main/cookbook/tutorials) |
 | Inspect or run pretraining | [Training code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) |
 | Reproduce the paper benchmarks | [Spectral properties and molecular identification](https://github.com/Dsadd4/UltraMS/blob/main/benchmarks/README.md) |
+| Redraw a manuscript figure | [Figure 2 and Figure 3 plotting code and source data](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md) |
 
 <p align="center">
   <img src="assets/ultrams_homepage.svg" alt="MS/MS peaks flowing through UltraMS representations into a chemical landscape" width="820">
@@ -98,6 +99,10 @@ The [UltraMSdata pretraining package](https://github.com/Dsadd4/UltraMS/blob/mai
 ## Benchmarks
 
 The [benchmark code and results](https://github.com/Dsadd4/UltraMS/blob/main/benchmarks/README.md) cover spectral properties and molecular identification. The task pages link to public input downloads, training and test commands, and the measured results.
+
+## Paper figures
+
+[`paper_figures/`](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md) contains the plotting code and plotted source data for Figure 2 and Figure 3, including the supplementary NPLIB1, MassSpecGym and MSnLib comparison panels, packaged at the code versions used for the printed figures. Each figure has a panel-by-panel README and a `panel_manifest.json` provenance ledger; large evaluation arrays are not redistributed and their sources are documented.
 
 ## Cite
 

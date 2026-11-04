@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "grouping": "oracle exact canonical SMILES; groups of size >=2",
+  "ranking": "Top-1 plurality, normalized-Borda support over each member's frozen Top-50 list, lexical final tie break",
+  "depth": 50,
+  "primary_model_seed": 0,
+  "main_result_policy": "one frozen checkpoint per method; learned baselines use seed 0",
+  "formal_chemberta_six": false,
+  "formal_final_six": true,
+  "n_oracle_groups": 5002,
+  "n_oracle_spectra": 57436,
+  "methods": [
+    "DeepSets",
+    "DreaMS",
+    "Fourier projection",
+    "Linear",
+    "UltraMS",
+    "UltraMS codebook"
+  ],
+  "artifacts": {
+    "per_group_top50_consensus.csv.gz": "f12aea10fe3eb894a1c3150a299d88de47280b90e8191543048b164cf838a03e",
+    "method_summary.csv": "f66a1c5777565adb3f75637ecbc13b777edc55e0e3fbbd99271d386036fc0881",
+    "DONE.json": "5e86cc2aa09c9cbbaafa33299903786156b5a7829e799fac046b88a0c140a8cf",
+    "input_manifest.csv": "2ee143bab9aaac5efdef8f995a7b976b815c243fdbe92ac7538351027c4ca26c",
+    "per_seed_metrics.csv": "27a0515f11ab48d3fc82c13ba967a2c10621ed16e2ff56a5800c39f0ac811134",
+    "consensus_audit.csv": "57c394511a76489bf6f518559dc0c137d89661c138fefe5af6a116a4580f7d50"
+  }
+}

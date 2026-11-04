@@ -1,0 +1,31 @@
+{
+  "representation": {
+    "UltraMS": "projection(CLS)",
+    "DreaMS": "head(precursor token)"
+  },
+  "excluded": [
+    "peak pooling",
+    "peak matching",
+    "fusion"
+  ],
+  "checkpoints": {
+    "UltraMS": {
+      "path": "train/output/comparison/dreams_contrastive_ultrams_finetune/u4_e3_top100_seed3407_20260702/best.pt",
+      "sha256": "3b8ae5bd85ff8f6991f8a78b6d70531aab74f32914878730e7296aaddb79afb0"
+    },
+    "DreaMS": {
+      "path": "train/comparison/resources/DreaMS_Check/embedding_model.ckpt",
+      "sha256": "630ba2e5fd0d2ac288fe32772ed73f9bc7d0f4c45759490cc856a96087dd12f4"
+    }
+  },
+  "splits": {
+    "val": {
+      "n_spectra": 1562,
+      "dimension": 1024
+    },
+    "test": {
+      "n_spectra": 1592,
+      "dimension": 1024
+    }
+  }
+}

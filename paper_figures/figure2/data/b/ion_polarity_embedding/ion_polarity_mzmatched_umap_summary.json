@@ -1,0 +1,30 @@
+{
+  "method": "umap",
+  "n_pairs": 500,
+  "seed": 42,
+  "split": "test",
+  "models": {
+    "rt_only_d": "UltraMs Stage-D epoch 1",
+    "dreams": "DreaMS"
+  },
+  "metrics": {
+    "rt_only_d": {
+      "silhouette": 0.1947919726371765,
+      "center_distance": 2.78063702583313,
+      "spread": 17.337659239555315,
+      "separation_ratio": 0.6678040827841937
+    },
+    "dreams": {
+      "silhouette": 0.034295469522476196,
+      "center_distance": 0.9441057443618774,
+      "spread": 6.658085696945258,
+      "separation_ratio": 0.36588613265540093
+    }
+  },
+  "sample": {
+    "n_positive": 500,
+    "n_negative": 500,
+    "median_paired_mz_delta": 0.6887950000000274,
+    "mean_paired_mz_delta": 1.6246972799999955
+  }
+}

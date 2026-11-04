@@ -1,0 +1,42 @@
+{
+  "experiment": "Figure 3c candidate-blind top-topology selection",
+  "selection_rule": "For each query peak, select the source-valid fragment topology with the highest contextual peak-embedding cosine; ties are resolved by fragment connectivity key. Candidate identities and compatibility are revealed only after this table is frozen.",
+  "rule_registered_before_execution_as": "global_top_family_sum",
+  "n_query_peaks_with_source_valid_topology": 49,
+  "pairwise_relation_counts": {
+    "neither": 43,
+    "shared": 5,
+    "target_only": 1
+  },
+  "n_pairwise_informative_topologies": 6,
+  "n_pairwise_discriminative_topologies": 1,
+  "all_discriminative_topologies_favor_target": true,
+  "peak_316": {
+    "peak_id": 51,
+    "query_mz": 316.0203857421875,
+    "selected_frag_connectivity_key": "YRRAGUMVDQQZIY",
+    "max_cosine": 0.732305645942688,
+    "median_cosine": 0.6466569304466248,
+    "n_reference_spectra": 3,
+    "n_reference_parent_connectivities": 3,
+    "minimum_delta_ppm": 0.1931367690304418,
+    "target_compatible": true,
+    "pleurostimin_compatible": false,
+    "pairwise_relation": "target_only"
+  },
+  "blindness_audit": {
+    "blind_table_written_before_candidate_file_read": true,
+    "candidate_identity_used_to_select_topology": false,
+    "candidate_compatibility_used_to_select_topology": false
+  },
+  "input_sha256": {
+    "families": "72e81809bf5c61133815557731ec0e19240a8c59700e1d51366be943c07adb3b",
+    "compatibility": "c42a9cfe162c293610fa35503f1e3a367b4919d89b311c7786c0f3ef48592da2",
+    "candidates": "ed9d7f82661e719e88f961a1a9f127c21faf283b495a594406bd7c23362ae951",
+    "registered_protocol": "eb454d05c6e79fba3b5de621b781d856b938d2f58db2e8dde2f220d1be47f99a"
+  },
+  "output_sha256": {
+    "blind_top_topology_per_peak": "24fa27aa9f2bbdb333dfbd83ed9bcc581765ce50668a3f3f620a6d06fa01ca3d",
+    "revealed_pairwise_compatibility": "2bc0f4b9e5b47022eaa509b575ab436472c199c9630255aae23466bff86b2e25"
+  }
+}

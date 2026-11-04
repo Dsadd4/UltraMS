@@ -1,0 +1,96 @@
+{
+  "figure": "four_peaks_break_molecular_tie_nature",
+  "canvas_mm": [
+    205.0,
+    82.0
+  ],
+  "full_width_layout": {
+    "target_width_mm": 205.0,
+    "width_distribution": "existing normalized panel map; extra width shared across all evidence panels",
+    "vertical_height_unchanged": true
+  },
+  "upper_story_height_scale": 0.8,
+  "lower_descriptor_physical_height_preserved": true,
+  "molecule_rendering": {
+    "format": "RDKit SVG paths",
+    "n_svg_assets": 11,
+    "embedded_raster_images_in_main_svg": 0,
+    "bond_linewidth_pt": 0.5,
+    "multiple_bond_offset": 0.19,
+    "bond_cap_and_join": "round"
+  },
+  "sample_idx": 545225,
+  "adduct": "[M-H]-",
+  "formula": "C22H22O13",
+  "n_benchmark_entries": 62,
+  "n_connectivity_structures": 60,
+  "support_peak_ids": [
+    18,
+    21,
+    11,
+    51
+  ],
+  "peak_embedding_retrieval": {
+    "peak_id": 51,
+    "query_mz": 316.0203857421875,
+    "fragment_connectivity_key": "YRRAGUMVDQQZIY",
+    "selection": "highest-cosine source-valid topology before candidate reveal",
+    "selection_used_candidate_identity": false,
+    "selection_used_candidate_compatibility": false,
+    "n_reference_spectra": 3,
+    "n_reference_parent_connectivities": 3,
+    "target_compatible": 3,
+    "fixed_isomer_compatible": 0,
+    "maximum_cosine": 0.732305645942688,
+    "cosine_range": [
+      0.6114855408668518,
+      0.732305645942688
+    ],
+    "delta_ppm_range": [
+      0.1931367690304418,
+      3.8627353806088367
+    ],
+    "blind_selection_file": "source_data/peak_embedding_cross_parent_20260823/stage12_blind_topology_selection/blind_top_topology_per_peak.csv",
+    "revealed_compatibility_file": "source_data/peak_embedding_cross_parent_20260823/stage12_blind_topology_selection/revealed_pairwise_compatibility.csv",
+    "blind_audit_file": "source_data/peak_embedding_cross_parent_20260823/stage12_blind_topology_selection/audit.json",
+    "source_file": "source_data/peak_embedding_cross_parent_20260823/stage10_blind_candidate_scoring/blind_source_valid_neighbor_annotations.csv"
+  },
+  "descriptor_panel_candidates": [
+    "UltraMS top 20",
+    "DreaMS top 20"
+  ],
+  "descriptor_axis_reference": "range across the same 60 connectivity candidates",
+  "descriptor_distribution": {
+    "definition": "Gaussian-kernel-smoothed empirical distribution within each model's top 20 after excluding the measured target",
+    "n_candidates_per_model": 19,
+    "bandwidth": "Silverman-style robust scale with a 3.5% full-range floor; discrete count descriptors additionally use a 0.35-unit floor"
+  },
+  "descriptor_panel_metrics": [
+    "TPSA",
+    "cLogP",
+    "phenolic OH groups",
+    "carbonyl groups",
+    "rotatable bonds",
+    "fraction Csp3"
+  ],
+  "peak_selection_uses_model_outputs": false,
+  "baseline": {
+    "rt_only_d11": {
+      "true_rank": 1,
+      "fixed_decoy_margin": 0.1167241632938385
+    },
+    "dreams": {
+      "true_rank": 14,
+      "fixed_decoy_margin": -0.038425862789154
+    }
+  },
+  "formats_complete": true,
+  "guardrails": [
+    "All benchmark candidates share the query formula.",
+    "Peak selection is model-independent: shared formula, different connectivity, CE20 repetition, then intensity.",
+    "MAGMa structures are candidate fragment interpretations.",
+    "Display order places the two adjacent C7O5H3 assignments together; it does not relabel them as isotopes.",
+    "For m/z 316, the highest-cosine source-valid topology was frozen before target/Pleurostimin compatibility was evaluated.",
+    "This is a frozen illustrative case, not a population effect estimate."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "primary_model_seed": 0,
+  "stability_model_seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "point_definition": "each point is one independently trained model seed",
+  "summary_definition": "mean plus or minus sample standard deviation across five seeds",
+  "sources": [
+    {
+      "source_id": "fig3abg_retrieval_aggregate_v1/per_seed_metrics.csv",
+      "bytes": 1757,
+      "sha256": "a1106aa576e56e58b3008d757580e6c595f1587be8a4cfd29c4e2f8b7a67f069"
+    },
+    {
+      "source_id": "fig3b_frozen_group_baselines_v1/per_seed_performance.csv",
+      "bytes": 2402,
+      "sha256": "eccc5e5d1bfa10b26a246305dd3b51b01b08607fc23ddc3643d5fb2921d3ed4c"
+    },
+    {
+      "source_id": "fig3h_aggregate_v2/low_fdr_mean_recall_per_seed.csv",
+      "bytes": 3041,
+      "sha256": "48b7c9004b1da6fc59cc567128b497f31847271db76f5ac6c1a5af305198882b"
+    }
+  ],
+  "outputs": {
+    "fig3_baseline_seed_stability.pdf": "fc7b9c8c9a5da0ac3d432c3d18bd093f15e01d8d0e5134b22c8589f184743625",
+    "fig3_baseline_seed_stability.png": "d36e5e9135c7fb78e1f2d78deb9f2c4280e760ed0c3c48b00c5f6ca2308af0d0",
+    "fig3_baseline_seed_stability.svg": "e5650357bc54d792b64e0469e3ca68aca39f37305c756141c5478eda756b88fc"
+  }
+}

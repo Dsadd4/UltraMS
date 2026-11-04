@@ -1,0 +1,26 @@
+{
+  "multi": true,
+  "response": {
+    "metric-dd": {
+      "options": [
+        {
+          "label": "Hit rate @ 1 (\u2191)",
+          "value": "Hit rate @ 1"
+        },
+        {
+          "label": "Hit rate @ 5 (\u2191)",
+          "value": "Hit rate @ 5"
+        },
+        {
+          "label": "Hit rate @ 20 (\u2191)",
+          "value": "Hit rate @ 20"
+        },
+        {
+          "label": "MCES @ 1 (\u2193)",
+          "value": "MCES @ 1"
+        }
+      ],
+      "value": "Hit rate @ 1"
+    }
+  }
+}

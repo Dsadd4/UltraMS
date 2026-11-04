@@ -1,0 +1,8 @@
+# Large regenerated inputs are not redistributed with this figure package.
+__pycache__/
+*.pyc
+data/**/*.npy
+data/**/*.npz
+data/**/*.pt
+data/**/*.pkl
+regenerated/

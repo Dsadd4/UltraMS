@@ -1,0 +1,1307 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="311.76pt" height="135.36pt" viewBox="0 0 311.76 135.36" version="1.1">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-08-19T06:02:48.419671</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 135.36  L 311.76 135.36  L 311.76 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 17.1468 101.931637  L 106.468938 101.931637  L 106.468938 17.5968  L 17.1468 17.5968  z " style="fill: #ffffff" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: #4d555b; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="61.807869" y="110.379283" transform="rotate(-0 61.807869 110.379283)">UMAP 1</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="fill: #4d555b; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="11.835429" y="59.764218" transform="rotate(-90 11.835429 59.764218)">UMAP 2</text>
+    </g>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="mbfe4df5a11" d="M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z " />
+    </defs>
+    <g clip-path="url(#p28a798dee9)">
+     <use xlink:href="#mbfe4df5a11" x="31.637645" y="78.783212" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="21.283931" y="88.503179" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="24.473437" y="92.277022" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="21.206897" y="87.708463" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="31.069095" y="87.303895" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="27.813274" y="83.991121" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="28.092295" y="89.440776" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="29.702925" y="79.408992" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="22.28014" y="79.344303" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="26.833422" y="80.326467" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="25.511911" y="78.87452" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="21.841525" y="80.710179" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="22.200651" y="85.928215" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="21.921842" y="83.212356" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="22.345562" y="81.646187" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="24.888455" y="88.275125" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="27.425544" y="75.091673" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="22.830053" y="88.366893" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="28.259878" y="80.531152" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="23.784005" y="84.457619" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="25.358918" y="82.697663" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="25.850229" y="80.18946" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="29.559409" y="77.321942" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="25.287735" y="82.041418" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="33.215358" y="79.590248" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="28.039935" y="83.488559" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="24.663566" y="83.824556" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="22.138401" y="82.776064" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="31.420923" y="89.045188" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="23.150865" y="81.957681" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="29.85583" y="80.442851" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="21.619708" y="87.625365" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="27.626408" y="89.757145" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="22.006519" y="81.429605" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="23.57754" y="86.307783" style="fill: #4e79a7; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m09405a6c6f" d="M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z " />
+    </defs>
+    <g clip-path="url(#p28a798dee9)">
+     <use xlink:href="#m09405a6c6f" x="68.599566" y="85.637146" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="66.554215" y="85.273774" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="58.368874" y="67.342889" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="82.280747" y="87.557763" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="59.014459" y="71.565565" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="61.314741" y="74.519096" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="60.83835" y="78.887039" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="82.738634" y="89.023116" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="82.336928" y="82.786784" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="64.526075" y="60.221402" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="68.981084" y="81.203308" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="62.811198" y="76.851986" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="59.340389" y="74.203144" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="75.306992" y="80.708133" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="54.876694" y="71.332115" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="82.316771" y="85.986687" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="78.07514" y="85.189111" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="65.176846" y="66.187979" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="77.678698" y="81.439724" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="72.732754" y="84.271555" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="71.783424" y="69.946341" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="80.677564" y="83.417892" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="72.793299" y="85.450653" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="83.404456" y="86.831658" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="69.036629" y="60.118488" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="61.980532" y="68.267404" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="83.680932" y="80.947516" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="82.18635" y="85.600474" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="60.776502" y="66.67619" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="64.749114" y="68.411554" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="61.323025" y="61.418856" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="66.443368" y="75.68397" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="66.123348" y="66.100099" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="76.578355" y="71.786465" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="66.755253" y="68.474845" style="fill: #59a14f; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <defs>
+     <path id="m282ec79336" d="M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z " />
+    </defs>
+    <g clip-path="url(#p28a798dee9)">
+     <use xlink:href="#m282ec79336" x="102.408841" y="56.733882" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="99.027238" y="46.666065" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="97.951999" y="57.860811" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="100.248448" y="52.785999" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="94.780927" y="51.542083" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="95.844843" y="60.269857" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="94.161742" y="37.542887" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="87.527772" y="27.098088" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="101.588893" y="56.146328" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="97.277799" y="36.33696" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="94.215635" y="44.175462" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="98.649809" y="48.964908" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="80.054386" y="36.536188" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="86.371736" y="34.883102" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="83.230766" y="26.101811" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="90.701742" y="47.180637" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="92.091266" y="43.222607" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="92.158251" y="47.574719" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="95.8736" y="62.128195" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="100.76152" y="52.817526" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="85.814367" y="28.351938" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="87.443893" y="36.397139" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="95.45126" y="54.224876" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="94.65399" y="42.682366" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="96.877089" y="57.230889" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="93.734689" y="37.118211" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="92.335817" y="64.117956" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="99.852683" y="60.415344" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="91.629587" y="32.506292" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="95.243453" y="48.633818" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="90.72683" y="40.40869" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="89.980688" y="57.468922" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="94.279177" y="52.992777" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="98.585589" y="39.038507" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="86.692619" y="44.781876" style="fill: #e39c37; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_4">
+    <defs>
+     <path id="m75361b0134" d="M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z " />
+    </defs>
+    <g clip-path="url(#p28a798dee9)">
+     <use xlink:href="#m75361b0134" x="86.895041" y="65.255614" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="70.543419" y="42.787271" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="70.111212" y="41.016348" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="68.439996" y="45.662489" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="82.601949" y="51.902884" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="87.498644" y="51.886321" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="84.05869" y="70.536166" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="75.763439" y="76.905551" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="68.903698" y="43.977955" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="69.878407" y="42.169053" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="87.954127" y="52.900148" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="76.292696" y="74.90681" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="92.284541" y="53.845452" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="96.870108" y="44.053885" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="84.020463" y="48.728851" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="78.313845" y="45.362067" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="86.894998" y="69.212948" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="98.05684" y="46.45017" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="81.09642" y="71.158802" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="90.607287" y="63.52981" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="78.555589" y="72.842703" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="67.58467" y="50.607888" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="77.903633" y="69.30209" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="85.765231" y="73.563627" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="67.947864" y="43.835306" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="79.732735" y="45.11705" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="67.016847" y="48.450145" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="91.893109" y="57.466627" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="82.175154" y="73.761909" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="82.718795" y="38.452999" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="92.753327" y="59.909204" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="83.721637" y="59.691512" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="84.46959" y="29.84113" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="95.263737" y="46.557423" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="70.909033" y="64.523531" style="fill: #b07aa1; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_5">
+    <defs>
+     <path id="me0e73938cf" d="M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z " />
+    </defs>
+    <g clip-path="url(#p28a798dee9)">
+     <use xlink:href="#me0e73938cf" x="62.946703" y="77.317295" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="71.710508" y="82.378513" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="66.499082" y="86.964257" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="66.730785" y="91.478907" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="69.140904" y="70.277831" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="65.258966" y="92.388687" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="65.850229" y="90.93586" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="82.637099" y="48.494453" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="78.413295" y="56.799511" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="74.422327" y="70.907556" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="61.464239" y="70.947234" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="63.078703" y="59.652551" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="72.411061" y="77.035131" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="70.260275" y="75.729227" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="67.321646" y="66.971303" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="96.713048" y="63.634274" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="66.155347" y="86.450885" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="58.888974" y="70.416472" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="70.501172" y="66.742832" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="66.476236" y="40.310897" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="68.700922" y="75.031321" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="65.326375" y="43.110854" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="67.404572" y="65.086437" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="62.538355" y="58.16085" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="84.836767" y="68.847632" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="88.277579" y="60.50562" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="82.963548" y="69.702892" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="62.244169" y="74.735189" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="92.109982" y="66.989014" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="96.666178" y="62.685469" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="74.527231" y="54.647281" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="65.322455" y="58.581197" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="67.502984" y="55.565817" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="67.745618" y="65.420544" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="73.67752" y="71.608846" style="fill: #76b7b2; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_6">
+    <defs>
+     <path id="md2ac6e9228" d="M 0 1.5  C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066  C 1.341951 0.77937 1.5 0.397805 1.5 0  C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066  C 0.77937 -1.341951 0.397805 -1.5 0 -1.5  C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066  C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0  C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066  C -0.77937 1.341951 -0.397805 1.5 0 1.5  z " />
+    </defs>
+    <g clip-path="url(#p28a798dee9)">
+     <use xlink:href="#md2ac6e9228" x="79.69507" y="30.359404" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="90.437887" y="28.982069" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="89.469956" y="29.875578" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="86.412294" y="35.314057" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="92.954482" y="31.211113" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="84.695785" y="39.718006" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="74.146338" y="34.720563" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="87.263297" y="34.392479" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="83.740661" y="27.744401" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="85.329492" y="42.880359" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="86.498058" y="29.891063" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="80.32026" y="49.212495" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="82.439555" y="28.039201" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="74.863574" y="33.873511" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="61.506915" y="57.142471" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="93.295592" y="47.359503" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="93.424297" y="43.336266" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="82.31586" y="48.940807" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="95.677858" y="35.563913" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="88.070063" y="41.08478" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="93.341943" y="53.144359" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="80.18048" y="56.313403" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="78.002743" y="57.134906" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="91.140453" y="43.020663" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="59.370174" y="83.708991" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="86.750998" y="56.521277" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="75.036268" y="75.137096" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="92.002281" y="36.274061" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="84.250481" y="34.840329" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="82.332786" y="72.627375" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="66.154415" y="93.426625" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="78.852116" y="34.826286" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="84.268965" y="67.00402" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="59.236787" y="64.887731" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="32.031536" y="83.078103" style="fill: #c56b6f; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="text_3">
+    <text style="font: 7px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="61.807869" y="15.0968" transform="rotate(-0 61.807869 15.0968)">DreaMS</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 122.118177 101.931637  L 211.440315 101.931637  L 211.440315 17.5968  L 122.118177 17.5968  z " style="fill: #ffffff" />
+   </g>
+   <g id="matplotlib.axis_3" />
+   <g id="matplotlib.axis_4" />
+   <g id="PathCollection_7">
+    <g clip-path="url(#p2e60bc8d91)">
+     <use xlink:href="#mbfe4df5a11" x="136.924541" y="36.159253" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="129.343437" y="32.953439" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="126.376827" y="28.579888" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="133.956434" y="28.586742" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="131.990912" y="36.340494" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="134.238796" y="27.588533" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="127.149187" y="30.950513" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="126.739647" y="29.307598" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="132.817273" y="28.444358" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="132.585811" y="33.904124" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="130.923561" y="26.101811" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="132.452574" y="28.241042" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="134.036562" y="27.210881" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="129.638127" y="27.975291" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="133.705061" y="27.67838" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="133.821587" y="35.022648" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="142.058787" y="37.498953" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="126.780243" y="29.768384" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="141.387269" y="36.99447" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="133.451612" y="31.486003" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="126.178274" y="28.014716" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="128.675178" y="31.812706" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="133.314354" y="32.972955" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="128.915787" y="27.519618" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="129.278218" y="30.493436" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="128.599504" y="31.611169" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="142.620502" y="37.148196" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="127.671415" y="31.322554" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="132.289177" y="37.111637" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="136.34582" y="30.651058" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="141.031507" y="37.033286" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="143.239833" y="38.337681" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="127.582199" y="29.036275" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="133.438391" y="28.234368" style="fill: #4e79a7; fill-opacity: 0.78" />
+     <use xlink:href="#mbfe4df5a11" x="130.415204" y="29.337745" style="fill: #4e79a7; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_8">
+    <g clip-path="url(#p2e60bc8d91)">
+     <use xlink:href="#m09405a6c6f" x="157.868345" y="90.498528" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="157.779911" y="89.919256" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="153.30525" y="86.974431" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="170.676559" y="93.426625" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="157.390544" y="83.419084" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="156.500588" y="83.596745" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="156.14756" y="89.885392" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="167.453097" y="93.403061" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="166.389872" y="92.408697" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="163.571784" y="82.36171" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="157.010653" y="87.781105" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="162.469474" y="87.2442" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="155.565507" y="86.586797" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="162.923817" y="90.658357" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="152.159873" y="78.816668" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="168.884976" y="92.915885" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="167.286505" y="89.001657" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="161.6592" y="80.793493" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="168.93673" y="91.777797" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="156.13903" y="86.785436" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="166.86034" y="87.005527" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="169.822442" y="91.30771" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="168.054252" y="88.394444" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="170.942276" y="90.289369" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="153.490596" y="86.097372" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="173.914215" y="85.782357" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="155.172849" y="77.480816" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="169.412336" y="92.557334" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="155.631436" y="85.230685" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="171.267423" y="81.181713" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="153.214502" y="80.16323" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="175.358343" y="86.633983" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="158.03704" y="86.583735" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="159.191426" y="89.883821" style="fill: #59a14f; fill-opacity: 0.78" />
+     <use xlink:href="#m09405a6c6f" x="159.31911" y="84.66" style="fill: #59a14f; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_9">
+    <g clip-path="url(#p2e60bc8d91)">
+     <use xlink:href="#m282ec79336" x="206.578275" y="64.660748" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="202.120791" y="63.897771" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="205.542781" y="61.662933" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="205.813091" y="63.88895" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="198.496935" y="64.716602" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="203.108408" y="67.585847" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="196.262799" y="62.34185" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="200.738064" y="62.850344" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="204.582447" y="63.321598" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="199.140698" y="70.682873" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="200.952928" y="62.050749" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="207.380217" y="65.384172" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="201.310004" y="63.481784" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="191.196577" y="58.839528" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="198.377328" y="60.004074" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="198.840081" y="65.44983" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="197.150258" y="62.170398" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="194.202797" y="61.364997" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="199.600941" y="69.779468" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="170.819712" y="53.082325" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="182.674656" y="56.720796" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="188.278095" y="57.112968" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="196.461905" y="64.269631" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="191.505316" y="64.416914" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="200.21826" y="67.358463" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="184.04886" y="58.272277" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="194.924874" y="71.619859" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="205.460904" y="64.17263" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="191.303581" y="58.888267" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="199.229908" y="65.694617" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="190.916541" y="61.75562" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="191.68915" y="62.205509" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="195.051514" y="67.86665" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="196.921622" y="70.702348" style="fill: #e39c37; fill-opacity: 0.78" />
+     <use xlink:href="#m282ec79336" x="197.832935" y="70.161257" style="fill: #e39c37; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_10">
+    <g clip-path="url(#p2e60bc8d91)">
+     <use xlink:href="#m75361b0134" x="178.566034" y="83.855363" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="162.618469" y="68.04435" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="162.080818" y="68.746374" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="163.72409" y="69.56672" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="179.18083" y="67.224103" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="181.643893" y="66.380728" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="175.288386" y="83.145247" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="165.432706" y="78.337331" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="162.485889" y="70.513247" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="161.50052" y="69.994449" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="180.250166" y="74.263255" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="160.701192" y="79.470482" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="179.885717" y="84.887204" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="180.377778" y="82.277654" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="184.424079" y="65.908145" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="179.622175" y="64.487373" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="182.428257" y="65.405707" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="172.942001" y="84.662686" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="187.326488" y="68.860949" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="180.212251" y="79.885122" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="161.103583" y="78.429898" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="171.186703" y="64.898425" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="168.559389" y="75.316039" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="185.078815" y="69.738759" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="164.479076" y="73.135931" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="181.397015" y="68.817423" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="170.805209" y="64.445836" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="181.232066" y="81.366526" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="176.481785" y="83.240068" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="178.004793" y="62.011042" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="187.30069" y="73.393836" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="150.813117" y="75.340425" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="176.911971" y="64.03742" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="174.908442" y="85.267436" style="fill: #b07aa1; fill-opacity: 0.78" />
+     <use xlink:href="#m75361b0134" x="170.903974" y="73.580408" style="fill: #b07aa1; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_11">
+    <g clip-path="url(#p2e60bc8d91)">
+     <use xlink:href="#me0e73938cf" x="147.375278" y="64.979588" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="143.917804" y="69.643689" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="149.467385" y="67.606498" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="144.73875" y="73.122115" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="164.433708" y="81.723319" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="146.280708" y="71.614248" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="149.962995" y="71.177019" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="149.320731" y="69.985149" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="146.642648" y="66.210942" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="173.945349" y="74.337192" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="157.847555" y="74.059898" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="157.190374" y="72.642074" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="147.652856" y="64.518253" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="152.672173" y="73.137956" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="158.155163" y="79.38549" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="149.390109" y="64.41469" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="146.985727" y="77.42033" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="157.895405" y="71.605706" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="181.081508" y="71.231003" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="172.228033" y="65.040709" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="153.798362" y="75.876383" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="153.958501" y="71.714906" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="178.44063" y="81.58009" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="157.66192" y="72.647184" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="175.349484" y="81.523781" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="195.168519" y="64.26191" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="180.829991" y="72.751105" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="155.427546" y="72.740624" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="146.261547" y="73.334589" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="145.841691" y="67.491164" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="171.737759" y="80.524428" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="177.304965" y="75.227613" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="164.332499" y="84.30398" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="158.739141" y="83.871982" style="fill: #76b7b2; fill-opacity: 0.78" />
+     <use xlink:href="#me0e73938cf" x="174.416093" y="80.597411" style="fill: #76b7b2; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="PathCollection_12">
+    <g clip-path="url(#p2e60bc8d91)">
+     <use xlink:href="#md2ac6e9228" x="166.389991" y="65.482848" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="182.04146" y="56.577853" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="185.306097" y="59.054645" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="186.333154" y="57.640348" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="181.50214" y="59.449755" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="183.187705" y="60.119149" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="163.305009" y="67.911109" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="184.961704" y="58.791807" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="170.249941" y="53.328115" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="180.156094" y="60.280255" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="184.221135" y="59.557988" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="180.303931" y="68.031591" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="192.578699" y="71.906126" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="167.467593" y="65.632991" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="172.680115" y="66.772816" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="192.284102" y="67.493063" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="193.603404" y="67.667742" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="183.442823" y="66.963115" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="195.39475" y="68.616076" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="187.342942" y="63.508871" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="189.988354" y="66.094894" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="149.007103" y="70.772464" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="156.244957" y="66.730401" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="188.694456" y="66.822863" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="133.538088" y="39.577371" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="173.528476" y="77.33665" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="176.210818" y="78.704223" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="146.661835" y="73.183424" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="166.891593" y="53.621167" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="182.165182" y="65.058572" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="146.553306" y="71.464284" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="173.092618" y="91.063027" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="178.279519" y="82.198658" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="163.553096" y="81.366746" style="fill: #c56b6f; fill-opacity: 0.78" />
+     <use xlink:href="#md2ac6e9228" x="133.561863" y="38.085472" style="fill: #c56b6f; fill-opacity: 0.78" />
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font: 7px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="166.779246" y="15.0968" transform="rotate(-0 166.779246 15.0968)">UltraMS</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g clip-path="url(#p22a77b959e)">
+    <svg x="17.1468" y="108.462" width="31.68" height="15.84" viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet"><path class="bond-0 atom-0 atom-1" d="M 15.0,95.7 L 22.5,91.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 22.5,91.4 L 30.0,95.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 30.0,95.8 L 37.5,91.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 37.5,91.5 L 45.0,95.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 45.0,95.9 L 52.5,91.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 52.5,91.6 L 60.0,95.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 52.5,93.1 L 59.3,97.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 60.0,95.9 L 67.5,91.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 67.5,91.7 L 75.0,96.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 75.0,96.0 L 82.5,91.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 75.0,94.5 L 81.9,90.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 82.5,91.8 L 90.0,96.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 90.0,96.1 L 97.5,91.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-11 atom-12" d="M 97.5,91.8 L 105.0,96.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 105.0,96.2 L 112.5,91.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-13 atom-14" d="M 112.5,91.9 L 120.0,96.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 120.0,96.3 L 127.5,92.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-15 atom-15 atom-16" d="M 127.5,92.0 L 135.0,96.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 135.0,96.4 L 142.5,92.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-17 atom-18" d="M 143.2,92.5 L 143.2,89.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-17 atom-18" d="M 143.2,89.3 L 143.2,86.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-17 atom-18" d="M 141.9,92.5 L 141.9,89.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-17 atom-18" d="M 141.9,89.3 L 141.9,86.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-18 atom-17 atom-19" d="M 142.5,92.1 L 145.1,93.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-18 atom-17 atom-19" d="M 145.1,93.6 L 147.7,95.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 152.3,95.2 L 154.9,93.7" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 154.9,93.7 L 157.5,92.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-20 atom-20 atom-21" d="M 157.5,92.2 L 165.0,96.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-21 atom-21 atom-22" d="M 165.0,96.6 L 167.6,95.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-21 atom-21 atom-22" d="M 167.6,95.1 L 170.2,93.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-22 atom-22 atom-23" d="M 174.9,93.7 L 177.4,95.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-22 atom-22 atom-23" d="M 177.4,95.2 L 180.0,96.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 179.4,96.3 L 179.3,99.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 179.3,99.6 L 179.3,102.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 180.7,96.3 L 180.6,99.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 180.6,99.6 L 180.6,102.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-24 atom-23 atom-25" d="M 180.0,96.7 L 187.5,92.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-25 atom-25 atom-26" d="M 187.5,92.4 L 195.0,96.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-26 atom-26 atom-27" d="M 195.0,96.8 L 202.5,92.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-27 atom-27 atom-28" d="M 202.5,92.5 L 210.0,96.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-28 atom-28 atom-29" d="M 210.0,96.9 L 217.5,92.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-29 atom-29 atom-30" d="M 217.5,92.6 L 225.0,97.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-30 atom-30 atom-31" d="M 225.0,97.0 L 232.5,92.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-31 atom-31 atom-32" d="M 232.5,92.7 L 240.0,97.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-32 atom-32 atom-33" d="M 240.0,97.1 L 247.5,92.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-32 atom-32 atom-33" d="M 240.0,95.6 L 246.9,91.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-33 atom-33 atom-34" d="M 247.5,92.8 L 255.0,97.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-34 atom-34 atom-35" d="M 255.0,97.2 L 262.5,92.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-35 atom-35 atom-36" d="M 262.5,92.9 L 270.0,97.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-36 atom-36 atom-37" d="M 270.0,97.2 L 277.5,93.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-37 atom-37 atom-38" d="M 277.5,93.0 L 285.0,97.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-38 atom-20 atom-39" d="M 157.5,92.2 L 157.6,83.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-39 atom-39 atom-40" d="M 157.6,83.6 L 160.2,82.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-39 atom-39 atom-40" d="M 160.2,82.1 L 162.8,80.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-40 atom-40 atom-41" d="M 165.1,76.8 L 165.1,74.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-40 atom-40 atom-41" d="M 165.1,74.9 L 165.1,73.0" style="fill:none;fill-rule:evenodd;stroke:#FF7F00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-41 atom-41 atom-42" d="M 167.1,71.3 L 169.3,71.3" style="fill:none;fill-rule:evenodd;stroke:#FF7F00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-41 atom-41 atom-42" d="M 169.3,71.3 L 171.5,71.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-41 atom-41 atom-42" d="M 167.1,70.0 L 169.3,70.0" style="fill:none;fill-rule:evenodd;stroke:#FF7F00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-41 atom-41 atom-42" d="M 169.3,70.0 L 171.5,70.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-42 atom-41 atom-43" d="M 163.2,70.6 L 161.0,70.6" style="fill:none;fill-rule:evenodd;stroke:#FF7F00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-42 atom-41 atom-43" d="M 161.0,70.6 L 158.8,70.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-43 atom-41 atom-44" d="M 165.2,68.2 L 165.2,66.3" style="fill:none;fill-rule:evenodd;stroke:#FF7F00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-43 atom-41 atom-44" d="M 165.2,66.3 L 165.2,64.5" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-44 atom-44 atom-45" d="M 162.9,60.6 L 160.3,59.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-44 atom-44 atom-45" d="M 160.3,59.1 L 157.7,57.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-45 atom-45 atom-46" d="M 157.7,57.6 L 157.8,48.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-46 atom-46 atom-47" d="M 157.8,48.9 L 155.0,47.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-46 atom-46 atom-47" d="M 155.0,47.3 L 152.3,45.7" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 22.2,91.6 L 22.5,91.4 L 22.9,91.6" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 29.6,95.5 L 30.0,95.8 L 30.4,95.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 37.2,91.7 L 37.5,91.5 L 37.9,91.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 44.6,95.6 L 45.0,95.9 L 45.4,95.6" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 52.2,91.8 L 52.5,91.6 L 52.9,91.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 59.6,95.7 L 60.0,95.9 L 60.4,95.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 67.2,91.9 L 67.5,91.7 L 67.9,91.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 74.6,95.8 L 75.0,96.0 L 75.4,95.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 82.2,92.0 L 82.5,91.8 L 82.9,92.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 89.6,95.9 L 90.0,96.1 L 90.4,95.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 97.2,92.1 L 97.5,91.8 L 97.9,92.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 104.6,96.0 L 105.0,96.2 L 105.4,96.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 112.2,92.2 L 112.5,91.9 L 112.9,92.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 119.6,96.1 L 120.0,96.3 L 120.4,96.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 127.2,92.2 L 127.5,92.0 L 127.9,92.3" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 134.6,96.2 L 135.0,96.4 L 135.4,96.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 142.2,92.3 L 142.5,92.1 L 142.7,92.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 164.6,96.4 L 165.0,96.6 L 165.1,96.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 179.9,96.6 L 180.0,96.7 L 180.4,96.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 187.2,92.6 L 187.5,92.4 L 187.9,92.6" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 194.6,96.6 L 195.0,96.8 L 195.4,96.6" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 202.2,92.7 L 202.5,92.5 L 202.9,92.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 209.6,96.7 L 210.0,96.9 L 210.4,96.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 217.2,92.8 L 217.5,92.6 L 217.9,92.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 224.6,96.7 L 225.0,97.0 L 225.4,96.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 232.2,92.9 L 232.5,92.7 L 232.9,92.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 239.6,96.8 L 240.0,97.1 L 240.4,96.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 247.2,93.0 L 247.5,92.8 L 247.9,93.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 254.6,96.9 L 255.0,97.2 L 255.4,96.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 262.2,93.1 L 262.5,92.9 L 262.9,93.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 269.6,97.0 L 270.0,97.2 L 270.4,97.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 277.2,93.2 L 277.5,93.0 L 277.9,93.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 157.6,84.0 L 157.6,83.6 L 157.7,83.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 157.9,57.7 L 157.7,57.6 L 157.7,57.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 157.8,49.4 L 157.8,48.9 L 157.7,48.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-18" d="M 140.5 83.6 Q 140.5 82.5, 141.1 81.9 Q 141.7 81.3, 142.6 81.3 Q 143.2 81.3, 143.7 81.6 Q 144.1 81.8, 144.4 82.4 Q 144.6 82.9, 144.6 83.5 Q 144.6 84.2, 144.4 84.7 Q 144.1 85.2, 143.6 85.5 Q 143.1 85.7, 142.6 85.7 Q 142.0 85.7, 141.5 85.4 Q 141.0 85.1, 140.8 84.6 Q 140.5 84.1, 140.5 83.6 M 141.1 83.6 Q 141.1 84.3, 141.5 84.8 Q 141.9 85.2, 142.6 85.2 Q 143.2 85.2, 143.6 84.8 Q 144.0 84.3, 144.0 83.5 Q 144.0 83.0, 143.9 82.6 Q 143.7 82.2, 143.4 82.0 Q 143.0 81.8, 142.6 81.8 Q 142.0 81.8, 141.5 82.2 Q 141.1 82.6, 141.1 83.6 " fill="#FF0000" />
+<path class="atom-19" d="M 147.9 96.6 Q 147.9 95.5, 148.5 94.9 Q 149.1 94.3, 150.0 94.3 Q 150.6 94.3, 151.1 94.6 Q 151.6 94.9, 151.8 95.4 Q 152.1 95.9, 152.1 96.5 Q 152.1 97.2, 151.8 97.7 Q 151.5 98.2, 151.0 98.5 Q 150.6 98.8, 150.0 98.8 Q 149.4 98.8, 148.9 98.5 Q 148.4 98.2, 148.2 97.7 Q 147.9 97.2, 147.9 96.6 M 148.5 96.6 Q 148.5 97.4, 148.9 97.8 Q 149.4 98.3, 150.0 98.3 Q 150.6 98.3, 151.1 97.8 Q 151.5 97.4, 151.5 96.5 Q 151.5 96.0, 151.3 95.6 Q 151.1 95.2, 150.8 95.0 Q 150.4 94.8, 150.0 94.8 Q 149.4 94.8, 149.0 95.2 Q 148.5 95.6, 148.5 96.6 " fill="#FF0000" />
+<path class="atom-22" d="M 170.5 92.4 Q 170.5 91.3, 171.0 90.7 Q 171.6 90.1, 172.5 90.1 Q 173.1 90.1, 173.6 90.4 Q 174.1 90.7, 174.3 91.2 Q 174.6 91.7, 174.6 92.4 Q 174.6 93.0, 174.3 93.5 Q 174.1 94.0, 173.6 94.3 Q 173.1 94.6, 172.5 94.6 Q 171.9 94.6, 171.4 94.3 Q 171.0 94.0, 170.7 93.5 Q 170.5 93.0, 170.5 92.4 M 171.1 92.4 Q 171.1 93.2, 171.5 93.6 Q 171.9 94.1, 172.5 94.1 Q 173.2 94.1, 173.6 93.6 Q 174.0 93.2, 174.0 92.4 Q 174.0 91.8, 173.8 91.4 Q 173.6 91.0, 173.3 90.8 Q 173.0 90.6, 172.5 90.6 Q 171.9 90.6, 171.5 91.0 Q 171.1 91.4, 171.1 92.4 " fill="#FF0000" />
+<path class="atom-24" d="M 177.9 105.4 Q 177.9 104.4, 178.5 103.8 Q 179.0 103.2, 179.9 103.2 Q 180.5 103.2, 181.0 103.4 Q 181.5 103.7, 181.7 104.2 Q 182.0 104.7, 182.0 105.4 Q 182.0 106.0, 181.7 106.6 Q 181.5 107.1, 181.0 107.3 Q 180.5 107.6, 179.9 107.6 Q 179.3 107.6, 178.9 107.3 Q 178.4 107.0, 178.1 106.5 Q 177.9 106.0, 177.9 105.4 M 178.5 105.5 Q 178.5 106.2, 178.9 106.7 Q 179.3 107.1, 179.9 107.1 Q 180.6 107.1, 181.0 106.7 Q 181.4 106.2, 181.4 105.4 Q 181.4 104.9, 181.2 104.5 Q 181.1 104.1, 180.7 103.9 Q 180.4 103.7, 180.0 103.7 Q 179.3 103.7, 178.9 104.1 Q 178.5 104.5, 178.5 105.5 " fill="#FF0000" />
+<path class="atom-40" d="M 163.1 79.4 Q 163.1 78.3, 163.6 77.7 Q 164.2 77.1, 165.1 77.1 Q 165.7 77.1, 166.2 77.4 Q 166.7 77.7, 166.9 78.2 Q 167.2 78.7, 167.2 79.3 Q 167.2 80.0, 166.9 80.5 Q 166.6 81.0, 166.1 81.3 Q 165.7 81.5, 165.1 81.5 Q 164.5 81.5, 164.0 81.2 Q 163.5 80.9, 163.3 80.4 Q 163.1 79.9, 163.1 79.4 M 163.6 79.4 Q 163.6 80.2, 164.1 80.6 Q 164.5 81.0, 165.1 81.0 Q 165.7 81.0, 166.2 80.6 Q 166.6 80.1, 166.6 79.3 Q 166.6 78.8, 166.4 78.4 Q 166.2 78.0, 165.9 77.8 Q 165.5 77.6, 165.1 77.6 Q 164.5 77.6, 164.1 78.0 Q 163.6 78.4, 163.6 79.4 " fill="#FF0000" />
+<path class="atom-41" d="M 163.5 72.8 L 163.5 68.5 L 165.1 68.5 Q 165.6 68.5, 165.8 68.5 Q 166.1 68.6, 166.3 68.7 Q 166.5 68.9, 166.7 69.1 Q 166.8 69.4, 166.8 69.7 Q 166.8 70.3, 166.5 70.6 Q 166.1 71.0, 165.2 71.0 L 164.1 71.0 L 164.1 72.8 L 163.5 72.8 M 164.1 70.5 L 165.2 70.5 Q 165.8 70.5, 166.0 70.3 Q 166.2 70.1, 166.2 69.7 Q 166.2 69.5, 166.1 69.3 Q 165.9 69.1, 165.7 69.0 Q 165.6 69.0, 165.2 69.0 L 164.1 69.0 L 164.1 70.5 " fill="#FF7F00" />
+<path class="atom-42" d="M 171.8 70.8 Q 171.8 69.7, 172.3 69.1 Q 172.9 68.5, 173.8 68.5 Q 174.4 68.5, 174.9 68.8 Q 175.4 69.1, 175.6 69.6 Q 175.9 70.1, 175.9 70.7 Q 175.9 71.4, 175.6 71.9 Q 175.3 72.4, 174.9 72.7 Q 174.4 72.9, 173.8 72.9 Q 173.2 72.9, 172.7 72.6 Q 172.3 72.3, 172.0 71.8 Q 171.8 71.3, 171.8 70.8 M 172.4 70.8 Q 172.4 71.5, 172.8 72.0 Q 173.2 72.4, 173.8 72.4 Q 174.5 72.4, 174.9 72.0 Q 175.3 71.5, 175.3 70.7 Q 175.3 70.2, 175.1 69.8 Q 174.9 69.4, 174.6 69.2 Q 174.3 69.0, 173.8 69.0 Q 173.2 69.0, 172.8 69.4 Q 172.4 69.8, 172.4 70.8 " fill="#FF0000" />
+<path class="atom-43" d="M 150.2 72.7 L 150.2 68.5 L 150.8 68.5 L 150.8 70.2 L 153.0 70.2 L 153.0 68.5 L 153.6 68.5 L 153.6 72.7 L 153.0 72.7 L 153.0 70.7 L 150.8 70.7 L 150.8 72.7 L 150.2 72.7 " fill="#FF0000" />
+<path class="atom-43" d="M 154.4 70.7 Q 154.4 69.6, 155.0 69.0 Q 155.6 68.4, 156.5 68.4 Q 157.1 68.4, 157.6 68.7 Q 158.1 68.9, 158.3 69.5 Q 158.6 70.0, 158.6 70.6 Q 158.6 71.3, 158.3 71.8 Q 158.0 72.3, 157.5 72.6 Q 157.1 72.8, 156.5 72.8 Q 155.9 72.8, 155.4 72.5 Q 154.9 72.2, 154.7 71.7 Q 154.4 71.2, 154.4 70.7 M 155.0 70.7 Q 155.0 71.4, 155.4 71.9 Q 155.9 72.3, 156.5 72.3 Q 157.1 72.3, 157.6 71.9 Q 158.0 71.4, 158.0 70.6 Q 158.0 70.1, 157.8 69.7 Q 157.6 69.3, 157.3 69.1 Q 156.9 68.9, 156.5 68.9 Q 155.9 68.9, 155.5 69.3 Q 155.0 69.7, 155.0 70.7 " fill="#FF0000" />
+<path class="atom-44" d="M 163.2 62.0 Q 163.2 61.0, 163.7 60.4 Q 164.3 59.8, 165.2 59.8 Q 165.8 59.8, 166.3 60.1 Q 166.8 60.3, 167.0 60.8 Q 167.3 61.4, 167.3 62.0 Q 167.3 62.7, 167.0 63.2 Q 166.7 63.7, 166.3 63.9 Q 165.8 64.2, 165.2 64.2 Q 164.6 64.2, 164.1 63.9 Q 163.7 63.6, 163.4 63.1 Q 163.2 62.6, 163.2 62.0 M 163.7 62.1 Q 163.7 62.8, 164.2 63.3 Q 164.6 63.7, 165.2 63.7 Q 165.9 63.7, 166.3 63.3 Q 166.7 62.8, 166.7 62.0 Q 166.7 61.5, 166.5 61.1 Q 166.3 60.7, 166.0 60.5 Q 165.6 60.3, 165.2 60.3 Q 164.6 60.3, 164.2 60.7 Q 163.7 61.1, 163.7 62.1 " fill="#FF0000" />
+<path class="atom-47" d="M 142.1 46.7 L 142.1 42.4 L 142.6 42.4 L 142.6 44.2 L 144.9 44.2 L 144.9 42.4 L 145.4 42.4 L 145.4 46.7 L 144.9 46.7 L 144.9 44.7 L 142.6 44.7 L 142.6 46.7 L 142.1 46.7 " fill="#0000FF" />
+<path class="atom-47" d="M 148.1 48.5 L 148.1 48.8 L 146.2 48.8 Q 146.2 48.7, 146.3 48.6 Q 146.3 48.4, 146.5 48.2 Q 146.7 48.0, 147.0 47.8 Q 147.4 47.4, 147.6 47.2 Q 147.7 47.0, 147.7 46.8 Q 147.7 46.6, 147.6 46.4 Q 147.4 46.3, 147.2 46.3 Q 147.0 46.3, 146.8 46.4 Q 146.7 46.6, 146.7 46.8 L 146.3 46.8 Q 146.3 46.4, 146.6 46.2 Q 146.8 46.0, 147.2 46.0 Q 147.6 46.0, 147.9 46.2 Q 148.1 46.4, 148.1 46.8 Q 148.1 46.9, 148.0 47.1 Q 148.0 47.3, 147.8 47.5 Q 147.6 47.6, 147.3 48.0 Q 146.9 48.2, 146.9 48.3 Q 146.8 48.4, 146.7 48.5 L 148.1 48.5 " fill="#0000FF" />
+<path class="atom-47" d="M 148.6 46.7 L 148.6 42.4 L 149.2 42.4 L 151.5 45.8 L 151.5 42.4 L 152.0 42.4 L 152.0 46.7 L 151.4 46.7 L 149.2 43.3 L 149.2 46.7 L 148.6 46.7 " fill="#0000FF" />
+</svg></g>
+   <g id="text_14">
+    <text style="fill: #4e79a7; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="32.690281" y="129.439917" transform="rotate(-0 32.690281 129.439917)">Family 1</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g clip-path="url(#p6dba64c8af)">
+    <svg x="49.7881" y="108.462" width="31.68" height="15.84" viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet"><path class="bond-0 atom-0 atom-1" d="M 269.0,111.7 L 270.1,103.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 270.1,103.8 L 271.2,96.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 268.4,89.9 L 262.4,85.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 262.4,85.2 L 256.4,80.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 256.4,80.5 L 238.4,87.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 253.8,78.4 L 238.9,84.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 238.4,87.7 L 223.1,75.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 223.1,75.8 L 205.1,83.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 205.1,83.1 L 189.8,71.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 205.5,79.7 L 191.6,68.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 189.8,71.1 L 171.7,78.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 170.4,77.3 L 169.2,85.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 169.2,85.6 L 168.1,93.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 173.3,77.7 L 172.1,86.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 172.1,86.0 L 171.0,94.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-7 atom-9" d="M 171.7,78.4 L 165.7,73.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-7 atom-9" d="M 165.7,73.7 L 159.7,69.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 153.1,67.7 L 145.8,70.7" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 145.8,70.7 L 138.4,73.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 138.4,73.7 L 123.1,61.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-11 atom-12" d="M 123.1,61.7 L 125.8,42.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 125.8,42.5 L 119.8,37.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 119.8,37.8 L 113.8,33.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-11 atom-14" d="M 123.1,61.7 L 115.8,64.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-11 atom-14" d="M 115.8,64.7 L 108.4,67.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 104.6,72.5 L 103.5,80.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 103.5,80.4 L 102.4,88.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-15 atom-15 atom-16" d="M 102.4,88.2 L 95.0,91.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-15 atom-15 atom-16" d="M 95.0,91.2 L 87.7,94.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 81.1,92.9 L 75.1,88.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 75.1,88.2 L 69.1,83.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-17 atom-18" d="M 69.1,83.5 L 71.8,64.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-17 atom-18" d="M 66.4,81.4 L 68.6,65.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-18 atom-18 atom-19" d="M 71.8,64.3 L 56.5,52.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 56.5,52.3 L 38.4,59.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 56.0,55.6 L 41.1,61.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-20 atom-20 atom-21" d="M 38.4,59.6 L 32.4,54.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-20 atom-20 atom-21" d="M 32.4,54.9 L 26.4,50.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-21 atom-20 atom-22" d="M 38.4,59.6 L 35.7,78.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-22 atom-22 atom-23" d="M 35.7,78.8 L 28.4,81.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-22 atom-22 atom-23" d="M 28.4,81.8 L 21.0,84.8" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 17.2,89.7 L 16.1,97.5" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 16.1,97.5 L 15.0,105.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-24 atom-22 atom-25" d="M 35.7,78.8 L 51.0,90.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-24 atom-22 atom-25" d="M 38.9,77.6 L 51.5,87.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-25 atom-15 atom-26" d="M 102.4,88.2 L 117.7,100.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-26 atom-26 atom-27" d="M 117.7,100.2 L 116.6,108.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-26 atom-26 atom-27" d="M 116.6,108.1 L 115.5,115.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-27 atom-26 atom-28" d="M 117.7,100.2 L 135.7,92.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-28 atom-28 atom-29" d="M 135.7,92.9 L 141.7,97.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-28 atom-28 atom-29" d="M 141.7,97.6 L 147.7,102.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-29 atom-4 atom-30" d="M 223.1,75.8 L 225.8,56.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-29 atom-4 atom-30" d="M 226.2,74.5 L 228.4,58.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-30 atom-30 atom-31" d="M 225.8,56.5 L 243.8,49.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-31 atom-31 atom-32" d="M 243.8,49.3 L 259.1,61.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-31 atom-31 atom-32" d="M 243.3,52.6 L 256.0,62.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-32 atom-32 atom-33" d="M 259.1,61.2 L 266.5,58.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-32 atom-32 atom-33" d="M 266.5,58.3 L 273.8,55.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-33 atom-32 atom-2" d="M 259.1,61.2 L 256.4,80.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-34 atom-28 atom-10" d="M 135.7,92.9 L 138.4,73.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-35 atom-25 atom-17" d="M 51.0,90.8 L 69.1,83.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 239.3,87.4 L 238.4,87.7 L 237.6,87.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 206.0,82.7 L 205.1,83.1 L 204.3,82.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 190.5,71.7 L 189.8,71.1 L 188.9,71.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 172.6,78.0 L 171.7,78.4 L 171.4,78.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 125.7,43.4 L 125.8,42.5 L 125.5,42.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 71.6,65.2 L 71.8,64.3 L 71.0,63.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 57.2,52.9 L 56.5,52.3 L 55.6,52.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 50.3,90.2 L 51.0,90.8 L 51.9,90.4" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 225.7,57.5 L 225.8,56.5 L 226.7,56.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 242.9,49.6 L 243.8,49.3 L 244.6,49.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-1" d="M 269.1 92.6 Q 269.1 91.2, 269.8 90.4 Q 270.5 89.6, 271.7 89.6 Q 272.5 89.6, 273.1 90.0 Q 273.7 90.4, 274.1 91.0 Q 274.4 91.7, 274.4 92.5 Q 274.4 93.3, 274.0 94.0 Q 273.7 94.7, 273.1 95.0 Q 272.4 95.4, 271.7 95.4 Q 270.9 95.4, 270.3 95.0 Q 269.7 94.6, 269.4 94.0 Q 269.1 93.3, 269.1 92.6 M 269.8 92.6 Q 269.8 93.6, 270.4 94.2 Q 270.9 94.7, 271.7 94.7 Q 272.5 94.7, 273.1 94.2 Q 273.6 93.6, 273.6 92.5 Q 273.6 91.8, 273.4 91.3 Q 273.2 90.8, 272.7 90.5 Q 272.3 90.2, 271.7 90.2 Q 270.9 90.2, 270.4 90.8 Q 269.8 91.3, 269.8 92.6 " fill="#FF0000" />
+<path class="atom-8" d="M 166.4 97.7 Q 166.4 96.3, 167.1 95.6 Q 167.9 94.8, 169.0 94.8 Q 169.8 94.8, 170.4 95.1 Q 171.0 95.5, 171.4 96.2 Q 171.7 96.8, 171.7 97.7 Q 171.7 98.5, 171.4 99.2 Q 171.0 99.8, 170.4 100.2 Q 169.8 100.5, 169.0 100.5 Q 168.2 100.5, 167.6 100.1 Q 167.0 99.8, 166.7 99.1 Q 166.4 98.5, 166.4 97.7 M 167.1 97.7 Q 167.1 98.7, 167.7 99.3 Q 168.2 99.9, 169.0 99.9 Q 169.9 99.9, 170.4 99.3 Q 170.9 98.7, 170.9 97.7 Q 170.9 97.0, 170.7 96.5 Q 170.5 96.0, 170.0 95.7 Q 169.6 95.4, 169.0 95.4 Q 168.3 95.4, 167.7 95.9 Q 167.1 96.5, 167.1 97.7 " fill="#FF0000" />
+<path class="atom-9" d="M 153.8 66.5 Q 153.8 65.1, 154.5 64.3 Q 155.3 63.6, 156.4 63.6 Q 157.2 63.6, 157.8 63.9 Q 158.4 64.3, 158.8 65.0 Q 159.1 65.6, 159.1 66.4 Q 159.1 67.3, 158.8 68.0 Q 158.4 68.6, 157.8 69.0 Q 157.2 69.3, 156.4 69.3 Q 155.7 69.3, 155.0 68.9 Q 154.4 68.6, 154.1 67.9 Q 153.8 67.2, 153.8 66.5 M 154.5 66.5 Q 154.5 67.5, 155.1 68.1 Q 155.6 68.7, 156.4 68.7 Q 157.3 68.7, 157.8 68.1 Q 158.3 67.5, 158.3 66.4 Q 158.3 65.8, 158.1 65.3 Q 157.9 64.8, 157.4 64.5 Q 157.0 64.2, 156.4 64.2 Q 155.7 64.2, 155.1 64.7 Q 154.5 65.3, 154.5 66.5 " fill="#FF0000" />
+<path class="atom-13" d="M 102.4 33.3 L 102.4 27.8 L 103.1 27.8 L 103.1 30.0 L 106.0 30.0 L 106.0 27.8 L 106.7 27.8 L 106.7 33.3 L 106.0 33.3 L 106.0 30.7 L 103.1 30.7 L 103.1 33.3 L 102.4 33.3 " fill="#FF0000" />
+<path class="atom-13" d="M 107.9 30.6 Q 107.9 29.2, 108.6 28.4 Q 109.3 27.7, 110.5 27.7 Q 111.3 27.7, 111.9 28.0 Q 112.5 28.4, 112.8 29.1 Q 113.2 29.7, 113.2 30.5 Q 113.2 31.4, 112.8 32.1 Q 112.5 32.7, 111.9 33.1 Q 111.2 33.4, 110.5 33.4 Q 109.7 33.4, 109.1 33.0 Q 108.5 32.7, 108.2 32.0 Q 107.9 31.3, 107.9 30.6 M 108.6 30.6 Q 108.6 31.6, 109.2 32.2 Q 109.7 32.8, 110.5 32.8 Q 111.3 32.8, 111.9 32.2 Q 112.4 31.6, 112.4 30.5 Q 112.4 29.9, 112.2 29.4 Q 112.0 28.8, 111.5 28.6 Q 111.1 28.3, 110.5 28.3 Q 109.7 28.3, 109.2 28.8 Q 108.6 29.4, 108.6 30.6 " fill="#FF0000" />
+<path class="atom-14" d="M 102.4 69.1 Q 102.4 67.7, 103.2 66.9 Q 103.9 66.1, 105.1 66.1 Q 105.9 66.1, 106.5 66.5 Q 107.1 66.9, 107.4 67.5 Q 107.8 68.2, 107.8 69.0 Q 107.8 69.9, 107.4 70.5 Q 107.1 71.2, 106.4 71.6 Q 105.8 71.9, 105.1 71.9 Q 104.3 71.9, 103.7 71.5 Q 103.1 71.1, 102.8 70.5 Q 102.4 69.8, 102.4 69.1 M 103.2 69.1 Q 103.2 70.1, 103.7 70.7 Q 104.3 71.3, 105.1 71.3 Q 105.9 71.3, 106.5 70.7 Q 107.0 70.1, 107.0 69.0 Q 107.0 68.3, 106.8 67.8 Q 106.5 67.3, 106.1 67.1 Q 105.7 66.8, 105.1 66.8 Q 104.3 66.8, 103.8 67.3 Q 103.2 67.8, 103.2 69.1 " fill="#FF0000" />
+<path class="atom-16" d="M 81.7 95.6 Q 81.7 94.2, 82.4 93.4 Q 83.2 92.7, 84.4 92.7 Q 85.1 92.7, 85.8 93.0 Q 86.4 93.4, 86.7 94.0 Q 87.0 94.7, 87.0 95.5 Q 87.0 96.4, 86.7 97.1 Q 86.3 97.7, 85.7 98.1 Q 85.1 98.4, 84.4 98.4 Q 83.6 98.4, 83.0 98.0 Q 82.3 97.6, 82.0 97.0 Q 81.7 96.3, 81.7 95.6 M 82.5 95.6 Q 82.5 96.6, 83.0 97.2 Q 83.5 97.8, 84.4 97.8 Q 85.2 97.8, 85.7 97.2 Q 86.3 96.6, 86.3 95.5 Q 86.3 94.9, 86.0 94.4 Q 85.8 93.8, 85.4 93.6 Q 84.9 93.3, 84.4 93.3 Q 83.6 93.3, 83.0 93.8 Q 82.5 94.4, 82.5 95.6 " fill="#FF0000" />
+<path class="atom-21" d="M 15.0 50.4 L 15.0 44.9 L 15.7 44.9 L 15.7 47.2 L 18.6 47.2 L 18.6 44.9 L 19.4 44.9 L 19.4 50.4 L 18.6 50.4 L 18.6 47.8 L 15.7 47.8 L 15.7 50.4 L 15.0 50.4 " fill="#FF0000" />
+<path class="atom-21" d="M 20.5 47.7 Q 20.5 46.3, 21.2 45.6 Q 22.0 44.8, 23.1 44.8 Q 23.9 44.8, 24.5 45.1 Q 25.1 45.5, 25.5 46.2 Q 25.8 46.8, 25.8 47.7 Q 25.8 48.5, 25.5 49.2 Q 25.1 49.8, 24.5 50.2 Q 23.9 50.5, 23.1 50.5 Q 22.3 50.5, 21.7 50.2 Q 21.1 49.8, 20.8 49.1 Q 20.5 48.5, 20.5 47.7 M 21.2 47.7 Q 21.2 48.7, 21.8 49.3 Q 22.3 49.9, 23.1 49.9 Q 24.0 49.9, 24.5 49.3 Q 25.0 48.7, 25.0 47.7 Q 25.0 47.0, 24.8 46.5 Q 24.6 46.0, 24.1 45.7 Q 23.7 45.4, 23.1 45.4 Q 22.4 45.4, 21.8 46.0 Q 21.2 46.5, 21.2 47.7 " fill="#FF0000" />
+<path class="atom-23" d="M 15.1 86.2 Q 15.1 84.8, 15.8 84.0 Q 16.5 83.3, 17.7 83.3 Q 18.5 83.3, 19.1 83.6 Q 19.7 84.0, 20.0 84.7 Q 20.4 85.3, 20.4 86.1 Q 20.4 87.0, 20.0 87.7 Q 19.7 88.3, 19.1 88.7 Q 18.4 89.0, 17.7 89.0 Q 16.9 89.0, 16.3 88.6 Q 15.7 88.3, 15.4 87.6 Q 15.1 86.9, 15.1 86.2 M 15.8 86.2 Q 15.8 87.2, 16.4 87.8 Q 16.9 88.4, 17.7 88.4 Q 18.5 88.4, 19.1 87.8 Q 19.6 87.2, 19.6 86.1 Q 19.6 85.5, 19.4 85.0 Q 19.2 84.5, 18.7 84.2 Q 18.3 83.9, 17.7 83.9 Q 16.9 83.9, 16.4 84.4 Q 15.8 85.0, 15.8 86.2 " fill="#FF0000" />
+<path class="atom-27" d="M 112.3 119.5 Q 112.3 118.2, 113.1 117.4 Q 113.8 116.6, 115.0 116.6 Q 115.8 116.6, 116.4 117.0 Q 117.0 117.3, 117.3 118.0 Q 117.6 118.6, 117.6 119.5 Q 117.6 120.3, 117.3 121.0 Q 117.0 121.7, 116.3 122.0 Q 115.7 122.3, 115.0 122.3 Q 114.2 122.3, 113.6 122.0 Q 113.0 121.6, 112.6 120.9 Q 112.3 120.3, 112.3 119.5 M 113.1 119.6 Q 113.1 120.6, 113.6 121.1 Q 114.2 121.7, 115.0 121.7 Q 115.8 121.7, 116.3 121.1 Q 116.9 120.5, 116.9 119.5 Q 116.9 118.8, 116.6 118.3 Q 116.4 117.8, 116.0 117.5 Q 115.5 117.2, 115.0 117.2 Q 114.2 117.2, 113.6 117.8 Q 113.1 118.3, 113.1 119.6 " fill="#FF0000" />
+<path class="atom-27" d="M 118.5 122.2 L 118.5 116.7 L 119.2 116.7 L 119.2 119.0 L 122.1 119.0 L 122.1 116.7 L 122.8 116.7 L 122.8 122.2 L 122.1 122.2 L 122.1 119.6 L 119.2 119.6 L 119.2 122.2 L 118.5 122.2 " fill="#FF0000" />
+<path class="atom-29" d="M 148.4 105.0 Q 148.4 103.6, 149.1 102.8 Q 149.8 102.0, 151.0 102.0 Q 151.8 102.0, 152.4 102.4 Q 153.0 102.8, 153.3 103.4 Q 153.7 104.1, 153.7 104.9 Q 153.7 105.8, 153.3 106.4 Q 153.0 107.1, 152.4 107.5 Q 151.7 107.8, 151.0 107.8 Q 150.2 107.8, 149.6 107.4 Q 149.0 107.0, 148.7 106.4 Q 148.4 105.7, 148.4 105.0 M 149.1 105.0 Q 149.1 106.0, 149.7 106.6 Q 150.2 107.2, 151.0 107.2 Q 151.8 107.2, 152.4 106.6 Q 152.9 106.0, 152.9 104.9 Q 152.9 104.2, 152.7 103.7 Q 152.5 103.2, 152.0 103.0 Q 151.6 102.7, 151.0 102.7 Q 150.2 102.7, 149.7 103.2 Q 149.1 103.7, 149.1 105.0 " fill="#FF0000" />
+<path class="atom-29" d="M 154.5 107.7 L 154.5 102.1 L 155.2 102.1 L 155.2 104.4 L 158.1 104.4 L 158.1 102.1 L 158.9 102.1 L 158.9 107.7 L 158.1 107.7 L 158.1 105.1 L 155.2 105.1 L 155.2 107.7 L 154.5 107.7 " fill="#FF0000" />
+<path class="atom-33" d="M 274.5 54.1 Q 274.5 52.7, 275.2 51.9 Q 276.0 51.1, 277.1 51.1 Q 277.9 51.1, 278.5 51.5 Q 279.2 51.9, 279.5 52.5 Q 279.8 53.2, 279.8 54.0 Q 279.8 54.9, 279.5 55.5 Q 279.1 56.2, 278.5 56.5 Q 277.9 56.9, 277.1 56.9 Q 276.4 56.9, 275.7 56.5 Q 275.1 56.1, 274.8 55.5 Q 274.5 54.8, 274.5 54.1 M 275.2 54.1 Q 275.2 55.1, 275.8 55.7 Q 276.3 56.3, 277.1 56.3 Q 278.0 56.3, 278.5 55.7 Q 279.0 55.1, 279.0 54.0 Q 279.0 53.3, 278.8 52.8 Q 278.6 52.3, 278.1 52.0 Q 277.7 51.8, 277.1 51.8 Q 276.4 51.8, 275.8 52.3 Q 275.2 52.8, 275.2 54.1 " fill="#FF0000" />
+<path class="atom-33" d="M 280.6 56.8 L 280.6 51.2 L 281.4 51.2 L 281.4 53.5 L 284.3 53.5 L 284.3 51.2 L 285.0 51.2 L 285.0 56.8 L 284.3 56.8 L 284.3 54.2 L 281.4 54.2 L 281.4 56.8 L 280.6 56.8 " fill="#FF0000" />
+</svg></g>
+   <g id="text_15">
+    <text style="fill: #59a14f; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="65.331592" y="129.439917" transform="rotate(-0 65.331592 129.439917)">Family 2</text>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g clip-path="url(#pf6f43c9500)">
+    <svg x="82.4294" y="108.462" width="31.68" height="15.84" viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet"><path class="bond-0 atom-0 atom-1" d="M 15.0,100.1 L 43.6,92.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 43.6,92.8 L 51.5,64.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 48.5,91.5 L 55.1,68.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 51.5,64.4 L 80.1,57.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 80.1,57.0 L 100.8,78.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 78.7,61.9 L 95.8,79.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 100.8,78.1 L 129.3,70.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 131.1,72.6 L 134.5,60.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 134.5,60.5 L 137.9,48.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 126.9,71.4 L 130.3,59.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 130.3,59.3 L 133.6,47.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-5 atom-7" d="M 129.3,70.8 L 137.5,79.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-5 atom-7" d="M 137.5,79.1 L 145.7,87.4" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 154.3,90.7 L 166.4,87.6" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 166.4,87.6 L 178.6,84.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 178.6,84.5 L 199.2,105.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 199.2,105.6 L 227.8,98.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 227.8,98.2 L 248.5,119.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 232.8,97.0 L 249.9,114.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-11 atom-12" d="M 248.5,119.3 L 277.1,112.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 277.1,112.0 L 285.0,83.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 273.5,108.3 L 280.0,84.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-13 atom-14" d="M 285.0,83.5 L 264.3,62.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 264.3,62.5 L 235.8,69.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 263.0,67.4 L 239.3,73.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-15 atom-8 atom-16" d="M 178.6,84.5 L 186.5,56.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 189.0,55.4 L 180.7,47.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 180.7,47.0 L 172.5,38.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 185.8,58.5 L 177.6,50.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 177.6,50.1 L 169.3,41.7" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-16 atom-18" d="M 186.5,56.1 L 198.3,53.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-16 atom-18" d="M 198.3,53.0 L 210.1,50.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-18 atom-4 atom-19" d="M 100.8,78.1 L 92.8,106.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 92.8,106.5 L 64.2,113.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 89.2,102.9 L 65.6,109.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-20 atom-20 atom-1" d="M 64.2,113.9 L 43.6,92.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-21 atom-15 atom-10" d="M 235.8,69.8 L 227.8,98.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 51.1,65.8 L 51.5,64.4 L 52.9,64.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 78.7,57.4 L 80.1,57.0 L 81.1,58.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 127.9,71.1 L 129.3,70.8 L 129.8,71.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 198.2,104.5 L 199.2,105.6 L 200.7,105.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 247.4,118.3 L 248.5,119.3 L 249.9,119.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 275.6,112.3 L 277.1,112.0 L 277.5,110.6" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 284.6,85.0 L 285.0,83.5 L 284.0,82.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 265.4,63.5 L 264.3,62.5 L 262.9,62.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 237.2,69.4 L 235.8,69.8 L 235.4,71.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 186.1,57.5 L 186.5,56.1 L 187.1,55.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 93.2,105.1 L 92.8,106.5 L 91.4,106.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 65.7,113.5 L 64.2,113.9 L 63.2,112.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-6" d="M 133.2 42.5 Q 133.2 40.4, 134.4 39.2 Q 135.5 38.0, 137.3 38.0 Q 138.5 38.0, 139.4 38.6 Q 140.3 39.1, 140.8 40.1 Q 141.3 41.1, 141.3 42.4 Q 141.3 43.7, 140.8 44.7 Q 140.3 45.7, 139.3 46.3 Q 138.4 46.8, 137.3 46.8 Q 136.1 46.8, 135.1 46.2 Q 134.2 45.6, 133.7 44.6 Q 133.2 43.6, 133.2 42.5 M 134.4 42.5 Q 134.4 44.1, 135.2 44.9 Q 136.0 45.8, 137.3 45.8 Q 138.5 45.8, 139.3 44.9 Q 140.2 44.0, 140.2 42.4 Q 140.2 41.4, 139.8 40.6 Q 139.5 39.8, 138.8 39.4 Q 138.1 39.0, 137.3 39.0 Q 136.1 39.0, 135.2 39.8 Q 134.4 40.6, 134.4 42.5 " fill="#FF0000" />
+<path class="atom-7" d="M 146.7 96.1 L 146.7 87.6 L 147.8 87.6 L 152.3 94.3 L 152.3 87.6 L 153.3 87.6 L 153.3 96.1 L 152.2 96.1 L 147.7 89.4 L 147.7 96.1 L 146.7 96.1 " fill="#0000FF" />
+<path class="atom-7" d="M 146.7 105.4 L 146.7 96.9 L 147.8 96.9 L 147.8 100.4 L 152.2 100.4 L 152.2 96.9 L 153.3 96.9 L 153.3 105.4 L 152.2 105.4 L 152.2 101.4 L 147.8 101.4 L 147.8 105.4 L 146.7 105.4 " fill="#0000FF" />
+<path class="atom-17" d="M 161.8 35.2 Q 161.8 33.1, 163.0 31.9 Q 164.1 30.7, 165.9 30.7 Q 167.0 30.7, 168.0 31.2 Q 168.9 31.8, 169.4 32.8 Q 169.9 33.8, 169.9 35.1 Q 169.9 36.4, 169.4 37.4 Q 168.9 38.4, 167.9 38.9 Q 167.0 39.4, 165.9 39.4 Q 164.7 39.4, 163.7 38.9 Q 162.8 38.3, 162.3 37.3 Q 161.8 36.3, 161.8 35.2 M 163.0 35.2 Q 163.0 36.7, 163.8 37.6 Q 164.6 38.5, 165.9 38.5 Q 167.1 38.5, 167.9 37.6 Q 168.8 36.7, 168.8 35.1 Q 168.8 34.0, 168.4 33.3 Q 168.1 32.5, 167.4 32.1 Q 166.7 31.6, 165.9 31.6 Q 164.7 31.6, 163.8 32.5 Q 163.0 33.3, 163.0 35.2 " fill="#FF0000" />
+<path class="atom-18" d="M 211.1 48.9 Q 211.1 46.8, 212.2 45.6 Q 213.3 44.4, 215.1 44.4 Q 216.3 44.4, 217.2 45.0 Q 218.2 45.5, 218.6 46.5 Q 219.1 47.5, 219.1 48.8 Q 219.1 50.1, 218.6 51.1 Q 218.1 52.1, 217.2 52.6 Q 216.2 53.2, 215.1 53.2 Q 213.9 53.2, 213.0 52.6 Q 212.0 52.0, 211.5 51.0 Q 211.1 50.0, 211.1 48.9 M 212.2 48.9 Q 212.2 50.5, 213.0 51.3 Q 213.9 52.2, 215.1 52.2 Q 216.4 52.2, 217.2 51.3 Q 218.0 50.4, 218.0 48.8 Q 218.0 47.8, 217.6 47.0 Q 217.3 46.2, 216.6 45.8 Q 216.0 45.4, 215.1 45.4 Q 213.9 45.4, 213.1 46.2 Q 212.2 47.0, 212.2 48.9 " fill="#FF0000" />
+<path class="atom-18" d="M 220.4 53.0 L 220.4 44.6 L 221.5 44.6 L 221.5 48.0 L 225.9 48.0 L 225.9 44.6 L 227.0 44.6 L 227.0 53.0 L 225.9 53.0 L 225.9 49.0 L 221.5 49.0 L 221.5 53.0 L 220.4 53.0 " fill="#FF0000" />
+</svg></g>
+   <g id="text_16">
+    <text style="fill: #e39c37; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="97.972902" y="129.439917" transform="rotate(-0 97.972902 129.439917)">Family 3</text>
+   </g>
+  </g>
+  <g id="axes_7">
+   <g clip-path="url(#p3730f44e67)">
+    <svg x="115.071" y="108.462" width="31.68" height="15.84" viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet"><path class="bond-0 atom-0 atom-1" d="M 15.0,135.5 L 25.8,133.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 25.8,133.4 L 36.6,131.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 42.8,125.8 L 46.3,115.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 46.3,115.6 L 49.9,105.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 49.9,105.4 L 32.5,85.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 51.4,101.1 L 37.1,84.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 32.5,85.3 L 41.3,60.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 41.3,60.2 L 67.4,55.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 44.3,63.6 L 65.9,59.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 67.4,55.2 L 70.9,45.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 70.9,45.1 L 74.5,35.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 72.1,25.3 L 65.4,17.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 65.4,17.6 L 58.8,9.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-5 atom-8" d="M 67.4,55.2 L 84.8,75.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 84.8,75.3 L 95.9,73.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 95.9,73.2 L 107.0,71.1" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 114.8,74.9 L 121.5,82.7" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 121.5,82.7 L 128.3,90.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 126.8,88.8 L 123.0,99.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 123.0,99.5 L 119.3,110.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 130.5,90.1 L 126.8,100.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 126.8,100.8 L 123.0,111.5" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-10 atom-12" d="M 128.3,90.5 L 154.4,85.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 154.4,85.6 L 161.1,93.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 161.1,93.4 L 167.8,101.2" style="fill:none;fill-rule:evenodd;stroke:#CCCC00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-13 atom-14" d="M 175.6,105.0 L 186.8,102.8" style="fill:none;fill-rule:evenodd;stroke:#CCCC00;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-13 atom-14" d="M 186.8,102.8 L 197.9,100.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 197.9,100.7 L 204.6,108.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 204.6,108.6 L 211.3,116.4" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 202.4,99.9 L 208.4,106.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-14 atom-15" d="M 208.4,106.8 L 214.4,113.8" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-15 atom-15 atom-16" d="M 219.1,120.1 L 230.2,118.0" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-15 atom-15 atom-16" d="M 230.2,118.0 L 241.3,115.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 239.1,116.3 L 246.1,124.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 246.1,124.5 L 253.1,132.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 242.1,113.7 L 249.1,121.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-16 atom-16 atom-17" d="M 249.1,121.9 L 256.1,130.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-17 atom-16 atom-18" d="M 241.3,115.9 L 250.1,90.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-18 atom-18 atom-19" d="M 250.1,90.8 L 276.2,85.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-18 atom-18 atom-19" d="M 251.6,86.5 L 273.2,82.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-19 atom-19 atom-20" d="M 276.2,85.8 L 285.0,60.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-20 atom-20 atom-21" d="M 285.0,60.7 L 267.6,40.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-20 atom-20 atom-21" d="M 280.5,61.6 L 266.1,44.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-21 atom-21 atom-22" d="M 267.6,40.6 L 241.5,45.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-22 atom-22 atom-23" d="M 241.5,45.6 L 232.8,70.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-22 atom-22 atom-23" d="M 244.5,49.0 L 237.3,69.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 232.8,70.7 L 221.6,72.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-23 atom-23 atom-24" d="M 221.6,72.8 L 210.5,74.9" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-24 atom-8 atom-25" d="M 84.8,75.3 L 76.0,100.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-24 atom-8 atom-25" d="M 80.2,76.2 L 73.0,97.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-25 atom-25 atom-2" d="M 76.0,100.4 L 49.9,105.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-26 atom-24 atom-14" d="M 205.0,80.3 L 201.4,90.5" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-26 atom-24 atom-14" d="M 201.4,90.5 L 197.9,100.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-27 atom-23 atom-18" d="M 232.8,70.7 L 250.1,90.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 33.4,86.3 L 32.5,85.3 L 33.0,84.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 40.9,61.4 L 41.3,60.2 L 42.6,59.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 127.9,90.1 L 128.3,90.5 L 129.6,90.3" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 153.1,85.8 L 154.4,85.6 L 154.7,85.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 240.8,116.0 L 241.3,115.9 L 241.8,114.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 274.9,86.1 L 276.2,85.8 L 276.7,84.6" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 284.6,62.0 L 285.0,60.7 L 284.1,59.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 268.5,41.6 L 267.6,40.6 L 266.3,40.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 242.8,45.3 L 241.5,45.6 L 241.1,46.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 76.4,99.2 L 76.0,100.4 L 74.7,100.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-1" d="M 37.5 130.7 Q 37.5 128.8, 38.5 127.7 Q 39.5 126.6, 41.1 126.6 Q 42.2 126.6, 43.0 127.1 Q 43.9 127.6, 44.3 128.5 Q 44.8 129.4, 44.8 130.6 Q 44.8 131.7, 44.3 132.7 Q 43.8 133.6, 43.0 134.0 Q 42.1 134.5, 41.1 134.5 Q 40.0 134.5, 39.2 134.0 Q 38.4 133.5, 37.9 132.6 Q 37.5 131.7, 37.5 130.7 M 38.5 130.7 Q 38.5 132.1, 39.3 132.9 Q 40.0 133.7, 41.1 133.7 Q 42.3 133.7, 43.0 132.9 Q 43.7 132.1, 43.7 130.6 Q 43.7 129.7, 43.4 129.0 Q 43.1 128.3, 42.5 127.9 Q 41.9 127.5, 41.1 127.5 Q 40.1 127.5, 39.3 128.2 Q 38.5 129.0, 38.5 130.7 " fill="#FF0000" />
+<path class="atom-6" d="M 72.5 30.3 Q 72.5 28.4, 73.6 27.3 Q 74.6 26.2, 76.2 26.2 Q 77.2 26.2, 78.1 26.7 Q 78.9 27.2, 79.4 28.1 Q 79.8 29.0, 79.8 30.2 Q 79.8 31.3, 79.4 32.2 Q 78.9 33.2, 78.0 33.6 Q 77.2 34.1, 76.2 34.1 Q 75.1 34.1, 74.3 33.6 Q 73.4 33.1, 73.0 32.2 Q 72.5 31.3, 72.5 30.3 M 73.6 30.3 Q 73.6 31.6, 74.3 32.4 Q 75.1 33.2, 76.2 33.2 Q 77.3 33.2, 78.0 32.4 Q 78.8 31.6, 78.8 30.2 Q 78.8 29.2, 78.5 28.5 Q 78.2 27.8, 77.5 27.5 Q 76.9 27.1, 76.2 27.1 Q 75.1 27.1, 74.3 27.8 Q 73.6 28.6, 73.6 30.3 " fill="#FF0000" />
+<path class="atom-9" d="M 107.9 74.2 L 107.9 66.6 L 108.9 66.6 L 112.9 72.5 L 112.9 66.6 L 113.9 66.6 L 113.9 74.2 L 112.9 74.2 L 108.9 68.2 L 108.9 74.2 L 107.9 74.2 " fill="#0000FF" />
+<path class="atom-9" d="M 107.9 65.8 L 107.9 58.2 L 108.9 58.2 L 108.9 61.3 L 112.9 61.3 L 112.9 58.2 L 113.9 58.2 L 113.9 65.8 L 112.9 65.8 L 112.9 62.2 L 108.9 62.2 L 108.9 65.8 L 107.9 65.8 " fill="#0000FF" />
+<path class="atom-11" d="M 115.9 115.8 Q 115.9 113.9, 116.9 112.8 Q 117.9 111.7, 119.5 111.7 Q 120.6 111.7, 121.4 112.2 Q 122.2 112.8, 122.7 113.7 Q 123.1 114.6, 123.1 115.7 Q 123.1 116.9, 122.7 117.8 Q 122.2 118.7, 121.3 119.2 Q 120.5 119.6, 119.5 119.6 Q 118.4 119.6, 117.6 119.1 Q 116.7 118.6, 116.3 117.7 Q 115.9 116.8, 115.9 115.8 M 116.9 115.8 Q 116.9 117.2, 117.6 118.0 Q 118.4 118.8, 119.5 118.8 Q 120.6 118.8, 121.4 118.0 Q 122.1 117.2, 122.1 115.7 Q 122.1 114.8, 121.8 114.1 Q 121.5 113.4, 120.9 113.0 Q 120.3 112.6, 119.5 112.6 Q 118.4 112.6, 117.7 113.4 Q 116.9 114.1, 116.9 115.8 " fill="#FF0000" />
+<path class="atom-13" d="M 168.7 107.1 L 169.7 107.0 Q 169.7 107.6, 170.0 108.0 Q 170.2 108.3, 170.7 108.6 Q 171.3 108.8, 171.9 108.8 Q 172.5 108.8, 172.9 108.6 Q 173.4 108.4, 173.6 108.2 Q 173.8 107.9, 173.8 107.5 Q 173.8 107.1, 173.6 106.9 Q 173.4 106.6, 172.9 106.4 Q 172.6 106.3, 171.6 106.1 Q 170.5 105.8, 170.1 105.6 Q 169.5 105.3, 169.3 104.9 Q 169.0 104.4, 169.0 103.9 Q 169.0 103.3, 169.3 102.8 Q 169.7 102.3, 170.3 102.1 Q 170.9 101.8, 171.7 101.8 Q 172.5 101.8, 173.2 102.1 Q 173.8 102.4, 174.2 102.9 Q 174.5 103.4, 174.5 104.1 L 173.6 104.2 Q 173.5 103.4, 173.0 103.1 Q 172.6 102.7, 171.7 102.7 Q 170.8 102.7, 170.4 103.0 Q 170.0 103.4, 170.0 103.9 Q 170.0 104.3, 170.3 104.5 Q 170.6 104.8, 171.8 105.1 Q 173.0 105.3, 173.5 105.6 Q 174.1 105.9, 174.5 106.3 Q 174.8 106.8, 174.8 107.4 Q 174.8 108.0, 174.4 108.6 Q 174.1 109.1, 173.4 109.4 Q 172.8 109.7, 172.0 109.7 Q 170.9 109.7, 170.2 109.4 Q 169.5 109.1, 169.1 108.5 Q 168.7 107.9, 168.7 107.1 " fill="#CCCC00" />
+<path class="atom-15" d="M 212.2 124.7 L 212.2 117.1 L 213.3 117.1 L 217.3 123.0 L 217.3 117.1 L 218.2 117.1 L 218.2 124.7 L 217.2 124.7 L 213.2 118.7 L 213.2 124.7 L 212.2 124.7 " fill="#0000FF" />
+<path class="atom-17" d="M 255.1 136.2 Q 255.1 134.3, 256.1 133.3 Q 257.1 132.2, 258.7 132.2 Q 259.8 132.2, 260.6 132.7 Q 261.5 133.2, 261.9 134.1 Q 262.4 135.0, 262.4 136.1 Q 262.4 137.3, 261.9 138.2 Q 261.4 139.1, 260.6 139.6 Q 259.7 140.1, 258.7 140.1 Q 257.6 140.1, 256.8 139.5 Q 255.9 139.0, 255.5 138.1 Q 255.1 137.2, 255.1 136.2 M 256.1 136.2 Q 256.1 137.6, 256.8 138.4 Q 257.6 139.2, 258.7 139.2 Q 259.8 139.2, 260.6 138.4 Q 261.3 137.6, 261.3 136.1 Q 261.3 135.2, 261.0 134.5 Q 260.7 133.8, 260.1 133.4 Q 259.5 133.0, 258.7 133.0 Q 257.7 133.0, 256.9 133.8 Q 256.1 134.5, 256.1 136.2 " fill="#FF0000" />
+<path class="atom-24" d="M 196.2 79.4 L 196.2 71.8 L 197.2 71.8 L 197.2 74.9 L 201.2 74.9 L 201.2 71.8 L 202.2 71.8 L 202.2 79.4 L 201.2 79.4 L 201.2 75.8 L 197.2 75.8 L 197.2 79.4 L 196.2 79.4 " fill="#0000FF" />
+<path class="atom-24" d="M 203.6 79.4 L 203.6 71.8 L 204.7 71.8 L 208.7 77.8 L 208.7 71.8 L 209.6 71.8 L 209.6 79.4 L 208.6 79.4 L 204.6 73.4 L 204.6 79.4 L 203.6 79.4 " fill="#0000FF" />
+</svg></g>
+   <g id="text_17">
+    <text style="fill: #b07aa1; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="130.614212" y="129.42062" transform="rotate(-0 130.614212 129.42062)">Family 4</text>
+   </g>
+  </g>
+  <g id="axes_8">
+   <g clip-path="url(#p64b2633da5)">
+    <svg x="147.712" y="108.462" width="31.68" height="15.84" viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet"><path class="bond-0 atom-0 atom-1" d="M 249.5,142.5 L 242.9,129.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 242.9,129.1 L 236.3,115.7" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 226.5,108.3 L 211.0,107.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 211.0,107.3 L 195.4,106.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 195.4,106.2 L 174.5,137.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 188.9,105.8 L 171.6,131.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 174.5,137.5 L 136.9,135.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 136.9,135.0 L 120.4,101.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 140.6,129.6 L 126.8,101.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 120.4,101.2 L 82.8,98.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 81.4,95.8 L 72.7,108.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 72.7,108.7 L 64.1,121.7" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 86.1,98.9 L 77.4,111.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 77.4,111.9 L 68.7,124.8" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-6 atom-8" d="M 82.8,98.7 L 76.2,85.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-6 atom-8" d="M 76.2,85.3 L 69.6,71.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-5 atom-9" d="M 120.4,101.2 L 141.3,70.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 141.3,70.0 L 178.8,72.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 144.2,75.8 L 175.2,77.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 178.8,72.5 L 187.0,60.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 187.0,60.3 L 195.1,48.2" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-11 atom-12" d="M 196.4,34.5 L 189.8,21.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-11 atom-12" d="M 189.8,21.0 L 183.2,7.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-10 atom-2" d="M 178.8,72.5 L 195.4,106.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 175.5,135.9 L 174.5,137.5 L 172.6,137.4" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 138.8,135.1 L 136.9,135.0 L 136.1,133.3" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 84.7,98.8 L 82.8,98.7 L 82.5,98.0" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 140.2,71.5 L 141.3,70.0 L 143.2,70.1" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-1" d="M 227.8 109.0 Q 227.8 106.3, 229.2 104.8 Q 230.6 103.3, 232.9 103.3 Q 234.4 103.3, 235.6 104.0 Q 236.8 104.7, 237.4 106.0 Q 238.1 107.2, 238.1 108.9 Q 238.1 110.5, 237.4 111.8 Q 236.7 113.1, 235.5 113.8 Q 234.3 114.4, 232.9 114.4 Q 231.4 114.4, 230.2 113.7 Q 229.0 112.9, 228.4 111.7 Q 227.8 110.4, 227.8 109.0 M 229.2 109.0 Q 229.2 111.0, 230.3 112.1 Q 231.3 113.2, 232.9 113.2 Q 234.5 113.2, 235.6 112.1 Q 236.6 110.9, 236.6 108.9 Q 236.6 107.5, 236.1 106.6 Q 235.7 105.6, 234.8 105.0 Q 234.0 104.5, 232.9 104.5 Q 231.4 104.5, 230.3 105.5 Q 229.2 106.6, 229.2 109.0 " fill="#FF0000" />
+<path class="atom-7" d="M 56.7 130.2 Q 56.7 127.5, 58.2 126.0 Q 59.6 124.5, 61.9 124.5 Q 63.4 124.5, 64.6 125.2 Q 65.8 125.9, 66.4 127.2 Q 67.0 128.4, 67.0 130.1 Q 67.0 131.7, 66.4 133.0 Q 65.7 134.3, 64.5 134.9 Q 63.3 135.6, 61.9 135.6 Q 60.4 135.6, 59.2 134.9 Q 58.0 134.1, 57.4 132.9 Q 56.7 131.6, 56.7 130.2 M 58.2 130.2 Q 58.2 132.1, 59.3 133.3 Q 60.3 134.4, 61.9 134.4 Q 63.5 134.4, 64.5 133.3 Q 65.6 132.1, 65.6 130.0 Q 65.6 128.7, 65.1 127.8 Q 64.7 126.8, 63.8 126.2 Q 63.0 125.7, 61.9 125.7 Q 60.4 125.7, 59.3 126.7 Q 58.2 127.8, 58.2 130.2 " fill="#FF0000" />
+<path class="atom-8" d="M 50.5 70.4 L 50.5 59.7 L 51.9 59.7 L 51.9 64.1 L 57.5 64.1 L 57.5 59.7 L 58.9 59.7 L 58.9 70.4 L 57.5 70.4 L 57.5 65.4 L 51.9 65.4 L 51.9 70.4 L 50.5 70.4 " fill="#FF0000" />
+<path class="atom-8" d="M 61.1 65.2 Q 61.1 62.5, 62.5 61.0 Q 64.0 59.5, 66.3 59.5 Q 67.7 59.5, 68.9 60.2 Q 70.1 60.9, 70.8 62.2 Q 71.4 63.4, 71.4 65.1 Q 71.4 66.7, 70.7 68.0 Q 70.1 69.3, 68.9 70.0 Q 67.6 70.6, 66.2 70.6 Q 64.7 70.6, 63.5 69.9 Q 62.3 69.1, 61.7 67.9 Q 61.1 66.6, 61.1 65.2 M 62.6 65.2 Q 62.6 67.2, 63.6 68.3 Q 64.7 69.4, 66.2 69.4 Q 67.8 69.4, 68.9 68.3 Q 69.9 67.1, 69.9 65.1 Q 69.9 63.7, 69.5 62.8 Q 69.0 61.8, 68.2 61.2 Q 67.3 60.7, 66.3 60.7 Q 64.7 60.7, 63.7 61.7 Q 62.6 62.8, 62.6 65.2 " fill="#FF0000" />
+<path class="atom-11" d="M 194.6 41.5 Q 194.6 38.8, 196.0 37.3 Q 197.5 35.8, 199.8 35.8 Q 201.2 35.8, 202.4 36.5 Q 203.6 37.2, 204.3 38.5 Q 204.9 39.7, 204.9 41.4 Q 204.9 43.0, 204.2 44.3 Q 203.6 45.6, 202.4 46.3 Q 201.1 46.9, 199.7 46.9 Q 198.2 46.9, 197.0 46.2 Q 195.8 45.4, 195.2 44.2 Q 194.6 42.9, 194.6 41.5 M 196.1 41.5 Q 196.1 43.5, 197.1 44.6 Q 198.2 45.7, 199.7 45.7 Q 201.3 45.7, 202.4 44.6 Q 203.4 43.4, 203.4 41.4 Q 203.4 40.0, 203.0 39.1 Q 202.5 38.1, 201.7 37.5 Q 200.8 37.0, 199.8 37.0 Q 198.2 37.0, 197.2 38.0 Q 196.1 39.1, 196.1 41.5 " fill="#FF0000" />
+</svg></g>
+   <g id="text_18">
+    <text style="fill: #76b7b2; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="163.255523" y="129.42062" transform="rotate(-0 163.255523 129.42062)">Family 5</text>
+   </g>
+  </g>
+  <g id="axes_9">
+   <g clip-path="url(#p1ed5fb6bd9)">
+    <svg x="180.353" y="108.462" width="31.68" height="15.84" viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet"><path class="bond-0 atom-0 atom-1" d="M 15.0,74.8 L 52.6,55.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 52.6,55.2 L 66.9,64.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 66.9,64.3 L 81.2,73.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 95.6,74.2 L 110.8,66.3" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 110.8,66.3 L 126.0,58.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 129.1,60.4 L 129.9,42.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 129.9,42.1 L 130.7,23.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 122.8,60.1 L 123.6,41.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 123.6,41.9 L 124.4,23.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-3 atom-5" d="M 126.0,58.4 L 161.8,81.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 161.8,81.2 L 164.5,123.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 168.5,85.4 L 170.5,118.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 164.5,123.5 L 181.9,128.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 181.9,128.0 L 199.4,132.5" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 210.3,126.6 L 219.3,112.5" style="fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 219.3,112.5 L 228.3,98.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 228.3,98.3 L 270.2,91.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-8 atom-9" d="M 230.9,91.4 L 265.5,85.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-9 atom-9 atom-10" d="M 270.2,91.3 L 285.0,51.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 285.0,51.5 L 258.0,18.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-10 atom-10 atom-11" d="M 277.8,52.8 L 255.4,25.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-11 atom-11 atom-12" d="M 258.0,18.8 L 216.1,25.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 216.1,25.8 L 201.3,65.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-12 atom-12 atom-13" d="M 220.8,31.5 L 208.6,64.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-13 atom-13 atom-5" d="M 201.3,65.6 L 161.8,81.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-14 atom-13 atom-8" d="M 201.3,65.6 L 228.3,98.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 50.7,56.2 L 52.6,55.2 L 53.3,55.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 125.3,58.8 L 126.0,58.4 L 127.8,59.5" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 164.3,121.4 L 164.5,123.5 L 165.3,123.7" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 268.1,91.6 L 270.2,91.3 L 270.9,89.3" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 284.3,53.5 L 285.0,51.5 L 283.6,49.9" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 259.3,20.4 L 258.0,18.8 L 255.9,19.2" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 218.2,25.5 L 216.1,25.8 L 215.4,27.8" style="fill:none;stroke:#000000;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-2" d="M 82.6 78.3 Q 82.6 75.2, 84.2 73.5 Q 85.9 71.8, 88.4 71.8 Q 90.1 71.8, 91.5 72.6 Q 92.8 73.4, 93.5 74.9 Q 94.2 76.3, 94.2 78.1 Q 94.2 80.0, 93.5 81.4 Q 92.7 82.9, 91.4 83.6 Q 90.0 84.4, 88.4 84.4 Q 86.7 84.4, 85.4 83.6 Q 84.0 82.7, 83.3 81.3 Q 82.6 79.9, 82.6 78.3 M 84.3 78.3 Q 84.3 80.5, 85.4 81.8 Q 86.6 83.0, 88.4 83.0 Q 90.2 83.0, 91.4 81.7 Q 92.6 80.5, 92.6 78.1 Q 92.6 76.6, 92.1 75.5 Q 91.6 74.4, 90.6 73.8 Q 89.6 73.2, 88.4 73.2 Q 86.7 73.2, 85.5 74.4 Q 84.3 75.5, 84.3 78.3 " fill="#FF0000" />
+<path class="atom-4" d="M 122.1 16.3 Q 122.1 13.2, 123.7 11.5 Q 125.3 9.8, 127.9 9.8 Q 129.6 9.8, 130.9 10.6 Q 132.3 11.4, 133.0 12.9 Q 133.7 14.3, 133.7 16.1 Q 133.7 18.0, 132.9 19.4 Q 132.2 20.9, 130.8 21.6 Q 129.5 22.4, 127.9 22.4 Q 126.2 22.4, 124.8 21.6 Q 123.5 20.7, 122.8 19.3 Q 122.1 17.9, 122.1 16.3 M 123.7 16.3 Q 123.7 18.5, 124.9 19.7 Q 126.1 21.0, 127.9 21.0 Q 129.7 21.0, 130.8 19.7 Q 132.0 18.5, 132.0 16.1 Q 132.0 14.6, 131.5 13.5 Q 131.0 12.4, 130.1 11.8 Q 129.1 11.2, 127.9 11.2 Q 126.2 11.2, 124.9 12.4 Q 123.7 13.5, 123.7 16.3 " fill="#FF0000" />
+<path class="atom-7" d="M 200.8 140.2 L 200.8 128.0 L 202.4 128.0 L 208.8 137.6 L 208.8 128.0 L 210.3 128.0 L 210.3 140.2 L 208.7 140.2 L 202.3 130.6 L 202.3 140.2 L 200.8 140.2 " fill="#0000FF" />
+<path class="atom-7" d="M 212.7 140.2 L 212.7 128.0 L 214.3 128.0 L 214.3 133.0 L 220.6 133.0 L 220.6 128.0 L 222.2 128.0 L 222.2 140.2 L 220.6 140.2 L 220.6 134.5 L 214.3 134.5 L 214.3 140.2 L 212.7 140.2 " fill="#0000FF" />
+</svg></g>
+   <g id="text_19">
+    <text style="fill: #c56b6f; font: 6.5px 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="195.896833" y="129.439917" transform="rotate(-0 195.896833 129.439917)">Family 6</text>
+   </g>
+  </g>
+  <g id="axes_10" />
+ </g>
+ <defs>
+  <clipPath id="p28a798dee9">
+   <rect x="17.1468" y="17.5968" width="89.322138" height="84.334837" />
+  </clipPath>
+  <clipPath id="p2e60bc8d91">
+   <rect x="122.118177" y="17.5968" width="89.322138" height="84.334837" />
+  </clipPath>
+  <clipPath id="p976b47763e">
+   <rect x="227.089553" y="17.5968" width="82.176367" height="84.334837" />
+  </clipPath>
+  <clipPath id="p22a77b959e">
+   <rect x="17.1468" y="108.758256" width="31.086962" height="15.543481" />
+  </clipPath>
+  <clipPath id="p6dba64c8af">
+   <rect x="49.78811" y="108.758256" width="31.086962" height="15.543481" />
+  </clipPath>
+  <clipPath id="pf6f43c9500">
+   <rect x="82.429421" y="108.758256" width="31.086962" height="15.543481" />
+  </clipPath>
+  <clipPath id="p3730f44e67">
+   <rect x="115.070731" y="108.758256" width="31.086962" height="15.543481" />
+  </clipPath>
+  <clipPath id="p64b2633da5">
+   <rect x="147.712042" y="108.758256" width="31.086962" height="15.543481" />
+  </clipPath>
+  <clipPath id="p1ed5fb6bd9">
+   <rect x="180.353352" y="108.758256" width="31.086962" height="15.543481" />
+  </clipPath>
+ </defs>
+<svg width="96.06" height="135.36" viewBox="0 0 95.76 135.36" version="1.1" x="215.7" y="0">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-10-18T19:23:10.044012</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="stack_figure_1">
+  <g id="stack_patch_1">
+   <path d="M 0 135.36  L 95.76 135.36  L 95.76 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="stack_axes_1">
+   <g id="stack_patch_2">
+    <path d="M 11.353983 60.912  L 93.273709 60.912  L 93.273709 17.5968  L 11.353983 17.5968  z " style="fill: #ffffff" />
+   </g>
+   <g id="stack_matplotlib.axis_1">
+    <g id="stack_xtick_1">
+     <g id="stack_line2d_1">
+      <defs>
+       <path id="stack_m04ec18a2fd" d="M 0 0  L 0 2.2  " style="stroke: #000000; stroke-width: 0.5" />
+      </defs>
+      <g>
+       <use xlink:href="#stack_m04ec18a2fd" x="24.449994" y="60.912" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_1">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: middle" x="24.449994" y="68.906687" transform="rotate(-0 24.449994 68.906687)">NMI</text>
+     </g>
+    </g>
+    <g id="stack_xtick_2">
+     <g id="stack_line2d_2">
+      <g>
+       <use xlink:href="#stack_m04ec18a2fd" x="52.313846" y="60.912" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_2">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: middle" x="52.313846" y="68.906687" transform="rotate(-0 52.313846 68.906687)">ARI</text>
+     </g>
+    </g>
+    <g id="stack_xtick_3">
+     <g id="stack_line2d_3">
+      <g>
+       <use xlink:href="#stack_m04ec18a2fd" x="80.177698" y="60.912" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_3">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: middle" x="80.177698" y="68.906687" transform="rotate(-0 80.177698 68.906687)">Silhouette</text>
+     </g>
+    </g>
+   </g>
+   <g id="stack_matplotlib.axis_2">
+    <g id="stack_ytick_1">
+     <g id="stack_line2d_4">
+      <path d="M 11.353983 60.912  L 93.273709 60.912  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #e7e9ea; stroke-width: 0.45; stroke-linecap: square" />
+     </g>
+     <g id="stack_line2d_5">
+      <defs>
+       <path id="stack_mf263d3562b" d="M 0 0  L -2.2 0  " style="stroke: #000000; stroke-width: 0.5" />
+      </defs>
+      <g>
+       <use xlink:href="#stack_mf263d3562b" x="11.353983" y="60.912" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_4">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: end" x="7.653983" y="63.059344" transform="rotate(-0 7.653983 63.059344)">0.0</text>
+     </g>
+    </g>
+    <g id="stack_ytick_2">
+     <g id="stack_line2d_6">
+      <path d="M 11.353983 43.58592  L 93.273709 43.58592  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #e7e9ea; stroke-width: 0.45; stroke-linecap: square" />
+     </g>
+     <g id="stack_line2d_7">
+      <g>
+       <use xlink:href="#stack_mf263d3562b" x="11.353983" y="43.58592" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_5">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: end" x="7.653983" y="45.733264" transform="rotate(-0 7.653983 45.733264)">0.2</text>
+     </g>
+    </g>
+    <g id="stack_ytick_3">
+     <g id="stack_line2d_8">
+      <path d="M 11.353983 26.25984  L 93.273709 26.25984  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #e7e9ea; stroke-width: 0.45; stroke-linecap: square" />
+     </g>
+     <g id="stack_line2d_9">
+      <g>
+       <use xlink:href="#stack_mf263d3562b" x="11.353983" y="26.25984" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_6">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: end" x="7.653983" y="28.407184" transform="rotate(-0 7.653983 28.407184)">0.4</text>
+     </g>
+    </g>
+   </g>
+   <g id="stack_patch_3">
+    <path d="M 15.254922 60.912  L 21.38497 60.912  L 21.38497 33.50111  L 15.254922 33.50111  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #d9d9d9" />
+   </g>
+   <g id="stack_patch_4">
+    <path d="M 43.118775 60.912  L 49.248822 60.912  L 49.248822 49.612488  L 43.118775 49.612488  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #d9d9d9" />
+   </g>
+   <g id="stack_patch_5">
+    <path d="M 70.982627 60.912  L 77.112675 60.912  L 77.112675 59.452525  L 70.982627 59.452525  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #d9d9d9" />
+   </g>
+   <g id="stack_patch_6">
+    <path d="M 21.38497 60.912  L 27.515017 60.912  L 27.515017 26.324384  L 21.38497 26.324384  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #e9a0aa" />
+   </g>
+   <g id="stack_patch_7">
+    <path d="M 49.248822 60.912  L 55.37887 60.912  L 55.37887 35.283425  L 49.248822 35.283425  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #e9a0aa" />
+   </g>
+   <g id="stack_patch_8">
+    <path d="M 77.112675 60.912  L 83.242722 60.912  L 83.242722 52.100417  L 77.112675 52.100417  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #e9a0aa" />
+   </g>
+   <g id="stack_patch_9">
+    <path d="M 27.515017 60.912  L 33.645065 60.912  L 33.645065 22.731935  L 27.515017 22.731935  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #3965bb" />
+   </g>
+   <g id="stack_patch_10">
+    <path d="M 55.37887 60.912  L 61.508917 60.912  L 61.508917 24.849187  L 55.37887 24.849187  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #3965bb" />
+   </g>
+   <g id="stack_patch_11">
+    <path d="M 83.242722 60.912  L 89.37277 60.912  L 89.37277 49.760057  L 83.242722 49.760057  z " clip-path="url(#stack_p0b0e587a34)" style="fill: #3965bb" />
+   </g>
+   <g id="stack_patch_12">
+    <path d="M 11.353983 60.912  L 11.353983 17.5968  " style="fill: none; stroke: #000000; stroke-width: 0.55; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="stack_patch_13">
+    <path d="M 11.353983 60.912  L 93.273709 60.912  " style="fill: none; stroke: #000000; stroke-width: 0.55; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="stack_LineCollection_1">
+    <path d="M 18.319946 35.160399  L 18.319946 30.808894  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+    <path d="M 46.183798 51.928932  L 46.183798 46.585624  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+    <path d="M 74.047651 59.630646  L 74.047651 59.27673  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+   </g>
+   <g id="stack_line2d_10">
+    <defs>
+     <path id="stack_m7130dec9f2" d="M 1.3 0  L -1.3 -0  " style="stroke: #303438; stroke-width: 0.55" />
+    </defs>
+    <g clip-path="url(#stack_p0b0e587a34)">
+     <use xlink:href="#stack_m7130dec9f2" x="18.319946" y="35.160399" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="46.183798" y="51.928932" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="74.047651" y="59.630646" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+    </g>
+   </g>
+   <g id="stack_line2d_11">
+    <g clip-path="url(#stack_p0b0e587a34)">
+     <use xlink:href="#stack_m7130dec9f2" x="18.319946" y="30.808894" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="46.183798" y="46.585624" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="74.047651" y="59.27673" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+    </g>
+   </g>
+   <g id="stack_LineCollection_2">
+    <path d="M 24.449994 28.257294  L 24.449994 22.708812  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+    <path d="M 52.313846 37.968206  L 52.313846 31.871684  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+    <path d="M 80.177698 52.642139  L 80.177698 51.565451  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+   </g>
+   <g id="stack_line2d_12">
+    <g clip-path="url(#stack_p0b0e587a34)">
+     <use xlink:href="#stack_m7130dec9f2" x="24.449994" y="28.257294" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="52.313846" y="37.968206" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="80.177698" y="52.642139" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+    </g>
+   </g>
+   <g id="stack_line2d_13">
+    <g clip-path="url(#stack_p0b0e587a34)">
+     <use xlink:href="#stack_m7130dec9f2" x="24.449994" y="22.708812" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="52.313846" y="31.871684" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="80.177698" y="51.565451" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+    </g>
+   </g>
+   <g id="stack_LineCollection_3">
+    <path d="M 30.580041 24.592616  L 30.580041 19.498079  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+    <path d="M 58.443894 28.898184  L 58.443894 20.248317  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+    <path d="M 86.307746 50.405322  L 86.307746 49.139847  " clip-path="url(#stack_p0b0e587a34)" style="fill: none; stroke: #303438; stroke-width: 0.55" />
+   </g>
+   <g id="stack_line2d_14">
+    <g clip-path="url(#stack_p0b0e587a34)">
+     <use xlink:href="#stack_m7130dec9f2" x="30.580041" y="24.592616" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="58.443894" y="28.898184" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="86.307746" y="50.405322" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+    </g>
+   </g>
+   <g id="stack_line2d_15">
+    <g clip-path="url(#stack_p0b0e587a34)">
+     <use xlink:href="#stack_m7130dec9f2" x="30.580041" y="19.498079" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="58.443894" y="20.248317" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+     <use xlink:href="#stack_m7130dec9f2" x="86.307746" y="49.139847" style="fill: #1f77b4; stroke: #303438; stroke-width: 0.55" />
+    </g>
+   </g>
+  </g>
+  <g id="stack_axes_2">
+   <g id="stack_patch_14">
+    <path d="M 11.353983 115.056  L 93.273709 115.056  L 93.273709 83.9232  L 11.353983 83.9232  z " style="fill: #ffffff" />
+   </g>
+   <g id="stack_matplotlib.axis_3">
+    <g id="stack_xtick_4">
+     <g id="stack_line2d_16">
+      <g>
+       <use xlink:href="#stack_m04ec18a2fd" x="11.353983" y="115.056" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_7">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: middle" x="11.353983" y="123.050687" transform="rotate(-0 11.353983 123.050687)">0</text>
+     </g>
+    </g>
+    <g id="stack_xtick_5">
+     <g id="stack_line2d_17">
+      <g>
+       <use xlink:href="#stack_m04ec18a2fd" x="44.121873" y="115.056" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_8">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: middle" x="44.121873" y="123.050687" transform="rotate(-0 44.121873 123.050687)">4</text>
+     </g>
+    </g>
+    <g id="stack_xtick_6">
+     <g id="stack_line2d_18">
+      <g>
+       <use xlink:href="#stack_m04ec18a2fd" x="76.889764" y="115.056" style="stroke: #000000; stroke-width: 0.5" />
+      </g>
+     </g>
+     <g id="stack_text_9">
+      <text style="font-size: 6px; font-family: 'Arial'; text-anchor: middle" x="76.889764" y="123.050687" transform="rotate(-0 76.889764 123.050687)">8</text>
+     </g>
+    </g>
+    <g id="stack_text_10">
+     <text style="font-size: 6.5px; font-family: 'Arial'; text-anchor: middle" x="52.313846" y="129.895766" transform="rotate(-0 52.313846 129.895766)">DB index ↓</text>
+    </g>
+   </g>
+   <g id="stack_matplotlib.axis_4" />
+   <g id="stack_patch_15">
+    <path d="M 11.353983 92.6793  L 77.200599 92.6793  L 77.200599 86.8419  L 11.353983 86.8419  z " clip-path="url(#stack_p10e8df9c23)" style="fill: #d9d9d9" />
+   </g>
+   <g id="stack_patch_16">
+    <path d="M 11.353983 102.4083  L 69.594522 102.4083  L 69.594522 96.5709  L 11.353983 96.5709  z " clip-path="url(#stack_p10e8df9c23)" style="fill: #e9a0aa" />
+   </g>
+   <g id="stack_patch_17">
+    <path d="M 11.353983 112.1373  L 56.739934 112.1373  L 56.739934 106.2999  L 11.353983 106.2999  z " clip-path="url(#stack_p10e8df9c23)" style="fill: #3965bb" />
+   </g>
+   <g id="stack_patch_18">
+    <path d="M 11.353983 115.056  L 11.353983 83.9232  " style="fill: none; stroke: #000000; stroke-width: 0.55; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="stack_patch_19">
+    <path d="M 11.353983 115.056  L 93.273709 115.056  " style="fill: none; stroke: #000000; stroke-width: 0.55; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="stack_text_11">
+    <text style="font-size: 6px; font-family: 'Arial'; text-anchor: start" x="78.511315" y="91.311694" transform="rotate(-0 78.511315 91.311694)">8.04</text>
+   </g>
+   <g id="stack_text_12">
+    <text style="font-size: 6px; font-family: 'Arial'; text-anchor: start" x="70.905237" y="101.040694" transform="rotate(-0 70.905237 101.040694)">7.11</text>
+   </g>
+   <g id="stack_text_13">
+    <text style="font-size: 6px; font-family: 'Arial'; text-anchor: start" x="58.05065" y="110.769694" transform="rotate(-0 58.05065 110.769694)">5.54</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="stack_p0b0e587a34">
+   <rect x="11.353983" y="17.5968" width="81.919726" height="43.3152" />
+  </clipPath>
+  <clipPath id="stack_p10e8df9c23">
+   <rect x="11.353983" y="83.9232" width="81.919726" height="31.1328" />
+  </clipPath>
+ </defs>
+</svg><g id="legend_1">
+    <g id="patch_16">
+     <path d="M 232.406682 7.183731  L 237.356682 7.183731  L 237.356682 3.333731  L 232.406682 3.333731  z " style="fill: #d9d9d9" />
+    </g>
+    <g id="text_11">
+     <text style="font: 5.5px 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="239.006682" y="7.183731" transform="rotate(-0 239.006682 7.183731)">Raw spectrum</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 232.406682 13.038652  L 237.356682 13.038652  L 237.356682 9.188652  L 232.406682 9.188652  z " style="fill: #3965bb" />
+    </g>
+    <g id="text_12">
+     <text style="font: 5.5px 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="239.006682" y="13.038652" transform="rotate(-0 239.006682 13.038652)">UltraMS</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 277.178401 7.183731  L 282.128401 7.183731  L 282.128401 3.333731  L 277.178401 3.333731  z " style="fill: #e9a0aa" />
+    </g>
+    <g id="text_13">
+     <text style="font: 5.5px 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="283.778401" y="7.183731" transform="rotate(-0 283.778401 7.183731)">DreaMS</text>
+    </g>
+   </g>
+  </svg>

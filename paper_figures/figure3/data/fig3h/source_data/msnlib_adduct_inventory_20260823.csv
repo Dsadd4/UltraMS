@@ -1,0 +1,12 @@
+adduct,ion_mode,n_spectra,n_unique_smiles,n_spectra_train,n_spectra_val,n_spectra_test,n_unique_smiles_train,n_unique_smiles_val,n_unique_smiles_test,frozen_test_raw_eligible_ge2,audited_fig3h_query,audited_fig3h_library,status
+[M+H]+,positive,303709,42205,241736,30210,31763,33567,4262,4376,6334,6202,295434,formal_full_library_search
+[M-H]-,negative,144247,21791,116263,14160,13824,17525,2158,2108,3211,3193,137000,formal_full_library_search
+[M+FA]-,negative,54259,9377,42675,5700,5884,7378,991,1008,1399,1381,49773,formal_additional_full_library_search
+[M+Cl]-,negative,24497,5579,19480,2614,2403,4441,599,539,825,731,19113,formal_additional_full_library_search
+[M+H-H2O]+,positive,11970,2088,9648,1070,1252,1676,190,222,333,330,11430,formal_additional_full_library_search
+[M+NH4]+,positive,9513,1581,7281,1043,1189,1210,173,198,221,221,9139,formal_additional_full_library_search
+[M+Na]+,positive,5720,1361,4540,597,583,1090,135,136,202,163,4777,formal_additional_full_library_search
+[M]+,positive,3774,534,3157,330,287,444,47,43,36,,,not_evaluated_too_few_frozen_queries
+[M+H-2H2O]+,positive,1503,254,1141,193,169,194,33,27,36,,,not_evaluated_too_few_frozen_queries
+[M-H2O]+,positive,630,102,535,36,59,85,6,11,15,,,not_evaluated_too_few_frozen_queries
+[M]-,negative,262,53,211,27,24,43,6,4,2,,,not_evaluated_too_few_frozen_queries

@@ -1,0 +1,42 @@
+{
+  "UltraMS": {
+    "nn_mz_mae_da": 0.4917705727895101,
+    "nn_mz_median_da": 0.0003509521484375,
+    "formula_hit_at1": 0.3334666666666667,
+    "fragment_family_hit_at1": 0.72705,
+    "fragment_fp_tanimoto_at1": 0.38836859994844125,
+    "n_queries": 60000,
+    "n_missing_cross_spectrum_neighbor": 0
+  },
+  "DreaMS": {
+    "nn_mz_mae_da": 47.99913899714152,
+    "nn_mz_median_da": 28.00603866577149,
+    "formula_hit_at1": 0.14531666666666668,
+    "fragment_family_hit_at1": 0.5938,
+    "fragment_fp_tanimoto_at1": 0.26797838703446947,
+    "n_queries": 60000,
+    "n_missing_cross_spectrum_neighbor": 0
+  },
+  "n_peaks": 60000,
+  "n_spectra": 7249,
+  "fragment_label_counts": {
+    "Halogenated": 10000,
+    "Hydrocarbon": 10000,
+    "N-containing": 10000,
+    "O-rich": 10000,
+    "Other": 10000,
+    "S/P-containing": 10000
+  },
+  "sampling": {
+    "max_points": 60000,
+    "seed": 42,
+    "source_data_dir": "main_figure/fig2/data/task5_peak_embedding_umap/x10"
+  },
+  "nearest_neighbor": {
+    "method": "faiss_hnsw",
+    "n_neighbors": 256,
+    "chunk_size": 4096,
+    "hnsw_m": 32,
+    "ef_search": 128
+  }
+}

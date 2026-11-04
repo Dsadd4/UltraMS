@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "metrics": [
+    "molecular_Recall@1",
+    "molecular_Recall@5",
+    "molecular_Recall@10",
+    "molecular_MRR"
+  ],
+  "query": "all original 6202 positive and 3193 negative test queries in exact original order",
+  "reference": "all original opposite-mode 137000 negative or 295434 positive spectra; no deletions",
+  "training": false,
+  "encoding": false,
+  "mass_filter": false,
+  "checkpoint_selection": false,
+  "identity": "unchanged exact frozen reference SMILES identity strings; no new standardization",
+  "molecule_score": "maximum original float32 normalized cosine over all spectra of this molecule",
+  "molecular_tie": "earliest original library-cache row attaining that molecule maximum",
+  "matrix_multiplication": "original float32 full-reference q @ library.T, query batch 128",
+  "rank": "1 + number of molecule scores strictly greater than GT maximum + number equal with earlier first maximum row",
+  "supported_denominators": {
+    "pos_to_neg": 2421,
+    "neg_to_pos": 2476
+  },
+  "no_reference": "GT rank=-1; recall hits false and reciprocal rank zero; retained in all-query denominator",
+  "scope": "frozen cross-polarity adapted model ranking comparison; not FDR controlled identification or a pretraining-only ablation"
+}

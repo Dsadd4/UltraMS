@@ -24,7 +24,7 @@
     "vote_temperature": 0.1,
     "per_spectrum_topk": 50,
     "reuse_benchmark10_details": true,
-    "benchmark10_details_dir": "/hpc2hdd/home/aimslab/yifanl/MS/Light_ultra/train/output/comparison",
+    "benchmark10_details_dir": "train/output/comparison",
     "out_dir": "train/output/comparison/14_cluster_consensus",
     "device": "cuda:0",
     "seed": 42,

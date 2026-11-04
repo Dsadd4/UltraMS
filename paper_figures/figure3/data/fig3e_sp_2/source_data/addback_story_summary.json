@@ -1,0 +1,76 @@
+{
+  "stage": "task19_peak_addback_visual_story",
+  "story": "Eight fixed peaks are restored by descending measured intensity while 46 other peaks remain present.",
+  "selection_rule": "Descending original measured intensity; independent of both model outcomes.",
+  "support_peak_order": [
+    18,
+    51,
+    11,
+    21,
+    53,
+    46,
+    48,
+    25
+  ],
+  "path_coalition_masks": [
+    0,
+    1,
+    3,
+    7,
+    15,
+    31,
+    63,
+    127,
+    255
+  ],
+  "rank_path": {
+    "DreaMS": [
+      1,
+      42,
+      53,
+      52,
+      51,
+      30,
+      12,
+      7,
+      14
+    ],
+    "UltraMS": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "rank1_across_all_256": {
+    "DreaMS": 51,
+    "UltraMS": 256
+  },
+  "n_exact_coalitions": 256,
+  "n_support_peaks": 8,
+  "n_always_present_peaks": 46,
+  "candidate_formula": "C22H22O13",
+  "training_or_inference_performed": false,
+  "source_hashes": {
+    "manifest": "f90cc788c7028e2eb824d08af1eb85029b74ea5e2669501e47417c4361349ebb",
+    "scores": "812aec203e501f5ff9d898947d4295b2b7bef9b77314659f48365050293abd1d",
+    "candidate_scores": "7113b239e18e7b3070e0e64340b7aefc1b2ace77c33afa0cff59f9aa11dd0b77",
+    "fragments": "8e559272653b67e49443585719c29114b5321e02b8009c9c78a97a3c09d70a20",
+    "spectrum": "31093b11839295fc5782cc1ec294490e1f24f106d672cc187a2f09ce9b7a0b55",
+    "config": "61245491ff2880791aa35900fdb0a444eea0462db0c9c8f727aa8e7575b6b228"
+  },
+  "guardrails": [
+    "The add-back filmstrip is one model-independent path through the exhaustive 256-coalition set.",
+    "Only the intensity order is model-independent; the fixed eight-peak set is conditioned on the frozen DreaMS error isomer used to define the case.",
+    "Non-support peaks and precursor metadata remain present in every coalition.",
+    "Displayed spectra retain one fixed original intensity scale; model effects include deletion and native intensity renormalization applied during scoring.",
+    "The frozen isomer is the original DreaMS top-1 error for this case, not a population decoy definition.",
+    "MAGMa fragment structures are candidate interpretations.",
+    "This is a deterministic single-case stress test, not population or causal evidence."
+  ]
+}

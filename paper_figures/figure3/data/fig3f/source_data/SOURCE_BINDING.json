@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "original": "<LOCAL_WORKSPACE_ROOT>",
+  "full_queries_recounted": true,
+  "original_files": {
+    "retrieval_summary.csv": "91ede0811ccfa5570adbd42d4b56758f470c4ecee71aecec1650821cf9d08505",
+    "paired_improvement.csv": "309375b6de08c74f859826eca519fd246cd3330ee4299d1ae7b6ea88ed7b5070",
+    "PROTOCOL.json": "da7aea9e1d1b06a6810a3f2c45de56a1f4698d9dbf6fe190f4527f8fb1539a76",
+    "INPUTS.json": "a2fe0267a5dd7f34c64ed47a0c1538b6c35c71a5885e3ba748b70880b61885c5",
+    "COMPLETE.json": "1962592cff7546afffb05ea188815be9c499081d6bbf437b0c6a86194cef4dda",
+    "INDEPENDENT_RESULT_VERIFICATION.json": "913a9488939fa6b1cbc0e8640ffb5a5b6d53d06978d39cc6fcd7ae289ec2c1eb",
+    "POSTRUN_INPUT_VERIFICATION.json": "2e06a2cb48a391a3793472ed7f8b9d8f513af928666d7048043d5628677ebc09",
+    "ultra/pos_to_neg_per_query.csv.gz": "a72c37a23a12a67f4ef65b4f5dad1af7641a5632e76b5bd33e90c9b01a8ad62a",
+    "ultra/neg_to_pos_per_query.csv.gz": "182c9d3e5d987830d8119951a8b5711f4fc72ab74de6ccc98e9fdfe2bf410c76",
+    "dreams/pos_to_neg_per_query.csv.gz": "db9dc29dc90626ad115723113bf5923e89a0b1ea7a044ddaa9091ee1fd5d8250",
+    "dreams/neg_to_pos_per_query.csv.gz": "193f82641e5f2201c4837e7c39accf52f7091950bb6d32d4bad2775ac74d7f93"
+  },
+  "fixed_k": [
+    1,
+    5,
+    10
+  ],
+  "mass_filter": false,
+  "uncertainty": "none plotted; fixed-model full-cohort point estimates"
+}

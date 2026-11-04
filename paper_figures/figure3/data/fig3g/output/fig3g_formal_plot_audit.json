@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "visual_type_preserved": "empirical candidate-rank CDF on a log-scaled x-axis",
+  "primary_model_seed": 0,
+  "methods": [
+    "DeepSets",
+    "Fourier projection",
+    "UltraMS codebook",
+    "Linear",
+    "DreaMS",
+    "UltraMS"
+  ],
+  "excluded_from_plot": [
+    "Spec2Vec",
+    "Binned FFN",
+    "DeepSets + Fourier"
+  ],
+  "exclusion_scope": "display only; formal result artifacts are retained",
+  "source_sha256": "7baabe0926fa271c1974d392e5fd5fc692cff8c28153036f21e07670367f38a0"
+}

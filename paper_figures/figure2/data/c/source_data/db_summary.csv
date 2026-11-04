@@ -1,0 +1,4 @@
+display_name,metric,value,diagnostic_bootstrap_q025,diagnostic_bootstrap_q975,n_molecules,n_families,direction,space,distance,labels
+Raw spectrum,davies_bouldin,8.037943878338469,6.166533398556949,6.91518720814032,661,6,lower_is_better,L2_normalized_original_features,euclidean,frozen_Butina_structure_families
+DreaMS,davies_bouldin,7.109464547631005,5.39913885792937,6.505927951426267,661,6,lower_is_better,L2_normalized_original_features,euclidean,frozen_Butina_structure_families
+UltraMS,davies_bouldin,5.540295761466607,4.43949150748301,5.626522089371829,661,6,lower_is_better,L2_normalized_original_features,euclidean,frozen_Butina_structure_families
