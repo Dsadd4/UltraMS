@@ -18,10 +18,10 @@ python -m pip install ultrams
 | Redraw a manuscript figure | [Figure 2 and Figure 3 plotting code and source data](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md) |
 
 <p align="center">
-  <img src="assets/ultrams_homepage.svg" alt="MS/MS peaks flowing through UltraMS representations into a chemical landscape" width="820">
+  <img src="assets/ultrams_banner.png" alt="MS/MS spectra flowing through UltraMS into the UltraAtlas of metabolite structure, with class islands labelled by representative molecules" width="880">
 </p>
 
-<p align="center"><em>MS/MS spectra → UltraMS representations → UltraAtlas chemical space. Vector illustration.</em></p>
+<p align="center"><em>MS/MS spectra → UltraMS representations → the UltraAtlas of metabolite structure. Island positions, classes, sizes and representative molecules are drawn from the UltraAtlas (Figure 5) data; point density is an illustrative rendering.</em></p>
 
 ## Embed a spectrum
 
