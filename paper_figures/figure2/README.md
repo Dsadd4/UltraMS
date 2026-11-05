@@ -1,20 +1,18 @@
-# Figure 2 — plotting code and source data
+# Figure 2 — source data and rendered panels
 
-This directory contains the plotting scripts, the plotted source data and the selection-time
-rendered panel images for **Figure 2** of the UltraMS manuscript (panels **a–j**).
+This directory contains the plotted source data and the selection-time rendered panel images for **Figure 2** of the UltraMS manuscript (panels **a–j**). The plotting scripts themselves are **not redistributed**; their filenames are kept in the panel table for provenance.
 
-The data-generation code for these panels lives in
+The data-generation and metric-recalculation code lives in
 [`benchmarks/spectral_properties/`](../../benchmarks/spectral_properties/README.md); this package
-contains the *figure-facing* layer, i.e. the code and the small numeric tables that turn the
-benchmark outputs into the published panels.
+contains the figure-facing numeric tables that were used to draw the published panels, together
+with the rendered panels and a provenance ledger.
 
 ```
 paper_figures/figure2/
 ├── README.md                 (this file)
 ├── panel_manifest.json       per-file ledger: panel, source path, target path, bytes, sha256, note
 ├── .gitignore                ignores large regenerated inputs
-├── scripts/<panel>/          plotting scripts, file names preserved
-├── data/<panel>/             small source-data files read by the scripts (CSV / JSON / SVG)
+├── data/<panel>/             small plotted source-data files (CSV / JSON / SVG)
 └── outputs/<panel>/          rendered panel images from the selected figure snapshot (PNG / PDF / SVG)
 ```
 
@@ -24,7 +22,7 @@ by the internal figure-selection manifest are listed per panel in the table and 
 
 ## Panel guide
 
-| Manuscript panel | Content | Plotting scripts (this package) | Source data (this package) | Data-generation code in `benchmarks/spectral_properties/` | Re-render / reproduce |
+| Manuscript panel | Content | Plotting script (provenance; not redistributed) | Source data (this package) | Data-generation code in `benchmarks/spectral_properties/` | Re-render / reproduce |
 | --- | --- | --- | --- | --- | --- |
 | **a** | Masked-peak m/z reconstruction accuracy (UltraMS vs DreaMS) on GeMS-A10 and MassSpecGym; hit = \|Δ*m/z*\| ≤ 0.05 Da. Also includes the registered mean-absolute-error variant (`fig2a_mae`). | `scripts/a/plot_task1.py` | — (the reported numbers are set in the script) | `original/masked_peak_reconstruction/evaluate_masked_peaks.py`; `reproduce.py` | `python benchmarks/spectral_properties/reproduce.py` (accuracy rows); `python scripts/a/plot_task1.py` to redraw |
 | **b** | Ionization-polarity recognition: test F1 for [M−H]⁻ and [M+H]⁺ with a frozen-embedding MLP probe. | `scripts/b/plot_task4.py`, `scripts/b/plot_ion_polarity_embedding_umap.py` | `data/b/ion_polarity/polarity_linear_probe_combined.json`; `data/b/ion_polarity_embedding/*.csv`, `*.json` | `original/ion_mode/train_test_ion_mode.py`; `reproduce.py` | `python benchmarks/spectral_properties/reproduce.py`; `python scripts/b/plot_task4.py` (reads `data/b/ion_polarity/`) |
@@ -42,6 +40,13 @@ follows: `a ← fig2a_accuracy` (+ `fig2a_mae` variant), `b ← fig2b`, `c ← f
 `e ← fig2e`, `f ← fig2g`, `g ← fig2h`, `h ← fig2f`, `i ← fig2j`, `j ← fig2k`. The selection
 identifiers are **not** identical to the manuscript letters for panels f–j; use the manuscript
 letter directories.
+
+## Plotting scripts
+
+The plotting scripts are not distributed in this repository. Filenames of the form
+`scripts/<panel>/...` and the re-render commands in the panel table above refer to the upstream
+figure workspace; they are kept as provenance references only. The rendered panels and the
+plotted source data are distributed here.
 
 ## Reproducing the reported numbers
 
@@ -62,32 +67,18 @@ the public inputs and checkpoint downloads are listed in
 
 ## Re-rendering the panels
 
-The registered plotting scripts are the producers used for the manuscript panels. Two conventions
-apply when re-running them from this repository:
-
-1. Most scripts derive their input roots from their own file location and expect the original
-   research workspace layout (`main_figure/fig2/...` for figure data and `train/output/showcase/...`
-   for run directories). They are included unchanged for provenance. To re-render from this
-   package, either place the script into that layout or edit the few path constants
-   (`FIG2_DIR`, `RUNS_BASE`, `DATA_PATH`, …) so that they point at the copied `data/<panel>/`
-   directory. No absolute or guessed paths were substituted.
-2. Scripts that take arguments (for example `render_peak_neighbor_curves_from_data.py`,
-   `plot_ultrams_peak_umap.py`, `prepare_msnlib_magma_subset.py`) can be pointed at the copied data
-   directories directly via `--data-dir`, `--metrics-json`, `--output-dir`, etc.
-
-Two `fig2c` rendering scripts resolve `source_data/` as a sibling of the directory above the script
-(`scripts/` and `source_data/` side by side). Copy `data/c/source_data/` next to `scripts/c/` (or run
-from a copy of the original package layout) when re-rendering that panel.
-
-`scripts/i/run_magma_msnlib_subset.py` originally contained a hard-coded MAGMa checkout path; the
-default is now the relative `UltraGo`, and the checkout must be supplied explicitly with
-`--ultrago-root` (see the sanitisation note below).
+The plotting scripts are not redistributed with this repository. The rendered panels are in
+`outputs/<panel>/` and the numeric inputs are in `data/<panel>/`; the plotting script filenames
+in the table above identify the upstream producer of each panel for provenance. To redraw a
+panel, implement it from the included tables or use the upstream figure workspace; the
+reported benchmark numbers are reproduced with
+[`benchmarks/spectral_properties/reproduce.py`](../../benchmarks/spectral_properties/reproduce.py).
 
 ## Large inputs that are not redistributed
 
 Following the repository size policy (single file ≤ 20 MB, single directory ≤ 50 MB, no binary
 model checkpoints or large embedding arrays), the following inputs are **not** included. They can be
-downloaded from the released benchmark assets or regenerated with the scripts listed above.
+downloaded from the released benchmark assets or regenerated with the data-generation code under `benchmarks/`.
 
 | Panel | Omitted inputs | How to obtain or regenerate |
 | --- | --- | --- |

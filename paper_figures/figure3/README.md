@@ -1,11 +1,12 @@
-# Figure 3 — manuscript plotting code and source data
+# Figure 3 — source data and rendered panels
 
-This directory packages the **plotting scripts, source data, and final outputs** for **Figure 3 (printed panels a–f in the manuscript, plus internal slots a–i in the figure workspace)** and for the Figure 3 supplementary performance-comparison figures (NPLIB1, MassSpecGym, MSnLib, source fusion, label-blind consensus, FDR threshold transfer, etc.). Files correspond to the code version used to draw the paper figures and are packaged into the UltraMS public repository (`Dsadd4/UltraMS`).
+This directory packages the **source data and final rendered outputs** for **Figure 3 (printed panels a–f in the manuscript, plus internal slots a–i in the figure workspace)** and for the Figure 3 supplementary performance-comparison figures (NPLIB1, MassSpecGym, MSnLib, source fusion, label-blind consensus, FDR threshold transfer, etc.). Files correspond to the code version used to draw the paper figures and are packaged into the UltraMS public repository (`Dsadd4/UltraMS`).
 
 - Upstream figure workspace (**not redistributed**): `main_figure/figure3/Main_select/` (authoritative mappings: `fig3_main_select_manifest.json`, `selection_map.json`, `supp/mapping_manifest.csv`), combined with `main_figure/paper/Ultramsp/sup_figure/overall/`, `main_figure/Suppment_figure/promising/`, and the final artwork decisions of 2026-10-30 / 2026-11-04. Only the files copied into this package are distributed here.
 - Manuscript: `Ultramsp/sec/figs/fig3.pdf`; text: `Ultramsp/sec/2_results.tex`; supplementary figures: `Ultramsp/sec/5_supp.tex` and `Ultramsp/sec/spfig/`.
 - Existing data-generation and metric-recalculation code in the repository: `benchmarks/molecular_identification/`.
-- This package only adds files under `ultrams_public_release/paper_figures/figure3/`; it does **not** modify other repository files and **does not run git add / commit / push**.
+- The plotting scripts are **not redistributed**; the script filenames in the tables below are provenance references to the upstream figure workspace.
+- This package only adds files under `ultrams_public_release/paper_figures/figure3/`; it does **not** modify other repository files.
 
 > Scope note: the current manuscript PDF (2026-09-06 snapshot) prints the six Figure 3 panels **a–f**; `fig3a`–`fig3i` are **internal slot identifiers** from the figure workspace and are not one-to-one with printed panels (see §2 and §3). `fig3_main_select_manifest.json` was generated on 2026-08-22; the author decisions of 2026-10-30 later reassigned Figure 3b, 3e, and 3f. This package keeps both the "authoritative manifest record" and the "final printed artwork" file sets, and itemizes the differences in `version_audit.md`.
 
@@ -16,17 +17,21 @@ paper_figures/figure3/
 ├── README.md                    # this file: panel tables, provenance, reproduction, scope
 ├── panel_manifest.json          # per-file inventory (source_path/target_path/bytes/sha256/reused_or_copied/note)
 ├── version_audit.md             # itemized version audit against benchmarks/molecular_identification
-├── scripts/<panel>/             # plotting scripts, copied at their original package-relative paths (byte-identical)
 ├── data/<panel>/                # small source data (CSV/JSON/small .gz/.npz), original package-relative paths preserved
 └── outputs/                     # final panel PDF/PNG (for comparison only, all <5 MB)
 ```
 
-- Covers **9 main-figure internal slots + 8 supplementary-figure slots**; the supplementary slot `fig3e_sp_1` was promoted to manuscript Figure 3c, so it is not duplicated and is registered as an alias of `fig3c`. The final package has 16 independent panel directories and 235 file entries.
+- Covers **9 main-figure internal slots + 8 supplementary-figure slots**; the supplementary slot `fig3e_sp_1` was promoted to manuscript Figure 3c, so it is not duplicated and is registered as an alias of `fig3c`. The final package has 16 independent panel directories; the ledger lists the distributed data and output files (plotting scripts are not redistributed).
 - In `panel_manifest.json`, `sha256` is the SHA-256 of **the actual file in this package**; when a file was sanitized through internal-path placeholders, `source_sha256` is also given.
 - `reused_or_copied` definition: `reused` = **byte-identical (same SHA-256)** to a file under `benchmarks/molecular_identification/`; `copied` = present only in the upstream figure workspace (including files that have identical values but different column structure/float serialization; see `version_audit.md`).
 - `path_sanitization` records every internal-absolute-path substitution (see §6).
 
 ## 2. Main-figure panels (internal slot → current manuscript artwork)
+
+The plotting scripts are not distributed in this repository. The `scripts/<panel>/...`
+filenames in the tables below are provenance references to the upstream figure workspace;
+the plotted source data are under `data/<panel>/` and the rendered panels under `outputs/`.
+
 
 | Internal slot | Current manuscript location | Paper content | Plotting script (this package) | Source data (this package) | Repository counterpart code/data | Reproduce / redraw |
 |---|---|---|---|---|---|---|
@@ -108,55 +113,13 @@ This is the section most relevant to Nature open-source compliance review. Botto
 | eight-peak add-back | `fig3e_sp_2` | **Missing from repository** | Combination enumeration and decision-path data |
 | sample-level s2s case | `fig3i` | **Missing from repository** | UMAP/retrieval inputs for this case |
 
-## 5. Reproduction / redrawing
+## 5. Reproduction
 
-In the original packages, plotting scripts load inputs via `Path(__file__).resolve().parents[1]` or a sibling `source_data/`. Therefore, **restoring this package's scripts and data to their original package-relative positions allows them to run unchanged** (the scripts were copied byte for byte). The directory hierarchy of `scripts/<panel>/` and `data/<panel>/` follows the original package layout as closely as possible (e.g. `data/fig3a/source_data/`, `data/fig3a_sp1/data/`). Examples:
-
-```bash
-# Example 1: fig3c (scripts at package root; data in source_data/)
-P=/tmp/ultrams_fig3_rerun/fig3c
-mkdir -p "$P/out"
-cp scripts/fig3c/*.py "$P"/
-cp -r data/fig3c/source_data "$P"/source_data
-cp data/fig3c/BLIND_PEAK_EVIDENCE_AUDIT.md "$P"/
-python "$P/plot_four_peaks_molecular_tie_nature.py" --data-dir "$P/source_data" --output-dir "$P/out"
-
-# Example 2: fig3a (scripts in scripts/; data in source_data/ and output/)
-P=/tmp/ultrams_fig3_rerun/fig3a
-mkdir -p "$P/scripts"
-cp scripts/fig3a/plot_fig3a_refined.py "$P/scripts/"
-cp -r data/fig3a/source_data data/fig3a/output "$P"/
-python "$P/scripts/plot_fig3a_refined.py"
-
-# Example 3: fig3a_sp1 (scripts in scripts/, data in data/, outputs back to package root)
-P=/tmp/ultrams_fig3_rerun/fig3a_sp1
-mkdir -p "$P/scripts"
-cp scripts/fig3a_sp1/plot_benchmark_topn_comparison.py "$P/scripts/"
-cp -r data/fig3a_sp1/data "$P"/data
-cp data/fig3a_sp1/fig3a_sp1_plot_data.csv data/fig3a_sp1/fig3a_sp1_chart_contract.json "$P"/
-python "$P/scripts/plot_benchmark_topn_comparison.py"
-```
-
-| Panel | Script restore location (relative to panel root) | Data restore location | Run / notes |
-|---|---|---|---|
-| `fig3a` | `scripts/` | `source_data/`, `output/` (both in `data/fig3a/`) | `python scripts/plot_fig3a_refined.py` |
-| `fig3b` | package root `export_panel.py` | two CSVs at package root | Reads the manuscript `Ultramsp/sec/figs/fig3.pdf`; without that PDF only the bundled `outputs/` and the two CSVs can be used |
-| `fig3c` | 6 scripts at package root | `source_data/` + `BLIND_PEAK_EVIDENCE_AUDIT.md` | `python plot_four_peaks_molecular_tie_nature.py --data-dir <root>/source_data --output-dir <out>`; the 4 helper scripts load data by original package-relative paths |
-| `fig3d` | `scripts/` | `source_data/formal_final_six_v1/` (see `data/fig3d/`) | `python scripts/plot_fig3b_formal_baselines.py`; output is written to `<panel>.parents[1]/output`; keeping the `refinement/<panel>/` hierarchy is recommended |
-| `fig3e` | package root `plot_fig3e.py` | `source_data/` (see `data/fig3e/`) | `python plot_fig3e.py`; output is written back to the panel root |
-| `fig3f` | 2 scripts at package root | `source_data/` (see `data/fig3f/`) | `python plot_cross_polarity.py` (optionally `prepare_source_data.py` first) |
-| `fig3g` | `scripts/` | `source_data/`, `output/` | Uses the original npz as fallback (bundled at `data/fig3g/source_data/`); the complete upstream experiment path is still determined by the original script |
-| `fig3h` | `scripts/` | `source_data/formal_seven_raw_matchms/`, `source_data/other_strict_adduct_v5_s2s_raw_seven_methods/`, `output/` | `python scripts/plot_fig3h_formal_baselines.py`; output is written to `<panel>.parents[1]/output` |
-| `fig3i` | `scripts/panel_sources/task8_s2s_sample_umap/` | upstream project data directory + panel `data/` | The complete case pipeline needs upstream `train/output`; bundled data can be compared against the final figure |
-| `fig3a_sp1` | `scripts/` | `data/` + package-root plot data | See example 3 above |
-| `fig3a_sp_3` | `scripts/` | `source_data/`, `config/`, `output/` | `python scripts/plot_s7.py`; `build_source_data.py` can regenerate the omitted large table |
-| `fig3a_sp_4` | `scripts/` | `source_data/`, `statistics/`, `config/`, `audit/`; output `outputs/` | `python scripts/plot_s9.py`; **the script raises an error when the omitted `group_candidate_vote_ledger_test.csv.gz` (>20 MB) is absent**, so first regenerate that large table via `run_analysis.py` or the repository `run_public_grouping_evaluation.sh` route; the final figure is available in `outputs/fig3a_sp_4.*` |
-| `fig3a_sp_5` | `scripts/` | `source_data/`, `output/` | `python scripts/plot_msnlib_promoted_fingerprint.py`; per-query results are not in this package |
-| `fig3_baselines_sp_1` | package-root script | 3 `seed_stability_*_source.csv` files at package root | The bundled aggregate CSVs can be used to check values directly; rerunning the script needs three upstream experiment directories (`per_seed_metrics.csv`, `per_seed_performance.csv`, `low_fdr_mean_recall_per_seed.csv`), which are not bundled |
-| `fig3h_sp_1` | package-root script | `source_data/`, package-root summary tables | `--aggregate-dir <dir> --output-dir <dir>`; the script also validates the upstream `DONE.json` or `threshold_transfer_summary.json` completion marker (requiring `n_repeats=200`, `target_fdr=0.05`, table sha match), and that upstream aggregate directory is not bundled. The bundled `threshold_transfer_repeats.csv.gz` + `PLOT_AUDIT.json` can be used for checking but are not sufficient for a standalone rerun |
-| `fig3e_sp_2` | package-root script | `source_data/` | `--data-dir <root>/source_data --output-dir <out>` |
-
-Environment: Python 3 + `numpy`, `pandas`, `matplotlib` (`fig3c` additionally needs `rdkit`, `scipy`). The font sizes/canvas constants in the scripts are the final paper dimensions; when comparing redraws against `outputs/`, compare the PDF vectors first.
+The plotting scripts are not redistributed with this repository; the tables above list their
+filenames as provenance references to the upstream figure workspace. The plotted source data
+are under `data/<panel>/` and the final rendered panels under `outputs/`. The reported
+benchmark numbers are recalculated with the public code in
+[`benchmarks/molecular_identification/`](../../benchmarks/molecular_identification/README.md).
 
 ## 6. Internal paths and data compliance
 

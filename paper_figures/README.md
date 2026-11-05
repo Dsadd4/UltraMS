@@ -1,8 +1,9 @@
-# Paper figures — plotting code and source data
+# Paper figures — source data and rendered panels
 
 This directory contains the **figure-facing layer** of the UltraMS manuscript: the
-plotting programs, the numeric tables they read, the rendered panels, and a
-file-level provenance ledger for each figure. It is packaged from the internal
+numeric source tables, the rendered panels, and a file-level provenance ledger for each
+figure. The plotting scripts themselves are not redistributed; their filenames are kept as
+provenance references. It is packaged from the internal
 figure-selection workspaces at the code versions used for the submitted manuscript
 figures.
 
@@ -12,8 +13,8 @@ that turns those benchmark outputs into the published panels.
 
 | Directory | Manuscript figure | Main contents |
 | --- | --- | --- |
-| [`figure2/`](figure2/README.md) | Figure 2 (panels a–j) | 28 plotting/rendering scripts, 57 small source-data files, 23 rendered panel images |
-| [`figure3/`](figure3/README.md) | Figure 3 (printed panels a–f; internal slots a–i) and the supplementary comparison packages (NPLIB1, MassSpecGym, MSnLib, source fusion, label-blind consensus, FDR threshold transfer, cases) | 27 plotting scripts, 173 source-data files, 35 rendered panels, plus `version_audit.md` |
+| [`figure2/`](figure2/README.md) | Figure 2 (panels a–j) | 57 small source-data files, 23 rendered panel images |
+| [`figure3/`](figure3/README.md) | Figure 3 (printed panels a–f; internal slots a–i) and the supplementary comparison packages (NPLIB1, MassSpecGym, MSnLib, source fusion, label-blind consensus, FDR threshold transfer, cases) | 173 source-data files, 35 rendered panels, plus `version_audit.md` |
 
 ## Conventions
 
@@ -25,7 +26,6 @@ figures/<figure>/
 │                        data-generation code in benchmarks/, re-render command
 ├── panel_manifest.json  per-file ledger: panel, source path, target path, bytes,
 │                        sha256, reused_or_copied, notes, and skipped large inputs
-├── scripts/<panel>/     plotting scripts, original file names preserved
 ├── data/<panel>/        small source-data tables read by the scripts
 └── outputs/<panel>/     rendered panel images (PNG/PDF, SVG where available)
 ```
