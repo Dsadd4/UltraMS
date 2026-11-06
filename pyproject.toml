@@ -40,7 +40,7 @@ Homepage = "https://github.com/Dsadd4/UltraMS"
 Source = "https://github.com/Dsadd4/UltraMS"
 Documentation = "https://github.com/Dsadd4/UltraMS/blob/main/docs/api.md"
 Changelog = "https://github.com/Dsadd4/UltraMS/blob/main/CHANGELOG.md"
-Issue Tracker = "https://github.com/Dsadd4/UltraMS/issues"
+"Issue Tracker" = "https://github.com/Dsadd4/UltraMS/issues"
 Datasets = "https://huggingface.co/datasets/dsadd4"
 
 [tool.setuptools.packages.find]
