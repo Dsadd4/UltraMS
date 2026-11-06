@@ -1,10 +1,26 @@
 # UltraMS
 
-**Pretrained models for tandem mass spectra.** Turn MS/MS spectra into embeddings, compare spectra, or fine-tune the encoder for a measured property.
+[![CI](https://github.com/Dsadd4/UltraMS/actions/workflows/ci.yml/badge.svg)](https://github.com/Dsadd4/UltraMS/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/ultrams)](https://pypi.org/project/ultrams/)
+[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://github.com/Dsadd4/UltraMS/blob/main/pyproject.toml)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/Dsadd4/UltraMS/blob/main/LICENSE)
+[![MSnLib benchmark DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23963489.svg)](https://doi.org/10.5281/zenodo.23963489)
+[![SpectraVerse dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23964105.svg)](https://doi.org/10.5281/zenodo.23964105)
+
+**Pretrained models for tandem mass spectra.** Turn MS/MS spectra into embeddings, compare spectra, or fine-tune the encoder for a measured property. UltraMS is a ~200 M-parameter transformer encoder pretrained on 161 million experimental MS/MS spectra (UltraMSdata) and released with pretrained weights, pretraining code, benchmark code, and the source data behind the manuscript figures.
+
+## Install
 
 ```bash
 python -m pip install ultrams
 ```
+
+- Reads MGF and `.mgf.gz` out of the box; `python -m pip install 'ultrams[io]'` adds mzML support.
+- CPU, CUDA and Apple MPS devices are supported (`device="cuda"`, `device="mps"`).
+- Python 3.10 or newer; `torch` and `transformers` are installed as dependencies.
+- From a checkout: `python -m pip install -e .`
+
+## Quick start
 
 | I want to… | Start here |
 | --- | --- |
@@ -16,6 +32,7 @@ python -m pip install ultrams
 | Inspect or run pretraining | [Training code](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) |
 | Reproduce the paper benchmarks | [Spectral properties and molecular identification](https://github.com/Dsadd4/UltraMS/blob/main/benchmarks/README.md) |
 | Inspect manuscript figure source data | [Figure 2 and Figure 3 source data and rendered panels](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md) |
+| Use the public API / CLI reference | [API and CLI](https://github.com/Dsadd4/UltraMS/blob/main/docs/api.md) |
 
 <p align="center">
   <img src="assets/ultrams_banner.png" alt="The UltraAtlas rendered as a spiral galaxy of metabolite structure: chemical-class spiral arms with representative molecules as bright stars" width="880">
@@ -92,6 +109,25 @@ For measured molecular labels, the [MassSpecGym contrastive tutorial](https://gi
 
 Load any of them with `UltraMS.from_pretrained("name")`, or load a downloaded `model.pt` with `UltraMS.from_checkpoint(path)`. [Model selection](https://github.com/Dsadd4/UltraMS/blob/main/docs/model-selection.md) explains the training purpose and output of each checkpoint. The Search checkpoint is the **UltraAtlas application `best.pt`**.
 
+## Data and models
+
+Pre-trained checkpoints:
+
+| Checkpoint | Training data | Size | Weights |
+| --- | --- | ---: | --- |
+| Unsupervised | UltraMSdata pretraining + retention time | ~0.8 GB | [HF](https://huggingface.co/dsadd4/UltraMS-Unsupervised) |
+| MoNA contrastive | MoNA contrastive | ~1.2 GB | [HF](https://huggingface.co/dsadd4/UltraMS-MoNA-Contrastive) |
+| Search | UltraAtlas spectrum-to-spectrum contrastive | ~1.0 GB | [HF](https://huggingface.co/dsadd4/UltraMS-Search) |
+
+Released reference data (the paper's benchmark inputs are downloadable from public sources; see each benchmark page):
+
+| Dataset | Contents | DOI | Mirror |
+| --- | --- | --- | --- |
+| UltraMS MSnLib benchmark | Full MSnLib library (560,084 spectra) with the UltraMS formula-level 80/10/10 split; strict-adduct molecule-level 70/15/15 split with queries and libraries for library search | [10.5281/zenodo.23963489](https://doi.org/10.5281/zenodo.23963489) | [HF](https://huggingface.co/datasets/dsadd4/UltraMS-MSnLib-Benchmark) |
+| UltraMS SpectraVerse dataset | 464,346 SpectraVerse spectra with a frozen molecule-level 8:1:1 split; used for the negative-ion structure-family evaluation and as one of the three structure-annotated sources | [10.5281/zenodo.23964105](https://doi.org/10.5281/zenodo.23964105) | [HF](https://huggingface.co/datasets/dsadd4/UltraMS-Spectraverse-Dataset) |
+
+Manuscript figure source data and rendered panels (Figure 2 and Figure 3, including the supplementary NPLIB1, MassSpecGym and MSnLib comparisons) are in [`paper_figures/`](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md). The plotting scripts are not redistributed; filenames are kept as provenance references.
+
 ## Pretraining
 
 The [UltraMSdata pretraining package](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) contains the current model architecture, training entry points, configuration and history outputs. It installs separately from the inference package.
@@ -104,6 +140,51 @@ The [benchmark code and results](https://github.com/Dsadd4/UltraMS/blob/main/ben
 
 [`paper_figures/`](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md) contains the plotted source data and rendered panels for Figure 2 and Figure 3, including the supplementary NPLIB1, MassSpecGym and MSnLib comparison panels. The plotting scripts themselves are not redistributed; filenames are kept as provenance references. Each figure has a panel-by-panel README and a `panel_manifest.json` provenance ledger; large evaluation arrays are not redistributed and their sources are documented.
 
+## Repository layout
+
+| Path | Contents |
+| --- | --- |
+| `src/ultrams/` | Installable inference package (`UltraMS`, `UltraMSPredictor`, spectrum readers, CLI) |
+| `training/` | Pretraining and adaptation package (model architecture, data tools, configs, entry points) |
+| `benchmarks/` | Benchmark input preparation, training/evaluation code, saved outputs and metric recalculation |
+| `paper_figures/` | Plotted source data, rendered panels and provenance ledgers for Figures 2 and 3 |
+| `examples/` | Runnable embedding, fine-tuning and spectrum-search examples |
+| `cookbook/` | Tutorials and notebooks |
+| `docs/` | Spectrum input format, model selection, API/CLI reference, FAQ |
+| `hub/` | Model cards for the released checkpoints |
+| `tests/` | Unit tests and released-checkpoint verification |
+
+## Documentation
+
+- [Spectrum input and preprocessing](https://github.com/Dsadd4/UltraMS/blob/main/docs/data-format.md)
+- [Model selection](https://github.com/Dsadd4/UltraMS/blob/main/docs/model-selection.md)
+- [Python API and CLI](https://github.com/Dsadd4/UltraMS/blob/main/docs/api.md)
+- [FAQ and troubleshooting](https://github.com/Dsadd4/UltraMS/blob/main/docs/faq.md)
+- [Examples](https://github.com/Dsadd4/UltraMS/blob/main/examples/README.md) · [Tutorials](https://github.com/Dsadd4/UltraMS/blob/main/cookbook/tutorials/README.md) · [Training](https://github.com/Dsadd4/UltraMS/blob/main/training/README.md) · [Benchmarks](https://github.com/Dsadd4/UltraMS/blob/main/benchmarks/README.md)
+
+## Hardware
+
+Embedding is lightweight: a single spectrum encodes in milliseconds on CPU, and batches use the standard `torch` device selection (`cuda`, `mps` or `cpu`). Checkpoint download requires network access to Hugging Face on first use; subsequent runs use the local Hugging Face cache. Peak limits are 100–150 retained peaks per spectrum depending on the checkpoint (see [model selection](https://github.com/Dsadd4/UltraMS/blob/main/docs/model-selection.md)).
+
+## Contributing
+
+Bug reports, benchmark issues and pull requests are welcome; see [CONTRIBUTING.md](https://github.com/Dsadd4/UltraMS/blob/main/CONTRIBUTING.md). Release notes are in [CHANGELOG.md](https://github.com/Dsadd4/UltraMS/blob/main/CHANGELOG.md).
+
+## License
+
+UltraMS is released under the [Apache License 2.0](https://github.com/Dsadd4/UltraMS/blob/main/LICENSE). Third-party components keep their original licenses (for example the MAGMa-derived annotation modules under `benchmarks/spectral_properties/magma_support/` carry the MIST MIT notice).
+
 ## Cite
 
-Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff).
+Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff). If you use the released benchmark data, cite the corresponding dataset DOIs listed under [Data and models](#data-and-models).
+
+```bibtex
+@software{ultrams,
+  title   = {UltraMS: pretrained models for tandem mass spectra},
+  author  = {Li, Yifan and Zhong, Yunhua and Liu, Pan and Xia, Jun},
+  year    = {2026},
+  version = {0.3.0},
+  url     = {https://github.com/Dsadd4/UltraMS},
+  license = {Apache-2.0}
+}
+```

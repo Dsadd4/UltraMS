@@ -6,9 +6,22 @@ build-backend = "setuptools.build_meta"
 name = "ultrams"
 version = "0.3.0"
 description = "Pretrained UltraMS models for mass spectrometry"
+keywords = ["mass spectrometry", "tandem mass spectra", "MS/MS", "spectrum embedding", "metabolomics", "deep learning"]
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
 dependencies = [
   "numpy>=1.24,<3",
   "torch>=2.1",
@@ -25,6 +38,10 @@ ultrams-embed = "ultrams.cli:main"
 [project.urls]
 Homepage = "https://github.com/Dsadd4/UltraMS"
 Source = "https://github.com/Dsadd4/UltraMS"
+Documentation = "https://github.com/Dsadd4/UltraMS/blob/main/docs/api.md"
+Changelog = "https://github.com/Dsadd4/UltraMS/blob/main/CHANGELOG.md"
+Issue Tracker = "https://github.com/Dsadd4/UltraMS/issues"
+Datasets = "https://huggingface.co/datasets/dsadd4"
 
 [tool.setuptools.packages.find]
 where = ["src"]
