@@ -9,7 +9,7 @@ from .spectra import read_mgf, read_mzml, read_spectra
 try:
     __version__ = version("ultrams")
 except PackageNotFoundError:  # source checkout without installation metadata
-    __version__ = "0.3.0"
+    __version__ = "0.3.1"
 
 __all__ = [
     "UltraMS",

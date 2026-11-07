@@ -3,7 +3,7 @@
 All notable changes to UltraMS are documented here. The package follows semantic
 versioning; the GitHub releases correspond to the PyPI versions.
 
-## Unreleased
+## 0.3.1 — 2026-11-07
 
 - Benchmark packages for spectral properties and molecular identification, including saved
   outputs, metric recalculation scripts and the task documentation.
