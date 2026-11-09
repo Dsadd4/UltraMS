@@ -19,7 +19,7 @@ url: https://pypi.org/project/ultrams/
 license: Apache-2.0
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.24091278
+    value: 10.5281/zenodo.24071652
     description: "Archived release of the code used in the manuscript"
 keywords:
   - mass spectrometry
