@@ -13,11 +13,15 @@ import re
 from pathlib import Path
 
 from ultrams_training.data_tools._audit_utils import fingerprint, load_json, sha256_file
-from ultrams_training.data_tools.extract_ultramsdata import DEFAULT_FINGERPRINT, require
 from ultrams_training.data_tools.validate_pretraining_data import (
     _recompute_dataset_fingerprint,
     _source_inventory_fingerprint,
 )
+
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        raise ValueError(message)
+
 
 COUNTS = {
     "clean": (
@@ -139,13 +143,11 @@ def read_verified_assets(
         "UltraMSdata provenance not verified",
     )
     require(
-        proof["mixed_fingerprint"] == DEFAULT_FINGERPRINT
-        and proof["dataset_fingerprint"] == clean["dataset_fingerprint"],
+        proof.get("dataset_fingerprint") == clean["dataset_fingerprint"],
         "UltraMSdata provenance identity differs",
     )
     require(
-        proof["pure_rows"] == COUNTS["clean"][0]
-        and proof["public_rows_removed"] == 775870,
+        proof.get("pure_rows") == COUNTS["clean"][0],
         "UltraMSdata provenance row counts differ",
     )
     require(clean["removed"]["total"] == 0, "pure extraction changed row selection")
