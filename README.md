@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/Dsadd4/UltraMS/blob/main/LICENSE)
 [![MSnLib benchmark DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23963489.svg)](https://doi.org/10.5281/zenodo.23963489)
 [![SpectraVerse dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23964105.svg)](https://doi.org/10.5281/zenodo.23964105)
-[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24071653.svg)](https://doi.org/10.5281/zenodo.24071653)
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24091278.svg)](https://doi.org/10.5281/zenodo.24091278)
 
 **Pretrained models for tandem mass spectra.** Turn MS/MS spectra into embeddings, compare spectra, or fine-tune the encoder for a measured property. UltraMS is a ~200 M-parameter transformer encoder pretrained on 161 million experimental MS/MS spectra (UltraMSdata) and released with pretrained weights, pretraining code, benchmark code, and the source data behind the manuscript figures.
 
@@ -178,7 +178,7 @@ UltraMS is released under the [Apache License 2.0](https://github.com/Dsadd4/Ult
 
 ## Cite
 
-Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff). The archived code release used in the manuscript is at [doi:10.5281/zenodo.24071653](https://doi.org/10.5281/zenodo.24071653). If you use the released benchmark data, cite the corresponding dataset DOIs listed under [Data and models](#data-and-models).
+Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff). The archived code release used in the manuscript is at [doi:10.5281/zenodo.24091278](https://doi.org/10.5281/zenodo.24091278). If you use the released benchmark data, cite the corresponding dataset DOIs listed under [Data and models](#data-and-models).
 
 ```bibtex
 @software{ultrams,
