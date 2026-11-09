@@ -17,6 +17,10 @@ authors:
 repository-code: https://github.com/Dsadd4/UltraMS
 url: https://pypi.org/project/ultrams/
 license: Apache-2.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24071653
+    description: "Archived release of the code used in the manuscript"
 keywords:
   - mass spectrometry
   - tandem mass spectra

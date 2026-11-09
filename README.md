@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/Dsadd4/UltraMS/blob/main/LICENSE)
 [![MSnLib benchmark DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23963489.svg)](https://doi.org/10.5281/zenodo.23963489)
 [![SpectraVerse dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23964105.svg)](https://doi.org/10.5281/zenodo.23964105)
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24071653.svg)](https://doi.org/10.5281/zenodo.24071653)
 
 **Pretrained models for tandem mass spectra.** Turn MS/MS spectra into embeddings, compare spectra, or fine-tune the encoder for a measured property. UltraMS is a ~200 M-parameter transformer encoder pretrained on 161 million experimental MS/MS spectra (UltraMSdata) and released with pretrained weights, pretraining code, benchmark code, and the source data behind the manuscript figures.
 
@@ -124,6 +125,7 @@ Released reference data (the paper's benchmark inputs are downloadable from publ
 | Dataset | Contents | DOI | Mirror |
 | --- | --- | --- | --- |
 | UltraMS MSnLib benchmark | Full MSnLib library (560,084 spectra) with the UltraMS formula-level 80/10/10 split; strict-adduct molecule-level 70/15/15 split with queries and libraries for library search | [10.5281/zenodo.23963489](https://doi.org/10.5281/zenodo.23963489) | [HF](https://huggingface.co/datasets/dsadd4/UltraMS-MSnLib-Benchmark) |
+| UltraMSdata file manifest | File-level inventory of the 824,828 open-format MS/MS files (3,062 MassIVE datasets) used as the pretraining-corpus inventory | [10.5281/zenodo.24071783](https://doi.org/10.5281/zenodo.24071783) | — |
 | UltraMS SpectraVerse dataset | 464,346 SpectraVerse spectra with a frozen molecule-level 8:1:1 split; used for the negative-ion structure-family evaluation and as one of the three structure-annotated sources | [10.5281/zenodo.23964105](https://doi.org/10.5281/zenodo.23964105) | [HF](https://huggingface.co/datasets/dsadd4/UltraMS-Spectraverse-Dataset) |
 
 Manuscript figure source data and rendered panels (Figure 2 and Figure 3, including the supplementary NPLIB1, MassSpecGym and MSnLib comparisons) are in [`paper_figures/`](https://github.com/Dsadd4/UltraMS/blob/main/paper_figures/README.md). The plotting scripts are not redistributed; filenames are kept as provenance references.
@@ -176,7 +178,7 @@ UltraMS is released under the [Apache License 2.0](https://github.com/Dsadd4/Ult
 
 ## Cite
 
-Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff). If you use the released benchmark data, cite the corresponding dataset DOIs listed under [Data and models](#data-and-models).
+Citation metadata for this software is in [CITATION.cff](https://github.com/Dsadd4/UltraMS/blob/main/CITATION.cff). The archived code release used in the manuscript is at [doi:10.5281/zenodo.24071653](https://doi.org/10.5281/zenodo.24071653). If you use the released benchmark data, cite the corresponding dataset DOIs listed under [Data and models](#data-and-models).
 
 ```bibtex
 @software{ultrams,
