@@ -1,0 +1,13 @@
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.venv/
+ultrams_finetune/
+.pytest_cache/
+.ipynb_checkpoints/
+cookbook/tutorials/example_5_spectra.mgf
+cookbook/tutorials/ultrams_embeddings.npz
+cookbook/tutorials/ultrams_finetune_demo.json
+

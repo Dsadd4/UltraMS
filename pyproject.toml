@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultrams"
+version = "0.3.2.post1"
+description = "Pretrained UltraMS models for mass spectrometry"
+keywords = ["mass spectrometry", "tandem mass spectra", "MS/MS", "spectrum embedding", "metabolomics", "deep learning"]
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "numpy>=1.24,<3",
+  "torch>=2.1",
+  "transformers>=4.33,<5",
+  "huggingface-hub>=0.23,<1",
+]
+
+[project.optional-dependencies]
+io = ["pyteomics>=4.6"]
+
+[project.scripts]
+ultrams-embed = "ultrams.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Dsadd4/UltraMS"
+Source = "https://github.com/Dsadd4/UltraMS"
+Documentation = "https://github.com/Dsadd4/UltraMS/blob/main/docs/api.md"
+Changelog = "https://github.com/Dsadd4/UltraMS/blob/main/CHANGELOG.md"
+"Issue Tracker" = "https://github.com/Dsadd4/UltraMS/issues"
+Datasets = "https://huggingface.co/datasets/dsadd4"
+
+[tool.setuptools.packages.find]
+where = ["src"]

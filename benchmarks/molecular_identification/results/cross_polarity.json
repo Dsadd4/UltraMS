@@ -1,0 +1,156 @@
+{
+  "recall": [
+    {
+      "model": "ultra",
+      "direction": "pos_to_neg",
+      "k": 1,
+      "n_query": 6202,
+      "n_supported": 2421,
+      "n_hit": 543,
+      "recall_percent": 22.428748451053284
+    },
+    {
+      "model": "ultra",
+      "direction": "pos_to_neg",
+      "k": 5,
+      "n_query": 6202,
+      "n_supported": 2421,
+      "n_hit": 1342,
+      "recall_percent": 55.43163981825692
+    },
+    {
+      "model": "ultra",
+      "direction": "pos_to_neg",
+      "k": 10,
+      "n_query": 6202,
+      "n_supported": 2421,
+      "n_hit": 1739,
+      "recall_percent": 71.82982238744322
+    },
+    {
+      "model": "ultra",
+      "direction": "neg_to_pos",
+      "k": 1,
+      "n_query": 3193,
+      "n_supported": 2476,
+      "n_hit": 402,
+      "recall_percent": 16.235864297253634
+    },
+    {
+      "model": "ultra",
+      "direction": "neg_to_pos",
+      "k": 5,
+      "n_query": 3193,
+      "n_supported": 2476,
+      "n_hit": 1061,
+      "recall_percent": 42.85137318255251
+    },
+    {
+      "model": "ultra",
+      "direction": "neg_to_pos",
+      "k": 10,
+      "n_query": 3193,
+      "n_supported": 2476,
+      "n_hit": 1456,
+      "recall_percent": 58.80452342487884
+    },
+    {
+      "model": "dreams",
+      "direction": "pos_to_neg",
+      "k": 1,
+      "n_query": 6202,
+      "n_supported": 2421,
+      "n_hit": 287,
+      "recall_percent": 11.854605534902934
+    },
+    {
+      "model": "dreams",
+      "direction": "pos_to_neg",
+      "k": 5,
+      "n_query": 6202,
+      "n_supported": 2421,
+      "n_hit": 845,
+      "recall_percent": 34.9029326724494
+    },
+    {
+      "model": "dreams",
+      "direction": "pos_to_neg",
+      "k": 10,
+      "n_query": 6202,
+      "n_supported": 2421,
+      "n_hit": 1229,
+      "recall_percent": 50.76414704667492
+    },
+    {
+      "model": "dreams",
+      "direction": "neg_to_pos",
+      "k": 1,
+      "n_query": 3193,
+      "n_supported": 2476,
+      "n_hit": 145,
+      "recall_percent": 5.856219709208401
+    },
+    {
+      "model": "dreams",
+      "direction": "neg_to_pos",
+      "k": 5,
+      "n_query": 3193,
+      "n_supported": 2476,
+      "n_hit": 567,
+      "recall_percent": 22.89983844911147
+    },
+    {
+      "model": "dreams",
+      "direction": "neg_to_pos",
+      "k": 10,
+      "n_query": 3193,
+      "n_supported": 2476,
+      "n_hit": 884,
+      "recall_percent": 35.70274636510501
+    }
+  ],
+  "paired": [
+    {
+      "direction": "pos_to_neg",
+      "k": 1,
+      "gained": 425,
+      "lost": 169,
+      "net": 256
+    },
+    {
+      "direction": "pos_to_neg",
+      "k": 5,
+      "gained": 725,
+      "lost": 228,
+      "net": 497
+    },
+    {
+      "direction": "pos_to_neg",
+      "k": 10,
+      "gained": 722,
+      "lost": 212,
+      "net": 510
+    },
+    {
+      "direction": "neg_to_pos",
+      "k": 1,
+      "gained": 348,
+      "lost": 91,
+      "net": 257
+    },
+    {
+      "direction": "neg_to_pos",
+      "k": 5,
+      "gained": 698,
+      "lost": 204,
+      "net": 494
+    },
+    {
+      "direction": "neg_to_pos",
+      "k": 10,
+      "gained": 787,
+      "lost": 215,
+      "net": 572
+    }
+  ]
+}

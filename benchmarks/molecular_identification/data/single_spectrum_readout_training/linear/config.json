@@ -1,0 +1,27 @@
+{
+  "amp": false,
+  "architecture": "Linear(1005,768)",
+  "batch_size": 512,
+  "canary_limits": {
+    "max_train_samples": 0,
+    "max_validation_samples": 0
+  },
+  "checkpoint_selection": "lowest full-validation mean paired cosine loss",
+  "deterministic_algorithms": true,
+  "display_name": "Linear",
+  "epochs": 30,
+  "experiment": "MSnLib matched ChemBERTa-readout baselines",
+  "input_cache_summary_sha256": "e47641d5899288dd6f68149e91a4770200e1ecaa268ca24df8d8a3dc6f344b2c",
+  "learning_rate": 0.0005,
+  "main_seed_policy": "seed 0 only; split and query identities remain frozen",
+  "method": "linear",
+  "molecule_target": "frozen 768-dimensional ChemBERTa embedding used by UltraMS/DreaMS retrieval",
+  "optimizer": "AdamW",
+  "seed": 0,
+  "target_cache_summary_sha256": "6484b0dc0ce616fa2cda0bacf0f3a1c97e52a0a175e5d10505f3d2be216b5f0f",
+  "target_smiles_sha256": "b2d3c85a6bad9eeeee2f78f719f1bdb4a21cbbafe20bda11c9e7a7d056deebd6",
+  "temperature": 0.07,
+  "training_objective": "in-batch InfoNCE on normalized spectrum and ChemBERTa vectors",
+  "validation_batch_size": 1024,
+  "weight_decay": 0.0001
+}

@@ -1,0 +1,47 @@
+  [ultrams] Loading projection from WORKSPACE/train/output/comparison/proj_msnlib_mass_ultrams_seed42.pt ...
+  [ultrams] Evaluating val (mass):
+    n=55980, avg_cands=3062: Top1=27.23%  Top5=34.97%  Top10=38.85%  Top20=43.48%  MRR=0.3129
+      [0-10] n=768, top1=56.64%  mrr=0.7005
+      [10-50] n=3132, top1=52.20%  mrr=0.6013
+      [50-200] n=6148, top1=39.85%  mrr=0.4591
+      [200-1000] n=12480, top1=33.94%  mrr=0.3857
+      [1000-inf] n=33452, top1=19.39%  mrr=0.2230
+    Raw scores saved: WORKSPACE/train/output/comparison/10_raw_scores_msnlib_mass_ultrams_val.npz
+  [ultrams] Evaluating test (mass):
+    n=57437, avg_cands=2804: Top1=27.15%  Top5=34.80%  Top10=38.88%  Top20=43.54%  MRR=0.3121
+      [0-10] n=784, top1=58.80%  mrr=0.7010
+      [10-50] n=2620, top1=50.08%  mrr=0.5859
+      [50-200] n=6847, top1=39.55%  mrr=0.4576
+      [200-1000] n=12890, top1=31.44%  mrr=0.3600
+      [1000-inf] n=34296, top1=20.59%  mrr=0.2353
+    Raw scores saved: WORKSPACE/train/output/comparison/10_raw_scores_msnlib_mass_ultrams_test.npz
+
+  [dreams] Training (T=0.050, seed=42)...
+    Training projection on 446667 pairs (1024→768, ResidualProj, T=0.050)
+      epoch 1: loss=3.8522  lr=5.00e-04
+      epoch 5: loss=2.4328  lr=4.89e-04
+      epoch 10: loss=2.0725  lr=4.57e-04
+      epoch 15: loss=1.8955  lr=4.07e-04
+      epoch 20: loss=1.7749  lr=3.45e-04
+      epoch 25: loss=1.6828  lr=2.75e-04
+      epoch 30: loss=1.6085  lr=2.05e-04
+      epoch 35: loss=1.5498  lr=1.43e-04
+      epoch 40: loss=1.5039  lr=9.30e-05
+      epoch 45: loss=1.4736  lr=6.10e-05
+      epoch 50: loss=1.4583  lr=5.00e-05
+  [dreams] Evaluating val (mass):
+    n=55980, avg_cands=3062: Top1=20.39%  Top5=27.40%  Top10=31.19%  Top20=35.69%  MRR=0.2414
+      [0-10] n=768, top1=52.60%  mrr=0.6655
+      [10-50] n=3132, top1=45.79%  mrr=0.5378
+      [50-200] n=6148, top1=33.47%  mrr=0.3993
+      [200-1000] n=12480, top1=25.61%  mrr=0.2982
+      [1000-inf] n=33452, top1=12.92%  mrr=0.1537
+    Raw scores saved: WORKSPACE/train/output/comparison/10_raw_scores_msnlib_mass_dreams_val.npz
+  [dreams] Evaluating test (mass):
+    n=57437, avg_cands=2804: Top1=20.25%  Top5=27.05%  Top10=30.96%  Top20=35.35%  MRR=0.2398
+      [0-10] n=784, top1=60.08%  mrr=0.7170
+      [10-50] n=2620, top1=44.69%  mrr=0.5287
+      [50-200] n=6847, top1=33.30%  mrr=0.3954
+      [200-1000] n=12890, top1=22.91%  mrr=0.2722
+      [1000-inf] n=34296, top1=13.87%  mrr=0.1635
+    Raw scores saved: WORKSPACE/train/output/comparison/10_raw_scores_msnlib_mass_dreams_test.npz

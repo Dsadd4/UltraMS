@@ -1,0 +1,168 @@
+"""Add a retention-time column to the released UltraMS MSnLib table.
+
+The released ``MSnLib.csv`` table of the UltraMS MSnLib benchmark release
+(Hugging Face dataset ``dsadd4/UltraMS-MSnLib-Benchmark``; DOI 10.5281/zenodo.23963488) contains
+one row per MSnLib spectrum and the formula-level 80/10/10 ``fold``
+column, but it does not carry retention times. This script joins ``RTINSECONDS``
+values from an RT-bearing spectrum record onto those 560,084 rows by
+(SMILES, first-peak key) and writes ``MSnLib_with_rt.csv``.
+
+Supply that record with ``--rt-source`` (or the ``ULTRAMS_MSNLIB_RT_SOURCE``
+environment variable). Per-spectrum retention times are also released as
+``split_A_full_msnlib/msnlib_rt.csv.gz`` in the benchmark dataset. The joined spectra are derived from the public MSnLib release
+(Brungs et al., Zenodo 11163380, CC BY 4.0).
+"""
+
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import pandas as pd
+from tqdm import tqdm
+
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with open(path, 'rb') as stream:
+        for chunk in iter(lambda: stream.read(8 << 20), b''):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def parse_mgf_rt(mgf_path):
+    """Parse MGF line-by-line, extract (mzs_hash, precursor_mz, smiles, rt) per spectrum."""
+    records = []
+    current = {}
+    peaks_mz = []
+    in_peaks = False
+
+    with open(mgf_path) as f:
+        for line in tqdm(f, desc="Parsing MGF"):
+            line = line.strip()
+            if line == 'BEGIN IONS':
+                current = {}
+                peaks_mz = []
+                in_peaks = False
+            elif line == 'END IONS':
+                if peaks_mz and 'rt' in current:
+                    first3 = sorted(peaks_mz)[:3]
+                    current['mz_key'] = ','.join(f'{m:.5f}' for m in first3)
+                    current['n_peaks'] = len(peaks_mz)
+                    records.append(current)
+                current = {}
+                peaks_mz = []
+                in_peaks = False
+            elif '=' in line and not in_peaks:
+                key, _, val = line.partition('=')
+                key = key.strip().upper()
+                if key == 'RTINSECONDS':
+                    try:
+                        current['rt'] = float(val)
+                    except ValueError:
+                        pass
+                elif key == 'SMILES':
+                    current['smiles'] = val.strip()
+                elif key in ('PEPMASS', 'PRECURSOR_MZ'):
+                    try:
+                        current['precursor_mz'] = float(val.split()[0])
+                    except ValueError:
+                        pass
+            elif line and line[0].isdigit():
+                in_peaks = True
+                parts = line.split()
+                if len(parts) >= 2:
+                    try:
+                        peaks_mz.append(float(parts[0]))
+                    except ValueError:
+                        pass
+
+    print(f"Parsed {len(records)} spectra with RT from MGF")
+    return records
+
+
+def build_csv_key(row):
+    """Build matching key from CSV row's mzs field."""
+    mzs_str = str(row['mzs'])
+    mzs = sorted(float(x) for x in mzs_str.split(',') if x.strip())[:3]
+    return ','.join(f'{m:.5f}' for m in mzs)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root', type=Path, required=True, help='Benchmark workspace root')
+    parser.add_argument(
+        '--rt-source', type=Path, default=None,
+        help='RT-bearing spectrum record (MGF with RTINSECONDS); defaults to '
+             'ULTRAMS_MSNLIB_RT_SOURCE or datasets/MSnLib/MSnLib_dataset.mgf when present',
+    )
+    args = parser.parse_args()
+    source = args.root.resolve() / 'datasets' / 'MSnLib'
+    legacy_default = source / 'MSnLib_dataset.mgf'
+    mgf_path = (
+        args.rt_source
+        or (Path(os.environ['ULTRAMS_MSNLIB_RT_SOURCE'])
+            if os.environ.get('ULTRAMS_MSNLIB_RT_SOURCE') else None)
+        or (legacy_default if legacy_default.exists() else None)
+    )
+    if mgf_path is None:
+        raise SystemExit(
+            'error: the released MSnLib.csv has no retention-time column; pass an '
+            'RT-bearing spectrum record with --rt-source PATH or export '
+            'ULTRAMS_MSNLIB_RT_SOURCE=PATH'
+        )
+    mgf_path = Path(mgf_path).resolve()
+    if not mgf_path.is_file():
+        raise SystemExit(f'error: RT source not found: {mgf_path}')
+    csv_path = source / 'MSnLib.csv'
+    output_path = source / 'MSnLib_with_rt.csv'
+    mgf_records = parse_mgf_rt(mgf_path)
+
+    rt_lookup = {}
+    for r in mgf_records:
+        key = (r.get('smiles', ''), r.get('mz_key', ''))
+        rt_lookup[key] = r['rt']
+    print(f"RT lookup table: {len(rt_lookup)} entries")
+
+    df = pd.read_csv(csv_path)
+    print(f"CSV loaded: {len(df)} rows, columns: {list(df.columns)}")
+
+    rt_vals = []
+    matched = 0
+    for _, row in tqdm(df.iterrows(), total=len(df), desc="Matching RT"):
+        smiles = str(row.get('smiles', ''))
+        mz_key = build_csv_key(row)
+        key = (smiles, mz_key)
+        rt = rt_lookup.get(key, 0.0)
+        if rt > 0:
+            matched += 1
+        rt_vals.append(rt)
+
+    df['rt'] = rt_vals
+    print(f"Matched: {matched}/{len(df)} ({100*matched/len(df):.1f}%)")
+
+    valid_rt = df[df['rt'] > 0]['rt']
+    if len(valid_rt) > 0:
+        print(f"RT stats: mean={valid_rt.mean():.1f}s, std={valid_rt.std():.1f}s, "
+              f"min={valid_rt.min():.1f}s, max={valid_rt.max():.1f}s")
+
+    df.to_csv(output_path, index=False)
+    audit = {
+        'source_mgf_sha256': sha256(mgf_path),
+        'source_csv_sha256': sha256(csv_path),
+        'output_csv_sha256': sha256(output_path),
+        'n_spectra': len(df),
+        'n_with_rt': matched,
+        'n_without_rt': len(df) - matched,
+        'n_mgf_rt_records': len(mgf_records),
+        'n_rt_lookup_keys': len(rt_lookup),
+    }
+    if len(df) != 560084 or matched != 446032:
+        raise ValueError(f'MSnLib spectrum or retention-time counts differ: {len(df)}, {matched}')
+    (source / 'MSnLib_rt_conversion.json').write_text(json.dumps(audit, indent=2) + '\n')
+    print(f"Saved to: {output_path}")
+    print(json.dumps(audit, indent=2))
+
+
+if __name__ == '__main__':
+    main()

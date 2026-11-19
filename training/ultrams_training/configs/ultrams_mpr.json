@@ -1,0 +1,117 @@
+{
+  "data_audits": {
+    "clean": {
+      "dataset_fingerprint": "ea4c71467eb7737bdb738fb5730c316c5efc6392a488f63b4f8245db6cc8cf06",
+      "rows_at_least_three_valid_peaks": 160641162,
+      "sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
+    },
+    "polarity": {
+      "dataset_fingerprint": "25dfdeafdf886159bd2544e63273571b1512292a3ee28a2591275fe5f40b2aa5",
+      "rows_at_least_three_valid_peaks": 21586258,
+      "sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
+    }
+  },
+  "data_mode": "ultramsdata_parquet",
+  "launch_phase": "mlm",
+  "distributed_profiles": {
+    "4": {
+      "phase1": {
+        "batch_size_per_rank": 480,
+        "global_optimizer_batch_size": 3840,
+        "gradient_accumulation": 2
+      }
+    },
+    "6": {
+      "phase1": {
+        "batch_size_per_rank": 640,
+        "global_optimizer_batch_size": 3840,
+        "gradient_accumulation": 1
+      }
+    }
+  },
+  "expected_assets": {
+    "clean": {
+      "above_1500": 6351728,
+      "accepted_0_to_1500": 154289434,
+      "dataset_fingerprint": "ea4c71467eb7737bdb738fb5730c316c5efc6392a488f63b4f8245db6cc8cf06",
+      "files": 816,
+      "input_content_fingerprint": "810861f1906ccf1fe33168b8aac2a885d7b434d78fef15e2f5b9a80381fa22d1",
+      "negative_0": 10793129,
+      "other_or_null": 80689,
+      "positive_1": 149767344,
+      "rows": 160641162,
+      "run_identity": "b23b98f7a88bff1a954e03af0a6b3d3e691838acbe3f067977fe6771f2cf5fd8",
+      "schema_fingerprint": "182a8c7e2831a49d1b87515b2eac2c3be00c1e285fc04251091ee1d2b3520a2c"
+    },
+    "polarity": {
+      "above_1500": 1584057,
+      "accepted_0_to_1500": 20002201,
+      "dataset_fingerprint": "25dfdeafdf886159bd2544e63273571b1512292a3ee28a2591275fe5f40b2aa5",
+      "files": 48,
+      "input_content_fingerprint": "7785a659b4f5c5c615507f0edede864102ed505cc3a4f6a20534a9485aaa376c",
+      "negative_0": 10793129,
+      "other_or_null": 0,
+      "positive_1": 10793129,
+      "rows": 21586258,
+      "run_identity": "cdbe03cafbe4aef8c1ee31e74a82686be4259045cd0d2e7d3984d29a656ab537",
+      "schema_fingerprint": "182a8c7e2831a49d1b87515b2eac2c3be00c1e285fc04251091ee1d2b3520a2c",
+      "seed": 42
+    }
+  },
+  "model": {
+    "mask_ratio": 0.15,
+    "max_peaks": 150,
+    "mlm_weight": 0.3,
+    "rt_huber_delta": 0.1,
+    "rt_max_seconds": 1500.0,
+    "rt_norm_scale": 600.0,
+    "rt_self_consistency_tau": 0.1
+  },
+  "optimization": {
+    "gradient_clip": 5.0,
+    "keep_last_step_checkpoints": 2,
+    "log_every_optimizer_steps": 50,
+    "num_workers": 2,
+    "precision": "bf16",
+    "save_every_optimizer_steps": 5000,
+    "weight_decay": 0.01
+  },
+  "paths": {
+    "clean_shard_dir": "derived/ultramsdata/shards",
+    "output_dir": "runs/ultramsdata-mpr5-4g",
+    "polarity_shard_dir": "derived/ultramsdata_polarity/shards"
+  },
+  "ultramsdata_freeze": {
+    "mode": "phase1",
+    "required_end_stage": "peak_reconstruction",
+    "required_start_stage": "peak_reconstruction",
+    "semantic_audit_sha256": "e2b1d2c0d61715bf35b0380b3cc5ae70728cce05cb2e563307e3e5a3562d7461"
+  },
+  "run_name": "ultramsdata-mpr5-4g",
+  "seed": 42,
+  "stages": [
+    {
+      "epochs": 5,
+      "initial_estimated_steps_per_epoch": 53000,
+      "learning_rate": 3e-05,
+      "minimum_learning_rate": 5e-07,
+      "mlm_frequency": 1,
+      "name": "peak_reconstruction",
+      "polarity_weight": 0.0,
+      "profile": "phase1",
+      "recalibrate_scheduler_after_epoch": 1,
+      "rt_weight": 0.0,
+      "save_every_optimizer_steps": 2500,
+      "scheduler": "warmup_cosine",
+      "scheduler_planned_epochs": 5,
+      "trainable_scope": "all_base",
+      "warmup_ratio": 0.03
+    }
+  ],
+  "supported_world_sizes": [
+    4,
+    6
+  ],
+  "training_mode": "pretraining",
+  "world_size": 4
+}
